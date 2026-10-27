@@ -1,0 +1,88 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="baglam-v1" name="Bağlam">
+    <mxGraphModel dx="1768" dy="929" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1440" pageHeight="980" background="#FFFFFF" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="hasta" parent="1" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;fontFamily=Arial;fontSize=28;fontStyle=1;align=center;verticalAlign=middle;fillColor=#F1F5F9;strokeColor=#CBD5E1;strokeWidth=2;fontColor=#173343;spacing=12;" value="Hasta" vertex="1">
+          <mxGeometry height="140" width="240" x="80" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="resepsiyon" parent="1" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;fontFamily=Arial;fontSize=28;fontStyle=1;align=center;verticalAlign=middle;fillColor=#F1F5F9;strokeColor=#CBD5E1;strokeWidth=2;fontColor=#173343;spacing=12;" value="Resepsiyon" vertex="1">
+          <mxGeometry height="140" width="240" x="80" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="doktor" parent="1" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;fontFamily=Arial;fontSize=28;fontStyle=1;align=center;verticalAlign=middle;fillColor=#F1F5F9;strokeColor=#CBD5E1;strokeWidth=2;fontColor=#173343;spacing=12;" value="Doktor" vertex="1">
+          <mxGeometry height="140" width="240" x="80" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="sistem" parent="1" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;fontFamily=Arial;fontSize=22;fontStyle=1;align=center;verticalAlign=middle;fillColor=#173343;strokeColor=#173343;strokeWidth=2;fontColor=#FFFFFF;spacing=12;" value="Klinik Randevu&lt;br&gt;&lt;br&gt;Eğitim prototipi&lt;br&gt;&lt;br&gt;Randevu işlemleri&lt;br&gt;ve günlük görünüm" vertex="1">
+          <mxGeometry height="600" width="270" x="1100" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="h-istek" edge="1" parent="1" source="hasta" style="edgeStyle=none;rounded=0;html=1;strokeColor=#007F70;strokeWidth=2.5;endArrow=block;endFill=1;endSize=12;startArrow=none;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.075;entryDx=0;entryDy=0;" target="sistem" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h-istek-label" connectable="0" parent="h-istek" style="text;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;resizable=1;fontFamily=Arial;fontSize=20;fontColor=#007F70;fillColor=#FFFFFF;strokeColor=none;spacing=3;" value="Doktor / tarih seçimi&lt;br&gt;Randevu oluşturma / kendi kaydını iptal isteği" vertex="1">
+          <mxGeometry height="58" relative="1" width="620" as="geometry">
+            <mxPoint x="-310" y="-29" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h-sonuc" edge="1" parent="1" source="sistem" style="edgeStyle=none;rounded=0;html=1;strokeColor=#1D4ED8;strokeWidth=2.5;endArrow=block;endFill=1;endSize=12;startArrow=none;exitX=0;exitY=0.19166666666666668;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" target="hasta" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h-sonuc-label" connectable="0" parent="h-sonuc" style="text;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;resizable=1;fontFamily=Arial;fontSize=20;fontColor=#1D4ED8;fillColor=#FFFFFF;strokeColor=none;spacing=3;" value="Seçili doktor / tarih için saatler&lt;br&gt;Kendi randevuları ve işlem sonucu" vertex="1">
+          <mxGeometry height="58" relative="1" width="620" as="geometry">
+            <mxPoint x="-310" y="-29" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r-istek" edge="1" parent="1" source="resepsiyon" style="edgeStyle=none;rounded=0;html=1;strokeColor=#007F70;strokeWidth=2.5;endArrow=block;endFill=1;endSize=12;startArrow=none;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.44166666666666665;entryDx=0;entryDy=0;" target="sistem" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r-istek-label" connectable="0" parent="r-istek" style="text;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;resizable=1;fontFamily=Arial;fontSize=20;fontColor=#007F70;fillColor=#FFFFFF;strokeColor=none;spacing=3;" value="Doktor / tarih ve hasta seçimi&lt;br&gt;Hasta adına randevu isteği" vertex="1">
+          <mxGeometry height="58" relative="1" width="620" as="geometry">
+            <mxPoint x="-310" y="-29" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r-sonuc" edge="1" parent="1" source="sistem" style="edgeStyle=none;rounded=0;html=1;strokeColor=#1D4ED8;strokeWidth=2.5;endArrow=block;endFill=1;endSize=12;startArrow=none;exitX=0;exitY=0.5583333333333333;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" target="resepsiyon" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r-sonuc-label" connectable="0" parent="r-sonuc" style="text;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;resizable=1;fontFamily=Arial;fontSize=20;fontColor=#1D4ED8;fillColor=#FFFFFF;strokeColor=none;spacing=3;" value="Seçili doktor / tarih için günlük liste&lt;br&gt;Saatler, toplamlar ve işlem sonucu" vertex="1">
+          <mxGeometry height="58" relative="1" width="620" as="geometry">
+            <mxPoint x="-310" y="-29" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="d-istek" edge="1" parent="1" source="doktor" style="edgeStyle=none;rounded=0;html=1;strokeColor=#007F70;strokeWidth=2.5;endArrow=block;endFill=1;endSize=12;startArrow=none;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.8083333333333333;entryDx=0;entryDy=0;" target="sistem" value="Görevli doktor ve tarih seçimiBekliyor durumundaki randevuyu tamamlama isteği">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="d-istek-label" connectable="0" parent="d-istek" style="text;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;resizable=1;fontFamily=Arial;fontSize=20;fontColor=#007F70;fillColor=#FFFFFF;strokeColor=none;spacing=3;" value="&lt;pre dir=&quot;ltr&quot;&gt;&lt;code&gt;Görevli doktor ve tarih seçimi&lt;br/&gt;Bekliyor durumundaki randevuyu tamamlama isteği&lt;/code&gt;&lt;/pre&gt;" vertex="1">
+          <mxGeometry height="58" relative="1" width="620" as="geometry">
+            <mxPoint x="-310" y="-29" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="d-sonuc" edge="1" parent="1" source="sistem" style="edgeStyle=none;rounded=0;html=1;strokeColor=#1D4ED8;strokeWidth=2.5;endArrow=block;endFill=1;endSize=12;startArrow=none;exitX=0;exitY=0.925;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" target="doktor" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="d-sonuc-label" connectable="0" parent="d-sonuc" style="text;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;resizable=1;fontFamily=Arial;fontSize=20;fontColor=#1D4ED8;fillColor=#FFFFFF;strokeColor=none;spacing=3;" value="Seçili doktor / tarih için günlük liste&lt;br&gt;Saatler, toplamlar ve işlem sonucu" vertex="1">
+          <mxGeometry height="58" relative="1" width="620" as="geometry">
+            <mxPoint x="-310" y="-29" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="title" parent="1" style="text;html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=40;fontStyle=1;fontColor=#173343;align=left;verticalAlign=middle;strokeColor=none;fillColor=none;spacing=0;" value="Bağlam diyagramı" vertex="1">
+          <mxGeometry height="62" width="1280" x="80" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="subtitle" parent="1" style="text;html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=22;fontStyle=0;fontColor=#526374;align=left;verticalAlign=middle;strokeColor=none;fillColor=none;spacing=0;" value="Klinik Randevu • İlk sürüm • Öğretmen çalışma örneği" vertex="1">
+          <mxGeometry height="36" width="1280" x="80" y="105" as="geometry" />
+        </mxCell>
+        <mxCell id="legend1" parent="1" style="text;html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=18;fontStyle=0;fontColor=#007F70;align=left;verticalAlign=middle;strokeColor=none;fillColor=none;spacing=0;" value="Sisteme doğru: seçim / istek" vertex="1">
+          <mxGeometry height="32" width="430" x="370" y="153" as="geometry" />
+        </mxCell>
+        <mxCell id="legend2" parent="1" style="text;html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=18;fontStyle=0;fontColor=#1D4ED8;align=left;verticalAlign=middle;strokeColor=none;fillColor=none;spacing=0;" value="Kullanıcıya doğru: bilgi / sonuç" vertex="1">
+          <mxGeometry height="32" width="520" x="840" y="153" as="geometry" />
+        </mxCell>
+        <mxCell id="foot1" parent="1" style="text;html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=20;fontStyle=0;fontColor=#526374;align=left;verticalAlign=middle;strokeColor=none;fillColor=none;spacing=0;" value="Sistem tek kutuyla gösterilir; ekranlar, veri saklama ve kod burada ayrıştırılmaz." vertex="1">
+          <mxGeometry height="34" width="1280" x="80" y="850" as="geometry" />
+        </mxCell>
+        <mxCell id="foot2" parent="1" style="text;html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=19;fontStyle=0;fontColor=#526374;align=left;verticalAlign=middle;strokeColor=none;fillColor=none;spacing=0;" value="Roller eğitim için canlandırılır. Oklar arayüz etkileşimidir; ağ bağlantısı anlamına gelmez." vertex="1">
+          <mxGeometry height="34" width="1280" x="80" y="892" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

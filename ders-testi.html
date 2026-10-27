@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src data:; connect-src 'none'; base-uri 'none'; form-action 'none'">
+<title>6 soruluk ders testi — Klinik Randevu</title>
+<style>
+:root{color-scheme:light;--ink:#173343;--muted:#506572;--teal:#00796d;--mint:#e2f3ee;--line:#d9e3e6;--paper:#fff;--bg:#f1f5f5;--red:#a1392e;--red-bg:#fff0ed}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}a{color:var(--teal);text-underline-offset:3px}.wrap{width:min(900px,calc(100% - 36px));margin:auto}header{padding:38px 0 24px}.top{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}.eyebrow{color:var(--teal);font-size:13px;font-weight:750;letter-spacing:.09em}h1{font-size:clamp(30px,5vw,44px);line-height:1.15;letter-spacing:-.03em;margin:23px 0 16px}header p{max-width:730px;margin:0;color:var(--muted)}.progress-meta{display:flex;justify-content:space-between;gap:16px;margin:17px 0 7px;font-size:14px;color:var(--muted)}progress{width:100%;height:9px;border:0;border-radius:10px;overflow:hidden;background:#dbe6e5;display:block;accent-color:var(--teal)}progress::-webkit-progress-bar{background:#dbe6e5}progress::-webkit-progress-value{background:var(--teal)}progress::-moz-progress-bar{background:var(--teal)}.card{background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:30px;margin:20px 0;box-shadow:0 12px 34px #16363a07}.topic{display:inline-block;padding:4px 11px;border-radius:7px;background:var(--mint);color:var(--teal);font-size:13px;font-weight:700}h2{font-size:25px;line-height:1.38;letter-spacing:-.01em;margin:19px 0 22px}.clue{margin:-5px 0 20px;padding:10px 15px;border:1px solid var(--line);border-radius:9px;background:#f7fafa;font-size:15px}.clue summary{cursor:pointer;font-weight:700;color:var(--teal)}.clue p{margin:8px 0 3px}.choices{display:grid;gap:12px}.choice{appearance:none;display:flex;align-items:flex-start;text-align:left;gap:14px;width:100%;background:#fff;border:1.5px solid #cbd9dd;border-radius:11px;padding:16px;color:var(--ink);font:inherit;line-height:1.45;cursor:pointer}.choice:hover:not(:disabled){border-color:var(--teal);background:#f2faf7}.letter{font-size:14px;line-height:30px;min-width:30px;text-align:center;border-radius:50%;background:#eef3f4;font-weight:750}.choice:disabled{color:var(--ink);opacity:1;cursor:default}.choice.correct{border-color:var(--teal);background:#effaf5}.choice.wrong{border-color:var(--red);background:var(--red-bg)}.choice.correct .letter{background:var(--teal);color:white}.choice.wrong .letter{background:var(--red);color:white}.mark{display:block;font-size:13px;font-weight:750;margin:6px 0 0;color:var(--teal)}.wrong .mark{color:var(--red)}.feedback{margin-top:22px;padding:18px 20px;border-left:4px solid var(--teal);border-radius:0 10px 10px 0;background:#eff8f5}.feedback.wrong-feedback{background:var(--red-bg);border-left-color:var(--red)}.feedback p{margin:7px 0 0;font-size:16px}.feedback small{display:block;margin-top:9px;color:var(--muted)}.controls{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-top:24px}.hint{font-size:14px;color:var(--muted)}button.primary{background:var(--teal);color:white;border:0;border-radius:9px;padding:12px 20px;font:inherit;font-weight:650;cursor:pointer;flex-shrink:0}button.primary:disabled{background:#cad7d7;color:#52696a;cursor:not-allowed}button.secondary{background:#fff;color:var(--teal);border:1px solid var(--teal);border-radius:9px;padding:11px 18px;font:inherit;font-weight:650;cursor:pointer}button:focus-visible,a:focus-visible,textarea:focus-visible{outline:3px solid #e1a33b;outline-offset:4px}[hidden]{display:none!important}.score{font-size:48px;font-weight:800;line-height:1.1;letter-spacing:-.04em;margin:14px 0}.result-note{color:var(--muted);margin:0 0 23px}.review-item{border-top:1px solid var(--line);padding:17px 0}.review-item summary{cursor:pointer;display:flex;gap:12px;align-items:flex-start}.result-badge{border-radius:5px;background:var(--mint);color:var(--teal);font-size:13px;font-weight:750;padding:2px 7px;flex-shrink:0}.result-badge.incorrect{background:var(--red-bg);color:var(--red)}.review-item p{font-size:16px;margin:9px 0}.review-item small{color:var(--muted)}label{display:block;font-weight:650;margin:24px 0 9px}textarea{width:100%;min-height:200px;resize:vertical;border:1px solid #c5d4d9;border-radius:9px;padding:14px;font:14px/1.6 ui-monospace,monospace;color:var(--ink);background:#f8fbfb}.subtle{font-size:14px;color:var(--muted)}footer{padding:4px 0 35px;color:var(--muted);font-size:14px}footer p{margin:7px 0}.noscript{padding:20px;background:#fff0ed;border:1px solid #b35e50;border-radius:10px}@media(max-width:600px){.wrap{width:calc(100% - 24px)}header{padding-top:24px}.card{padding:21px 17px;border-radius:15px}h2{font-size:22px}.choice{padding:13px 11px;gap:10px;font-size:16px}.controls{align-items:stretch;flex-direction:column}.controls button{width:100%}.score{font-size:42px}}@media print{body{background:white}.card{border:0;box-shadow:none;padding:0}.top a,.controls,#restart,footer{display:none}.review-item{break-inside:avoid}textarea{min-height:230px}}
+</style>
+</head>
+<body>
+<header class="wrap">
+ <div class="top"><span class="eyebrow">YAZILIM GELİŞTİRME SÜREÇLERİ · 1–2. HAFTA</span><a href="index.html">Klinik Randevu demosuna dön</a></div>
+ <h1>Kendi bilginizi sınayın.</h1>
+ <p>Altı soruda gereksinim, iş kuralı, kalite hedefi ve ekip süreci. Önce yanıtınızı seçin; ardından gerekçeyi okuyun. Sonuç, her sorudaki ilk seçiminizden hesaplanır.</p>
+</header>
+<main class="wrap">
+ <noscript><p class="noscript">Bu çevrimdışı test için JavaScript açık olmalıdır. Ağ bağlantısı gerekmez.</p></noscript>
+ <div class="progress-meta"><span id="counter">Soru 1 / 6</span><span id="answered-count">0 / 6 yanıtlandı</span></div>
+ <progress id="progress" max="6" value="0" aria-label="Yanıtlanan soru sayısı"></progress>
+ <section class="card" id="question-panel" aria-labelledby="question-title">
+  <span class="topic" id="topic"></span>
+  <h2 id="question-title" tabindex="-1"></h2>
+  <details class="clue" id="clue"><summary>İpucu</summary><p id="clue-text"></p></details>
+  <div class="choices" id="choices" role="group" aria-labelledby="question-title"></div>
+  <div class="feedback" id="feedback" aria-live="polite" aria-atomic="true" hidden></div>
+  <div class="controls"><span class="hint" id="question-hint">Bir seçenek seçerek yanıtı kontrol edin.</span><button class="primary" type="button" id="next" disabled>Sonraki soru →</button></div>
+ </section>
+ <section class="card" id="result-panel" aria-labelledby="result-title" hidden>
+  <span class="topic">TEST TAMAMLANDI</span>
+  <h2 id="result-title" tabindex="-1">Gerekçeyi kendi örneğinizle açıklayın.</h2>
+  <div class="score" id="score"></div>
+  <p class="result-note" id="result-note"></p>
+  <div id="review"></div>
+  <label for="result-record">Toplantı notuna aktarabileceğiniz sonuç kaydı</label>
+  <textarea id="result-record" readonly spellcheck="false" aria-describedby="record-help"></textarea>
+  <p class="subtle" id="record-help">Metni seçip kopyalayın; docs/07-toplanti-notu.md dosyanıza ekleyin. Kendi açıklamanızı ve açık sorunuzu tamamlayın. Test sonucu kendi başına proje teslim kanıtının yerine geçmez.</p>
+  <div class="controls"><a href="index.html">Demoda tekrar gözlem yap</a><button class="secondary" type="button" id="restart">Testi yeniden başlat</button></div>
+ </section>
+</main>
+<footer class="wrap"><p>Çevrimdışı çalışır. Yanıtlar yalnız bu açık sayfanın belleğinde tutulur; yenileme veya kapatma sonucu siler. Otomatik gönderim, hesap, kayıt servisi ve analitik yoktur.</p><p>Bu bir öğrenme etkinliğidir. Kanıt sınırlarını, gözlem koşullarını ve gerçek GitHub bağlantılarınızı ayrıca belgeleyin.</p></footer>
+<script>
+'use strict';
+const QUESTIONS = [{"id": "Q01", "topic": "FR-03 ve kabul koşulu", "prompt": "FR-03 için hangi ifade bu prototipin iptal davranışını doğru anlatır?", "choices": ["Resepsiyon, seçili gündeki bütün randevuları onay istemeden iptal eder.", "Hasta, kendisine ait Bekliyor randevuyu açık onay vererek iptal eder; aynı doktor, tarih ve saat yeniden uygun olur.", "Doktor, Tamamlandı kaydını iptal ederek hastanın geçmişini siler.", "Hasta, başka bir hastaya ait randevuyu listeden seçerek iptal eder."], "correct": 1, "explanation": "FR-03, hastanın kendi Bekliyor kaydını iptal etmesidir. Onay verilirse kayıt İptal edildi olur ve saat serbest kalır; onaydan vazgeçilirse kayıt değişmez. Resepsiyonun iptal yetkisi bu prototipte yoktur. Bu gözlem, gerçek bir sistemde sunucu yetkilendirmesinin doğrulandığı anlamına gelmez.", "steps": ["A06", "B02", "B05"], "hint": "İptal için kaydın sahibini, mevcut durumunu ve kullanıcı onayını düşünün."}, {"id": "Q02", "topic": "BR-01 ile FR-02 ilişkisi", "prompt": "BR-01 hangi kuralı koyar ve bu derste öncelikle hangi işlevsel gereksinime bağlanır?", "choices": ["Bütün doktorlarda aynı saatte yalnız bir randevu olabilir; FR-06'ya bağlanır.", "Tamamlandı randevular hiçbir saati meşgul etmez; FR-05'e bağlanır.", "Aynı doktor, tarih ve saat için iptal edilmemiş ikinci kayıt oluşmamalıdır; FR-02'ye bağlanır.", "GitHub'daki üçüncü issue her zaman FR-03 olmalıdır; FR-03'e bağlanır."], "correct": 2, "explanation": "BR-01 bir iş kuralıdır: doktor + tarih + saat birleşimi için iptal edilmemiş ikinci kayıt oluşmasını sınırlar. FR-02, randevu oluşturma işlemini tarif eder ve bu kurala uyar. Bekliyor ve Tamamlandı kayıtları iptal edilmemiştir; iptal edilmiş kayıt aynı saati serbest bırakır. BR veya FR kimliği, GitHub'ın verdiği issue numarasından ayrıdır.", "steps": ["A17", "B02", "B03"], "hint": "Çakışmayı yalnız saatle tanımlamak yeterli mi? Kural kimliği ile issue numarasını da ayırın."}, {"id": "Q03", "topic": "Ölçülebilir kalite gereksinimi", "prompt": "Hangisi ölçülebilir bir NFR taslağıdır ve henüz ölçüm yapılmadığını doğru belirtir?", "choices": ["İlk kez kullanan 3 deneme katılımcısının her biri, belirlenmiş başlangıçtan yardım almadan 5 dakika içinde randevu oluşturabilsin. Durum: Tasarım hedefi; henüz ölçülmedi.", "Sistem çok hızlı ve herkes için kusursuz olmalıdır. Durum: Kesinlikle geçti.", "Hasta İptal et düğmesine basabilmelidir. Durum: Bütün kalite koşulları doğrulandı.", "Aynı doktor, tarih ve saatte ikinci aktif kayıt oluşmasın. Durum: Bu bir performans ölçümüdür."], "correct": 0, "explanation": "A seçeneği katılımcıyı, görevi, yardım koşulunu ve süre sınırını belirtir; kullanılabilirlik için sınanabilir bir kalite hedefidir. Sayı yazılması ölçüm yapıldığı anlamına gelmez. Hızlı/kusursuz ifadesi belirsizdir; iptal işlemi FR, çift kayıt sınırlaması ise BR örneğidir. Üç kişi ve beş dakika, bu dersin tartışılabilir tasarım önerisidir; evrensel standart değildir.", "steps": ["B02", "B03", "B04"], "hint": "Kim, hangi görevi, hangi koşulda ve hangi sınır içinde deneyecek? Gerçek ölçüm yapılmış mı?"}, {"id": "Q04", "topic": "Commit, dal ve pull request", "prompt": "docs/fr03-kabul-kriterleri dalında belgeyi değiştirdiniz. Commit ve PR için hangi açıklama doğrudur?", "choices": ["Commit oluşunca bütün değişiklikler otomatik olarak main dalına ve bütün ekip arkadaşlarına birleştirilir.", "PR yalnız bir ekran görüntüsüdür; commit geçmişiyle bağlantısı yoktur.", "Doğru yön base: docs/fr03-kabul-kriterleri, compare: main olmalıdır.", "Commit değişikliği dalda kaydeder; PR bu değişikliğin incelenip main dalına alınmasını ister. Bu çalışmada base: main, compare: docs/fr03-kabul-kriterleri seçilir."], "correct": 3, "explanation": "Commit bir dal üzerindeki değişiklik kaydıdır. PR, kaynak daldaki değişikliğin hedef dala alınması için inceleme ve tartışma alanıdır; açılması otomatik birleştirme değildir. Hedef base: main, belge değişikliğini taşıyan kaynak compare: docs/fr03-kabul-kriterleri olur. İnceleme, gerekli düzeltme ve merge adımları ayrıca tamamlanır.", "steps": ["A16", "B06", "B13", "B14", "B16"], "hint": "Değişikliği kaydetmek, inceleme istemek ve birleştirmek ayrı adımlardır. Değişiklik hangi dalda?"}, {"id": "Q05", "topic": "Bağlam ve kullanım durumu modeli", "prompt": "Bu dersteki bağlam diyagramı ile kullanım durumu diyagramı arasındaki fark hangisidir?", "choices": ["İkisi de veritabanı tablolarını ve C# sınıflarını eksiksiz gösterir.", "Bağlam diyagramı sistemi, dış aktörleri ve aralarındaki alışverişi gösterir; kullanım durumu diyagramı sistem sınırı içindeki kullanıcı amaçlarını ve bunlarla ilişkili aktörleri gösterir.", "Kullanım durumu diyagramında bütün aktörler sistem sınırının içinde yer alır.", "Sistemi hiç kullanmayan her paydaş, otomatik olarak altı kullanım durumunun da aktörüdür."], "correct": 1, "explanation": "Bu modülde bağlam modeli tek sistem ile Hasta, Resepsiyon ve Doktor arasındaki etkileşim kapsamını gösterir. Kullanım durumu modeli altı kullanıcı amacını oval olarak sistemin içinde, aktörleri dışında gösterir. Paydaş, sistemden etkilenen veya sistemi etkileyen taraftır; aktör ise incelenen sistemle etkileşen dış roldür. Her paydaşın aktör olması gerekmez.", "steps": ["A09", "B08", "B10"], "hint": "Bir model sistemin çevresini, diğeri sistemle gerçekleştirilen kullanıcı amaçlarını öne çıkarır."}, {"id": "Q06", "topic": "Gözlem ve kanıtın sınırı", "prompt": "Yerel demoda R008 kaydını oluşturdunuz ve 09:30 saatinin Dolu olduğunu gördünüz. Hangi sonuç kanıta uygundur?", "choices": ["Gerçek kullanıcı girişi ve bütün saldırılara karşı sunucu güvenliği doğrulanmıştır.", "Bütün tarayıcılar, cihazlar ve eşzamanlı kullanıcılar için çift kayıt kesin olarak engellenmiştir.", "Seçtiğim rol, doktor, tarih ve saatle bu açık sayfadaki davranışı gözledim; gerçek kimlik doğrulama, ortak veritabanı ve eşzamanlılık güvencesi ayrıca sınanmalıdır.", "Prototip güzel göründüğü için bütün NFR'leri Geçti olarak işaretleyebilirim."], "correct": 2, "explanation": "Gözlem, denediğiniz koşullarla sınırlıdır. Rol seçici eğitim simülasyonudur; gerçek giriş değildir. Veriler tarayıcıda saklanır veya bellekte kalır; sekmeler ve cihazlar arasında ortak veri ve eşzamanlı çakışma garantisi yoktur. Beklenen sonucu yazmak ya da ekranı beğenmek, güvenlik, performans veya diğer kalite hedeflerinin doğrulandığını göstermez.", "steps": ["A04", "A06", "B01", "B04", "B18"], "hint": "Yalnız denediğiniz ortamı düşünün. Açık sayfanız ile başka cihazdaki kullanıcı ortak veri mi kullanıyor?"}];
+const LETTERS = ['A','B','C','D'];
+const state = { index: 0, answers: Array(QUESTIONS.length).fill(null) };
+const el = id => document.getElementById(id);
+function esc(value){return String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+function countAnswered(){return state.answers.filter(x=>x!==null).length;}
+function score(){return state.answers.reduce((n,a,i)=>n+(a===QUESTIONS[i].correct?1:0),0);}
+function choose(choice){
+ const q=QUESTIONS[state.index];
+ if(!Number.isInteger(choice)||choice<0||choice>=q.choices.length||state.answers[state.index]!==null)return false;
+ state.answers[state.index]=choice;
+ renderQuestion();
+ return true;
+}
+function renderQuestion(){
+ const q=QUESTIONS[state.index],answer=state.answers[state.index],answered=answer!==null;
+ el('counter').textContent='Soru '+(state.index+1)+' / '+QUESTIONS.length;
+ el('answered-count').textContent=countAnswered()+' / '+QUESTIONS.length+' yanıtlandı';
+ el('progress').value=countAnswered();
+ el('topic').textContent=q.topic;
+ el('question-title').textContent=q.prompt;
+ el('clue-text').textContent=q.hint;
+ el('clue').open=false;
+ el('choices').innerHTML=q.choices.map((c,i)=>{
+  const css=answered?(i===q.correct?' correct':i===answer?' wrong':''):'';
+  const mark=answered&&i===q.correct?'<span class="mark">'+(i===answer?'Seçiminiz · Doğru yanıt':'Doğru yanıt')+'</span>':answered&&i===answer?'<span class="mark">Seçiminiz · Yeniden düşünün</span>':'';
+  return '<button type="button" class="choice'+css+'" data-choice="'+i+'" '+(answered?'disabled':'')+'><span class="letter" aria-hidden="true">'+LETTERS[i]+'</span><span><span class="sr-choice">'+esc(c)+'</span>'+mark+'</span></button>';
+ }).join('');
+ const feedback=el('feedback');
+ feedback.hidden=!answered;
+ feedback.className='feedback'+(answered&&answer!==q.correct?' wrong-feedback':'');
+ feedback.innerHTML=answered?'<strong>'+(answer===q.correct?'Doğru. Gerekçe:':'Bu seçimi gözden geçirin. Doğru yanıt: '+LETTERS[q.correct]+'.')+'</strong><p>'+esc(q.explanation)+'</p><small>Rehberde tekrar: '+q.steps.join(', ')+'</small>':'';
+ el('question-hint').textContent=answered?'Gerekçeyi okuduktan sonra devam edin.':'Bir seçenek seçerek yanıtı kontrol edin.';
+ el('next').disabled=!answered;
+ el('next').textContent=state.index===QUESTIONS.length-1?'Sonucu göster →':'Sonraki soru →';
+}
+function resultRecord(){
+ return '### B18 — Ders testi sonucu\n\nİlk deneme sonucu: '+score()+'/'+QUESTIONS.length+' doğru.\n'+QUESTIONS.map((q,i)=>'- '+q.id+': '+LETTERS[state.answers[i]]+' seçtim; '+(state.answers[i]===q.correct?'doğru':'doğru seçenek '+LETTERS[q.correct])+'.').join('\n')+'\n\nÖğrendiğim / düzelttiğim kavram: [Kendi cümlemle yazacağım.]\nKendi belgemdeki kanıt bağlantısı: [FR-03 → UC-03 → kabul koşulu → issue → birleşmiş PR]\nAçık sorum: [ ]';
+}
+function showResults(){
+ if(countAnswered()!==QUESTIONS.length)return false;
+ el('question-panel').hidden=true;
+ el('result-panel').hidden=false;
+ el('counter').textContent='Altı soru tamamlandı';
+ el('score').textContent=score()+' / '+QUESTIONS.length+' doğru';
+ el('result-note').textContent=score()===QUESTIONS.length?'Bütün ilk yanıtlarınız doğru. Şimdi bir kavramı kendi belgenizdeki somut kanıtla açıklayın.':'Aşağıdaki başlıkları açıp gerekçeleri yeniden okuyun. Yanlış yanıtlar, tekrar çalışacağınız kavramları gösterir.';
+ el('review').innerHTML=QUESTIONS.map((q,i)=>'<details class="review-item"><summary><span class="result-badge'+(state.answers[i]===q.correct?'':' incorrect')+'">'+(state.answers[i]===q.correct?'Doğru':'Tekrar')+'</span><strong>'+q.id+' · '+esc(q.topic)+'</strong></summary><p>'+esc(q.prompt)+'</p><p><strong>Seçiminiz:</strong> '+LETTERS[state.answers[i]]+' — '+esc(q.choices[state.answers[i]])+'</p><p><strong>Doğru yanıt:</strong> '+LETTERS[q.correct]+' — '+esc(q.choices[q.correct])+'</p><p>'+esc(q.explanation)+'</p><small>Rehberde tekrar: '+q.steps.join(', ')+'</small></details>').join('');
+ el('result-record').value=resultRecord();
+ el('result-title').focus();
+ return true;
+}
+function nextQuestion(){
+ if(state.answers[state.index]===null)return false;
+ if(state.index===QUESTIONS.length-1)return showResults();
+ state.index++;
+ renderQuestion();
+ el('question-title').focus();
+ return true;
+}
+function restart(){
+ if(!window.confirm('Bu sayfadaki test sonucu silinip altı soru yeniden başlatılsın mı?'))return false;
+ state.index=0;state.answers.fill(null);
+ el('result-panel').hidden=true;el('question-panel').hidden=false;
+ renderQuestion();el('question-title').focus();return true;
+}
+el('choices').addEventListener('click',event=>{const b=event.target.closest('button[data-choice]');if(b)choose(Number(b.dataset.choice));});
+el('next').addEventListener('click',nextQuestion);
+el('restart').addEventListener('click',restart);
+renderQuestion();
+</script>
+</body>
+</html>

@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="Yazılım Geliştirme Süreçleri dersi için çevrimdışı Klinik Randevu eğitim prototipi. Tüm veriler sentetiktir.">
+  <title>Klinik Randevu • Eğitim Prototipi</title>
+  <style>
+    :root{--ink:#173343;--muted:#526976;--teal:#00796d;--teal-dark:#005e55;--tint:#e7f4ee;--canvas:#f3f5f2;--paper:#fff;--line:#dce5e1;--amber:#946000;--amber-bg:#fff5da;--red:#9e3331;--red-bg:#fff0ed;--blue-bg:#eaf1f8;--shadow:0 8px 30px rgba(23,51,67,.045);--radius:18px}
+    *{box-sizing:border-box}body{margin:0;color:var(--ink);background:var(--canvas);font:15px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif}button,input,select{font:inherit}button,select{touch-action:manipulation}button{cursor:pointer}button:disabled{cursor:not-allowed}button:focus-visible,select:focus-visible,summary:focus-visible,a:focus-visible{outline:3px solid #d59420;outline-offset:3px}h1,h2,h3,p{margin:0}a{color:var(--teal-dark)}[hidden]{display:none!important}.wrap{max-width:1200px;margin:auto;padding:0 28px}.topbar{background:var(--paper);border-bottom:1px solid var(--line)}.topbar .wrap{min-height:82px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{display:flex;align-items:center;gap:13px}.mark{width:42px;height:42px;border-radius:14px;background:var(--teal);color:white;display:grid;place-items:center;font-size:27px;font-weight:500;line-height:1}.brand strong{display:block;font-size:17px;letter-spacing:-.4px}.brand small{display:block;font-size:12px;color:var(--muted)}.top-actions{display:flex;align-items:center;gap:14px}.tag{display:inline-flex;align-items:center;border-radius:99px;padding:5px 10px;background:var(--tint);color:var(--teal-dark);font-size:11px;font-weight:750;letter-spacing:.4px}.ghost{border:1px solid var(--line);border-radius:10px;background:white;padding:9px 13px;color:var(--ink);font-size:13px;font-weight:650}.ghost:hover{border-color:var(--teal);background:#f7fbf9}.hero{display:flex;justify-content:space-between;align-items:center;gap:20px;padding:28px 0 23px}.eyebrow{font-size:11px;font-weight:750;text-transform:uppercase;letter-spacing:1.8px;color:var(--teal);margin-bottom:7px}h1{font-size:clamp(24px,3.3vw,34px);letter-spacing:-1.1px;line-height:1.2;margin-bottom:10px}.hero p{color:var(--muted);max-width:760px;font-size:14px}.version{white-space:nowrap;color:var(--muted);font-size:12px;text-align:right}.panel{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}.controls{padding:20px 22px;display:grid;grid-template-columns:1.35fr 1fr 1.2fr 1.05fr;gap:18px;align-items:start}.field label,.field-label{display:block;font-size:12px;font-weight:750;margin:0 0 8px}.field select{width:100%;min-height:44px;border:1px solid #cbd8d2;border-radius:10px;background:#fff;color:var(--ink);padding:8px 30px 8px 10px}.field select:disabled{background:#f1f3f2;color:#5e6c75}.field small{display:block;color:var(--muted);font-size:11px;margin-top:6px;line-height:1.5}.roles{display:grid;grid-template-columns:repeat(3,1fr);gap:4px;background:#edf2ef;padding:4px;border-radius:12px}.role{border:0;background:transparent;min-height:36px;border-radius:9px;padding:5px 7px;color:var(--muted);font-size:12px;font-weight:700}.role[aria-pressed="true"]{background:var(--teal);color:white;box-shadow:0 2px 4px #00796d24}.status{margin:15px 0 18px;padding:12px 16px;border:1px solid #cfe3d9;background:#edf7f1;color:#225946;border-radius:12px;font-size:13px;min-height:48px;display:flex;gap:10px;align-items:center}.status[data-tone="error"]{background:var(--red-bg);border-color:#ecc4bf;color:var(--red)}.status[data-tone="info"]{background:var(--blue-bg);border-color:#d3dfeb;color:#36576c}.status-symbol{font-size:17px;font-weight:750;flex:none}.main-grid{display:grid;grid-template-columns:1fr 1.38fr;gap:20px;align-items:start}.panel-head{padding:20px 22px 15px;display:flex;align-items:flex-start;gap:12px;border-bottom:1px solid #edf1ee}.section-id{border:1px solid #d5e5dc;background:#f0f6f2;border-radius:8px;min-width:32px;height:28px;display:grid;place-items:center;color:var(--teal-dark);font-weight:750;font-size:11px;letter-spacing:.6px}.panel-head h2{font-size:18px;letter-spacing:-.3px;line-height:1.35}.panel-head p{font-size:12px;color:var(--muted);margin-top:4px}.panel-body{padding:18px 22px 22px}.legend{display:flex;gap:15px;color:var(--muted);font-size:11px;margin-bottom:14px}.legend span{display:flex;align-items:center;gap:5px}.dot{width:8px;height:8px;border:1px solid #b6c9c0;border-radius:99px;background:white}.dot.free{background:#e4f4e9;border-color:#84b59c}.dot.selected{background:var(--teal);border-color:var(--teal)}.slots{display:grid;grid-template-columns:repeat(5,1fr);gap:8px}.slot{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:65px;border:1px solid #bdd8c9;border-radius:11px;background:#f3faf5;color:#20543d;padding:7px 3px}.slot strong{font-size:14px;font-variant-numeric:tabular-nums}.slot small{font-size:10px;margin-top:2px}.slot:hover:not(:disabled){border-color:var(--teal);background:#e2f2e8}.slot:disabled{background:#f1f3f2;border-color:#e0e5e2;color:#697a73}.slot[aria-pressed="true"]{background:var(--teal);border-color:var(--teal);color:#fff}.slot[aria-pressed="true"]:hover{background:var(--teal-dark);color:white}.booking{margin-top:18px;border-top:1px solid var(--line);padding-top:16px}.booking h3{font-size:12px;font-weight:750;margin-bottom:5px}.booking-summary{min-height:47px;font-size:13px;color:var(--muted);margin-bottom:13px}.primary{background:var(--teal);border:1px solid var(--teal);border-radius:11px;color:#fff;padding:10px 15px;min-height:44px;font-size:13px;font-weight:750;width:100%}.primary:hover:not(:disabled){background:var(--teal-dark)}.primary:disabled{background:#e6eeea;border-color:#e6eeea;color:#6a8074}.small-note{margin-top:10px;color:var(--muted);font-size:11px;line-height:1.5}.appointments{padding:4px 22px 13px}.appointment{padding:15px 0;border-bottom:1px solid #edf1ee;display:grid;grid-template-columns:61px minmax(0,1fr) auto;gap:12px;align-items:center}.appointment:last-child{border-bottom:0}.time-block{background:#f1f5f2;border-radius:10px;padding:9px 6px;text-align:center;font-weight:750;font-size:15px;font-variant-numeric:tabular-nums}.appointment-name{font-size:14px;font-weight:700}.appointment-meta{color:var(--muted);font-size:11px;margin-top:3px}.appointment-actions{display:flex;align-items:flex-end;flex-direction:column;gap:6px}.status-pill{display:inline-block;border-radius:99px;padding:3px 8px;font-size:10px;font-weight:750;white-space:nowrap;background:var(--amber-bg);color:var(--amber)}.status-pill.completed{background:var(--tint);color:var(--teal-dark)}.status-pill.cancelled{background:#f0f2f3;color:#5d6b74}.small-button{background:white;border:1px solid #c6d9cf;border-radius:8px;padding:5px 9px;color:var(--teal-dark);font-size:11px;font-weight:700;min-height:31px}.small-button:hover{background:#eaf5ee}.small-button.cancel{border-color:#e4c8c5;color:var(--red)}.small-button.cancel:hover{background:var(--red-bg)}.empty{padding:30px 14px 34px;text-align:center;color:var(--muted);font-size:13px}.list-note{padding:0 22px 18px;color:var(--muted);font-size:11px}.summary-panel{margin-top:20px}.summary-body{padding:18px 22px 20px}.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.metric{border-right:1px solid var(--line)}.metric:last-child{border-right:0}.metric strong{display:block;font-size:27px;line-height:1.1;letter-spacing:-.8px;font-variant-numeric:tabular-nums}.metric span{display:block;font-size:11px;color:var(--muted);margin-top:6px}.locked{display:flex;align-items:center;gap:12px;background:#f4f6f5;padding:14px 16px;border-radius:11px;color:var(--muted);font-size:13px}.locked .lock-symbol{font-size:20px;color:var(--ink)}.summary-note{font-size:11px;color:var(--muted);margin-top:15px}.help{margin:20px 0;background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden}.help summary{cursor:pointer;padding:15px 20px;font-weight:700;font-size:13px}.help-content{padding:0 24px 20px;color:var(--muted);font-size:13px;display:grid;grid-template-columns:1.2fr 1fr;gap:32px}.help ol{margin:0;padding-left:20px}.help li{margin-bottom:7px}.help p{margin-bottom:8px}.footer{padding:0 0 25px;display:flex;justify-content:space-between;align-items:flex-start;gap:20px;font-size:11px;color:var(--muted)}.storage{max-width:750px}.storage strong{color:var(--ink)}.footer a{white-space:nowrap}.visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+    @media(max-width:1000px){.wrap{padding:0 20px}.controls{grid-template-columns:1.2fr 1fr;gap:16px}.main-grid{grid-template-columns:1fr 1.22fr}.slots{grid-template-columns:repeat(5,1fr)}.panel-head,.panel-body{padding-left:17px;padding-right:17px}.appointments{padding-left:17px;padding-right:17px}.appointment{grid-template-columns:53px minmax(0,1fr) auto;gap:9px}.tag{display:none}}
+    @media(max-width:740px){.wrap{padding:0 15px}.topbar .wrap{min-height:74px;gap:10px}.brand{gap:9px}.brand strong{font-size:15px}.brand small{font-size:10px}.mark{width:34px;height:34px;border-radius:11px;font-size:23px}.top-actions{gap:0}.ghost{font-size:11px;padding:8px;max-width:115px;line-height:1.4}.hero{padding:24px 0 18px}.hero p{font-size:13px}.version{display:none}.controls{grid-template-columns:1fr 1fr;padding:16px;gap:14px}.role-field{grid-column:1/-1}.doctor-field{grid-column:1/-1;grid-row:3}.field small{font-size:10px}.main-grid{grid-template-columns:1fr;gap:16px}.slots{grid-template-columns:repeat(5,1fr)}.panel-head{padding-top:17px;padding-bottom:13px}.panel-head h2{font-size:17px}.summary-panel{margin-top:16px}.metrics{gap:12px}.metric strong{font-size:24px}.metric span{font-size:10px}.help-content{grid-template-columns:1fr;gap:15px}.footer{display:block}.footer a{display:inline-block;margin-top:10px}.status{font-size:12px}.appointment{grid-template-columns:55px minmax(0,1fr) auto}.list-note{padding-left:17px;padding-right:17px}}
+    @media print{body{background:white}.top-actions,.booking,.help,.footer a,.small-button{display:none}.wrap{max-width:none;padding:0}.topbar .wrap{min-height:65px}.panel{box-shadow:none;break-inside:avoid}.hero{padding:16px 0}.controls{padding:12px}.main-grid{grid-template-columns:1fr 1.3fr;gap:14px}.tag{display:inline-block}.summary-panel{margin-top:14px}.footer{padding-top:14px}}
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap">
+      <div class="brand"><span class="mark" aria-hidden="true">+</span><div><strong>Klinik Randevu</strong><small>Yazılım Geliştirme Süreçleri · 1–2. hafta</small></div></div>
+      <div class="top-actions"><span class="tag">EĞİTİM PROTOTİPİ</span><button class="ghost" id="reset-data" type="button" data-testid="reset-data">Örnek veriyi sıfırla</button></div>
+    </div>
+  </header>
+  <main class="wrap">
+    <section class="hero" aria-labelledby="page-title">
+      <div><p class="eyebrow">İncele · Soru sor · Gereksinimi yaz</p><h1 id="page-title">Bir randevunun yolculuğu.</h1><p>Rolleri değiştirin, bir randevu oluşturun ve sonucunu izleyin. Bütün kişi, randevu ve tarihler eğitim için hazırlanmış örneklerdir.</p></div>
+      <div class="version">Başlangıç sürümü<br><strong>v0.1 · Çevrimdışı demo</strong></div>
+    </section>
+
+    <section class="panel controls" aria-label="Simülasyon ayarları">
+      <div class="field role-field"><span class="field-label" id="role-label">Simülasyon rolü</span><div class="roles" role="group" aria-labelledby="role-label"><button class="role" id="role-patient" data-role="patient" type="button" aria-pressed="true">Hasta</button><button class="role" id="role-reception" data-role="reception" type="button" aria-pressed="false">Resepsiyon</button><button class="role" id="role-doctor" data-role="doctor" type="button" aria-pressed="false">Doktor</button></div><small>Bu seçim gerçek giriş veya güvenlik sağlamaz.</small></div>
+      <div class="field"><label for="patient-select">Örnek hasta</label><select id="patient-select" data-testid="patient-select"><option value="ece">Ece Yılmaz</option><option value="kaan">Kaan Demir</option></select><small id="patient-help">Bu hastanın rolünü canlandırıyorsunuz.</small></div>
+      <div class="field doctor-field"><label for="doctor-select" id="doctor-label">Doktor</label><select id="doctor-select" data-testid="doctor-select"><option value="deniz">Doktor Deniz Arı</option><option value="selin">Doktor Selin Kaya</option></select><small id="doctor-help">Saatler seçili doktora aittir.</small></div>
+      <div class="field"><label for="date-select">Tarih</label><select id="date-select" data-testid="date-select"><option value="2030-11-12">12 Kasım 2030</option><option value="2030-11-13">13 Kasım 2030</option></select><small>Sabit örnek takvim; bugüne bağlı değildir.</small></div>
+    </section>
+
+    <div class="status" id="notice" data-tone="info" role="status" aria-live="polite" aria-atomic="true"><span class="status-symbol" aria-hidden="true">i</span><span id="notice-text">Hazır. Uygun bir saat seçerek incelemeye başlayabilirsiniz.</span></div>
+
+    <div class="main-grid">
+      <section class="panel" aria-labelledby="slots-title">
+        <div class="panel-head"><span class="section-id">B1</span><div><h2 id="slots-title">Uygun saatler</h2><p id="slots-subtitle">Seçili doktor ve tarih · FR-01 / FR-02</p></div></div>
+        <div class="panel-body"><div class="legend" aria-hidden="true"><span><i class="dot free"></i>Uygun</span><span><i class="dot"></i>Dolu / kapalı</span><span><i class="dot selected"></i>Seçili</span></div><div id="slots" class="slots" aria-label="Randevu saatleri"></div>
+          <div class="booking"><h3 id="booking-label">Seçiminiz</h3><p class="booking-summary" id="booking-summary">Randevu oluşturmak için uygun bir saate tıklayın.</p><button id="book-appointment" class="primary" type="button" disabled data-testid="book-appointment">Randevuyu onayla</button><p class="small-note" id="booking-note">BR-01: Aynı doktor, tarih ve saat için iptal edilmemiş ikinci randevu oluşturulamaz.</p></div>
+        </div>
+      </section>
+
+      <section class="panel" aria-labelledby="appointments-title"><div class="panel-head"><span class="section-id">B2</span><div><h2 id="appointments-title">Randevularım</h2><p id="appointments-subtitle">Seçili hasta, doktor ve tarih · FR-03</p></div></div><div id="appointments" class="appointments" data-testid="appointments"></div><p class="list-note" id="list-note">Yalnız kendi bekleyen randevunuzu iptal edebilirsiniz.</p></section>
+    </div>
+
+    <section class="panel summary-panel" aria-labelledby="summary-title"><div class="panel-head"><span class="section-id">B3</span><div><h2 id="summary-title">Günlük toplamlar</h2><p>Seçili doktor ve tarihin kayıt özeti · FR-06</p></div></div><div class="summary-body"><div id="summary-lock" class="locked"><span class="lock-symbol" aria-hidden="true">▣</span><span>Bu bölüm resepsiyon ve doktor rollerine açıktır. Rolü değiştirerek farkı gözlemleyin.</span></div><div id="summary-metrics" class="metrics" hidden><div class="metric"><strong id="metric-pending" data-testid="metric-pending">0</strong><span>Bekleyen</span></div><div class="metric"><strong id="metric-completed" data-testid="metric-completed">0</strong><span>Tamamlanan</span></div><div class="metric"><strong id="metric-cancelled" data-testid="metric-cancelled">0</strong><span>İptal edilen</span></div><div class="metric"><strong id="metric-total" data-testid="metric-total">0</strong><span>Toplam kayıt</span></div></div><p id="summary-note" class="summary-note" hidden>Toplam kayıt; bekleyen, tamamlanan ve iptal edilen kayıtların toplamıdır.</p></div></section>
+
+    <details class="help" id="help-panel"><summary>Nasıl inceleyebilirim? · Kısa rehber ve prototipin sınırları</summary><div class="help-content"><div><ol><li><strong>Rolü seçin.</strong> Hasta rolünde Ece veya Kaan'ı canlandırın.</li><li><strong>Doktor ve tarihi seçin.</strong> Yalnız iki örnek gün bulunur.</li><li><strong>Uygun saati seçin.</strong> Dolu ve tamamlanmış saatler seçilemez.</li><li><strong>Randevuyu onaylayın.</strong> Yeni kaydı B2 alanında gözlemleyin.</li><li><strong>İptali deneyin.</strong> Hasta kendi bekleyen kaydını iptal edince saat yeniden açılır.</li><li><strong>Diğer rollere geçin.</strong> Resepsiyonda günlük liste ve toplamları, doktor rolünde Tamamlandı işlemini inceleyin.</li></ol></div><div><p><strong>Bu bir eğitim prototipidir.</strong> Rol ve kullanıcı seçicileri gerçek kimlik doğrulama yapmaz. Erişim kontrolleri yalnız tarayıcı içindeki kavram gösterimidir.</p><p>Gerçek hasta verisi girmeyin. Sunucu, ortak veri tabanı, e-posta ve SMS yoktur. Çoklu sekme veya çoklu cihaz arasında çakışmasız çalışma garantisi verilmez.</p><p>Örnek tarihler sabittir; geçmiş tarih veya saat engeli uygulanmaz. Tamamlanmış randevunun saati tekrar açılmaz. İptal edilen saatte yeni randevu oluşturulabilir.</p><p>Sayfayı yeniden açmadan önce yaptığınız değişiklikleri ve bulguları belgelerinize yazın; ekran görüntüsü tek başına gereksinim belgesi değildir.</p></div></div></details>
+
+    <footer class="footer"><p class="storage"><strong id="storage-label">Kaydetme durumu kontrol ediliyor.</strong><br><span id="storage-description"></span></p><a href="README.md">Paket açıklaması · README.md</a></footer>
+    <noscript><p class="status" data-tone="error">Bu prototip için tarayıcıda JavaScript açık olmalıdır. Belgeleri JavaScript olmadan okuyabilirsiniz.</p></noscript>
+  </main>
+  <script>
+  'use strict';
+  (() => {
+    const STORAGE_KEY = 'ygs-klinik-randevu-demo-v1';
+    const PATIENTS = {ece:'Ece Yılmaz',kaan:'Kaan Demir'};
+    const DOCTORS = {deniz:'Doktor Deniz Arı',selin:'Doktor Selin Kaya'};
+    const DATES = ['2030-11-12','2030-11-13'];
+    const TIMES = ['09:00','09:30','10:00','10:30','11:00','11:30','13:00','13:30','14:00','14:30'];
+    const STATUS_LABELS = {pending:'Bekliyor',completed:'Tamamlandı',cancelled:'İptal edildi'};
+    const ROLE_LABELS = {patient:'Hasta',reception:'Resepsiyon',doctor:'Doktor'};
+    const state = {role:'patient',patientId:'ece',doctorId:'deniz',date:DATES[0],selectedTime:null};
+    let storageAvailable = false;
+    let loadMessage = '';
+    const $ = id => document.getElementById(id);
+
+    function seedData() {
+      return {schema:1,nextId:8,appointments:[
+        {id:'R001',patientId:'ece',doctorId:'deniz',date:DATES[0],time:'09:00',status:'pending'},
+        {id:'R002',patientId:'kaan',doctorId:'deniz',date:DATES[0],time:'10:00',status:'pending'},
+        {id:'R003',patientId:'ece',doctorId:'deniz',date:DATES[0],time:'11:00',status:'completed'},
+        {id:'R004',patientId:'kaan',doctorId:'deniz',date:DATES[0],time:'13:00',status:'cancelled'},
+        {id:'R005',patientId:'ece',doctorId:'selin',date:DATES[0],time:'09:30',status:'pending'},
+        {id:'R006',patientId:'kaan',doctorId:'selin',date:DATES[0],time:'11:00',status:'completed'},
+        {id:'R007',patientId:'kaan',doctorId:'deniz',date:DATES[1],time:'10:30',status:'pending'}
+      ]};
+    }
+
+    function validateData(candidate) {
+      if (!candidate || candidate.schema !== 1 || !Number.isSafeInteger(candidate.nextId) || candidate.nextId < 8 || !Array.isArray(candidate.appointments) || candidate.appointments.length > 1000) return false;
+      const ids = new Set();
+      const occupied = new Set();
+      for (const a of candidate.appointments) {
+        if (!a || !/^R\d{3,12}$/.test(a.id) || ids.has(a.id) || !Object.hasOwn(PATIENTS,a.patientId) || !Object.hasOwn(DOCTORS,a.doctorId) || !DATES.includes(a.date) || !TIMES.includes(a.time) || !Object.hasOwn(STATUS_LABELS,a.status)) return false;
+        if (Number(a.id.slice(1)) >= candidate.nextId) return false;
+        ids.add(a.id);
+        const slotKey = [a.doctorId,a.date,a.time].join('|');
+        if (a.status !== 'cancelled') {
+          if (occupied.has(slotKey)) return false;
+          occupied.add(slotKey);
+        }
+      }
+      return true;
+    }
+
+    function loadData() {
+      let saved;
+      try {
+        const probe = STORAGE_KEY + '-probe';
+        localStorage.setItem(probe,'1');
+        localStorage.removeItem(probe);
+        saved = localStorage.getItem(STORAGE_KEY);
+        storageAvailable = true;
+      } catch (_) {
+        storageAvailable = false;
+        loadMessage = 'Tarayıcı kalıcı kayda izin vermiyor. Demo bu oturumda çalışır; sayfa yenilenince örnek verilere döner.';
+        return seedData();
+      }
+      if (saved) {
+        try {
+          const candidate = JSON.parse(saved);
+          if (validateData(candidate)) return candidate;
+        } catch (_) { /* Invalid local data is replaced with the known demo seed. */ }
+        loadMessage = 'Önceki demo kaydı okunamadı. Başlangıçtaki sentetik veriler yüklendi.';
+      }
+      return seedData();
+    }
+
+    let data = loadData();
+
+    function saveData() {
+      if (storageAvailable) {
+        try { localStorage.setItem(STORAGE_KEY,JSON.stringify(data)); }
+        catch (_) { storageAvailable = false; }
+      }
+      renderStorage();
+    }
+
+    function renderStorage() {
+      $('storage-label').textContent = storageAvailable ? 'Kaydetme: Bu tarayıcıda yerel kayıt.' : 'Kaydetme: Yalnız bu oturumun belleği.';
+      $('storage-description').textContent = storageAvailable
+        ? 'Sunucuya veri gönderilmez. Aynı dosya ve tarayıcıda kayıt korunabilir; tarayıcı verisi silinirse kaybolur. Sekmeler/cihazlar arasında eşzamanlama yoktur.'
+        : 'Tarayıcı kalıcı kayda izin vermedi. Sayfa yenilenince değişiklikler kaybolur. İncelemeye devam edebilir ve bulgularınızı belgelere yazabilirsiniz.';
+    }
+
+    function dateLabel(date) { return date === DATES[0] ? '12 Kasım 2030' : '13 Kasım 2030'; }
+    function canBook() { return state.role === 'patient' || state.role === 'reception'; }
+    function canViewDaily() { return state.role === 'reception' || state.role === 'doctor'; }
+    function occupiedAt(time) { return data.appointments.find(a => a.doctorId === state.doctorId && a.date === state.date && a.time === time && a.status !== 'cancelled'); }
+    function scopedAppointments() { return data.appointments.filter(a => a.doctorId === state.doctorId && a.date === state.date); }
+    function canCancel(a) { return state.role === 'patient' && a.patientId === state.patientId && a.status === 'pending'; }
+    function canComplete(a) { return state.role === 'doctor' && a.doctorId === state.doctorId && a.date === state.date && a.status === 'pending'; }
+
+    function notify(message,tone='info') {
+      $('notice').dataset.tone = tone;
+      $('notice').querySelector('.status-symbol').textContent = tone === 'success' ? '✓' : tone === 'error' ? '!' : 'i';
+      $('notice-text').textContent = message;
+    }
+
+    function renderControls() {
+      document.querySelectorAll('[data-role]').forEach(button => button.setAttribute('aria-pressed',String(button.dataset.role === state.role)));
+      $('patient-select').value = state.patientId;
+      $('patient-select').disabled = state.role === 'doctor';
+      $('doctor-select').value = state.doctorId;
+      $('date-select').value = state.date;
+      $('patient-help').textContent = state.role === 'patient' ? 'Bu hastanın rolünü canlandırıyorsunuz.' : state.role === 'reception' ? 'Bu hasta adına randevu oluşturabilirsiniz.' : 'Hasta seçimi doktor rolünde kullanılmaz.';
+      $('doctor-label').textContent = state.role === 'doctor' ? 'Görevli doktor (simülasyon)' : 'Doktor';
+      $('doctor-help').textContent = state.role === 'doctor' ? 'Bu doktorun günlük listesini inceliyorsunuz.' : 'Saatler seçili doktora aittir.';
+    }
+
+    function renderSlots() {
+      $('slots-subtitle').textContent = DOCTORS[state.doctorId] + ' · ' + dateLabel(state.date) + ' · FR-01';
+      const fragment = document.createDocumentFragment();
+      TIMES.forEach(time => {
+        const existing = occupiedAt(time);
+        const selected = state.selectedTime === time && !existing;
+        const button = document.createElement('button');
+        button.type = 'button';
+        button.className = 'slot';
+        button.dataset.time = time;
+        button.dataset.testid = 'slot-' + time.replace(':','');
+        button.disabled = Boolean(existing) || !canBook();
+        button.setAttribute('aria-pressed',String(selected));
+        const label = existing ? (existing.status === 'completed' ? 'Kapalı' : 'Dolu') : selected ? 'Seçili' : 'Uygun';
+        button.setAttribute('aria-label',time + ', ' + label + (canBook() ? '' : ', doktor rolünde kayıt oluşturulmaz'));
+        const strong = document.createElement('strong'); strong.textContent = time;
+        const small = document.createElement('small'); small.textContent = label;
+        button.append(strong,small);
+        fragment.append(button);
+      });
+      $('slots').replaceChildren(fragment);
+      if (state.selectedTime && occupiedAt(state.selectedTime)) state.selectedTime = null;
+      $('book-appointment').disabled = !canBook() || !state.selectedTime;
+      $('booking-summary').textContent = !canBook()
+        ? 'Doktor rolü saatleri inceler. Randevu oluşturmak için Hasta veya Resepsiyon rolünü seçin.'
+        : state.selectedTime
+          ? PATIENTS[state.patientId] + ' · ' + DOCTORS[state.doctorId] + ' · ' + dateLabel(state.date) + ', ' + state.selectedTime
+          : 'Randevu oluşturmak için uygun bir saate tıklayın.';
+    }
+
+    function renderAppointments() {
+      const rows = scopedAppointments().filter(a => canViewDaily() || a.patientId === state.patientId).sort((a,b) => a.time.localeCompare(b.time) || a.id.localeCompare(b.id));
+      $('appointments-title').textContent = canViewDaily() ? 'Günlük randevu listesi' : 'Randevularım';
+      $('appointments-subtitle').textContent = canViewDaily()
+        ? DOCTORS[state.doctorId] + ' · ' + dateLabel(state.date) + ' · FR-04 / FR-05'
+        : PATIENTS[state.patientId] + ' · ' + dateLabel(state.date) + ' · FR-03';
+      $('list-note').textContent = state.role === 'patient'
+        ? 'Seçili doktor ve tarihteki kendi kayıtlarınız gösterilir. Yalnız Bekliyor durumundaki kendi randevunuzu iptal edebilirsiniz.'
+        : state.role === 'doctor'
+          ? 'Yalnız görevli doktorun Bekliyor durumundaki randevuları Tamamlandı yapılabilir. Tamamlanmış saat tekrar açılmaz.'
+          : 'Seçili doktor ve tarihin bütün örnek kayıtları gösterilir. Resepsiyon bu prototipte iptal veya tamamlama yapamaz.';
+      const fragment = document.createDocumentFragment();
+      if (!rows.length) {
+        const empty = document.createElement('p'); empty.className = 'empty'; empty.textContent = 'Bu seçimde henüz randevu yok. Diğer doktoru veya tarihi inceleyebilirsiniz.'; fragment.append(empty);
+      }
+      rows.forEach(a => {
+        const row = document.createElement('article'); row.className = 'appointment'; row.dataset.appointmentId = a.id;
+        const time = document.createElement('div'); time.className = 'time-block'; time.textContent = a.time;
+        const details = document.createElement('div');
+        const name = document.createElement('p'); name.className = 'appointment-name'; name.textContent = PATIENTS[a.patientId];
+        const meta = document.createElement('p'); meta.className = 'appointment-meta'; meta.textContent = DOCTORS[a.doctorId] + ' · ' + a.id;
+        details.append(name,meta);
+        const actions = document.createElement('div'); actions.className = 'appointment-actions';
+        const pill = document.createElement('span'); pill.className = 'status-pill ' + a.status; pill.textContent = STATUS_LABELS[a.status]; actions.append(pill);
+        if (canCancel(a)) {
+          const button = document.createElement('button'); button.type = 'button'; button.className = 'small-button cancel'; button.dataset.action = 'cancel'; button.dataset.id = a.id; button.textContent = 'İptal et'; button.setAttribute('aria-label',a.time + ' saatindeki ' + a.id + ' randevusunu iptal et'); actions.append(button);
+        }
+        if (canComplete(a)) {
+          const button = document.createElement('button'); button.type = 'button'; button.className = 'small-button'; button.dataset.action = 'complete'; button.dataset.id = a.id; button.textContent = 'Tamamlandı'; button.setAttribute('aria-label',a.time + ' saatindeki ' + a.id + ' randevusunu tamamlandı yap'); actions.append(button);
+        }
+        row.append(time,details,actions); fragment.append(row);
+      });
+      $('appointments').replaceChildren(fragment);
+    }
+
+    function renderSummary() {
+      const allowed = canViewDaily();
+      $('summary-lock').hidden = allowed;
+      $('summary-metrics').hidden = !allowed;
+      $('summary-note').hidden = !allowed;
+      const rows = allowed ? scopedAppointments() : [];
+      ['pending','completed','cancelled'].forEach(status => $('metric-' + status).textContent = String(rows.filter(a => a.status === status).length));
+      $('metric-total').textContent = String(rows.length);
+    }
+
+    function render() { renderControls(); renderSlots(); renderAppointments(); renderSummary(); renderStorage(); }
+
+    function bookAppointment() {
+      if (!canBook()) { notify('Bu rol randevu oluşturamaz. Hasta veya Resepsiyon rolünü seçin.','error'); return false; }
+      if (!state.selectedTime || !TIMES.includes(state.selectedTime)) { notify('Önce uygun bir saat seçin.','error'); return false; }
+      if (occupiedAt(state.selectedTime)) { state.selectedTime = null; render(); notify('BR-01: Bu doktor ve saatte iptal edilmemiş bir randevu zaten var. Farklı saat seçin.','error'); return false; }
+      if (data.appointments.length >= 1000) { notify('Bu küçük demo en fazla 1.000 kayıt saklar. Bulgularınızı kaydedip örnek veriyi sıfırlayabilirsiniz.','error'); return false; }
+      const appointment = {id:'R' + String(data.nextId++).padStart(3,'0'),patientId:state.patientId,doctorId:state.doctorId,date:state.date,time:state.selectedTime,status:'pending'};
+      data.appointments.push(appointment); state.selectedTime = null; saveData(); render();
+      notify(appointment.id + ' oluşturuldu: ' + PATIENTS[appointment.patientId] + ', ' + dateLabel(appointment.date) + ' saat ' + appointment.time + '. B2 alanında kaydı inceleyin.','success');
+      return true;
+    }
+
+    function cancelAppointment(id) {
+      const appointment = data.appointments.find(a => a.id === id);
+      if (!appointment || !canCancel(appointment)) { notify('Yalnız Hasta rolünde, kendi Bekliyor durumundaki randevunuzu iptal edebilirsiniz.','error'); return false; }
+      if (!window.confirm(appointment.id + ' — ' + dateLabel(appointment.date) + ' saat ' + appointment.time + ' randevusu iptal edilsin mi?')) return false;
+      appointment.status = 'cancelled'; saveData(); render();
+      notify(appointment.id + ' iptal edildi. İlgili saat yeniden uygun. İptal kaydı geçmişte görünmeye devam eder.','success'); return true;
+    }
+
+    function completeAppointment(id) {
+      const appointment = data.appointments.find(a => a.id === id);
+      if (!appointment || !canComplete(appointment)) { notify('Yalnız görevli Doktor rolü, kendi günlük listesindeki Bekliyor kaydını tamamlayabilir.','error'); return false; }
+      appointment.status = 'completed'; saveData(); render();
+      notify(appointment.id + ' Tamamlandı durumuna geçti. Günlük toplamlar güncellendi; bu saat yeniden açılmaz.','success'); return true;
+    }
+
+    document.querySelectorAll('[data-role]').forEach(button => button.addEventListener('click',() => {
+      state.role = button.dataset.role; state.selectedTime = null; render();
+      notify(ROLE_LABELS[state.role] + ' rolüne geçildi. Görünen liste ve izin verilen işlemleri karşılaştırın.');
+    }));
+    ['patient','doctor','date'].forEach(field => $(field + '-select').addEventListener('change',event => {
+      if (field === 'patient') state.patientId = event.target.value;
+      else if (field === 'doctor') state.doctorId = event.target.value;
+      else state.date = event.target.value;
+      state.selectedTime = null; render(); notify('Seçim güncellendi. Saatler ve kayıtlar seçili doktor ve tarihe göre gösteriliyor.');
+    }));
+    $('slots').addEventListener('click',event => {
+      const button = event.target.closest('button[data-time]');
+      if (!button || button.disabled || !canBook()) return;
+      state.selectedTime = button.dataset.time; renderSlots();
+      notify(state.selectedTime + ' seçildi. Randevuyu onaylamadan önce hasta, doktor ve tarihi kontrol edin.');
+    });
+    $('book-appointment').addEventListener('click',bookAppointment);
+    $('appointments').addEventListener('click',event => {
+      const button = event.target.closest('button[data-action]');
+      if (!button) return;
+      if (button.dataset.action === 'cancel') cancelAppointment(button.dataset.id);
+      if (button.dataset.action === 'complete') completeAppointment(button.dataset.id);
+    });
+    $('reset-data').addEventListener('click',() => {
+      if (!window.confirm('Bu prototipte yaptığınız yerel randevu değişiklikleri silinecek ve başlangıçtaki örnek kayıtlar yüklenecek. Devam edilsin mi?')) return;
+      data = seedData(); Object.assign(state,{role:'patient',patientId:'ece',doctorId:'deniz',date:DATES[0],selectedTime:null});
+      saveData(); render(); notify('Başlangıçtaki sentetik veriler yüklendi. Hasta rolü, Ece Yılmaz ve 12 Kasım 2030 seçili.','success');
+    });
+    saveData(); render(); if (loadMessage) notify(loadMessage);
+  })();
+  </script>
+</body>
+</html>

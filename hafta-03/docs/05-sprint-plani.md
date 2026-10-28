@@ -2,10 +2,10 @@
 
 Çalışma: Klinik Randevu — öğretmen uygulaması  
 Tarih: 28.10.2026  
-Sürüm: 0.1 — ilk plan; yeni bilgi sonrası güncelleme henüz yapılmadı  
+Sürüm: 0.2 — ilk plan korundu, değişiklik kartı sonrası plan eklendi  
 Konum: hafta-03/docs/05-sprint-plani.md  
 Sprint etiketi: H3-S1  
-Durum: Plan hazır; işler uygulanmadı, test edilmedi ve tamamlanmadı.
+Durum: İlk açıklamalar f857deb ile kaydedildi. R011 onaylı iptal, R012 vazgeçme sonuçları gözlendi. Ek kapsam, kalan kontroller ve bağımsız inceleme bekliyor; işler tamamlanmadı.
 
 ## 1. Hedef
 
@@ -67,27 +67,27 @@ Bu, öğretim amaçlı sorumluluk planıdır. Herkes üretim ve kontrol çalış
 
 ## 6. Yeni bilgi sonrası güncel plan
 
-**Henüz hazırlanmadı.** İlk plan yukarıda korunacak. Dersin değişiklik kartı aşamasında yeni bilgi verildiğinde şu alanlar doldurulacak:
+06-degisiklik-karti.md içindeki eğitim senaryosu ele alındı. H3-01'e Tamamlandı kaydının iptal edilemeyeceğini açıkça yazma ve ilgili sınır kontrolü eklenecek. İlk tahmin 2 korunur, güncel tahmin 3 olur.
 
-| Alan | Şimdiki durum |
+| Karar | Kayıt |
 |---|---|
-| Yeni bilgi ve kaynağı | Henüz bu aşamada ele alınmadı. |
-| Değişen tahmin ve gerekçe | Yok; ilk ve güncel tahminler aynı. |
-| Yeni toplam ve kapasite farkı | Henüz yeniden hesaplanmadı. |
-| Güncel seçim / ertelenen iş | Henüz karar verilmedi. |
-| Hedefin nasıl korunduğu | Değişiklik kararında açıklanacak. |
-| Kalitenin nasıl korunduğu | Ortak Bitti Tanımı uygulanmaya devam edecek. |
+| Aynı kapsamın güncel toplamı | 3 + 3 + 3 = 9; kapasiteyi 1 puan aşıyor. |
+| Güncel seçim | H3-01 (3) + H3-02 (3) = 6 puan. |
+| Ertelenen | H3-03 (3 puan); yardımcı iş, hedef için zorunlu değil. |
+| Kalan kapasite | 2 puan; 3 puanlık işe yetmiyor. |
+| Hedef | İptal koşulu ve seçeneklerin sonucunu açıklama hedefi korunuyor. |
+| Kalite | Ortak Bitti Tanımı değişmedi; inceleme ve test kaldırılmadı. |
 
-Yeni bilgi için hazırlanmış 06-degisiklik-karti.md, rehberin ilgili aşamasında ele alınacak. O kart gerçek kullanıcı şikâyeti veya yapılmış toplantı olarak sunulmayacak.
+Üstteki ilk plan geçmiş başlangıç planıdır; silinmedi. Oradaki Başlanmadı durumları ilk plan anını anlatır. Güncel ilerleme: H3-01/H3-02 ilk uygulaması mevcut, yeni ek cümle henüz uygulanmadı; inceleme bekliyor. H3-03 uygulanmadı ve ertelendi. Gerçek ekip toplantısı yapıldığı iddia edilmez.
 
 ## 7. GitHub ve mevcut çalışma
 
-Planlanan dal adı: feat/h3-iptal-acikligi; henüz oluşturulmadı. Önceki belge PR #7 açık olduğundan, kod çalışmasına başlamadan dalın başlangıç noktası ve dosyalar birlikte kontrol edilecek. Üçüncü hafta değişiklikleri yanlışlıkla önceki belge PR'ına eklenmeyecek.
+Çalışma dalı: feat/h3-iptal-acikligi; oluşturuldu. Belgeler 0506ecd, ilk kod değişiklikleri f857deb ile kaydedildi. Önceki belge PR #7 açık olduğundan, kod çalışmasına başlamadan dalın başlangıç noktası ve dosyalar birlikte kontrol edilecek. Üçüncü hafta değişiklikleri yanlışlıkla önceki belge PR'ına eklenmeyecek.
 
-Yeni H3 görevleri, PR ve test sonuçları henüz yok. Bağlantılar işlemler gerçekleştikçe yazılacak.
+Yeni H3 görevleri ve PR henüz yok. İlk onaylı iptal ve vazgeçme gözlemleri sunum notlarında kayıtlı; ayrıntılı test belgesine aktarılacak.
 
 ## Kaydetme
 
 Bu dosyayı ilk dört belgenin yanına hafta-03/docs/05-sprint-plani.md olarak kaydedin. İlk plan tablosundaki 2 + 3 + 3 = 8 hesabını ve H3-03'ün neden yardımcı iş olduğunu okuyun.
 
-Beklenen çıktı: İlk plan kayıtlıdır. Sonraki uygulama adımında çalışma dosyası ve GitHub dalı hazırlanacak; değişiklik kartı kendi ders aşamasında açılacak.
+Beklenen çıktı: İlk plan kayıtlıdır. Sonraki adım: ek Tamamlandı cümlesini ve kabul koşulunu güncelleyip yeni sürümü kontrol etmek.

@@ -1,7 +1,7 @@
 # 3. hafta — Pano ve günlük plan kontrolü
 
 Tarih: 28.10.2026  
-Sürüm: 0.2 — test sonuçları ve #9 kontrol kutusu güncellendi  
+Sürüm: 0.3 — PR açılışı ve yükleme durumu güncellendi  
 Konum: hafta-03/docs/07-pano-ve-gunluk.md
 
 ## Amaç
@@ -11,7 +11,9 @@ Konum: hafta-03/docs/07-pano-ve-gunluk.md
 Pano: https://github.com/users/pozelll/projects/1/views/1  
 Depo: https://github.com/pozelll/-klinik-randevu-ogretmen  
 Çalışma dalı: feat/h3-iptal-acikligi  
-Son doğrulanan commit: b44550b.
+Son doğrulanan kod değişikliği commit'i: b44550b.
+Son doğrulanan çalışma dalı commit'i: c0bff15 (test ve pano paketi).
+Açık PR: https://github.com/pozelll/-klinik-randevu-ogretmen/pull/11
 
 ## Doğrulanan görevler
 
@@ -38,11 +40,11 @@ Bu öğretim uygulamasında aynı anda en fazla iki H3 kartını In Progress tut
 
 **Gerçekleşenler:** Ana iptal açıklaması ve onay metni uygulandı; ardından Tamamlandı sınırı açıkça eklendi. Kod ve ilgili plan belgeleri GitHub'a kaydedildi. Yeni görevler uygulamadan sonra oluşturuldu; tarihleri geçmişe çekilmedi.
 
-**Gözlenen kontroller:** R011'de Tamam ile iptal sonucu; R012'de İptal ile vazgeçme sonucu; R003 için Tamamlandı, iptal düğmesi yok ve 11:00 Kapalı görünümü. Bu kayıtlar 08-test-kaydi.md v1.0 içinde sürümleriyle kaydedildi. T05 hasta görünümü ve T06 R013 oluşturma–vazgeçme–iptal döngüsü de tamamlandı. Sayımlar 1/2/6/9 → 2/2/6/10 → 2/2/6/10 → 1/2/7/10; kanıt türleri test belgesinde ayrıldı.
+**Gözlenen kontroller:** R011'de Tamam ile iptal sonucu; R012'de İptal ile vazgeçme sonucu; R003 için Tamamlandı, iptal düğmesi yok ve 11:00 Kapalı görünümü. Bu kayıtlar 08-test-kaydi.md (test sonuçları v1.0; idari güncelleme v1.1) içinde sürümleriyle kaydedildi. T05 hasta görünümü ve T06 R013 oluşturma–vazgeçme–iptal döngüsü de tamamlandı. Sayımlar 1/2/6/9 → 2/2/6/10 → 2/2/6/10 → 1/2/7/10; kanıt türleri test belgesinde ayrıldı.
 
-**Açık işler / engeller:** Altı kontrol, test belgesinde belirtilen kapsamlarıyla geçti. #9 kartında toplam kayıt sayısı kutusu işaretlendiği ekranla doğrulandı. İnceleme ve son teslim kutuları boş; Open ve In Progress korunuyor. NFR ölçümleri yapılmadı. Yazardan/ortak yazardan farklı gerçek inceleyen kişi henüz belirlenmedi. H3 PR ve son teslim kontrolleri bekliyor.
+**Açık işler / engeller:** Altı kontrol, test belgesinde belirtilen kapsamlarıyla geçti. #9 kartında toplam kayıt sayısı kutusu işaretlendiği ekranla doğrulandı. İnceleme ve son teslim kutuları boş; Open ve In Progress korunuyor. NFR ölçümleri yapılmadı. Yazardan/ortak yazardan farklı gerçek inceleyen kişi henüz belirlenmedi. H3 PR #11 açıldı; bağımsız inceleme, #7 bağımlılığının çözülmesi ve son teslim kontrolleri bekliyor.
 
-**Sonraki küçük adım:** Güncel 03/07/08 belgeleri ile üç sayım kanıtını çalışma dalına kaydetmek ve H3 PR/inceleme hazırlığı yapmak.
+**Sonraki küçük adım:** PR içinde görülen belge güncelliği bulgularını düzeltmek; ardından bağımsız inceleme ve ders sonu değerlendirme/teslim kayıtlarını tamamlamak.
 
 **Gereken destek:** Bağımsız inceleme için katkıyı yazmayan gerçek bir kişi. Öğretmenin kendi kontrolü bu inceleme yerine sayılmaz.
 
@@ -56,4 +58,4 @@ Bu öğretmen kaydındaki pozelll hesabı veya sonuçlar öğrenci gruplarının
 
 ## Kaydetme
 
-Bu dosyayı hafta-03/docs içine 07-pano-ve-gunluk.md adıyla kaydedin. Gerçek görev bağlantıları eklenen güncel 03-product-backlog.md dosyasını da aynı klasördeki eski kopyasının yerine koyun. Bu dosyaların GitHub'a yüklenmesi henüz gerçekleşmedi.
+Bu dosyayı hafta-03/docs içine 07-pano-ve-gunluk.md adıyla kaydedin. Gerçek görev bağlantıları eklenen güncel 03-product-backlog.md dosyasını da aynı klasördeki eski kopyasının yerine koyun. Önceki 03/07/08 sürümleri ve üç sayım kanıtı c0bff15 ile GitHub'a yüklendi, PR #11 açıldı. Bu 07 v0.3 idari güncellemesi henüz GitHub'a yüklenmedi.

@@ -1,7 +1,7 @@
 # 3. hafta — Gerçek test kaydı
 
 Tarih: 28.10.2026; denemelerin ayrı saatleri kaydedilmedi.  
-Sürüm: 1.0 — altı kontrolün belirtilen kapsamları ve ek sayım tamamlandı.  
+Sürüm: 1.1 — test sonuçları değişmeden PR/yükleme durumu güncellendi.  
 Konum: hafta-03/docs/08-test-kaydi.md  
 Test eden: Pınar Kızıloğlu — yönlendirilmiş öğretmen uygulaması.  
 Ortam: Windows, Google Chrome; sürüm numaraları kaydedilmedi.  
@@ -61,9 +61,9 @@ Diğer sonuçlar kullanıcının bu oturumdaki mesajları ve incelenen ekranlarl
 - Kullanılabilirlik, performans ve klavye ölçümleri yapılmadı. Öğretmenle yönlendirilmiş denemeler bağımsız kullanıcı ölçümü yerine sayılmaz.
 - Yanlış Tamam seçimi geçmiş kayıtta korunuyor. R011 iptali başarılı vazgeçme gibi sunulmuyor.
 - Son doğrulanan durum: R012 / 09:00 Bekliyor; R013 / 09:30 İptal edildi, 09:30 Uygun. Son sayım 1/2/7/10.
-- Yazardan/ortak yazardan farklı kişinin incelemesi, H3 PR ve son teslim bekliyor. #8 ve #9 bu test kaydıyla Done/Closed yapılmaz.
+- H3 PR #11 açıldı. Yazardan/ortak yazardan farklı kişinin incelemesi ve son teslim bekliyor. #8 ve #9 bu test kaydıyla Done/Closed yapılmaz.
 - Main'e birleştirme ve birleştirme sonrası kısa kontrol henüz yapılmadı.
 
 ## Kaydetme ve sonraki adım
 
-Bu güncel dosyayı hafta-03/docs içindeki önceki 08-test-kaydi.md dosyasının yerine kaydedin. GitHub #9 kartındaki toplam kayıt sayısı kutusu işaretlendi. İnceleme ve son teslim kutuları boş kalıyor. Sonraki aşama test kanıtlarını çalışma dalına kaydetmek ve PR/inceleme hazırlığıdır.
+Bu güncel dosyayı hafta-03/docs içindeki önceki 08-test-kaydi.md dosyasının yerine kaydedin. GitHub #9 kartındaki toplam kayıt sayısı kutusu işaretlendi. İnceleme ve son teslim kutuları boş kalıyor. Önceki test kaydı ve üç sayım kanıtı c0bff15 ile çalışma dalına yüklendi; PR #11 açık. Bu v1.1 idari güncellemesi henüz GitHub'a yüklenmedi. Sonraki aşama belge düzeltmelerini kaydetmek ve bağımsız inceleme/teslim adımlarını tamamlamaktır.

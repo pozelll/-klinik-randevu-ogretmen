@@ -36,6 +36,13 @@
 
     <div class="status" id="notice" data-tone="info" role="status" aria-live="polite" aria-atomic="true"><span class="status-symbol" aria-hidden="true">i</span><span id="notice-text">Hazır. Uygun bir saat seçerek incelemeye başlayabilirsiniz.</span></div>
 
+    <section class="panel" aria-labelledby="cancel-help-title" style="margin-bottom:20px">
+      <div class="panel-body">
+        <h2 id="cancel-help-title" style="font-size:18px;margin-bottom:8px">Randevu iptali hakkında</h2>
+        <p>Hasta rolünde yalnız kendi <strong>Bekliyor</strong> durumundaki randevunuzu iptal edebilirsiniz. İptal edilen kayıt listede kalır. Aynı doktor, tarih ve saatte başka iptal edilmemiş kayıt yoksa saat yeniden uygun olur.</p>
+      </div>
+    </section>
+
     <div class="main-grid">
       <section class="panel" aria-labelledby="slots-title">
         <div class="panel-head"><span class="section-id">B1</span><div><h2 id="slots-title">Uygun saatler</h2><p id="slots-subtitle">Seçili doktor ve tarih · FR-01 / FR-02</p></div></div>
@@ -254,7 +261,12 @@
     function cancelAppointment(id) {
       const appointment = data.appointments.find(a => a.id === id);
       if (!appointment || !canCancel(appointment)) { notify('Yalnız Hasta rolünde, kendi Bekliyor durumundaki randevunuzu iptal edebilirsiniz.','error'); return false; }
-      if (!window.confirm(appointment.id + ' — ' + dateLabel(appointment.date) + ' saat ' + appointment.time + ' randevusu iptal edilsin mi?')) return false;
+      if (!window.confirm(
+        appointment.id + ' — ' + dateLabel(appointment.date) + ' saat ' + appointment.time + '\n\n' +
+        'Tamam: Randevuyu iptal eder. İptal edilen kayıt listede kalır. Aynı doktor, tarih ve saatte başka iptal edilmemiş kayıt yoksa saat yeniden uygun olur.\n\n' +
+        'İptal: İşlemden vazgeçer; randevunuz Bekliyor durumunda kalır.\n\n' +
+        'Randevunuzu iptal etmek istiyor musunuz?'
+      )) return false;
       appointment.status = 'cancelled'; saveData(); render();
       notify(appointment.id + ' iptal edildi. İlgili saat yeniden uygun. İptal kaydı geçmişte görünmeye devam eder.','success'); return true;
     }

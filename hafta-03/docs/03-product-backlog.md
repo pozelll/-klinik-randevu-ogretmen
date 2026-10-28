@@ -2,7 +2,7 @@
 
 Çalışma: Klinik Randevu — öğretmen uygulaması  
 Tarih: 28.10.2026  
-Sürüm: 0.2 — değişiklik kartı sonrası güncel seçim  
+Sürüm: 0.3 — güncel seçim ve doğrulanan görev bağlantıları  
 Konum: hafta-03/docs/03-product-backlog.md
 
 ## Bu dosya ne işe yarar?
@@ -40,13 +40,13 @@ Bu adımda bütün puanları toplayıp haftalık teslim sözü vermiyoruz. Kapas
 
 ## GitHub bağlantıları
 
-H3-01–H3-06 bu belgedeki iş kimlikleridir; GitHub Issue numarası değildir. Henüz üçüncü hafta için gerçek görev oluşturulmadı.
+H3-01–H3-06 bu belgedeki iş kimlikleridir; GitHub Issue numarası değildir. H3-01 için #8, H3-02 için #9 oluşturuldu. İkisi de pozelll sorumluluğunda, mevcut öğretmen panosunda In Progress ve Open olarak doğrulandı. H3-03 için #10 oluşturuldu: pozelll sorumlu, Todo ve Open; bu çalışmadan ertelendi. H3-04–H3-06 adaylarının gerçek görev bağlantıları henüz yok.
 
 | İş kimliği | Gerçek Issue URL |
 |---|---|
-| H3-01 | Henüz oluşturulmadı. |
-| H3-02 | Henüz oluşturulmadı. |
-| H3-03 | Henüz oluşturulmadı. |
+| H3-01 | https://github.com/pozelll/-klinik-randevu-ogretmen/issues/8 |
+| H3-02 | https://github.com/pozelll/-klinik-randevu-ogretmen/issues/9 |
+| H3-03 | https://github.com/pozelll/-klinik-randevu-ogretmen/issues/10 |
 | H3-04 | Henüz oluşturulmadı. |
 | H3-05 | Henüz oluşturulmadı. |
 | H3-06 | Henüz oluşturulmadı. |

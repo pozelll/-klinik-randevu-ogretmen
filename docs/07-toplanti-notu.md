@@ -1,14 +1,28 @@
 # 07 — Kısa ekip toplantısı
 
 Hazırlık tarihi: 27.10.2026  
-Sürüm: 1.0 — Öğretmen hazırlık metni tamamlandı; gerçek toplantı, kişi/tarih bilgileri ve ders testi kaydı bekliyor.  
+Sürüm: 1.1 — 28.10.2026 tarihli GitHub ve toplu belge kontrolü eklendi; gerçek öğrenci toplantısı ve ders testi kaydı bekliyor.  
 Durum: Mevcut hazırlık konuşmalarının özeti ve öğrenci toplantısı için taslak; gerçek öğrenci ekip toplantısı veya klinik paydaş toplantısı tutanağı değildir.
 
 Tarih ve süre: Gerçek öğrenci toplantısı henüz yapılmadı; gerçek tarih ve süre toplantı gerçekleşince yazılacak.  
 Katılanlar: Henüz öğrenci katılımcı adı kaydedilmedi. Toplantıya gerçekten katılan üyeler yazılacak.  
 Notu yazan: Bu hazırlık örneğini asistan oluşturdu. Öğrenci toplantısında notu tutan üye kendi adını yazacak.
 
-## Bugünkü amaç
+## 28.10.2026 — Hazırlık durumunun güncellenmesi
+
+Bu bölüm gerçek öğrenci toplantısı değildir; önceki öğretmen hazırlığından sonra oluşan dosya ve GitHub kayıtlarını izler. Aşağıdaki 27.10.2026 karar/gündem geçmişi korunur; o bölümlerdeki henüz ifadeleri hazırlık anına aittir.
+
+- [Görev #1](https://github.com/pozelll/-klinik-randevu-ogretmen/issues/1), [#2](https://github.com/pozelll/-klinik-randevu-ogretmen/issues/2), [#3](https://github.com/pozelll/-klinik-randevu-ogretmen/issues/3), [#4](https://github.com/pozelll/-klinik-randevu-ogretmen/issues/4), [#5](https://github.com/pozelll/-klinik-randevu-ogretmen/issues/5) ve [#6](https://github.com/pozelll/-klinik-randevu-ogretmen/issues/6) gerçekten oluşturuldu; önceki ekranlarda pozelll sorumluluğunda ve Open görüldü.
+- [Görev panosu](https://github.com/users/pozelll/projects/1/views/1) mevcut. Son görülen durum Todo 5 / In Progress 1 / Done 0; FR-01 çalışılıyor. Yeni pano durumu varsayılmadı.
+- [PR #7](https://github.com/pozelll/-klinik-randevu-ogretmen/pull/7), docs/izlenebilirlik dalındaki belge değişikliğini main'e önermek için açıldı. İncelenen a4bc1fc kaydında 05 sürümü 0.8. Bağımsız inceleme ve merge bekliyor.
+- Kullanıcının gönderdiği aynı dal ZIP kopyasında FR-01–FR-06, kabul koşulları ve önceki gözlemler karşılaştırıldı; tutarlı. Bu kontrol yeni uygulama testi değildir.
+- 09-ekip-rolleri.md sürüm 1.0 ve 5 + 5 + 5 + 4 planı gönderilen depoda doğrulandı. Öğrenci isimleri, gerçek katkılar ve anlaşma kabulü hâlâ bekliyor.
+- ZIP'te 06-riskler.md 0.1 taslak kaldığı görüldü; tamamlanmış 1.0 metni toplu düzeltmeye alındı. Riskler açık. Altı boş ISSUE kaynak dosyası doldurulmuş güncel metinlerle değiştirilecek.
+- K-02'deki üçüncü hafta metin iyileştirmesi için gerçek geliştirme görevi/PR henüz oluşturulmadı. Issue #3, mevcut FR-03 belge kontrolüdür; üçüncü hafta geliştirmesinin yapılmış olduğunu göstermez.
+
+**Sıradaki küçük hedef:** Hazırlanan toplu belge güncellemesini aynı çalışma dalına kaydetmek; PR #7'nin açıklamasını değişikliğin son kapsamıyla eşleştirmek; bağımsız incelemeyi takip etmek ve altı soruluk ders testinin gerçek ilk deneme sonucunu aşağıdaki bölüme eklemek. Üçüncü hafta hazırlığı, açık inceleme işi açıkça kaydedilerek sürdürülebilir.
+
+## 27.10.2026 hazırlık geçmişi — amaç
 
 Klinik Randevu başlangıç projesinde hazırladığımız belgelerin durumunu, açık riskleri ve üçüncü derse hazırlık için kalan işleri gözden geçirmek; yapılacak işleri, sorumlularını ve kontrol zamanlarını belirlemek.
 
@@ -101,7 +115,7 @@ Bu sorunun dayanağı 08 numaralı belgedeki G-06 ve paydaşa götürülecek sor
 
 **Daha sonra yanıt gelirse:** Yanıt ve kaynağı kaydedilir; ilk sürümde uygulanacağı otomatik varsayılmaz. Bir kapsam değişikliği kararı alınırsa etkilenen gereksinimler, kabul kriterleri, iki diyagram ve ilgili görev planı birlikte gözden geçirilir. Gerçek issue/PR bağlantıları oluştuğunda eklenir. Önceki soru ve karar geçmişi silinmez.
 
-## Bir sonraki küçük hedef
+## 27.10.2026 tarihindeki küçük hedef — ekip planı
 
 09-ekip-rolleri.md dosyasında 5 kişilik gruplar ve 4 kişilik grup için görev dağılımını hazırlamak. Gerçek isimler sağlandığında üyeleri görevlerle eşleştirmek; kimin yazacağını, kimin kontrol edeceğini ve bir sonraki etkinlikte görevlerin nasıl döneceğini belirtmek.
 
@@ -138,10 +152,10 @@ Dosyanın yeri docs/07-toplanti-notu.md. Başlangıçtaki aynı adlı boş şabl
 Son kaydetme kontrolü:
 
 1. Güncel dosyayı docs/07-toplanti-notu.md adıyla saklayın; kendi ek notlarınız varsa koruyun.
-2. Yeniden açınca sürümün 1.0 olduğunu, altı kararın ve açık kalan resepsiyon sorusunun bulunduğunu kontrol edin.
+2. Yeniden açınca sürümün 1.1 olduğunu, güncel takip bölümüyle birlikte altı kararın ve açık kalan resepsiyon sorusunun bulunduğunu kontrol edin.
 3. Gerçek toplantı tarihi/süresi, katılımcılar ve ders testi sonucu henüz oluşmadıysa bekliyor olarak bırakın.
-4. Bir sonraki küçük hedefin 09-ekip-rolleri.md ve grup düzeninin 5 + 5 + 5 + 4 olduğunu kontrol edin.
+4. Grup düzeninin 5 + 5 + 5 + 4 olduğunu ve güncel küçük hedefin toplu belge kaydı, inceleme takibi ve gerçek ders testi sonucu olduğunu kontrol edin.
 
-Bu 1.0 sürümünün kullanıcının bilgisayarında kaydedildiği henüz doğrulanmadı.
+28.10.2026 tarihinde gönderilen ZIP içindeki 1.0 kopyası öğretmen hazırlık dosyasıyla birebir aynı bulundu. Bu 1.1 güncellemesi aynı PR kapsamında aktarılacak; aktarım ve inceleme sonucu ayrıca doğrulanacak.
 
 Gerçek öğrenci toplantısı yapıldığında tarih, süre, katılanlar ve notu yazan kişi doldurulur; taslak kararlar grubun gerçekten aldığı kararlarla güncellenir. Üye adı, toplantı süresi, test sonucu, gerçek issue veya PR bağlantısı uydurulmaz. Hazırlık metni ile gerçekleşmiş ekip çalışması ayrı tutulur.

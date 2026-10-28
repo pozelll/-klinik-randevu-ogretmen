@@ -2,27 +2,29 @@
 
 Ekip: Öğretmen denemesi  
 Hazırlık tarihi: 28.10.2026  
-Sürüm: 0.8 — docs/izlenebilirlik dalına aktarılacak öğretmen çalışma metni  
+Sürüm: 1.0 — altı gereksinimin ZIP üzerinden toplu belge kontrolü ve gerçek PR bağlantıları  
 Dosyanın yeri: docs/05-izlenebilirlik.md  
-Aktarım öncesi hazırlık durumu: Altı FR için bağlantı satırları hazırlandı. Kullanıcı görüntülerindeki 03 / FR-01, 04 / AC-01 ve 08 / G-04 içerikleri öğretmen çalışma metinleriyle karşılaştırıldı ve birbiriyle uyumlu bulundu. docs/izlenebilirlik dalı oluşturuldu. Bu daldaki 05 dosyası 28.10.2026 tarihli görüntüde boş başlangıç şablonu olarak açıldı; bu çalışma metni onun güncellenmesi için hazırlandı. Diğer FR satırlarının karşılaştırılması, değişiklik commit'inin doğrulanması, pull request ve bağımsız inceleme henüz tamamlanmadı. Son görev listesi görüntüsünde ilk kutu boş, ikinci kutu işaretliydi; kutuların gerçekleşen işle eşleştirilmesi istendi, düzeltme sonucu henüz görülmedi. Yeni prototip testi yapılmadı.
+Durum: 28.10.2026 tarihinde docs/izlenebilirlik dalından gönderilen a4bc1fc anlık kopyasında FR-01–FR-06 ile ilgili kabul koşulları ve önceki gözlemler karşılaştırıldı; eşleşmeler tutarlı. Gerçek PR #7 açık; bağımsız inceleme ve son teslim kontrolü bekliyor. Bu sürüm, toplu kontrolün sonucunu ve ilgili kaynak dosya güncellemelerini kaydeder. Prototip yeniden çalıştırılmadı; yeni test veya merge sonucu yok.
 
 ## Amaç ve kaynaklar
 
-Kullanıcı ihtiyacından gereksinime, kabul koşuluna, gerçek gözleme ve işi takip eden GitHub kartına ulaşmak. Değişiklik incelemeye açıldığında gerçek pull request bağlantısı da aynı satıra eklenecek.
+Kullanıcı ihtiyacından gereksinime, kabul koşuluna, gerçek gözleme ve işi takip eden GitHub kartına ulaşmak. İzlenebilirlik belgesini değiştiren gerçek PR #7 bağlantısı altı ilgili satıra eklendi; PR'ın açık olması incelemenin tamamlandığı anlamına gelmez.
 
-Bu taslak, hazırladığımız öğretmen dosyalarına dayanır:
+Bu tablo, hazırladığımız öğretmen dosyalarına ve 28.10.2026 tarihinde gönderilen çalışma dalı ZIP kopyasına dayanır:
 
 - [03-gereksinimler.md](03-gereksinimler.md) — belge sürümü 0.4.
 - [04-kabul-kriterleri.md](04-kabul-kriterleri.md) — belge sürümü 1.0.
 - [08-prototip-gozlemleri.md](08-prototip-gozlemleri.md) — 26–27.10.2026 tarihli öğretmen gözlemleri.
 
-Issue numaraları ve adresleri, kullanıcının gönderdiği altı gerçek GitHub kart ekranından doğrulandı. Bu hazırlık, GitHub'da yüklü her belgenin bütün içeriğinin incelendiği anlamına gelmez. Kayıt kimlikleri öğretmen denemesine aittir; öğrenciler kendi gözlemlerini ve gerçek bağlantılarını kullanır.
+Issue numaraları ve adresleri önceki altı gerçek GitHub kart ekranından doğrulandı. Gönderilen ZIP içindeki 03, 04 ve 08 dosyaları öğretmen çalışma kopyalarıyla dosya düzeyinde birebir aynı bulundu; aşağıdaki altı FR eşleşmesi ayrıca içerik bakımından karşılaştırıldı. ZIP, çevrim içi kart konuşmalarını veya tarayıcıdaki randevu verilerini içermez. Kayıt kimlikleri öğretmen denemesine aittir; öğrenciler kendi gözlemlerini ve gerçek bağlantılarını kullanır.
 
 ## Proje bağlantıları
 
 - Depo: [pozelll/-klinik-randevu-ogretmen](https://github.com/pozelll/-klinik-randevu-ogretmen).
 - Pano: [Klinik Randevu - Öğretmen Görev Panosu](https://github.com/users/pozelll/projects/1/views/1).
-- Çalışma dalı: [docs/izlenebilirlik](https://github.com/pozelll/-klinik-randevu-ogretmen/tree/docs/izlenebilirlik). 28.10.2026 tarihli kullanıcı ekranında bu dal seçili ve 2 Branches bilgisi görünür. Dal main ile güncel; son commit ilk yüklemenin 63aa3fa kaydı, toplam 1 Commit. Bu belge değişikliği için yeni commit veya PR henüz yok.
+- Çalışma dalı: [docs/izlenebilirlik](https://github.com/pozelll/-klinik-randevu-ogretmen/tree/docs/izlenebilirlik). İlk yüklemenin 63aa3fa kaydından oluşturuldu.
+- Doğrulanan belge commit'i: [a4bc1fc](https://github.com/pozelll/-klinik-randevu-ogretmen/commit/a4bc1fc) — İzlenebilirlik tablosuna gereksinim, kanıt ve Issue bağlantılarını ekle. 05'in 0.8 sürümü bu kayıtta görüldü. ZIP yorumundaki tam kimlik: a4bc1fc89061f2b136bdaab085887acda62a0933. Bu, incelenen başlangıç kaydıdır; sonraki güncellemelerin kimlikleri PR geçmişinde izlenir.
+- Pull request: [#7 — İzlenebilirlik tablosunu gereksinim ve görev bağlantılarıyla doldur](https://github.com/pozelll/-klinik-randevu-ogretmen/pull/7). 28.10.2026 tarihli kullanıcı ekranında Open; kaynak docs/izlenebilirlik, hedef main. İlk oluşturma ekranında 1 commit, 1 değişen dosya, Checks 0 ve No reviews görüldü; fark 146 ekleme / 14 silmeydi. Bunlar ilk ekranın değerleridir; sonraki toplu belge güncellemesinden sonra sayıların değişmesi beklenir. Birleştirme ve bağımsız inceleme henüz yapılmadı.
 - 28.10.2026 tarihli son pano ekranı: Todo 5, In Progress 1, Done 0. FR-01 / Issue #1 kartı In Progress sütununda görüldü. Bu çalışma durumu, dosyaların GitHub'a aktarıldığı veya incelemenin tamamlandığı anlamına gelmez.
 
 Pano durumu bu belgedeki anlık gözlem kaydıdır. Çalışma ilerledikçe gerçek pano ve ilgili kayıtlar güncellenir. Bir kartın açılması veya panoya alınması, karttaki işin tamamlandığını göstermez.
@@ -33,12 +35,12 @@ Tabloda her FR için ana eşleşme yer alır. İlgili ek senaryolar ve kapsam s�
 
 | Kullanıcı ihtiyacı | Gereksinim | Kabul koşulu | Gözlem kanıtı | GitHub Issue | İlgili dosya / bölüm | Pull request |
 |---|---|---|---|---|---|---|
-| Kullanıcı, seçili doktor ve tarihte hangi saatin uygun olduğunu anlayabilmeli. Hasta seçiminin değişmesi başka hastaya ayrılmış saati boşaltmamalı. | FR-01 — Saatleri listeleme | AC-01 — Hasta değişince saat doluluğunun korunması | G-04: Kaan seçildiğinde Deniz Arı / 12.11.2030 / 09:00 Dolu kaldı. | [#1 — FR-01](https://github.com/pozelll/-klinik-randevu-ogretmen/issues/1) | 03: FR-01; 04: AC-01; 08: G-04 | Henüz oluşturulmadı. |
-| Hasta veya resepsiyon uygun saate doğru kişi ve zaman bilgileriyle randevu oluşturabilmeli. Ana kanıt Hasta rolünün başarılı akışına aittir. | FR-02 — Randevu oluşturma | AC-02 — Uygun saate randevu oluşturma | G-01: Ece / Deniz / 12.11.2030 / 09:30 için R008 Bekliyor oluştu; saat Dolu oldu. | [#2 — FR-02](https://github.com/pozelll/-klinik-randevu-ogretmen/issues/2) | 03: FR-02; 04: AC-02; 08: G-01 | Henüz oluşturulmadı. |
-| Hasta kendi bekleyen randevusunu onaylayarak iptal edebilmeli; vazgeçerse randevusu korunmalı. | FR-03 — Kendi randevusunu iptal etme | AC-03 — İptali onaylama; ALT-01 — Vazgeçme | AC-03 → G-02: R008 İptal edildi, 09:30 Uygun. ALT-01 → G-03-T3: R011 Bekliyor, 09:00 Dolu kaldı. | [#3 — FR-03](https://github.com/pozelll/-klinik-randevu-ogretmen/issues/3) | 03: FR-03; 04: AC-03 ve ALT-01; 08: G-02, G-03-T3 | Henüz oluşturulmadı. |
-| Doktor ve resepsiyon, seçili doktorun seçili gündeki bütün örnek hasta kayıtlarını ve durumlarını birlikte izleyebilmeli. | FR-04 — Günlük liste | AC-04A — Doktor görünümü; AC-04B — Resepsiyonda hasta seçiminin listeyi daraltmaması | AC-04A → G-05: Ece ve Kaan, üç durumla listelendi. AC-04B → G-06: Kaan seçiliyken Ece'nin R011 kaydı da görüldü. | [#4 — FR-04](https://github.com/pozelll/-klinik-randevu-ogretmen/issues/4) | 03: FR-04; 04: AC-04A/B; 08: G-05, G-06 | Henüz oluşturulmadı. |
-| Doktor biten muayeneyi tamamlanmış olarak işaretleyebilmeli; kayıt, saat ve sayılar tutarlı değişmeli. | FR-05 — Randevuyu tamamlama | AC-05 — Doktorun bekleyen randevuyu tamamlaması | Sonuç G-05-B: R002 Tamamlandı, 10:00 Kapalı; düğme kalktı; sayılar 1/2/5/8 oldu. Başlangıç G-05: 2/1/5/8. | [#5 — FR-05](https://github.com/pozelll/-klinik-randevu-ogretmen/issues/5) | 03: FR-05; 04: AC-05; 08: G-05, G-05-B | Henüz oluşturulmadı. |
-| Doktor ve resepsiyon, seçili doktor ve tarihin günlük akışını doğru durum ve toplam kayıt sayılarıyla okuyabilmeli. | FR-06 — Günlük toplamlar | AC-06 — Doktordan Resepsiyona geçişte toplamların korunması | Sonuç G-06: 1/2/5/8 korundu. Başlangıç G-05-B; kayıt dökümü G-05 ve R002'nin sonraki durum değişimiyle açıklanır. | [#6 — FR-06](https://github.com/pozelll/-klinik-randevu-ogretmen/issues/6) | 03: FR-06; 04: AC-06; 08: G-06, G-05-B, G-05 | Henüz oluşturulmadı. |
+| Kullanıcı, seçili doktor ve tarihte hangi saatin uygun olduğunu anlayabilmeli. Hasta seçiminin değişmesi başka hastaya ayrılmış saati boşaltmamalı. | FR-01 — Saatleri listeleme | AC-01 — Hasta değişince saat doluluğunun korunması | G-04: Kaan seçildiğinde Deniz Arı / 12.11.2030 / 09:00 Dolu kaldı. | [#1 — FR-01](https://github.com/pozelll/-klinik-randevu-ogretmen/issues/1) | 03: FR-01; 04: AC-01; 08: G-04 | [#7 — Açık](https://github.com/pozelll/-klinik-randevu-ogretmen/pull/7) |
+| Hasta veya resepsiyon uygun saate doğru kişi ve zaman bilgileriyle randevu oluşturabilmeli. Ana kanıt Hasta rolünün başarılı akışına aittir. | FR-02 — Randevu oluşturma | AC-02 — Uygun saate randevu oluşturma | G-01: Ece / Deniz / 12.11.2030 / 09:30 için R008 Bekliyor oluştu; saat Dolu oldu. | [#2 — FR-02](https://github.com/pozelll/-klinik-randevu-ogretmen/issues/2) | 03: FR-02; 04: AC-02; 08: G-01 | [#7 — Açık](https://github.com/pozelll/-klinik-randevu-ogretmen/pull/7) |
+| Hasta kendi bekleyen randevusunu onaylayarak iptal edebilmeli; vazgeçerse randevusu korunmalı. | FR-03 — Kendi randevusunu iptal etme | AC-03 — İptali onaylama; ALT-01 — Vazgeçme | AC-03 → G-02: R008 İptal edildi, 09:30 Uygun. ALT-01 → G-03-T3: R011 Bekliyor, 09:00 Dolu kaldı. | [#3 — FR-03](https://github.com/pozelll/-klinik-randevu-ogretmen/issues/3) | 03: FR-03; 04: AC-03 ve ALT-01; 08: G-02, G-03-T3 | [#7 — Açık](https://github.com/pozelll/-klinik-randevu-ogretmen/pull/7) |
+| Doktor ve resepsiyon, seçili doktorun seçili gündeki bütün örnek hasta kayıtlarını ve durumlarını birlikte izleyebilmeli. | FR-04 — Günlük liste | AC-04A — Doktor görünümü; AC-04B — Resepsiyonda hasta seçiminin listeyi daraltmaması | AC-04A → G-05: Ece ve Kaan, üç durumla listelendi. AC-04B → G-06: Kaan seçiliyken Ece'nin R011 kaydı da görüldü. | [#4 — FR-04](https://github.com/pozelll/-klinik-randevu-ogretmen/issues/4) | 03: FR-04; 04: AC-04A/B; 08: G-05, G-06 | [#7 — Açık](https://github.com/pozelll/-klinik-randevu-ogretmen/pull/7) |
+| Doktor biten muayeneyi tamamlanmış olarak işaretleyebilmeli; kayıt, saat ve sayılar tutarlı değişmeli. | FR-05 — Randevuyu tamamlama | AC-05 — Doktorun bekleyen randevuyu tamamlaması | Sonuç G-05-B: R002 Tamamlandı, 10:00 Kapalı; düğme kalktı; sayılar 1/2/5/8 oldu. Başlangıç G-05: 2/1/5/8. | [#5 — FR-05](https://github.com/pozelll/-klinik-randevu-ogretmen/issues/5) | 03: FR-05; 04: AC-05; 08: G-05, G-05-B | [#7 — Açık](https://github.com/pozelll/-klinik-randevu-ogretmen/pull/7) |
+| Doktor ve resepsiyon, seçili doktor ve tarihin günlük akışını doğru durum ve toplam kayıt sayılarıyla okuyabilmeli. | FR-06 — Günlük toplamlar | AC-06 — Doktordan Resepsiyona geçişte toplamların korunması | Sonuç G-06: 1/2/5/8 korundu. Başlangıç G-05-B; kayıt dökümü G-05 ve R002'nin sonraki durum değişimiyle açıklanır. | [#6 — FR-06](https://github.com/pozelll/-klinik-randevu-ogretmen/issues/6) | 03: FR-06; 04: AC-06; 08: G-06, G-05-B, G-05 | [#7 — Açık](https://github.com/pozelll/-klinik-randevu-ogretmen/pull/7) |
 
 ## İlk satırı birlikte okuma — FR-01
 
@@ -47,9 +49,9 @@ Tabloda her FR için ana eşleşme yer alır. İlgili ek senaryolar ve kapsam s�
 3. **AC-01:** 04 numaralı dosyada belirli bir durum seçer: Ece'den Kaan'a geçerken doktor ve tarih değişmez; 09:00 Dolu kalmalıdır.
 4. **G-04:** 08 numaralı dosyada bu önceki denemenin gerçek sonucunu kaydeder. Beklenen sonuçla gözlenen sonuç burada karşılaştırılır.
 5. **Issue #1:** Bu belge bağlantısının kontrolünü ve kalan değişiklik/inceleme işlerini takip eder.
-6. **Pull request:** Henüz yok. Değişiklik gerçekten incelemeye açılınca oluşan bağlantı eklenecek.
+6. **Pull request:** [#7](https://github.com/pozelll/-klinik-randevu-ogretmen/pull/7), izlenebilirlik belgesindeki bu bağlantıların eklenmesini önerir. PR açık; bağımsız inceleme ve birleştirme bekliyor.
 
-Bu satırın hazır olması bütün FR-01 senaryolarının sınandığı veya Issue #1'in tamamlandığı anlamına gelmez. FR-01, AC-01 ve G-04 için aşağıda kaydedilen içerik karşılaştırması tamamlandı; gerçek değişikliğin depoya kaydı ve incelemesi sırada.
+Bu satırın hazır olması bütün FR-01 senaryolarının sınandığı veya Issue #1'in tamamlandığı anlamına gelmez. FR-01, AC-01 ve G-04 karşılaştırması ile 0.8 sürümünün commit/PR kaydı tamamlandı. Toplu kontrolün ardından 1.0 sürümü, ilgili görev kaynakları ve güncel belgeler aynı PR içinde izlenecek; bağımsız inceleme ve son teslim kontrolü açık. PR #7 bu belgenin değişikliğine ilişkindir; altı işlevin bütün testlerinin tamamlandığı iddiası değildir.
 
 ## GitHub'da içerik karşılaştırması — FR-01
 
@@ -97,7 +99,30 @@ Sonuç: FR-01'in saat durumunu doktor/tarih üzerinden tanımlaması, AC-01'in h
 
 Issue #1'in ilk maddesindeki üç belgeyi karşılaştırma işi tamamlandı. İlk kutuyu işaretleme yönergesinden sonra gelen 28.10.2026 tarihli görev listesi görüntüsünde ilk kutu boş, ikinci kutu işaretli; üçüncü, dördüncü ve beşinci kutular boş. Bu kare yalnız Yapılacaklar ve Takip bölümünün başını gösterir; Issue başlığı/adresi görünmez. Kanıt: kanitlar/github-fr01-gorev-kutulari-20261028.png.
 
-İşaretli ikinci kutu, 05 dosyasındaki bağlantıları ekleme maddesidir. Hazırlanan çalışma kopyası mevcut; ancak kullanıcının yerel kopyası ve GitHub'a aktarımı bu görüntüyle doğrulanmıyor. Kullanıcıya tamamlanan karşılaştırma için ilk kutuyu işaretlemesi ve ikinci kutuyu aktarım doğrulanana kadar şimdilik boş bırakması söylendi. Düzeltme sonucu henüz görülmedi. Diğer teslim ve inceleme işleri bekliyor. Yeni prototip testi yapılmadı; son görülen pano durumu In Progress olarak korunur.
+Bu önceki görüntüde işaretli ikinci kutu, 05 dosyasındaki bağlantıları ekleme maddesiydi; aktarım o sırada doğrulanmamıştı. Kullanıcıya ilk kutuyu işaretlemesi ve ikinci kutuyu aktarım doğrulanana kadar boş bırakması söylendi. Sonrasında 05'in 0.8 sürümü a4bc1fc ile kaydedildi ve PR #7 oluşturuldu. Dolayısıyla ilk üç görevin işi artık yapılmış durumda; gerçek kutuların güncel görünümü yeniden kontrol edilecek. Diğer teslim ve inceleme işleri bekliyor. Yeni prototip testi yapılmadı; son görülen pano durumu In Progress olarak korunur.
+
+## Toplu belge kontrolü — 28.10.2026
+
+Kaynak: Kullanıcının gönderdiği -klinik-randevu-ogretmen-docs-izlenebilirlik.zip. Arşivde 26 dosya var; ZIP yorumundaki commit a4bc1fc89061f2b136bdaab085887acda62a0933. 05 dosyası, a4bc1fc için saklanan 0.8 kopyasıyla birebir aynı. Bu karşılaştırma, main dalının veya daha sonraki çevrim içi değişikliklerin anlık durumu olarak sunulmaz.
+
+| Gereksinim | Birlikte okunan bölümler | İçerik sonucu | Korunan kapsam sınırı |
+|---|---|---|---|
+| FR-01 | AC-01 → G-04 | Uyumlu; hasta değişince doktor/tarih sabit, 09:00 Dolu. | Önceki ekran kontrolü ZIP içeriğiyle desteklendi; yeni uygulama testi yok. |
+| FR-02 | AC-02 → G-01 | Uyumlu; Ece/Deniz/12.11.2030/09:30 için R008 Bekliyor ve saat Dolu. | Hasta rolünün önceki denemesi. Resepsiyonla oluşturma ayrı elle denenmedi; R008'in sonraki iptali bu sonucu silmez. |
+| FR-03 | AC-03 → G-02; ALT-01 → G-03-T3; destek G-04 | Uyumlu; Tamam ile R008 iptal, İptal seçeneğiyle R011 korunuyor. | İptal ve vazgeçme ayrı başlangıç kayıtlarıdır. Hasta rolünün kendi Bekliyor kaydı koşulu ve BR-01 korunuyor. |
+| FR-04 | AC-04A → G-05; AC-04B → G-06 | Uyumlu; Doktorda farklı hastalar ve üç durum; Resepsiyonda Kaan seçiliyken Ece'nin R011 kaydı. | G-05 ile G-06 arasında R002, G-05-B'de tamamlandı. G-06'da bütün liste satırları yeniden kontrol edilmiş sayılmadı. |
+| FR-05 | AC-05 → G-05-B; başlangıç G-05 | Uyumlu; R002 Tamamlandı, 10:00 Kapalı, işlem düğmesi yok; 2/1/5/8 → 1/2/5/8. | Başarılı Doktor senaryosu. Önceki kayıt sıfırlanmadı; bütün yetki yolları sınanmış sayılmadı. |
+| FR-06 | AC-06 → G-06; başlangıç G-05-B, döküm G-05 | Uyumlu; doktor/tarih değişmeden Resepsiyona geçişte 1/2/5/8 korunuyor. | İptaller toplamda. Hasta görünümünde sayıların gizlenmesine ilişkin ayrı elle gözlem ve bütün güncelleme yolları bu kanıtın kapsamında değil. |
+
+Bu sonuçlar **belgelerin birbirini desteklediğini** gösterir. Kabul koşullarındaki Geçti kayıtları 26–27.10.2026 gözlemlerine dayanır; 28.10.2026'da uygulama yeniden sınanmadı. NFR-01–NFR-03 hâlâ Ölçülmedi.
+
+### Aynı kontrolde bulunan dosya farkları
+
+- docs/09-ekip-rolleri.md sürüm 1.0 güncel kopyayla birebir aynı; 19 öğrenci için 5 + 5 + 5 + 4, görev dönüşümü ve yazardan farklı inceleyen planı yerinde. Gerçek öğrenci adları ve katkıları hâlâ bekliyor.
+- docs/06-riskler.md ZIP'te 0.1 taslak. Önceden tamamlanan 1.0 metni toplu güncellemede kullanılacak; üç riskin Açık durumu korunuyor.
+- issues/ISSUE-01.md–ISSUE-06.md ZIP'te boş başlangıç şablonları. Gerçek #1–#6 bağlantıları, pozelll ataması, bu kontrolün sonuçları ve PR #7 ile güncel kaynak metinleri hazırlandı. Kaynak dosya yüklemek çevrim içi Issue gövdesini veya kutularını otomatik değiştirmez.
+- docs/07-toplanti-notu.md içindeki hazırlık geçmişi korunarak 28.10.2026 takip bilgisi eklendi. Gerçek öğrenci toplantısı veya ders testi sonucu yazılmadı.
+- Bağlam diyagramının DRAWIO ve PNG kopyalarında Doktor isteğinin Bekliyor koşulunu içeren yeni açıklaması var; üç rol, tek sistem ve altı ok korunuyor. Kullanım durumu diyagramının 11 bağlantısı FR-01–FR-06 rol dağılımıyla uyumlu. Yardımcı rehbere güncel doğrulama kaydı eklendi.
 
 ## Ek bağlantılar ve kanıt kapsamı
 
@@ -122,8 +147,8 @@ Bu satırlarda ölçüm planı hazırdır; gerçek ölçüm kanıtı yoktur. Alt
 ## Kontrol
 
 - [x] Her FR için en az bir kabul koşulu çalışma tablosunda yer alıyor.
-- [ ] Altı FR kartı ile GitHub'daki ilgili belge ve gözlem içerikleri birlikte karşılaştırıldı. FR-01 karşılaştırması tamamlandı; FR-02–FR-06 bekliyor.
-- [x] Gerçek Issue bağlantıları kullanıldı; oluşmamış PR alanlarına Henüz oluşturulmadı yazıldı.
+- [x] Gönderilen çalışma dalı ZIP kopyasında FR-01–FR-06, ilgili kabul koşulları ve gözlem içerikleri birlikte karşılaştırıldı; eşleşmeler uyumlu.
+- [x] Gerçek Issue bağlantıları ve oluşturulmuş PR #7 adresi kullanıldı. NFR ölçümleri için henüz oluşmayan ayrı bağlantılar üretilmedi.
 - [ ] İlgili değişiklik, yazar veya ortak yazar olmayan kişinin incelemesinden geçti.
 
 Bu kutular bağlantı tablosu ve inceleme durumunu gösterir; bütün işlev veya kalite testlerinin tamamlandığı anlamına gelmez.
@@ -132,15 +157,15 @@ Bu kutular bağlantı tablosu ve inceleme durumunu gösterir; bütün işlev vey
 
 | Kontrol | Bu taslaktaki durum |
 |---|---|
-| Her FR için ana kabul koşulu ve önceki gözlem eşleşmesi | Öğretmen çalışma dosyalarından hazırlandı. |
+| Her FR için ana kabul koşulu ve önceki gözlem eşleşmesi | Altı eşleşme gönderilen ZIP içeriğinde kontrol edildi; sonuçlar üstteki tabloda. |
 | Altı Issue'nun gerçek adresleri | Kullanıcı ekranlarından doğrulandı. |
 | Görev panosu bağlantısı | Kullanıcının oluşturma sonrası ekranından alındı. |
-| 03, 04 ve 08 içeriklerinin karşılaştırılması | FR-01 → AC-01 → G-04 için tamamlandı; kullanıcı görüntülerindeki içerikler uyumlu. Diğer FR satırları bekliyor. 03 ve 04'ün sürüm alanları, son G-04 karesinde ise dosya yolu/dal görünmüyor. |
-| Issue #1'deki kontrol kutuları | Son kullanıcı görüntüsünde ilk kutu boş, ikinci kutu işaretli; diğer üçü boş. İçerik karşılaştırmasına karşılık ilk kutunun işaretlenmesi, aktarım doğrulanana kadar ikinci kutunun boş bırakılması istendi. Düzeltme sonucu bekliyor. |
-| Dalda açılan 05 dosyasının mevcut içeriği | 28.10.2026 tarihli kullanıcı ekranında docs/izlenebilirlik dalında açıldı: 22 satır, 818 Bytes, FR-01–FR-06 için boş şablon alanları, son dosya commit'i 63aa3fa. |
-| Bu dosyanın ve doldurulmuş ISSUE metinlerinin depoya güncellenmesi | Bu sürüm aktarım öncesinde hazırlandı; kaydetme sonucu henüz görülmedi. Doldurulmuş ISSUE kaynak metinleri ayrıca güncellenecek. |
-| Gerçek çalışma dalı | docs/izlenebilirlik oluşturuldu ve seçili; kullanıcı ekranında 2 Branches ve main ile güncel bilgisi görüldü. Bağlantı Proje bağlantıları bölümünde. |
-| Bu belge değişikliğine ait commit / pull request | Henüz oluşturulmadı. Dalın son kaydı ilk yüklemenin 63aa3fa commit'i; dal oluşturma yeni dosya değişikliği değildir. |
+| 03, 04 ve 08 içeriklerinin karşılaştırılması | Altı FR için tamamlandı. ZIP dosyaları öğretmen 03 v0.4 / 04 v1.0 / 08 kopyalarıyla birebir aynı; ana eşleşmeler içerik bakımından da uyumlu. |
+| Issue #1'deki kontrol kutuları | Son kutu görüntüsü 05 aktarımından önceydi: ilk boş, ikinci işaretli, diğer üçü boş. Şu anda içerik karşılaştırması, 05'in kaydı ve commit/PR oluşturma işleri tamamlandı; gerçek kutular yeniden kontrol edilip bu işlerle eşleştirilecek. |
+| Dalda açılan 05 dosyasının kaydedilmiş içeriği | Boş 22 satırlık şablon, a4bc1fc ile 0.8 sürümüne güncellendi. Kullanıcı ekranında 154 satır / 18.8 KB, sürüm 0.8 ve yeni commit mesajı görüldü. |
+| Bu dosyanın ve doldurulmuş ISSUE metinlerinin depoya güncellenmesi | Denetlenen a4bc1fc kopyasında 05 v0.8, altı ISSUE dosyasında boş şablon vardı. 05 v1.0 ve doldurulmuş kaynaklar toplu değişiklik olarak hazırlandı; GitHub aktarım sonucu ayrıca doğrulanacak. |
+| Gerçek çalışma dalı | docs/izlenebilirlik. main ile karşılaştırmada a4bc1fc commit'i ve tek değişen dosya görüldü. |
+| Bu belge değişikliğine ait commit / pull request | a4bc1fc / PR #7; gerçek bağlantılar Proje bağlantıları bölümünde. PR Open, inceleme ve merge bekliyor. |
 | Yazar veya ortak yazar olmayan kişinin incelemesi | Yapılmadı; inceleyen henüz belirlenmedi. |
 | İnceleme bulgularının giderilmesi ve yeniden kontrolü | Gerçek inceleme sonrasında kaydedilecek. |
 
@@ -148,7 +173,10 @@ Asistanın belge eşleştirme hazırlığı, bağımsız öğrenci/arkadaş ince
 
 ## Kaydetme ve sonraki güncelleme
 
-1. Dosyayı bilgisayardaki projenin docs klasörüne 05-izlenebilirlik.md adıyla kaydet. Mevcut boş taslak yerine bu sürüm kullanılabilir; kendi ek notların varsa koru.
-2. FR-01 → AC-01 → G-04 içerik karşılaştırması tamamlandı. Issue #1'in ilk kontrol maddesini işaretle; ikinci maddeyi dosyanın depoya aktarımı doğrulanınca tamamla. Diğer satırlar hazırlanmış taslaktır; kendi karşılaştırma ve inceleme kayıtları bekler.
-3. GitHub'a aktarımı oluşturulan docs/izlenebilirlik dalında yapacağız; ardından gerçek değişiklik commit'i ve pull request kaydedilecek. Yerelde kaydetmek GitHub dosyasını değiştirmez.
-4. Yeni bir test, inceleme veya pull request gerçekleşirse ilgili satırı gerçek kanıtla güncelle. Bekleyen alanlara örnek sonuç veya tahmini bağlantı yazma.
+1. Toplu güncellemedeki dosyaları mevcut konumlarıyla docs/izlenebilirlik dalına kaydet. Bu belge docs/05-izlenebilirlik.md yolunda sürüm 1.0 olmalı.
+2. Aynı dal kullanıldığında güncelleme mevcut PR #7 üzerinden izlenir. Yeni PR açılması gerekmez. Kabul edilen son değişiklik kapsamını PR açıklamasında güncelle.
+3. Gerçek Issue kartlarında ilk üç görevi yapılan belge karşılaştırması, ilk 05 kaydı ve PR oluşturma sonucuyla eşleştir. Bu kaynak dosyalardaki işaretler çevrim içi kartları otomatik değiştirmez. Son teslim ve bağımsız inceleme henüz tamamlanmış sayılmaz.
+4. PR bağlantısının kaydedildiğini ve güncel dosyalara erişimi kontrol et. Değişikliğin yazarı veya ortak yazarı olmayan gerçek kişinin incelemesini al; varsa engelleyici bulguları giderip yeniden kontrol et.
+5. Gerçek inceleme ve kabul kaydı oluşmadan görevleri Done sayma. İnceleyen henüz katılamıyorsa bu iş açık kalırken üçüncü hafta hazırlığı sürdürülebilir.
+
+Commit kimliği her değişiklikte farklıdır. Bu belgede incelenen başlangıç commit'i sabit kanıt olarak tutulur; yalnız son commit kimliğini yazabilmek için tekrar tekrar yeni commit oluşturulmaz. Güncel değişiklik geçmişi gerçek PR #7 üzerinden izlenir.

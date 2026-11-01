@@ -49,3 +49,7 @@ Eski çalışma klasörünü ve tarayıcı verilerini koruyun; karşılaştırma
 dosya yolunu, doktoru, tarihi ve rolü kaydedin.
 
 Bu hafta tasarım ve planlama yapacağız. Kodun modüllere ayrılması beşinci haftanın çalışmasıdır.
+
+## İlk dört haftanın okunabilir rehberleri
+
+[Öğretmen PDF’i, öğrenci PDF’i ve öğrenci çalışma ZIP’i](dagitim/README.md) hazır. Öğretmen rehberi gerekçeleri ve soru-cevapları; öğrenci rehberi uygulama sırasını içerir. Devam eden gruplar öğrenci paketinden yalnız yeni H4 klasörünü kendi dolu projelerine ekler.

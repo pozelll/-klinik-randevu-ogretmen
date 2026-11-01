@@ -1,6 +1,6 @@
 # 4. hafta — Mimari, tasarım kalıpları ve iş planlama
 
-Durum: İlk altı basamağın öğretmen hazırlığı hazır. H4-P0 ilk planı: dört kişilik örnek ekip, dokuz görev, 16 blok (8 saat) net süre ve 17 kişi-saat emek. Yedinci–sekizinci basamaklar, kodda uygulama ve bağımsız inceleme bekliyor. Süreler ölçülmüş sonuç değil, ders varsayımıdır.
+Durum: İlk yedi basamağın öğretmen hazırlığı hazır. H4-P0 korundu; H4-DK-01 kartıyla H4-P1 hazırlandı. Dört kişilik örnek ekip ve dokuz görev için net süre 8 → 9 saat, emek 17 → 19 kişi-saat oldu. Sekizinci basamağın bağımsız incelemesi/teslimi ve beşinci haftanın kod uygulaması bekliyor. Süreler ders varsayımıdır.
 Hazırlık tarihi: 1 Kasım 2026
 Öğretmen çalışma dalı: `docs/h4-mimari-plan`
 
@@ -29,9 +29,9 @@ proje kökünde korunur. Bu haftanın belgeleri `hafta04/docs`, çizimleri
 
 ## Şimdi yapılacak işlem
 
-1. `docs/03-is-plani-ve-riskler.md` içindeki ilk planı, bağımlılık ağını, kritik yol ve emek hesabını okuyun. `planlar/01-ilk-is-plani.md` değişiklik öncesindeki sabit karşılaştırma kopyasıdır.
+1. `kartlar/01-karar-tablosu-ve-kanit.md` kartını ve `docs/03-is-plani-ve-riskler.md` içindeki H4-P0 / H4-P1 karşılaştırmasını okuyun. `planlar/01-ilk-is-plani.md` ilk planı değişmeden korur.
 2. Öğrenci grupları `sablonlar` altındaki 01, 02 ve 03 belgelerini kendi `hafta04/docs` klasörlerine alır. Kendi gerekçelerini, görev sahiplerini ve sürelerini yazar; kendi diyagram ve kritik yol hesaplarını oluşturur.
-3. Sıradaki yedinci basamakta bir değişiklik kartı verilecek. H4-P0 korunarak 03 belgesinin güncel plan bölümünde etkilenen işler, süreler ve yeni kritik yol hesaplanacak. Henüz değişiklik kartı verilmedi.
+3. Sıradaki sekizinci basamakta yazardan farklı kişinin incelemesi, H4 PR hazırlığı ve teslim koşulları ele alınacak. Gerçek inceleme yapılmadan tamamlanmış teslim kaydı yazılmayacak.
 
 `[Doldurulacak]` yazıları öğrenci/öğretmen çalışması için ayrılmış alanlardır.
 Şablonun var olması, içindeki görevin tamamlandığı anlamına gelmez.

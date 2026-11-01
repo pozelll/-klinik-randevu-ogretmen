@@ -2,9 +2,9 @@
 
 Tarih: 1 Kasım 2026
 
-Durum: Altıncı basamağın ilk planı **H4-P0** öğretmen örneği olarak hazır.
-Yedinci basamağın değişiklik kartı ve güncel planı, bağımsız ekip incelemesi
-ve planlanan kod işlerinin uygulanması bekliyor.
+Durum: H4-P0 ilk planı korundu; yedinci basamağın **H4-DK-01** kartı ve
+**H4-P1** güncel öğretmen planı hazır. İlk bölümler H4-P0 karşılaştırma kaydıdır;
+güncel hesap H4-P1 bölümündedir. Bağımsız inceleme ve kodda uygulama bekliyor.
 
 ## Kapsam ve varsayımlar
 
@@ -195,27 +195,184 @@ PR bağımlılıkları için süre varsaymadık; 8 saat bu beklemeleri kapsamaz.
 İlk planın kapsamı, varsayımları, dokuz görevi, ağı, hesabı ve riskleri
 [01-ilk-is-plani.md](../planlar/01-ilk-is-plani.md) dosyasında ayrıca saklandı.
 Bu kopya karşılaştırma içindir; ekip onayı veya yapılmış iş kaydı değildir.
-Yedinci basamakta hem bu kopya hem yukarıdaki H4-P0 tablosu korunacak;
-yeni bilgi yalnız aşağıdaki güncel plan bölümüne işlenecek.
+Yedinci basamakta hem bu kopya hem yukarıdaki H4-P0 tablosu korundu;
+yeni kart ve H4-P1 hesabı aşağıdaki güncel plan bölümüne eklendi.
 
-## Değişiklik kartı ve güncel plan
+## Değişiklik kartı ve güncel plan — H4-P1
 
-**Yedinci basamak bekleniyor.** Henüz bir kart verilmedi ve güncel plan oluşturulmadı.
-Aşağıdaki alanlar bu yüzden boş; ilk planın satırlarını değiştirmeyin.
+**Kart:** [H4-DK-01 — Karar tablosu ve ayrı kontrol kanıtı](../kartlar/01-karar-tablosu-ve-kanit.md).
+Bu, uygulama işlerine henüz başlanmadan verilen bir ders senaryosudur. Gerçek
+paydaş talebi veya yapılmış deney sonucu değildir; A–I işleri hâlâ planlanmaktadır.
 
-- Kart / yeni bilgi: [Yedinci basamakta verilecek]
-- Etkilenen işler ve bağımlılıklar: [Doldurulacak]
-- Değerlendirilen seçenekler: [Doldurulacak]
-- Karar ve gerekçesi: [Doldurulacak]
+### Yeni bilginin etkisi
 
-| İş ID | Önceki süre | Güncel süre | Güncel öncüller | Değişiklik gerekçesi |
-|---|---|---|---|---|
-| [Doldurulacak] | [Doldurulacak] | [Doldurulacak] | [Doldurulacak] | [Doldurulacak] |
+İptal kurallarının yedi satırlık karar tablosu ve her satır için ayrı başlangıç
+verisi/sonuç kanıtı isteniyor. İlk plandaki olumlu ve olumsuz kontroller zaten
+vardı; ek iş, bu koşulları satır bazında hazırlayıp sonuçlarla eşleştirmektir.
+Ürünün rol yetkileri, onay/vazgeçme davranışı ve H4-MK-01 mimari kararı korunur.
 
-- Güncel kritik yol: [Doldurulacak]
-- Güncel bitiş tahmini: [Doldurulacak]
-- İlk plana göre fark: [Doldurulacak]
-- Koruduğumuz kabul ve kalite koşulları: [Doldurulacak]
+C'ye tablo ve veri hazırlığı için **2 blok**, F'ye yürütüm/kanıt kaydı için
+**1 blok** eklenir. Diğer süre ve atamalar, kartın açık varsayımlarıyla korunur.
+Yeni bir iş bağımlılığı eklenmez; değişenler C ve F'nin kapsamı/süre tahminidir.
+
+### Değerlendirilen seçenekler ve karar
+
+| Seçenek | İlk plana etkisi | Değerlendirme |
+|---|---|---|
+| Kartın tamamını bu çalışmaya al; süreyi yeniden hesapla. | C ve F genişler; net süre 9 saate, emek 19 kişi-saate çıkar. | **Seçildi.** Yeni kanıt koşulları karşılanacak şekilde planlanır; kabul ve inceleme işleri korunur. |
+| Ek karar tablosu/kanıt biçimini sonraki çalışmaya ertele. | H4-P0'ın 8 saat / 17 kişi-saat hesabı bu dar kapsam için kalır. | Seçilmedi. Yeni kart koşulları bu teslimde karşılanmış olmaz; aynı kapsamı 8 saatte bitirmek diye sunulamaz. |
+
+**H4-PK-01 kararı:** Ek işi kapsamda tutup bir saatlik net süre artışını kabul eden
+H4-P1 öğretmen planıyla devam ediyoruz. Bu, gerçek ekip veya paydaş onayı değildir.
+U4'ü kod yazımına kaydırarak bağımsız incelemeyi kaldırmıyoruz. İlave kişinin
+varlığı ve yapacağı iş belirlenmediğinden otomatik süre kısalması da varsaymıyoruz.
+
+### Güncel işler ve tahminler
+
+Görevlerin ilk açıklamaları H4-P0 tablosundadır. C artık karar tablosu/başlangıç
+verilerini de içerir; F'nin çıktıları her satırın kontrol kaydını da içerir.
+Aşağıdaki süreler blok, emek kişi-saat cinsindendir; **1 blok = 30 dakika**.
+
+| İş ID | İlk süre (blok) | Güncel süre (blok) | Güncel öncüller | Sorumlu(lar) | Güncel emek (kişi-saat) | Değişiklik gerekçesi |
+|---|---:|---:|---|---|---:|---|
+| A | 2 | 2 | Yok | U1 + U2 | 2 | İş kapsamı ve süre tahmini korundu. |
+| B | 4 | 4 | A | U1 | 2 | İş kapsamı ve süre tahmini korundu. |
+| C | 3 | 5 | A | U2 | 2,5 | Karar tablosu ve yalıtılmış başlangıç verileri eklendi. |
+| D | 3 | 3 | A | U3 | 1,5 | İş kapsamı ve süre tahmini korundu. |
+| E | 2 | 2 | B, C, D | U1 + U2 + U3 | 3 | İş kapsamı ve süre tahmini korundu. |
+| F | 3 | 4 | E | U2 + U3 | 4 | Yedi satır için ayrı yürütüm/kanıt kaydı eklendi. |
+| G | 2 | 2 | F | U4 | 1 | İş kapsamı ve süre tahmini korundu. |
+| H | 2 | 2 | G | U1 + U2 | 2 | İş kapsamı ve süre tahmini korundu. |
+| I | 1 | 1 | H | U1 + U4 | 1 | İş kapsamı ve süre tahmini korundu. |
+
+### Güncel ağ ve kritik yol
+
+Oklar ilk planla aynıdır; değişen süreler ve kritik kol aşağıda görülür.
+Kutulardaki sayılar blok süresidir. Yeni kritik işler renkli gösterilir.
+
+```mermaid
+flowchart TD
+    A["A · Sözleşme ve koşullar · 2"]
+    B["B · Randevu Deposu · 4"]
+    C["C · Kurallar ve karar tablosu · 5"]
+    D["D · Arayüz · 3"]
+    E["E · Birleştirme · 2"]
+    F["F · Denemeler ve satır kanıtı · 4"]
+    G["G · Bağımsız inceleme · 2"]
+    H["H · Düzeltme ve tekrar · 2"]
+    I["I · Son kontrol ve paket · 1"]
+    A --> B
+    A --> C
+    A --> D
+    B --> E
+    C --> E
+    D --> E
+    E --> F
+    F --> G
+    G --> H
+    H --> I
+    classDef kritik fill:#FFF2DD,stroke:#A65E00,color:#173343,stroke-width:2px
+    class A,C,E,F,G,H,I kritik
+```
+
+| Güncel yol | Süre hesabı (blok) | Sonuç |
+|---|---|---|
+| A → B → E → F → G → H → I | 2 + 4 + 2 + 4 + 2 + 2 + 1 = **17** | 8,5 saat |
+| A → C → E → F → G → H → I | 2 + 5 + 2 + 4 + 2 + 2 + 1 = **18** | 9 saat — kritik yol |
+| A → D → E → F → G → H → I | 2 + 3 + 2 + 4 + 2 + 2 + 1 = **16** | 8 saat |
+
+**Güncel kritik yol: A → C → E → F → G → H → I.** Net bitiş 18 blok,
+yani **9 saat**. İlk plandaki B kolunun yerini C kolu aldı. Bu süre gerçek
+takvim tarihi değildir; molalar, dersler arası günler ve dış onay beklemeleri
+ilk planda olduğu gibi ayrıca ele alınacak.
+
+### Güncel erken/geç zamanlar
+
+Tüm değerler aynı `t=0` başlangıcından itibaren blok sınırlarıdır.
+İşler başlamadığı için tamamlanmış süre veya kalan iş hesabı yapılmıyor.
+
+| İş ID | En erken başlangıç | En erken bitiş | En geç başlangıç | En geç bitiş | Toplam bolluk |
+|---|---:|---:|---:|---:|---:|
+| A | 0 | 2 | 0 | 2 | 0 |
+| B | 2 | 6 | 3 | 7 | 1 |
+| C | 2 | 7 | 2 | 7 | 0 |
+| D | 2 | 5 | 4 | 7 | 2 |
+| E | 7 | 9 | 7 | 9 | 0 |
+| F | 9 | 13 | 9 | 13 | 0 |
+| G | 13 | 15 | 13 | 15 | 0 |
+| H | 15 | 17 | 15 | 17 | 0 |
+| I | 17 | 18 | 17 | 18 | 0 |
+
+E'nin yeni başlangıcı `max(6, 7, 5) = 7` olur. B'nin bolluğu 1 blok,
+D'nin bolluğu 2 bloktur; C'nin bolluğu sıfıra düşer. Artık C'deki ek gecikme,
+diğer koşullar aynı kalırsa net bitişi de geciktirir.
+
+### İlk planla karşılaştırma
+
+| Ölçü | H4-P0 ilk plan | H4-P1 güncel plan | Fark |
+|---|---|---|---|
+| Görev sayısı | 9 | 9 | C ve F genişledi; yeni görev ID'si eklenmedi. |
+| C süresi | 3 blok / 1,5 saat | 5 blok / 2,5 saat | +2 blok / +1 saat |
+| F süresi | 3 blok / 1,5 saat | 4 blok / 2 saat | +1 blok / +0,5 saat |
+| İş sürelerinin toplamı | 22 blok / 11 saat | 25 blok / 12,5 saat | +3 blok / +1,5 saat |
+| Net geçen süre | 16 blok / 8 saat | 18 blok / 9 saat | **+2 blok / +1 saat** |
+| Toplam emek | 17 kişi-saat | 19 kişi-saat | **+2 kişi-saat** |
+| Kritik yol | A–B–E–F–G–H–I | A–C–E–F–G–H–I | B yerine C kritik oldu. |
+
+**Neden 1,5 saat ek iş süresi, 1 saat net gecikme yaptı?** C'nin ilk planda
+1 blok bolluğu vardı. C'ye eklenen iki bloğun ilki bu esnekliği kullanır;
+ikincisi E'nin başlangıcını 1 blok geciktirir. F'ye eklenen 1 blok da ortak
+son zinciri uzatır. Böylece net fark `1 + 1 = 2 blok = 1 saat` olur.
+
+Emek hesabında C'nin ek 1 saati × 1 kişi = 1 kişi-saat; F'nin ek 0,5 saati ×
+2 kişi = 1 kişi-saattir. Toplam artış **2 kişi-saat** olur. İş süresi, net geçen
+süre ve emek aynı ölçü değildir.
+
+### Güncel kaynak kontrolü
+
+Aşağıdaki emeklerin tamamı kişi-saattir. U1–U4 gerçek isim ataması değil,
+başlangıç planındaki örnek üyelerdir.
+
+| Üye | İlk emek | Güncel emek | Fark |
+|---|---:|---:|---:|
+| U1 | 5,5 | 5,5 | +0 |
+| U2 | 6 | 7,5 | +1,5 |
+| U3 | 4 | 4,5 | +0,5 |
+| U4 | 1,5 | 1,5 | +0 |
+
+2–5 arasında B, C ve D farklı üyelerle paraleldir. 5–6 arasında B ile C;
+6–7 arasında yalnız C sürer. E, 7–9; F, 9–13; G, 13–15; H, 15–17;
+I, 17–18 aralığındadır. Her blok için atanan kişiler kontrol edildi; aynı
+kişiye aynı anda iki farklı iş düşmüyor. U4, yeni G ve I zamanlarında uygun
+varsayılıyor. Gerçek uygunluk değişirse takvim ve kaynak hesabı yeniden yapılır.
+
+### Korunan kalite koşulları ve risklerin güncellenmesi
+
+- AC-03 onaylı iptal ve ALT-01 vazgeçme ayrı denemeler olarak kalır; H3 kabul
+  koşulları korunur. Yedi yeni kanıt satırı bunların yerine geçmez.
+- FR-03 rol/sahiplik/durum sınırları, kayıt silmeden iptal, BR-01 saat sonucu ve
+  toplamların tutarlılığı korunur. Kalıcı yazma başarısızlığında bellek/kalıcılık
+  ayrımı ve diğer randevu işlemleriyle ortak veri kontrolü sürer.
+- G'nin bağımsız incelemesi, H'nin sınırlı düzeltme/tekrar payı ve I'nin son
+  doğrulaması azaltılmaz. Açık engelleyici bulgu varken teslim tamamlanmış sayılmaz.
+- Gerçek sonuçlar ve inceleyen kişi henüz yoktur. Bu basamakta uygulama testi
+  çalıştırılmadı; yeni kanıt kayıtları gelecekteki uygulamanın çıktılarıdır.
+
+İlk risk kaydı yukarıda korunur. H4-P1 için ek değerlendirme:
+
+| Risk / varsayım | Yeni etkisi | Karşılık | Örnek sorumlu |
+|---|---|---|---|
+| Karar tablosundaki satırlar aynı değişmiş veriyi paylaşır. | Bazı koşullar yanlış başlangıçla sınanır; F kayıtları güvenilmez olur. | C'de her satır için bağımsız sentetik veri hazırla; F'de başlangıç ve son durumu satırla eşleştir. | U2 |
+| C kritik hale geldi. | Tablo/veri hazırlığındaki ek gecikme E'yi ve bitişi etkiler. | C'nin kapsamını ve ortak sözleşmeye uyumunu erken izle; süre artarsa yeniden hesapla. | U2 |
+| Yeni kayıtlar A/G/H tahminlerine sığmaz veya inceleyen yeni zamanda uygun değildir. | 9 saatlik tahmin de aşılabilir. | Kartın varsayımlarını gerçek ekipte kontrol et; eksik işi başka satırın içinde gizlemeden yeniden tahmin et. | U1 + U4 |
+
+### Öğrencinin açıklaması
+
+> Yeni kart uygulamanın kimin iptal edebileceğini değiştirmedi; bu kararların
+> ayrı satırlarla hazırlanmasını ve kanıtlanmasını istedi. C ve F büyüdü.
+> C'nin eski bolluğu süre artışının bir bölümünü karşıladı, sonra C kritik oldu.
+> İlk planı silmedik; net sürenin 8'den 9 saate ve emeğin 17'den 19 kişi-saate
+> neden çıktığını gösterdik. İnceleme ve mevcut kabul koşullarını koruduk.
 
 ## Yöntem kaynağı
 
@@ -230,9 +387,11 @@ iddia edilmez. Görevler, süreler ve kişi atamaları kendi öğretim varsayım
 - [x] Dokuz görev, öncülleri, somut çıktıları ve örnek sorumluları yazıldı.
 - [x] 30 dakikalık blok, net geçen süre, kişi-saat ve takvim tarihi ayrıldı.
 - [x] İleri/geri hesap, üç yolun toplamı ve bolluklar programatik olarak doğrulandı.
-- [x] En erken programa göre aynı anda aynı kişiye iki farklı görev atanmadığı kontrol edildi.
+- [x] Her iki en erken programda aynı kişiye aynı anda iki farklı görev atanmadığı kontrol edildi.
 - [x] İlk plan ayrı kopyada korundu; boş 03 öğrenci şablonu saklandı.
-- [ ] Değişiklik kartı ve güncel plan — yedinci basamak.
+- [x] H4-DK-01 kartı, etki tablosu ve H4-P1 güncel planı hazırlandı.
+- [x] İki planın süre/emek farkı, yeni kritik yol ve kaynak uygunluğu hesaplandı.
+- [x] İlk planın sabit kopyası ve bu belgedeki H4-P0 bölümü değiştirilmeden korundu.
 - [ ] Gerçek kişi atamaları, çalışma takvimi ve ekip tahminleri.
 - [ ] Yazardan farklı kişinin hesap ve plan incelemesi — sekizinci basamak.
 

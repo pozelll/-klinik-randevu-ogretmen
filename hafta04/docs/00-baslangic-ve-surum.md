@@ -29,8 +29,10 @@ bilgilerini kullanır; kendi başlangıç ve katkı kayıtlarını yazar.
 - Beşinci basamakta mevcut düzen ile katmanlı/modüler düzen karşılaştırıldı. H4-MK-01 ile tek tarayıcıda katmanlı yapı ve sınırlı Repository uyarlaması seçildi; yarar, maliyet ve beşinci hafta uygulama sınırları 02 belgesine yazıldı.
 - Çizim seçilen tasarımı gösterecek şekilde güncellendi. index.html henüz modüllere ayrılmadı.
 - Altıncı basamakta H4-P0 ilk planı hazırlandı: dört kişilik örnek ekip, dokuz görev; kritik yol A–B–E–F–G–H–I, net süre 16 blok (8 saat), toplam emek 17 kişi-saat. Süreler öğretim varsayımıdır; gerçek takvim ve kişi ataması değildir.
-- İlk plan hafta04/planlar/01-ilk-is-plani.md içinde ayrıca korundu. Değişiklik kartı ve güncel plan yedinci basamakta hazırlanacak; 03 belgesindeki ilgili alanlar boş bırakıldı.
-- İlk altı basamakta uygulamanın T01–T06 kontrolleri yeniden çalıştırılmadı. Kaynak kod, belge ve çizim tutarlılığı ile ilk planın ileri/geri hesabı ve kişi çakışmaları kontrol edildi; bu işlem bağımsız ekip incelemesi veya davranış testi değildir. Boş 01, 02 ve 03 öğrenci şablonları korundu.
+- İlk plan hafta04/planlar/01-ilk-is-plani.md içinde ayrıca korundu. Yedinci basamakta H4-DK-01 kartıyla karar tablosu ve satır bazında kanıt hazırlığı eklendi; C 3 → 5, F 3 → 4 blok oldu.
+- H4-P1 güncel hesabı 03 belgesine yazıldı: net süre 18 blok (9 saat), emek 19 kişi-saat; yeni kritik yol A–C–E–F–G–H–I. İlk H4-P0 bölümü ve ayrı kopyası değişmedi. Bağımlılıklar ve örnek kişi atamaları korundu; kişi çakışması yok.
+- Yeni kart öğretim senaryosudur; gerçek paydaş talebi, uygulama değişikliği veya yapılmış test değildir. Sekizinci basamakta gerçek bağımsız inceleme ve teslim koşulları ele alınacak.
+- İlk yedi basamakta uygulamanın T01–T06 kontrolleri yeniden çalıştırılmadı. Kaynak kod, belge ve çizim tutarlılığı ile iki planın ileri/geri hesapları, farkları ve kişi çakışmaları kontrol edildi; bu işlem bağımsız ekip incelemesi veya davranış testi değildir. Boş 01, 02 ve 03 öğrenci şablonları korundu.
 
 ## 3. Önceki PR'larla bağlantı
 

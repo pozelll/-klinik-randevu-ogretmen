@@ -27,8 +27,10 @@ bilgilerini kullanır; kendi başlangıç ve katkı kayıtlarını yazar.
 - Üçüncü basamakta 01 belgesi öğretmen örneği olarak dolduruldu. Seçim: kısa geri bildirim döngüleriyle küçük artımlar halinde çevik çalışma. Boş öğrenci kopyası hafta04/sablonlar altında korunur.
 - Dördüncü basamakta randevu iptalinin arayüz, iş kuralları ve veri erişimi sorumlulukları ayrıldı. 02 belgesinin ilgili bölümleri, düzenlenebilir 01-bilesen.drawio ve aynı çizim verisinden üretilmiş PNG hazır. Boş 02 öğrenci şablonu hafta04/sablonlar altında korunur.
 - Beşinci basamakta mevcut düzen ile katmanlı/modüler düzen karşılaştırıldı. H4-MK-01 ile tek tarayıcıda katmanlı yapı ve sınırlı Repository uyarlaması seçildi; yarar, maliyet ve beşinci hafta uygulama sınırları 02 belgesine yazıldı.
-- Çizim seçilen tasarımı gösterecek şekilde güncellendi. index.html henüz modüllere ayrılmadı. Kritik yol ve iş planı altıncı; değişiklik sonrası plan yedinci basamakta hazırlanacak.
-- İlk beş basamakta uygulamanın T01–T06 kontrolleri yeniden çalıştırılmadı. Kaynak kod, belge ve çizim tutarlılığı kontrol edildi; bu işlem bağımsız ekip incelemesi veya davranış testi değildir. Boş 01 ve 02 öğrenci şablonları korundu.
+- Çizim seçilen tasarımı gösterecek şekilde güncellendi. index.html henüz modüllere ayrılmadı.
+- Altıncı basamakta H4-P0 ilk planı hazırlandı: dört kişilik örnek ekip, dokuz görev; kritik yol A–B–E–F–G–H–I, net süre 16 blok (8 saat), toplam emek 17 kişi-saat. Süreler öğretim varsayımıdır; gerçek takvim ve kişi ataması değildir.
+- İlk plan hafta04/planlar/01-ilk-is-plani.md içinde ayrıca korundu. Değişiklik kartı ve güncel plan yedinci basamakta hazırlanacak; 03 belgesindeki ilgili alanlar boş bırakıldı.
+- İlk altı basamakta uygulamanın T01–T06 kontrolleri yeniden çalıştırılmadı. Kaynak kod, belge ve çizim tutarlılığı ile ilk planın ileri/geri hesabı ve kişi çakışmaları kontrol edildi; bu işlem bağımsız ekip incelemesi veya davranış testi değildir. Boş 01, 02 ve 03 öğrenci şablonları korundu.
 
 ## 3. Önceki PR'larla bağlantı
 

@@ -1,6 +1,6 @@
 # 4. hafta — Mimari, tasarım kalıpları ve iş planlama
 
-Durum: İlk beş basamağın öğretmen hazırlığı hazır. Mimari seçim: tek tarayıcıda katmanlı/modüler yapı; veri erişiminde sınırlı Randevu Deposu (Repository) uyarlaması. Altıncı–sekizinci basamaklar, kodda uygulama ve bağımsız inceleme bekliyor.
+Durum: İlk altı basamağın öğretmen hazırlığı hazır. H4-P0 ilk planı: dört kişilik örnek ekip, dokuz görev, 16 blok (8 saat) net süre ve 17 kişi-saat emek. Yedinci–sekizinci basamaklar, kodda uygulama ve bağımsız inceleme bekliyor. Süreler ölçülmüş sonuç değil, ders varsayımıdır.
 Hazırlık tarihi: 1 Kasım 2026
 Öğretmen çalışma dalı: `docs/h4-mimari-plan`
 
@@ -29,9 +29,9 @@ proje kökünde korunur. Bu haftanın belgeleri `hafta04/docs`, çizimleri
 
 ## Şimdi yapılacak işlem
 
-1. `docs/02-mimari-karar.md` içindeki iki seçenek karşılaştırmasını, H4-MK-01 kararını ve Repository değerlendirmesini okuyun. Güncel `diagrams/01-bilesen.png` / `.drawio` seçilen yapıyı gösterir; kod henüz bu yapıya dönüştürülmedi.
-2. Öğrenci grupları `sablonlar/01-yasam-dongusu-secimi.md` ve `sablonlar/02-mimari-karar.md` dosyalarını kendi `hafta04/docs` klasörlerine alıp kendi gerekçeleriyle doldurur; kendi diyagramlarını çizer. Öğretmenin sonuçları grup çalışması sayılmaz.
-3. Sıradaki altıncı basamakta `docs/03-is-plani-ve-riskler.md` içinde görevleri, tahmini süreleri, bağımlılıkları ve kritik yolu hazırlayacağız. Bu belge henüz boş çalışma şablonudur.
+1. `docs/03-is-plani-ve-riskler.md` içindeki ilk planı, bağımlılık ağını, kritik yol ve emek hesabını okuyun. `planlar/01-ilk-is-plani.md` değişiklik öncesindeki sabit karşılaştırma kopyasıdır.
+2. Öğrenci grupları `sablonlar` altındaki 01, 02 ve 03 belgelerini kendi `hafta04/docs` klasörlerine alır. Kendi gerekçelerini, görev sahiplerini ve sürelerini yazar; kendi diyagram ve kritik yol hesaplarını oluşturur.
+3. Sıradaki yedinci basamakta bir değişiklik kartı verilecek. H4-P0 korunarak 03 belgesinin güncel plan bölümünde etkilenen işler, süreler ve yeni kritik yol hesaplanacak. Henüz değişiklik kartı verilmedi.
 
 `[Doldurulacak]` yazıları öğrenci/öğretmen çalışması için ayrılmış alanlardır.
 Şablonun var olması, içindeki görevin tamamlandığı anlamına gelmez.
@@ -40,8 +40,8 @@ proje kökünde korunur. Bu haftanın belgeleri `hafta04/docs`, çizimleri
 
 Öğretmen için hazırlanan tam çalışma kopyası üçüncü haftanın mevcut dosyalarını içerir.
 Öğrenciler kendi gruplarının dolu projesine bu haftanın yönerge ve boş şablonlarını ekler;
-mevcut dolu dosyalarının üzerine yazmaz. Öğretmenin doldurduğu 01 ve 02 belgelerinin yerine
-`sablonlar` altındaki boş 01 ve 02 şablonlarını kendi `hafta04/docs` klasörlerinde kullanırlar.
+mevcut dolu dosyalarının üzerine yazmaz. Öğretmenin doldurduğu 01, 02 ve 03 belgelerinin yerine
+`sablonlar` altındaki boş 01, 02 ve 03 şablonlarını kendi `hafta04/docs` klasörlerinde kullanırlar.
 Öğretmenin sonuçları ve belgeleri öğrencinin kendi çalışması yerine geçmez.
 
 Klasörü yeni bir konuma kopyalamak tarayıcıdaki randevu kayıtlarını taşımaz.

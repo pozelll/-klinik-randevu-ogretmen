@@ -25,8 +25,9 @@ bilgilerini kullanır; kendi başlangıç ve katkı kayıtlarını yazar.
 - index.html içinde görünür iptal açıklaması ve genişletilmiş onay metni mevcut.
 - Dördüncü hafta çalışmaları hafta04 klasöründe yürütülür; önceki haftaların dosyaları korunur.
 - Üçüncü basamakta 01 belgesi öğretmen örneği olarak dolduruldu. Seçim: kısa geri bildirim döngüleriyle küçük artımlar halinde çevik çalışma. Boş öğrenci kopyası hafta04/sablonlar altında korunur.
-- Mimari karar, kritik yol hesabı ve güncel iş planı henüz hazırlanmadı.
-- Hazırlık ve yaklaşım seçimi adımlarında uygulamanın T01–T06 kontrolleri yeniden çalıştırılmadı.
+- Dördüncü basamakta randevu iptalinin arayüz, iş kuralları ve veri erişimi sorumlulukları ayrıldı. 02 belgesinin ilgili bölümleri, düzenlenebilir 01-bilesen.drawio ve aynı çizim verisinden üretilmiş PNG hazır. Boş 02 öğrenci şablonu hafta04/sablonlar altında korunur.
+- Çizim önerilen sorumluluk ayrımını gösterir; index.html henüz modüllere ayrılmadı. İki mimari seçeneğin karşılaştırılması ve tasarım kalıbı kararı beşinci basamakta; kritik yol ve güncel iş planı sonraki basamaklarda hazırlanacak.
+- İlk dört basamakta uygulamanın T01–T06 kontrolleri yeniden çalıştırılmadı. Dördüncü basamakta kaynak kod, belge ve çizim tutarlılığı kontrol edildi; bu işlem bağımsız ekip incelemesi veya davranış testi değildir.
 
 ## 3. Önceki PR'larla bağlantı
 

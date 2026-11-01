@@ -23,9 +23,10 @@ bilgilerini kullanır; kendi başlangıç ve katkı kayıtlarını yazar.
 - İlk iki haftanın dokuz belgesi, çizimleri ve üçüncü hafta dosyaları başlangıç sürümünde mevcut.
 - Üçüncü haftanın 01–13 belgelerinin tamamı mevcut; 13 numaralı dosya boş bireysel yanıt formu.
 - index.html içinde görünür iptal açıklaması ve genişletilmiş onay metni mevcut.
-- Bu hazırlık değişikliği yalnız hafta04 klasörüne yeni dosyalar ekler.
+- Dördüncü hafta çalışmaları hafta04 klasöründe yürütülür; önceki haftaların dosyaları korunur.
+- Üçüncü basamakta 01 belgesi öğretmen örneği olarak dolduruldu. Seçim: kısa geri bildirim döngüleriyle küçük artımlar halinde çevik çalışma. Boş öğrenci kopyası hafta04/sablonlar altında korunur.
 - Mimari karar, kritik yol hesabı ve güncel iş planı henüz hazırlanmadı.
-- Bu adımda uygulamanın T01–T06 kontrolleri yeniden çalıştırılmadı.
+- Hazırlık ve yaklaşım seçimi adımlarında uygulamanın T01–T06 kontrolleri yeniden çalıştırılmadı.
 
 ## 3. Önceki PR'larla bağlantı
 

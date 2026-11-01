@@ -1,6 +1,6 @@
 # 4. hafta — Mimari, tasarım kalıpları ve iş planlama
 
-Durum: Çalışma alanı ve boş şablonlar hazır; ders görevleri henüz doldurulmadı.
+Durum: Çalışma alanı hazır; üçüncü basamağın yaklaşım seçimi öğretmen örneği dolduruldu. Dördüncü basamaktan itibaren görevler ve bağımsız inceleme bekliyor.
 Hazırlık tarihi: 1 Kasım 2026
 Öğretmen çalışma dalı: `docs/h4-mimari-plan`
 
@@ -29,9 +29,9 @@ proje kökünde korunur. Bu haftanın belgeleri `hafta04/docs`, çizimleri
 
 ## Şimdi yapılacak işlem
 
-1. `docs/00-baslangic-ve-surum.md` dosyasını okuyun; hangi sürümden başladığınızı görün.
-2. Bir sonraki ders adımı için `docs/01-yasam-dongusu-secimi.md` dosyasını açın.
-3. Öğretmenle birlikte üçüncü basamakta karşılaştırma tablosunu doldurun.
+1. `docs/01-yasam-dongusu-secimi.md` içindeki doldurulmuş öğretmen örneğini okuyun. Seçimimiz, kısa geri bildirim döngüleriyle küçük artımlar halinde ilerleyen çevik çalışma düzenidir.
+2. Öğrenci grupları `sablonlar/01-yasam-dongusu-secimi.md` dosyasını kendi `hafta04/docs` klasörlerine alıp kendi gerekçeleriyle doldurur. Öğretmenin sonuçları grup çalışması sayılmaz.
+3. Sıradaki dördüncü basamakta randevu iptalinin bileşen diyagramını hazırlayacağız. `docs/02-mimari-karar.md` içindeki sorumluluk tablosu bu çizime eşlik edecek.
 
 `[Doldurulacak]` yazıları öğrenci/öğretmen çalışması için ayrılmış alanlardır.
 Şablonun var olması, içindeki görevin tamamlandığı anlamına gelmez.
@@ -39,8 +39,10 @@ proje kökünde korunur. Bu haftanın belgeleri `hafta04/docs`, çizimleri
 ## Çalışma kopyasını kullanma
 
 Öğretmen için hazırlanan tam çalışma kopyası üçüncü haftanın mevcut dosyalarını içerir.
-Öğrenciler kendi gruplarının dolu projesine yalnız `hafta04` klasörünü ekler;
-öğretmenin sonuçları ve belgeleri öğrencinin kendi çalışması yerine geçmez.
+Öğrenciler kendi gruplarının dolu projesine bu haftanın yönerge ve boş şablonlarını ekler;
+mevcut dolu dosyalarının üzerine yazmaz. Öğretmenin doldurulmuş 01 belgesinin yerine
+`sablonlar` altındaki boş 01 şablonunu kendi `hafta04/docs` klasörlerinde kullanırlar.
+Öğretmenin sonuçları ve belgeleri öğrencinin kendi çalışması yerine geçmez.
 
 Klasörü yeni bir konuma kopyalamak tarayıcıdaki randevu kayıtlarını taşımaz.
 Eski çalışma klasörünü ve tarayıcı verilerini koruyun; karşılaştırmada gerçek

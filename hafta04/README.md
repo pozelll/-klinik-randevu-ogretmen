@@ -1,6 +1,6 @@
 # 4. hafta — Mimari, tasarım kalıpları ve iş planlama
 
-Durum: Üçüncü basamağın yaklaşım seçimi ve dördüncü basamağın sorumluluk diyagramı öğretmen örneği olarak hazır. Beşinci–sekizinci basamaklar ve bağımsız inceleme bekliyor.
+Durum: İlk beş basamağın öğretmen hazırlığı hazır. Mimari seçim: tek tarayıcıda katmanlı/modüler yapı; veri erişiminde sınırlı Randevu Deposu (Repository) uyarlaması. Altıncı–sekizinci basamaklar, kodda uygulama ve bağımsız inceleme bekliyor.
 Hazırlık tarihi: 1 Kasım 2026
 Öğretmen çalışma dalı: `docs/h4-mimari-plan`
 
@@ -29,9 +29,9 @@ proje kökünde korunur. Bu haftanın belgeleri `hafta04/docs`, çizimleri
 
 ## Şimdi yapılacak işlem
 
-1. `diagrams/01-bilesen.png` çizimini ve `docs/02-mimari-karar.md` içindeki senaryo, sorumluluk ve kod eşleştirme tablolarını birlikte okuyun. Düzenlenebilir çizim `diagrams/01-bilesen.drawio` dosyasıdır.
+1. `docs/02-mimari-karar.md` içindeki iki seçenek karşılaştırmasını, H4-MK-01 kararını ve Repository değerlendirmesini okuyun. Güncel `diagrams/01-bilesen.png` / `.drawio` seçilen yapıyı gösterir; kod henüz bu yapıya dönüştürülmedi.
 2. Öğrenci grupları `sablonlar/01-yasam-dongusu-secimi.md` ve `sablonlar/02-mimari-karar.md` dosyalarını kendi `hafta04/docs` klasörlerine alıp kendi gerekçeleriyle doldurur; kendi diyagramlarını çizer. Öğretmenin sonuçları grup çalışması sayılmaz.
-3. Sıradaki beşinci basamakta iki mimari seçeneği karşılaştırıp bir tasarım kalıbını kullanma veya kullanmama kararını gerekçelendireceğiz. 02 belgesinin ilgili bölümleri bu nedenle henüz boş.
+3. Sıradaki altıncı basamakta `docs/03-is-plani-ve-riskler.md` içinde görevleri, tahmini süreleri, bağımlılıkları ve kritik yolu hazırlayacağız. Bu belge henüz boş çalışma şablonudur.
 
 `[Doldurulacak]` yazıları öğrenci/öğretmen çalışması için ayrılmış alanlardır.
 Şablonun var olması, içindeki görevin tamamlandığı anlamına gelmez.

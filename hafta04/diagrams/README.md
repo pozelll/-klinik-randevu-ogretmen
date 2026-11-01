@@ -1,14 +1,15 @@
 # 4. haftanın diyagramları
 
-Dördüncü basamağın öğretmen örneği hazır:
+Dördüncü basamakta oluşturulan öğretmen çizimi, beşinci basamağın mimari kararıyla güncellendi:
 
 - [01-bilesen.drawio](01-bilesen.drawio): Düzenlenebilir kutu, metin ve bağlantılardan oluşan çizim.
 - [01-bilesen.png](01-bilesen.png): Aynı kutu, metin ve bağlantı verisinden üretilmiş görüntü.
 
-Çizim **randevu iptali için önerilen sorumluluk ayrımını** gösterir. Üstteki mevcut
+Çizim **randevu iptali için seçilen katmanlı/modüler tasarımı** gösterir. Üstteki mevcut
 durum notunda belirtildiği gibi uygulama hâlâ tek `index.html` içindedir. Üç
 sorumluluk ayrı sunucu veya ayrı uygulama anlamına gelmez. Bu basamakta kod
-modüllere ayrılmadı; mimari seçenek ve tasarım kalıbı kararı beşinci basamakta.
+modüllere ayrılmadı. H4-MK-01 kararıyla bu yapı seçildi; üçüncü kutu sınırlı
+Randevu Deposu (Repository) uyarlamasını temsil eder. Uygulama beşinci haftada.
 
 Düz çizgili ok çağrıyı, kesik çizgili ok sonucu/veriyi gösterir. Oklar ağ isteği
 anlamına gelmez. Aynı tarayıcı içindeki önerilen iletişimi anlatır; sağdaki notlar

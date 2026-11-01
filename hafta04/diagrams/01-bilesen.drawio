@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <mxfile host="app.diagrams.net">
-  <diagram id="h4-iptal-sorumluluk-v1" name="Önerilen sorumluluk ayrımı">
+  <diagram id="h4-iptal-sorumluluk-v1" name="Seçilen katmanlı tasarım">
     <mxGraphModel dx="1200" dy="1120" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1120" background="#FFFFFF" math="0" shadow="0">
       <root>
         <mxCell id="0" />
@@ -8,7 +8,7 @@
         <mxCell id="title" value="Randevu iptali: sorumlulukları ayırıyoruz" style="fontFamily=DejaVu Sans;fontSize=34;fontColor=#173343;html=0;whiteSpace=wrap;align=left;verticalAlign=middle;spacing=0;strokeColor=none;fillColor=none;fontStyle=1;" vertex="1" parent="1">
           <mxGeometry as="geometry" x="50" y="36" width="1100" height="30" />
         </mxCell>
-        <mxCell id="subtitle" value="4. hafta · 4/8. basamak · Önerilen tasarım · Öğretmen örneği" style="fontFamily=DejaVu Sans;fontSize=21;fontColor=#146C70;html=0;whiteSpace=wrap;align=left;verticalAlign=middle;spacing=0;strokeColor=none;fillColor=none;fontStyle=0;" vertex="1" parent="1">
+        <mxCell id="subtitle" value="4. hafta · 5/8. basamak · Seçilen tasarım · Öğretmen örneği" style="fontFamily=DejaVu Sans;fontSize=21;fontColor=#146C70;html=0;whiteSpace=wrap;align=left;verticalAlign=middle;spacing=0;strokeColor=none;fillColor=none;fontStyle=0;" vertex="1" parent="1">
           <mxGeometry as="geometry" x="50" y="82" width="1100" height="30" />
         </mxCell>
         <mxCell id="current" value="" style="fontFamily=DejaVu Sans;fontSize=22;fontColor=#173343;html=0;whiteSpace=wrap;align=left;verticalAlign=middle;spacing=0;strokeColor=#CFD8DF;fillColor=#F1F4F7;strokeWidth=1;rounded=1;arcSize=12;" vertex="1" parent="1">
@@ -17,7 +17,7 @@
         <mxCell id="current-title" value="MEVCUT KOD: Tek index.html içinde birlikte çalışıyor." style="fontFamily=DejaVu Sans;fontSize=22;fontColor=#173343;html=0;whiteSpace=wrap;align=left;verticalAlign=middle;spacing=0;strokeColor=none;fillColor=none;fontStyle=1;" vertex="1" parent="current">
           <mxGeometry as="geometry" x="20" y="10" width="1060" height="30" />
         </mxCell>
-        <mxCell id="current-line" value="Aşağıdaki ayrım henüz uygulanmadı. Mimari seçenek ve kalıp kararı 5. basamakta." style="fontFamily=DejaVu Sans;fontSize=21;fontColor=#4D6270;html=0;whiteSpace=wrap;align=left;verticalAlign=middle;spacing=0;strokeColor=none;fillColor=none;fontStyle=0;" vertex="1" parent="current">
+        <mxCell id="current-line" value="Seçim: tek tarayıcıda katmanlı yapı. Kodun ayrılması 5. haftada yapılacak." style="fontFamily=DejaVu Sans;fontSize=21;fontColor=#4D6270;html=0;whiteSpace=wrap;align=left;verticalAlign=middle;spacing=0;strokeColor=none;fillColor=none;fontStyle=0;" vertex="1" parent="current">
           <mxGeometry as="geometry" x="20" y="46" width="1060" height="30" />
         </mxCell>
         <mxCell id="legend" value="Düz ok: çağrı     •     Kesik ok: sonuç / veri     •     Sağdaki kutular: kapsam notları" style="fontFamily=DejaVu Sans;fontSize=20;fontColor=#4D6270;html=0;whiteSpace=wrap;align=left;verticalAlign=middle;spacing=0;strokeColor=none;fillColor=none;fontStyle=0;" vertex="1" parent="1">
@@ -80,13 +80,13 @@
         <mxCell id="data" value="" style="fontFamily=DejaVu Sans;fontSize=22;fontColor=#173343;html=0;whiteSpace=wrap;align=left;verticalAlign=middle;spacing=0;strokeColor=#B8D1D2;fillColor=#F0F7F7;strokeWidth=1.5;rounded=1;arcSize=12;container=1;collapsible=0;" vertex="1" parent="1">
           <mxGeometry as="geometry" x="50" y="870" width="700" height="140" />
         </mxCell>
-        <mxCell id="data-title" value="03 · Veri erişimi" style="fontFamily=DejaVu Sans;fontSize=26;fontColor=#173343;html=0;whiteSpace=wrap;align=left;verticalAlign=middle;spacing=0;strokeColor=none;fillColor=none;fontStyle=1;" vertex="1" parent="data">
+        <mxCell id="data-title" value="03 · Veri erişimi / Randevu Deposu" style="fontFamily=DejaVu Sans;fontSize=26;fontColor=#173343;html=0;whiteSpace=wrap;align=left;verticalAlign=middle;spacing=0;strokeColor=none;fillColor=none;fontStyle=1;" vertex="1" parent="data">
           <mxGeometry as="geometry" x="22" y="16" width="656" height="30" />
         </mxCell>
         <mxCell id="data-line0" value="Veriyi okur; onaylanmış değişikliği saklar." style="fontFamily=DejaVu Sans;fontSize=22;fontColor=#173343;html=0;whiteSpace=wrap;align=left;verticalAlign=middle;spacing=0;strokeColor=none;fillColor=none;fontStyle=0;" vertex="1" parent="data">
           <mxGeometry as="geometry" x="22" y="56" width="656" height="30" />
         </mxCell>
-        <mxCell id="data-line1" value="Oturum verisi + mümkünse localStorage." style="fontFamily=DejaVu Sans;fontSize=22;fontColor=#173343;html=0;whiteSpace=wrap;align=left;verticalAlign=middle;spacing=0;strokeColor=none;fillColor=none;fontStyle=0;" vertex="1" parent="data">
+        <mxCell id="data-line1" value="Repository: oturum verisi + mümkünse localStorage." style="fontFamily=DejaVu Sans;fontSize=22;fontColor=#173343;html=0;whiteSpace=wrap;align=left;verticalAlign=middle;spacing=0;strokeColor=none;fillColor=none;fontStyle=0;" vertex="1" parent="data">
           <mxGeometry as="geometry" x="22" y="83" width="656" height="30" />
         </mxCell>
         <mxCell id="data-note" value="" style="fontFamily=DejaVu Sans;fontSize=22;fontColor=#173343;html=0;whiteSpace=wrap;align=left;verticalAlign=middle;spacing=0;strokeColor=#E3CBA4;fillColor=#FFF5E6;strokeWidth=1.5;rounded=1;arcSize=12;container=1;collapsible=0;" vertex="1" parent="1">

@@ -26,8 +26,9 @@ bilgilerini kullanır; kendi başlangıç ve katkı kayıtlarını yazar.
 - Dördüncü hafta çalışmaları hafta04 klasöründe yürütülür; önceki haftaların dosyaları korunur.
 - Üçüncü basamakta 01 belgesi öğretmen örneği olarak dolduruldu. Seçim: kısa geri bildirim döngüleriyle küçük artımlar halinde çevik çalışma. Boş öğrenci kopyası hafta04/sablonlar altında korunur.
 - Dördüncü basamakta randevu iptalinin arayüz, iş kuralları ve veri erişimi sorumlulukları ayrıldı. 02 belgesinin ilgili bölümleri, düzenlenebilir 01-bilesen.drawio ve aynı çizim verisinden üretilmiş PNG hazır. Boş 02 öğrenci şablonu hafta04/sablonlar altında korunur.
-- Çizim önerilen sorumluluk ayrımını gösterir; index.html henüz modüllere ayrılmadı. İki mimari seçeneğin karşılaştırılması ve tasarım kalıbı kararı beşinci basamakta; kritik yol ve güncel iş planı sonraki basamaklarda hazırlanacak.
-- İlk dört basamakta uygulamanın T01–T06 kontrolleri yeniden çalıştırılmadı. Dördüncü basamakta kaynak kod, belge ve çizim tutarlılığı kontrol edildi; bu işlem bağımsız ekip incelemesi veya davranış testi değildir.
+- Beşinci basamakta mevcut düzen ile katmanlı/modüler düzen karşılaştırıldı. H4-MK-01 ile tek tarayıcıda katmanlı yapı ve sınırlı Repository uyarlaması seçildi; yarar, maliyet ve beşinci hafta uygulama sınırları 02 belgesine yazıldı.
+- Çizim seçilen tasarımı gösterecek şekilde güncellendi. index.html henüz modüllere ayrılmadı. Kritik yol ve iş planı altıncı; değişiklik sonrası plan yedinci basamakta hazırlanacak.
+- İlk beş basamakta uygulamanın T01–T06 kontrolleri yeniden çalıştırılmadı. Kaynak kod, belge ve çizim tutarlılığı kontrol edildi; bu işlem bağımsız ekip incelemesi veya davranış testi değildir. Boş 01 ve 02 öğrenci şablonları korundu.
 
 ## 3. Önceki PR'larla bağlantı
 

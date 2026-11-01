@@ -1,6 +1,6 @@
 # 4. hafta — Mimari, tasarım kalıpları ve iş planlama
 
-Durum: İlk yedi basamağın öğretmen hazırlığı hazır. H4-P0 korundu; H4-DK-01 kartıyla H4-P1 hazırlandı. Dört kişilik örnek ekip ve dokuz görev için net süre 8 → 9 saat, emek 17 → 19 kişi-saat oldu. Sekizinci basamağın bağımsız incelemesi/teslimi ve beşinci haftanın kod uygulaması bekliyor. Süreler ders varsayımıdır.
+Durum: İlk yedi basamağın öğretmen hazırlığı ve sekizinci basamağın inceleme paketi hazır. [H4 taslak PR'ı](https://github.com/pozelll/-klinik-randevu-ogretmen/pull/12) bağımsız inceleme bekliyor; main'e birleştirme ve nihai teslim tamamlanmadı. H4-P0 korundu; H4-DK-01 kartıyla H4-P1 hazırlandı. Dört kişilik örnek ekip ve dokuz görev için net süre 8 → 9 saat, emek 17 → 19 kişi-saat oldu. Süreler ders varsayımıdır. Kodun modüllere ayrılması beşinci haftada yapılacak.
 Hazırlık tarihi: 1 Kasım 2026
 Öğretmen çalışma dalı: `docs/h4-mimari-plan`
 
@@ -25,13 +25,13 @@ proje kökünde korunur. Bu haftanın belgeleri `hafta04/docs`, çizimleri
 | 5 | İki mimari seçeneği ve bir tasarım kalıbını değerlendir. | docs/02-mimari-karar.md |
 | 6 | Görevleri, süreleri, bağımlılıkları ve kritik yolu planla. | docs/03-is-plani-ve-riskler.md |
 | 7 | Değişiklik kartıyla planı güncelle; ilk planı koru. | 03 belgesinin güncelleme bölümü |
-| 8 | Başka kişinin incelemesini al; koşullar sağlanınca teslim et. | 00 belgesindeki inceleme/teslim kaydı |
+| 8 | Başka kişinin incelemesini al; koşullar sağlanınca teslim et. | [04-inceleme-ve-teslim.md](docs/04-inceleme-ve-teslim.md); gerçek inceleme bekliyor |
 
 ## Şimdi yapılacak işlem
 
 1. `kartlar/01-karar-tablosu-ve-kanit.md` kartını ve `docs/03-is-plani-ve-riskler.md` içindeki H4-P0 / H4-P1 karşılaştırmasını okuyun. `planlar/01-ilk-is-plani.md` ilk planı değişmeden korur.
 2. Öğrenci grupları `sablonlar` altındaki 01, 02 ve 03 belgelerini kendi `hafta04/docs` klasörlerine alır. Kendi gerekçelerini, görev sahiplerini ve sürelerini yazar; kendi diyagram ve kritik yol hesaplarını oluşturur.
-3. Sıradaki sekizinci basamakta yazardan farklı kişinin incelemesi, H4 PR hazırlığı ve teslim koşulları ele alınacak. Gerçek inceleme yapılmadan tamamlanmış teslim kaydı yazılmayacak.
+3. [İnceleme ve teslim kaydındaki](docs/04-inceleme-ve-teslim.md) kontrol sırasını izleyin. Yazar veya ortak yazar olmayan kişi kendi değerlendirmesini, incelediği commit'i ve varsa bulgularını kaydeder. Taslak PR'ın açılması, inceleme veya nihai teslimin tamamlandığı anlamına gelmez.
 
 `[Doldurulacak]` yazıları öğrenci/öğretmen çalışması için ayrılmış alanlardır.
 Şablonun var olması, içindeki görevin tamamlandığı anlamına gelmez.

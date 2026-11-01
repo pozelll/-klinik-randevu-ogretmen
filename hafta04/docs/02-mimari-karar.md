@@ -267,7 +267,8 @@ bu ders için oluşturduğumuz öğretmen yorumudur. Erişim: 1 Kasım 2026.
 - [ ] Seçilen tasarımın kodda uygulanması ve davranış kontrolleri — henüz yapılmadı.
 
 Hazırlık: Öğretmen için kaynak kod ve önceki belgelerden oluşturulmuş örnek.
-Bağımsız inceleyen / geri bildirim: Henüz yok; sekizinci basamakta kaydedilecek.
+Bağımsız inceleyen / geri bildirim: Henüz yok;
+[04-inceleme-ve-teslim.md](04-inceleme-ve-teslim.md) üzerinden izlenecek.
 Uygulamanın T01–T06 davranış testleri bu basamakta yeniden çalıştırılmadı.
 
 Öğrenciler [boş 02 şablonunu](../sablonlar/02-mimari-karar.md) kendi gruplarında

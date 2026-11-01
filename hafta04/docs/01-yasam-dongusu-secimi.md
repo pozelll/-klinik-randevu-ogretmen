@@ -158,12 +158,13 @@ bireysel yanıtı yerine kullanılmaz.
 
 Hazırlama desteği: ChatGPT; mevcut öğretmen proje kayıtları üzerinden oluşturulan çalışma metni.
 
-Bağımsız inceleyen / görüşme katılımcısı: Henüz kaydedilmedi.
+Bağımsız inceleyen / görüşme katılımcısı: Henüz kaydedilmedi. Gerçek değerlendirme
+[04-inceleme-ve-teslim.md](04-inceleme-ve-teslim.md) üzerinden izlenecek.
 
 Bu adımda kod değişmedi ve uygulama testleri yeniden çalıştırılmadı.
 
-**Sıradaki dördüncü basamak:** Randevu iptalini arayüz, iş kuralları ve veri erişimi
-sorumluluklarına ayırıp bileşen diyagramını hazırlamak.
+Bu basamağı izleyen sorumluluk ayrımı ve bileşen diyagramı
+[02-mimari-karar.md](02-mimari-karar.md) dosyasında yer alır.
 
 ## Kavram kaynakları
 

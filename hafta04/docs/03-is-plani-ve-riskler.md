@@ -396,7 +396,9 @@ iddia edilmez. Görevler, süreler ve kişi atamaları kendi öğretim varsayım
 - [ ] Yazardan farklı kişinin hesap ve plan incelemesi — sekizinci basamak.
 
 Hazırlık: Öğretmen için varsayımları açık bir planlama örneği.
-Bağımsız inceleyen / geri bildirim: Henüz yok. Hesap kontrolü, bağımsız üye
+Bağımsız inceleyen / geri bildirim: Henüz yok; gerçek kayıt
+[04-inceleme-ve-teslim.md](04-inceleme-ve-teslim.md) dosyasında tutulacak.
+Hesap kontrolü, bağımsız üye
 incelemesi veya uygulama testi değildir. Planlanan A–I işleri yapılmadı;
 mevcut uygulamanın T01–T06 kontrolleri bu basamakta yeniden çalıştırılmadı.
 

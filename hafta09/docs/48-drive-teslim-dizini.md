@@ -29,6 +29,6 @@
 | Klinik_Randevu_0.3.0-rc.1.zip | 1sNXK-wsxlkQ498rTN3BBRkROQIu73ZkT | 47825 | 1GbDw2tUaQnDvCZJ8ehM7ganIaRaDl9_Z |
 | YAZ325_Hafta_09_Surec_Infografik_Aktif_Linkli.pdf | 17UFlkBmv8TIFmIj4fYHlenrEuz4fxOfk | 57056 | 16ho8HcE_UT98VJSqH8ONn5rnChIRHuQg |
 | YAZ325_Hafta_09_Ders_Anlatim_Rehberi.pdf | 1LbF1bKP3AJAfs5Co7uNA3AR8OWPh6KN- | 124011 | 16ho8HcE_UT98VJSqH8ONn5rnChIRHuQg |
-| YAZ325_Hafta09_Gitflow_Calisma_Paketi.zip | 1e8zI-eHDUJiE64AWRn92zQ0OLjc8U2Ju | 231780 | 16ho8HcE_UT98VJSqH8ONn5rnChIRHuQg |
+| YAZ325_Hafta09_Gitflow_Calisma_Paketi.zip | 1e8zI-eHDUJiE64AWRn92zQ0OLjc8U2Ju | 231778 | 16ho8HcE_UT98VJSqH8ONn5rnChIRHuQg |
 
-H9 çalışma paketi SHA-256: `c36dfe89e525137a5c432a0fa65c3d8f0e31653270f0e4ca70268b8db5a38d00`. Kaynak haftalarda bağımsız inceleme/merge açıktır. Drive yüklemesi bu kabul koşulunu kapatmaz.
+H9 çalışma paketi SHA-256: `7df15d416f686861bd5ef483231f140453dc73efc611feff9d0eebfe42fd8659`. Kaynak haftalarda bağımsız inceleme/merge açıktır. Drive yüklemesi bu kabul koşulunu kapatmaz.

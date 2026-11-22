@@ -1,12 +1,13 @@
 {
   "file": "YAZ325_Hafta09_Gitflow_Calisma_Paketi.zip",
-  "bytes": 231780,
-  "sha256": "c36dfe89e525137a5c432a0fa65c3d8f0e31653270f0e4ca70268b8db5a38d00",
+  "bytes": 231778,
+  "sha256": "7df15d416f686861bd5ef483231f140453dc73efc611feff9d0eebfe42fd8659",
   "entries": 45,
   "manifestVerifiedFiles": 44,
   "zipCrc": "PASS",
   "extractedLabChecks": 12,
   "extractedPanelChecks": 6,
   "clinicalBaselineZipSHA256": "36822b44675d5df7d1613f9605f907e18fe3656cc74b64e614d19c277bde2dc5",
-  "bundleSHA256": "d8fd9933df4a095305323b6767487d2ed2db7b9cbf0c2c7f694fc82e858d3b65"
+  "bundleSHA256": "d8fd9933df4a095305323b6767487d2ed2db7b9cbf0c2c7f694fc82e858d3b65",
+  "finalChange": "Yalnız SVG ok etiketi konumu düzeltildi; kod ve test girdileri aynı. Manifest ve ZIP CRC yeniden doğrulandı."
 }

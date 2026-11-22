@@ -1,0 +1,16 @@
+{
+  "archiveFormat": "ZIP_STORED; sorted names; timestamp 1980-01-01 00:00:00; unix file mode 100644",
+  "packageReadmeSha256": "24e7f4f3dd3327bdf97bc76953dd74cf5222e64b77cb01c7e2a667794137405f",
+  "purpose": "YAZ325 H7–H8 öğretmen ders adayı",
+  "releaseStatus": "candidate; independent review and acceptance pending",
+  "sourceCommit": "bd5fa3fb2c35d1c11864eed982fdbc20d539d58a",
+  "sourceFiles": {
+    "LICENSE": "a707c23f3a1f49fce87ce3093fc80d4f8f466b795c893eb5eda043052a32cba6",
+    "index.html": "88f3f703492aaf436a7e223b3ce8f99591ceaa3edf61e17a40e6a085d85a9d55",
+    "src/demo-data.js": "440d637afed2a1e596b5314020c57973dd323dc65ee3f1504a9ac7802f151906",
+    "src/repository.js": "8f77e18cf450c424d7cefd162b20c07c01c0591f44f200149d12252d7b9682c5",
+    "src/rules.js": "d695881e4dd6b0bfd2cc6c084b5899b910ee4b3384e0af527b4a58c53f0cb496",
+    "src/ui.js": "fe790bd7e13f4fdd2a7abe3db4c721d43c7c490e3c16d329f802c2174d49ac10"
+  },
+  "version": "0.3.0-rc.1"
+}

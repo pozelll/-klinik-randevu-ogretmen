@@ -1,0 +1,51 @@
+{
+  "runUrl": "https://github.com/pozelll/-klinik-randevu-ogretmen/actions/runs/45021999531",
+  "runId": 45021999531,
+  "jobId": 137206752706,
+  "workflowCommit": "6eb6088bdd8cdc9b8c3fe5b7ff1b703e2bd87fa2",
+  "applicationCommit": "bd5fa3fb2c35d1c11864eed982fdbc20d539d58a",
+  "conclusion": "success",
+  "node": {
+    "passed": 30,
+    "failed": 0
+  },
+  "sourceBrowser": {
+    "passed": 14,
+    "failed": 0,
+    "browser": "Chromium 157.0.8103.0"
+  },
+  "packageControls": {
+    "passed": 8,
+    "failed": 0
+  },
+  "reproducedVsCommittedZip": "cmp başarılı; baytlar eşit",
+  "packageBrowser": {
+    "passed": 14,
+    "failed": 0,
+    "browser": "Chromium 157.0.8103.0"
+  },
+  "package": {
+    "status": "PASS",
+    "version": "0.3.0-rc.1",
+    "sourceCommit": "bd5fa3fb2c35d1c11864eed982fdbc20d539d58a",
+    "sha256": "36822b44675d5df7d1613f9605f907e18fe3656cc74b64e614d19c277bde2dc5",
+    "bytes": 47825,
+    "fileCount": 9,
+    "files": [
+      "LICENSE",
+      "README.md",
+      "SHA256SUMS.txt",
+      "SURUM.json",
+      "index.html",
+      "src/demo-data.js",
+      "src/repository.js",
+      "src/rules.js",
+      "src/ui.js"
+    ]
+  },
+  "sourceHashesEqualToPackageHashes": true,
+  "independentReview": "pending",
+  "userAcceptance": "pending",
+  "NFR": "not measured",
+  "release": "not published"
+}

@@ -1,0 +1,8 @@
+{
+  "failedRun": "https://github.com/pozelll/-klinik-randevu-ogretmen/actions/runs/45021717098",
+  "failedCommit": "e6cd99a5f8adadcac27ab6b04d3f80a99e04ec27",
+  "stage": "Paket - 8 uretim ve butunluk kontrolu",
+  "finding": "Yerel LICENSE kopyasına fazladan bir satır sonu eklenmişti; bu yüzden aday tanımındaki özet GitHub kaynağından farklıydı. CI kaynak kontrolü üretimi durdurdu.",
+  "fix": "LICENSE, sabit H7 commit'inden base64 olarak baytları korunarak yeniden alındı. Özgün uzak lisans değiştirilmedi. Aday tanımı ve ZIP yeniden üretildi.",
+  "resolution": "Düzeltme sonrası CI kaydı ci-kaydi.json dosyasında; ilk başarısız koşu tarihsel olarak korunur."
+}

@@ -1,3 +1,23 @@
+# YAZ325 — 7. ve 8. hafta öğretmen çalışma paketi
+
+| Hafta | Konu | GitHub incelemesi |
+|---|---|---|
+| [7. hafta](hafta07/README.md) | Ertelenen görev, kontrollü değişiklik, kabul ve regresyon | [PR #18](https://github.com/pozelll/-klinik-randevu-ogretmen/pull/18) |
+| [8. hafta](hafta08/README.md) | Tekrarlanabilir aday paket, bütünlük, paket testi ve teslim | [PR #19](https://github.com/pozelll/-klinik-randevu-ogretmen/pull/19) |
+
+- [7. hafta süreç PDF'i](hafta07/dagitim/YAZ325_Hafta_07_Surec_Infografik_Aktif_Linkli.pdf)
+- [8. hafta süreç PDF'i](hafta08/dagitim/YAZ325_Hafta_08_Surec_Infografik_Aktif_Linkli.pdf)
+- [18 sayfalık H7–H8 ders anlatım rehberi](hafta08/dagitim/YAZ325_Hafta_07_08_Ders_Anlatim_Rehberi.pdf)
+- [Çalışan uygulamanın ZIP'i — 0.3.0-rc.1](hafta08/dagitim/Klinik_Randevu_0.3.0-rc.1.zip)
+
+Güncel birleşik ders dalı `release/h8-surum-adayi`. ZIP'i tamamen ayıklayın; index.html ile src/ birlikte tutulmalıdır. Uygulamayı açmak için Python veya Node.js gerekmez. Paket üretimi ve test araçları için [H8 yönergesini](hafta08/docs/06-paketten-test.md) izleyin.
+
+30 Node testi, 14 kaynak tarayıcı senaryosu, 8 paket kontrolü ve aynı 14 senaryonun ayıklanmış dağıtım paketindeki yürütümü geçti. [Gerçek CI kaydı](hafta08/kanitlar/ci-kaydi.json). Bağımsız inceleme, kullanıcı kabulü, NFR ölçümleri ve birleştirme bekliyor; nihai Release yayımlanmadı. main henüz bu haftaları içermez.
+
+Aşağıdaki haftalık açıklamalar tarihsel başlangıç kayıtlarıdır; güncel durum için yukarıdaki bağlantıları kullanın.
+
+---
+
 # YAZ325 — 7. hafta: kontrollü değişiklik yönetimi
 
 - [7. hafta: sekiz basamak ve gerçek kanıtlar](hafta07/README.md) · [PR #18](https://github.com/pozelll/-klinik-randevu-ogretmen/pull/18)

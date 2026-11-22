@@ -1,0 +1,8 @@
+{
+  "surum": "0.9.0-dev",
+  "kanal": "gelistirme",
+  "duyuru": "Hastalar randevu durumunu, personel uygun saatleri izleyebilir.",
+  "hasta_notu": "Bekliyor durumundaki randevunuzu iptal edebilirsiniz.",
+  "personel_notu": "İptal sonrasında saat uygunluğunu yeniden kontrol edin.",
+  "iptal_notu": "İptal edilen randevu listeden silinir."
+}

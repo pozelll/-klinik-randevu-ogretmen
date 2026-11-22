@@ -1,0 +1,9 @@
+flowchart TD
+    D["develop"] -->|özellik başlat| F["feature"]
+    F -->|katkıyı birleştir| D
+    D -->|sürüm hazırla| R["release"]
+    R -->|teslim| M["main"]
+    R -->|sürüm bilgisini geri taşı| D
+    M -->|acil düzeltme| H["hotfix"]
+    H -->|düzeltmeyi teslim et| M
+    H -->|sonraki sürüme taşı| D

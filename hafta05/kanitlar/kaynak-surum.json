@@ -1,0 +1,18 @@
+{
+  "date": "2026-11-22",
+  "code_commit": "2d11826f7d00baa245613305f5efa87c81902dc4",
+  "node": "v24.22.3",
+  "sources": {
+    "index.html": "4be86a26c11970bbbe2b824220fff580c0420e3bfe1a6feafb59ceac134cbc08",
+    "src/demo-data.js": "440d637afed2a1e596b5314020c57973dd323dc65ee3f1504a9ac7802f151906",
+    "src/repository.js": "8f77e18cf450c424d7cefd162b20c07c01c0591f44f200149d12252d7b9682c5",
+    "src/rules.js": "d695881e4dd6b0bfd2cc6c084b5899b910ee4b3384e0af527b4a58c53f0cb496",
+    "src/ui.js": "3db70733c4316ffeb9affa9ee0d8b24f190e2c380a085d91168c7c690ec70181"
+  },
+  "automated_tests": {
+    "passed": 8,
+    "failed": 0
+  },
+  "independent_review": "bekliyor",
+  "browser_tests": "H6 devamında ayrı kayıt"
+}

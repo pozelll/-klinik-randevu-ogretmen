@@ -1,3 +1,29 @@
+# 5. hafta - Modüler Klinik Randevu öğretmen örneği
+
+Bu dal, H4-MK-01 mimari kararını uygulayan öğretmen çalışma sürümüdür.
+Başlangıç: `docs/h4-mimari-plan`, commit `5bb20cd2dbe10be9b246bbfee627a5d3fc771f8e`.
+Önceki PR #7, #11 ve #12 açık olduğu için çalışma ayrı dalda sürdürülür.
+
+## Açma ve deneme
+
+Depo paketini tamamen ayıklayın. `index.html` ile `src/` klasörünü aynı kökte tutun.
+`index.html` dosyasını tarayıcıda açın. Yalnız HTML dosyasını kopyalamak yeterli değildir.
+Uygulama için Node.js veya sunucu gerekmez; otomatik testleri çalıştırmak için Node.js gerekir.
+Yerel dosyalarda saklama davranışı tarayıcıya bağlıdır; kaydetme durumunu alt bölümden okuyun.
+
+```bash
+node --test tests/h5-smoke.test.cjs
+```
+
+Arayüz: `src/ui.js`; iş kuralları: `src/rules.js`; veri erişimi: `src/repository.js`.
+`src/demo-data.js` ortak sentetik veri ve biçim sözlüğüdür, dördüncü bir mimari katman değildir.
+H5 testleri 8/8 geçti; ayrıntılı ders belgeleri `hafta05/` altında izlenir.
+
+Gerçek hasta verisi, gerçek giriş ve çoklu cihaz eşzamanlaması bu örneğin kapsamı dışındadır.
+Otomatik kontrol bağımsız kişi incelemesi değildir. Önceki haftaların aşağıdaki yönergeleri tarihsel başlangıç bağlamıdır; bu dalı açarken yukarıdaki çok dosyalı düzen geçerlidir.
+
+---
+
 # Klinik Randevu — başlangıç paketi
 
 **Yazılım Geliştirme Süreçleri · Birleşik 1–2. hafta · Sürüm 0.1**
@@ -88,3 +114,4 @@ Daha ayrıntılı özellik ve sınırlar: **BILINEN_KISITLAR.md**. Bu prototip 1
 ## Lisans
 
 Özgün başlangıç dosyaları MIT lisansıyla sunulmuştur. Lisans metni **LICENSE** dosyasındadır.
+

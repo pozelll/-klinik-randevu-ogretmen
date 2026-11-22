@@ -1,0 +1,190 @@
+TAP version 13
+# Subtest: H5-S01 | Onaylı iptal kaydı silmez, nextId korunur
+ok 1 - H5-S01 | Onaylı iptal kaydı silmez, nextId korunur
+  ---
+  duration_ms: 6.133593
+  type: 'test'
+  ...
+# Subtest: H5-S02 | Yalnız kopyayı değiştirmek depoyu değiştirmez
+ok 2 - H5-S02 | Yalnız kopyayı değiştirmek depoyu değiştirmez
+  ---
+  duration_ms: 0.53385
+  type: 'test'
+  ...
+# Subtest: H5-S03 | BR-01 dolu saate ikinci kayıt açtırmaz
+ok 3 - H5-S03 | BR-01 dolu saate ikinci kayıt açtırmaz
+  ---
+  duration_ms: 1.836181
+  type: 'test'
+  ...
+# Subtest: H5-S04 | İptal, yeniden oluşturma ve tamamlama aynı veriyi kullanır
+ok 4 - H5-S04 | İptal, yeniden oluşturma ve tamamlama aynı veriyi kullanır
+  ---
+  duration_ms: 1.378168
+  type: 'test'
+  ...
+# Subtest: H5-S05 | Hasta filtresi ve günlük toplamların kapsamı korunur
+ok 5 - H5-S05 | Hasta filtresi ve günlük toplamların kapsamı korunur
+  ---
+  duration_ms: 13.821262
+  type: 'test'
+  ...
+# Subtest: H5-S06 | Yazma başarısızsa değişiklik bellekte, kalıcılık false
+ok 6 - H5-S06 | Yazma başarısızsa değişiklik bellekte, kalıcılık false
+  ---
+  duration_ms: 1.072583
+  type: 'test'
+  ...
+# Subtest: H5-S07 | Resepsiyon iptal isteğinde güncelleme yapılmaz
+ok 7 - H5-S07 | Resepsiyon iptal isteğinde güncelleme yapılmaz
+  ---
+  duration_ms: 0.553254
+  type: 'test'
+  ...
+# Subtest: H5-S08 | Onaydan önce uygun olan kayıt işlem anında yeniden denetlenir
+ok 8 - H5-S08 | Onaydan önce uygun olan kayıt işlem anında yeniden denetlenir
+  ---
+  duration_ms: 0.484395
+  type: 'test'
+  ...
+# Subtest: DK-K01 | NOT_FOUND
+ok 9 - DK-K01 | NOT_FOUND
+  ---
+  duration_ms: 6.698488
+  type: 'test'
+  ...
+# Subtest: DK-K02 | ROLE
+ok 10 - DK-K02 | ROLE
+  ---
+  duration_ms: 0.983336
+  type: 'test'
+  ...
+# Subtest: DK-K03 | ROLE
+ok 11 - DK-K03 | ROLE
+  ---
+  duration_ms: 0.87981
+  type: 'test'
+  ...
+# Subtest: DK-K04 | OWNER
+ok 12 - DK-K04 | OWNER
+  ---
+  duration_ms: 0.545742
+  type: 'test'
+  ...
+# Subtest: DK-K05 | STATUS
+ok 13 - DK-K05 | STATUS
+  ---
+  duration_ms: 1.081303
+  type: 'test'
+  ...
+# Subtest: DK-K06 | STATUS
+ok 14 - DK-K06 | STATUS
+  ---
+  duration_ms: 1.983525
+  type: 'test'
+  ...
+# Subtest: DK-K07 | OK
+ok 15 - DK-K07 | OK
+  ---
+  duration_ms: 0.977459
+  type: 'test'
+  ...
+# Subtest: H6-R01 | Kalıcı veri tekrar açıldığında korunur
+ok 16 - H6-R01 | Kalıcı veri tekrar açıldığında korunur
+  ---
+  duration_ms: 5.187555
+  type: 'test'
+  ...
+# Subtest: H6-R02 | Bozuk JSON bilinen sentetik veriye döner
+ok 17 - H6-R02 | Bozuk JSON bilinen sentetik veriye döner
+  ---
+  duration_ms: 4.022261
+  type: 'test'
+  ...
+# Subtest: H6-R03 | Geçersiz veri şeması reddedilir
+ok 18 - H6-R03 | Geçersiz veri şeması reddedilir
+  ---
+  duration_ms: 0.556131
+  type: 'test'
+  ...
+# Subtest: H6-R04 | Başlangıç BR-01 çakışması iş katmanında saptanır
+ok 19 - H6-R04 | Başlangıç BR-01 çakışması iş katmanında saptanır
+  ---
+  duration_ms: 0.941663
+  type: 'test'
+  ...
+# Subtest: H6-R05 | Depo bulunmayan kimlikte kayıt oluşturmaz
+ok 20 - H6-R05 | Depo bulunmayan kimlikte kayıt oluşturmaz
+  ---
+  duration_ms: 0.653629
+  type: 'test'
+  ...
+# Subtest: H6-R06 | Yazma hatası son kalıcı kopyayı değiştirmez
+ok 21 - H6-R06 | Yazma hatası son kalıcı kopyayı değiştirmez
+  ---
+  duration_ms: 0.820528
+  type: 'test'
+  ...
+# Subtest: H6-R07 | localStorage yoksa uygulama oturum belleğinde çalışır
+ok 22 - H6-R07 | localStorage yoksa uygulama oturum belleğinde çalışır
+  ---
+  duration_ms: 0.961888
+  type: 'test'
+  ...
+# Subtest: H6-R08 | Doktor ve resepsiyon dışındaki görünüm toplamları açmaz
+ok 23 - H6-R08 | Doktor ve resepsiyon dışındaki görünüm toplamları açmaz
+  ---
+  duration_ms: 17.459837
+  type: 'test'
+  ...
+# Subtest: H6-R09 | İptal günlük toplamı korur, durum sayılarını değiştirir
+ok 24 - H6-R09 | İptal günlük toplamı korur, durum sayılarını değiştirir
+  ---
+  duration_ms: 0.962352
+  type: 'test'
+  ...
+# Subtest: H6-R10 | Doktor kayıt oluşturamaz; resepsiyon oluşturabilir
+ok 25 - H6-R10 | Doktor kayıt oluşturamaz; resepsiyon oluşturabilir
+  ---
+  duration_ms: 0.587579
+  type: 'test'
+  ...
+# Subtest: H6-R11 | Farklı doktor/tarih ve resepsiyon tamamlama isteği reddedilir
+ok 26 - H6-R11 | Farklı doktor/tarih ve resepsiyon tamamlama isteği reddedilir
+  ---
+  duration_ms: 5.15558
+  type: 'test'
+  ...
+# Subtest: H6-R12 | Geçersiz saat ve hasta yeni kayıt oluşturmaz
+ok 27 - H6-R12 | Geçersiz saat ve hasta yeni kayıt oluşturmaz
+  ---
+  duration_ms: 0.331231
+  type: 'test'
+  ...
+# Subtest: H6-R13 | 1000 kayıt sınırı nextId değerini artırmaz
+ok 28 - H6-R13 | 1000 kayıt sınırı nextId değerini artırmaz
+  ---
+  duration_ms: 13.541393
+  type: 'test'
+  ...
+# Subtest: H6-R14 | Çakışan başka kayıt varsa iptal saati uygun göstermez
+ok 29 - H6-R14 | Çakışan başka kayıt varsa iptal saati uygun göstermez
+  ---
+  duration_ms: 0.479522
+  type: 'test'
+  ...
+# Subtest: H6-R15 | Sıfırlama tek ortak depoyu başlangıca döndürür
+ok 30 - H6-R15 | Sıfırlama tek ortak depoyu başlangıca döndürür
+  ---
+  duration_ms: 0.395905
+  type: 'test'
+  ...
+1..30
+# tests 30
+# suites 0
+# pass 30
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 303.879308

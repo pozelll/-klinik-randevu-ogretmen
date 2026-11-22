@@ -1,0 +1,16 @@
+{
+  "runUrl": "https://github.com/pozelll/-klinik-randevu-ogretmen/actions/runs/45020807054",
+  "runId": 45020807054,
+  "jobId": 137203060445,
+  "sourceCommit": "bd5fa3fb2c35d1c11864eed982fdbc20d539d58a",
+  "conclusion": "success",
+  "nodeTests": {
+    "passed": 30,
+    "failed": 0
+  },
+  "browserTests": {
+    "passed": 14,
+    "failed": 0
+  },
+  "scope": "Otomatik teknik kontrol; bağımsız insan incelemesi ve NFR ölçümü değildir."
+}

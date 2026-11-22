@@ -17,7 +17,7 @@ def check(raw, meaning=False):
         ('P01', 'JSON nesnesi okunabilir', isinstance(data, dict)),
         ('P02', 'Altı beklenen alan var', isinstance(data, dict) and set(data) == KEYS),
         ('P03', 'Alanlar boş olmayan kısa metin', isinstance(data, dict) and set(data) == KEYS and all(isinstance(v, str) and 0 < len(v.strip()) <= 300 for v in data.values())),
-        ('P04', 'Ders sürümü ve kanal uyumlu', isinstance(data, dict) and ((data.get('surum') == '0.9.0-dev' and data.get('kanal') == 'gelistirme') or (data.get('surum') in {'0.9.0', '0.9.1'} and data.get('kanal') == 'egitim'))),
+        ('P04', 'Ders sürümü ve kanal uyumlu', isinstance(data, dict) and isinstance(data.get('surum'), str) and ((data.get('surum') == '0.9.0-dev' and data.get('kanal') == 'gelistirme') or (data.get('surum') in {'0.9.0', '0.9.1'} and data.get('kanal') == 'egitim'))),
         ('P05', 'Çakışma işareti yok', bool(raw) and not any(m in raw for m in ('<<<<<<<', '=======', '>>>>>>>'))),
     ]
     if meaning:

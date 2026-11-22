@@ -1,5 +1,7 @@
 # 46 - 14 konu kapsamı ve öğrenciye devir
 
+> 22 Kasım 2026 kapanış güncellemesi: PR zinciri main’e birleştirildi; rc.2, gerçek klavye ve performans sonuçları [49 numaralı raporda](49-kapanis-raporu.md). Aşağıdaki rc.1 hazırlık kayıtları tarihseldir; insan kabulü hâlâ açıktır.
+
 Bu tablo mevcut **öğretmen hazırlığına** aittir. “Kanıtlı örnek” öğrencinin kazanımı tamamladığı anlamına gelmez. Öğrenci kendi dosya, ölçüm, katkı ve değerlendirmesini ekler. “Kısmi” kapsamın bir bölümünde kanıt olduğunu, “eksik” uygulama kanıtı bulunmadığını belirtir.
 
 | No / konu | Mevcut çıktı ve kanıt | Durum | Öğrenci görevi / açık iş |

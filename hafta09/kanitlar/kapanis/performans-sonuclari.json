@@ -1,0 +1,916 @@
+{
+  "sourceCommit": "5c796623a18d4ba187d2a9fe9beba4708915360b",
+  "runUrl": "https://github.com/pozelll/-klinik-randevu-ogretmen/actions/runs/45027450559",
+  "jobId": 137223463407,
+  "report": {
+    "executedAt": "2026-11-22T13:26:38.816186+00:00",
+    "platform": "Linux-7.0.0-1020-azure-x86_64-with-glibc2.43",
+    "logicalCpuCount": 4,
+    "machine": "x86_64",
+    "context": {
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "headless": true,
+      "reducedMotion": "reduce",
+      "origin": "file://",
+      "tabsPerContext": 1
+    },
+    "python": "3.14.4",
+    "sources": {
+      "index.html": "6582e7f493af23135e073a51253bafb821bf21c36f743a42522dcb4df3c82737",
+      "src/demo-data.js": "440d637afed2a1e596b5314020c57973dd323dc65ee3f1504a9ac7802f151906",
+      "src/repository.js": "8f77e18cf450c424d7cefd162b20c07c01c0591f44f200149d12252d7b9682c5",
+      "src/rules.js": "d695881e4dd6b0bfd2cc6c084b5899b910ee4b3384e0af527b4a58c53f0cb496",
+      "src/ui.js": "229fd8588bb1adacd39597fc0fb4fe10b8fc5cceca2997d6c16ce081b506b421"
+    },
+    "method": "Native keyboard doctor changes; browser performance.now from capture-phase change to a second requestAnimationFrame. Correct slots, exact daily rows and totals checked together.",
+    "limitations": [
+      "Headless local single-tab browser; no server or multi-user load tested.",
+      "Two rAF callbacks are a paint-opportunity proxy, not a physical display measurement.",
+      "Instrumentation and content-oracle work add overhead.",
+      "Original NFR-02 screen-recording frame analysis is not claimed complete.",
+      "NFR-01 human usability and independent human acceptance are not simulated.",
+      "100/1000-record results are exploratory; no performance threshold was invented."
+    ],
+    "formalNFR02ScreenRecordingAcceptance": "NOT_ASSESSED",
+    "results": [
+      {
+        "recordCount": 7,
+        "fixtureSHA256": "4d8bbf206c025443c0c93fc49a86e5c31050bc2dd7a44f76474ff8fa0ee04f2b",
+        "operation": "Reception, 12 November 2030, doctor selection using native keyboard ArrowDown/ArrowUp",
+        "samples": [
+          {
+            "kind": "doctor",
+            "target": "selin",
+            "trustedEvent": true,
+            "startMs": 194.59999999999127,
+            "endMs": 220.59999999999127,
+            "durationMs": 26,
+            "correct": true,
+            "rowCount": 2,
+            "trial": 1,
+            "recordCount": 7
+          },
+          {
+            "kind": "doctor",
+            "target": "deniz",
+            "trustedEvent": true,
+            "startMs": 227.09999999999127,
+            "endMs": 253.6999999999971,
+            "durationMs": 26.60000000000582,
+            "correct": true,
+            "rowCount": 4,
+            "trial": 2,
+            "recordCount": 7
+          },
+          {
+            "kind": "doctor",
+            "target": "selin",
+            "trustedEvent": true,
+            "startMs": 259.5,
+            "endMs": 287.09999999999127,
+            "durationMs": 27.59999999999127,
+            "correct": true,
+            "rowCount": 2,
+            "trial": 3,
+            "recordCount": 7
+          },
+          {
+            "kind": "doctor",
+            "target": "deniz",
+            "trustedEvent": true,
+            "startMs": 293.09999999999127,
+            "endMs": 320.3999999999942,
+            "durationMs": 27.30000000000291,
+            "correct": true,
+            "rowCount": 4,
+            "trial": 4,
+            "recordCount": 7
+          },
+          {
+            "kind": "doctor",
+            "target": "selin",
+            "trustedEvent": true,
+            "startMs": 325.8000000000029,
+            "endMs": 353.6999999999971,
+            "durationMs": 27.89999999999418,
+            "correct": true,
+            "rowCount": 2,
+            "trial": 5,
+            "recordCount": 7
+          },
+          {
+            "kind": "doctor",
+            "target": "deniz",
+            "trustedEvent": true,
+            "startMs": 359.3999999999942,
+            "endMs": 387,
+            "durationMs": 27.60000000000582,
+            "correct": true,
+            "rowCount": 4,
+            "trial": 6,
+            "recordCount": 7
+          },
+          {
+            "kind": "doctor",
+            "target": "selin",
+            "trustedEvent": true,
+            "startMs": 392.1999999999971,
+            "endMs": 420.3000000000029,
+            "durationMs": 28.10000000000582,
+            "correct": true,
+            "rowCount": 2,
+            "trial": 7,
+            "recordCount": 7
+          },
+          {
+            "kind": "doctor",
+            "target": "deniz",
+            "trustedEvent": true,
+            "startMs": 425.59999999999127,
+            "endMs": 453.6999999999971,
+            "durationMs": 28.10000000000582,
+            "correct": true,
+            "rowCount": 4,
+            "trial": 8,
+            "recordCount": 7
+          },
+          {
+            "kind": "doctor",
+            "target": "selin",
+            "trustedEvent": true,
+            "startMs": 459.8000000000029,
+            "endMs": 487.09999999999127,
+            "durationMs": 27.29999999998836,
+            "correct": true,
+            "rowCount": 2,
+            "trial": 9,
+            "recordCount": 7
+          },
+          {
+            "kind": "doctor",
+            "target": "deniz",
+            "trustedEvent": true,
+            "startMs": 493.8000000000029,
+            "endMs": 520.3000000000029,
+            "durationMs": 26.5,
+            "correct": true,
+            "rowCount": 4,
+            "trial": 10,
+            "recordCount": 7
+          }
+        ],
+        "summary": {
+          "trials": 10,
+          "percentileMethod": "Nearest rank; descriptive small-sample result, not a population guarantee.",
+          "p50Ms": 27.30000000000291,
+          "p95Ms": 28.10000000000582,
+          "maxMs": 28.10000000000582,
+          "errors": 0,
+          "errorRate": 0,
+          "serialObservedUpdatesPerSecond": 30.703101013201238,
+          "serialIntervalMs": 325.70000000001164,
+          "throughputScope": "Single tab sequential instrumented run; interval includes Playwright gaps. Not concurrent users or server throughput."
+        },
+        "declaredThresholdMs": 1000,
+        "instrumentedThresholdResult": "PASS",
+        "transactions": {
+          "samples": [
+            {
+              "kind": "create",
+              "target": "R008",
+              "trustedEvent": true,
+              "startMs": 623.3999999999942,
+              "endMs": 653.8000000000029,
+              "durationMs": 30.40000000000873,
+              "correct": true,
+              "rowCount": 3
+            },
+            {
+              "kind": "cancel_after_confirmation",
+              "target": "R008",
+              "trustedEvent": null,
+              "startMs": 695.6999999999971,
+              "endMs": 720.3999999999942,
+              "durationMs": 24.69999999999709,
+              "correct": true,
+              "rowCount": 3
+            },
+            {
+              "kind": "create",
+              "target": "R009",
+              "trustedEvent": true,
+              "startMs": 789.6999999999971,
+              "endMs": 820.3000000000029,
+              "durationMs": 30.60000000000582,
+              "correct": true,
+              "rowCount": 4
+            },
+            {
+              "kind": "cancel_after_confirmation",
+              "target": "R009",
+              "trustedEvent": null,
+              "startMs": 860.6999999999971,
+              "endMs": 887,
+              "durationMs": 26.30000000000291,
+              "correct": true,
+              "rowCount": 4
+            },
+            {
+              "kind": "create",
+              "target": "R010",
+              "trustedEvent": true,
+              "startMs": 956.3999999999942,
+              "endMs": 986.8999999999942,
+              "durationMs": 30.5,
+              "correct": true,
+              "rowCount": 5
+            },
+            {
+              "kind": "cancel_after_confirmation",
+              "target": "R010",
+              "trustedEvent": null,
+              "startMs": 1027.199999999997,
+              "endMs": 1053.699999999997,
+              "durationMs": 26.5,
+              "correct": true,
+              "rowCount": 5
+            }
+          ],
+          "create": {
+            "trials": 3,
+            "percentileMethod": "Nearest rank; descriptive small-sample result, not a population guarantee.",
+            "p50Ms": 30.5,
+            "p95Ms": 30.60000000000582,
+            "maxMs": 30.60000000000582,
+            "errors": 0,
+            "errorRate": 0,
+            "serialObservedUpdatesPerSecond": 8.253094910591471,
+            "serialIntervalMs": 363.5,
+            "throughputScope": "Single tab sequential instrumented run; interval includes Playwright gaps. Not concurrent users or server throughput."
+          },
+          "cancelAfterNativeConfirmation": {
+            "trials": 3,
+            "percentileMethod": "Nearest rank; descriptive small-sample result, not a population guarantee.",
+            "p50Ms": 26.30000000000291,
+            "p95Ms": 26.5,
+            "maxMs": 26.5,
+            "errors": 0,
+            "errorRate": 0,
+            "serialObservedUpdatesPerSecond": 8.379888268156424,
+            "serialIntervalMs": 358,
+            "throughputScope": "Single tab sequential instrumented run; interval includes Playwright gaps. Not concurrent users or server throughput."
+          },
+          "acceptanceThreshold": null,
+          "scope": "Exploratory; cancellation timer begins after native confirm returns accepted. Human decision time excluded."
+        },
+        "reloadRecovery": {
+          "status": "PASS",
+          "recordCount": 10,
+          "persistedStateEqual": true,
+          "wallClockMsIncludingAutomation": 53.82809200000338,
+          "scope": "Same-origin reload, not crash durability or cross-device recovery; no latency acceptance threshold."
+        },
+        "pageErrors": []
+      },
+      {
+        "recordCount": 20,
+        "fixtureSHA256": "ef47c36b3e42be6fe70731923b6ce1c01b8ad357c70cd58d08c49b1d98263088",
+        "operation": "Reception, 12 November 2030, doctor selection using native keyboard ArrowDown/ArrowUp",
+        "samples": [
+          {
+            "kind": "doctor",
+            "target": "selin",
+            "trustedEvent": true,
+            "startMs": 147.79999999998836,
+            "endMs": 179.59999999999127,
+            "durationMs": 31.80000000000291,
+            "correct": true,
+            "rowCount": 9,
+            "trial": 1,
+            "recordCount": 20
+          },
+          {
+            "kind": "doctor",
+            "target": "deniz",
+            "trustedEvent": true,
+            "startMs": 185.59999999999127,
+            "endMs": 212.6999999999971,
+            "durationMs": 27.10000000000582,
+            "correct": true,
+            "rowCount": 10,
+            "trial": 2,
+            "recordCount": 20
+          },
+          {
+            "kind": "doctor",
+            "target": "selin",
+            "trustedEvent": true,
+            "startMs": 218.29999999998836,
+            "endMs": 246.09999999999127,
+            "durationMs": 27.80000000000291,
+            "correct": true,
+            "rowCount": 9,
+            "trial": 3,
+            "recordCount": 20
+          },
+          {
+            "kind": "doctor",
+            "target": "deniz",
+            "trustedEvent": true,
+            "startMs": 251.59999999999127,
+            "endMs": 279.29999999998836,
+            "durationMs": 27.69999999999709,
+            "correct": true,
+            "rowCount": 10,
+            "trial": 4,
+            "recordCount": 20
+          },
+          {
+            "kind": "doctor",
+            "target": "selin",
+            "trustedEvent": true,
+            "startMs": 285.1999999999971,
+            "endMs": 312.6999999999971,
+            "durationMs": 27.5,
+            "correct": true,
+            "rowCount": 9,
+            "trial": 5,
+            "recordCount": 20
+          },
+          {
+            "kind": "doctor",
+            "target": "deniz",
+            "trustedEvent": true,
+            "startMs": 318.79999999998836,
+            "endMs": 346.09999999999127,
+            "durationMs": 27.30000000000291,
+            "correct": true,
+            "rowCount": 10,
+            "trial": 6,
+            "recordCount": 20
+          },
+          {
+            "kind": "doctor",
+            "target": "selin",
+            "trustedEvent": true,
+            "startMs": 351.59999999999127,
+            "endMs": 379.3999999999942,
+            "durationMs": 27.80000000000291,
+            "correct": true,
+            "rowCount": 9,
+            "trial": 7,
+            "recordCount": 20
+          },
+          {
+            "kind": "doctor",
+            "target": "deniz",
+            "trustedEvent": true,
+            "startMs": 385,
+            "endMs": 412.6999999999971,
+            "durationMs": 27.69999999999709,
+            "correct": true,
+            "rowCount": 10,
+            "trial": 8,
+            "recordCount": 20
+          },
+          {
+            "kind": "doctor",
+            "target": "selin",
+            "trustedEvent": true,
+            "startMs": 417.8999999999942,
+            "endMs": 446,
+            "durationMs": 28.10000000000582,
+            "correct": true,
+            "rowCount": 9,
+            "trial": 9,
+            "recordCount": 20
+          },
+          {
+            "kind": "doctor",
+            "target": "deniz",
+            "trustedEvent": true,
+            "startMs": 451.29999999998836,
+            "endMs": 479.5,
+            "durationMs": 28.20000000001164,
+            "correct": true,
+            "rowCount": 10,
+            "trial": 10,
+            "recordCount": 20
+          }
+        ],
+        "summary": {
+          "trials": 10,
+          "percentileMethod": "Nearest rank; descriptive small-sample result, not a population guarantee.",
+          "p50Ms": 27.69999999999709,
+          "p95Ms": 31.80000000000291,
+          "maxMs": 31.80000000000291,
+          "errors": 0,
+          "errorRate": 0,
+          "serialObservedUpdatesPerSecond": 30.147723846848503,
+          "serialIntervalMs": 331.70000000001164,
+          "throughputScope": "Single tab sequential instrumented run; interval includes Playwright gaps. Not concurrent users or server throughput."
+        },
+        "declaredThresholdMs": 1000,
+        "instrumentedThresholdResult": "PASS",
+        "transactions": {
+          "samples": [
+            {
+              "kind": "create",
+              "target": "R021",
+              "trustedEvent": true,
+              "startMs": 582.1999999999971,
+              "endMs": 612.7999999999884,
+              "durationMs": 30.59999999999127,
+              "correct": true,
+              "rowCount": 9
+            },
+            {
+              "kind": "cancel_after_confirmation",
+              "target": "R021",
+              "trustedEvent": null,
+              "startMs": 652.6999999999971,
+              "endMs": 679.3999999999942,
+              "durationMs": 26.69999999999709,
+              "correct": true,
+              "rowCount": 9
+            },
+            {
+              "kind": "create",
+              "target": "R022",
+              "trustedEvent": true,
+              "startMs": 748.6999999999971,
+              "endMs": 779.2999999999884,
+              "durationMs": 30.59999999999127,
+              "correct": true,
+              "rowCount": 10
+            },
+            {
+              "kind": "cancel_after_confirmation",
+              "target": "R022",
+              "trustedEvent": null,
+              "startMs": 819,
+              "endMs": 846,
+              "durationMs": 27,
+              "correct": true,
+              "rowCount": 10
+            },
+            {
+              "kind": "create",
+              "target": "R023",
+              "trustedEvent": true,
+              "startMs": 915.2999999999884,
+              "endMs": 946,
+              "durationMs": 30.70000000001164,
+              "correct": true,
+              "rowCount": 11
+            },
+            {
+              "kind": "cancel_after_confirmation",
+              "target": "R023",
+              "trustedEvent": null,
+              "startMs": 985.6999999999971,
+              "endMs": 1012.6999999999971,
+              "durationMs": 27,
+              "correct": true,
+              "rowCount": 11
+            }
+          ],
+          "create": {
+            "trials": 3,
+            "percentileMethod": "Nearest rank; descriptive small-sample result, not a population guarantee.",
+            "p50Ms": 30.59999999999127,
+            "p95Ms": 30.70000000001164,
+            "maxMs": 30.70000000001164,
+            "errors": 0,
+            "errorRate": 0,
+            "serialObservedUpdatesPerSecond": 8.24628916987349,
+            "serialIntervalMs": 363.8000000000029,
+            "throughputScope": "Single tab sequential instrumented run; interval includes Playwright gaps. Not concurrent users or server throughput."
+          },
+          "cancelAfterNativeConfirmation": {
+            "trials": 3,
+            "percentileMethod": "Nearest rank; descriptive small-sample result, not a population guarantee.",
+            "p50Ms": 27,
+            "p95Ms": 27,
+            "maxMs": 27,
+            "errors": 0,
+            "errorRate": 0,
+            "serialObservedUpdatesPerSecond": 8.333333333333334,
+            "serialIntervalMs": 360,
+            "throughputScope": "Single tab sequential instrumented run; interval includes Playwright gaps. Not concurrent users or server throughput."
+          },
+          "acceptanceThreshold": null,
+          "scope": "Exploratory; cancellation timer begins after native confirm returns accepted. Human decision time excluded."
+        },
+        "reloadRecovery": {
+          "status": "PASS",
+          "recordCount": 23,
+          "persistedStateEqual": true,
+          "wallClockMsIncludingAutomation": 55.5712790000058,
+          "scope": "Same-origin reload, not crash durability or cross-device recovery; no latency acceptance threshold."
+        },
+        "pageErrors": []
+      },
+      {
+        "recordCount": 100,
+        "fixtureSHA256": "d26af337c504113c9a41cfc1e026aa602a5c01d5c7a605e00fbec20df809f1a6",
+        "operation": "Reception, 12 November 2030, doctor selection using native keyboard ArrowDown/ArrowUp",
+        "samples": [
+          {
+            "kind": "doctor",
+            "target": "selin",
+            "trustedEvent": true,
+            "startMs": 153.60000000000582,
+            "endMs": 185.40000000000873,
+            "durationMs": 31.80000000000291,
+            "correct": true,
+            "rowCount": 49,
+            "trial": 1,
+            "recordCount": 100
+          },
+          {
+            "kind": "doctor",
+            "target": "deniz",
+            "trustedEvent": true,
+            "startMs": 191.90000000000873,
+            "endMs": 217.60000000000582,
+            "durationMs": 25.69999999999709,
+            "correct": true,
+            "rowCount": 50,
+            "trial": 2,
+            "recordCount": 100
+          },
+          {
+            "kind": "doctor",
+            "target": "selin",
+            "trustedEvent": true,
+            "startMs": 223.10000000000582,
+            "endMs": 251,
+            "durationMs": 27.89999999999418,
+            "correct": true,
+            "rowCount": 49,
+            "trial": 3,
+            "recordCount": 100
+          },
+          {
+            "kind": "doctor",
+            "target": "deniz",
+            "trustedEvent": true,
+            "startMs": 256.6000000000058,
+            "endMs": 322.5,
+            "durationMs": 65.89999999999418,
+            "correct": true,
+            "rowCount": 50,
+            "trial": 4,
+            "recordCount": 100
+          },
+          {
+            "kind": "doctor",
+            "target": "selin",
+            "trustedEvent": true,
+            "startMs": 330.40000000000873,
+            "endMs": 350.90000000000873,
+            "durationMs": 20.5,
+            "correct": true,
+            "rowCount": 49,
+            "trial": 5,
+            "recordCount": 100
+          },
+          {
+            "kind": "doctor",
+            "target": "deniz",
+            "trustedEvent": true,
+            "startMs": 355.6000000000058,
+            "endMs": 384.1999999999971,
+            "durationMs": 28.59999999999127,
+            "correct": true,
+            "rowCount": 50,
+            "trial": 6,
+            "recordCount": 100
+          },
+          {
+            "kind": "doctor",
+            "target": "selin",
+            "trustedEvent": true,
+            "startMs": 389.6999999999971,
+            "endMs": 417.6000000000058,
+            "durationMs": 27.90000000000873,
+            "correct": true,
+            "rowCount": 49,
+            "trial": 7,
+            "recordCount": 100
+          },
+          {
+            "kind": "doctor",
+            "target": "deniz",
+            "trustedEvent": true,
+            "startMs": 422.6000000000058,
+            "endMs": 636.1999999999971,
+            "durationMs": 213.59999999999127,
+            "correct": true,
+            "rowCount": 50,
+            "trial": 8,
+            "recordCount": 100
+          },
+          {
+            "kind": "doctor",
+            "target": "selin",
+            "trustedEvent": true,
+            "startMs": 643.4000000000087,
+            "endMs": 667.6000000000058,
+            "durationMs": 24.19999999999709,
+            "correct": true,
+            "rowCount": 49,
+            "trial": 9,
+            "recordCount": 100
+          },
+          {
+            "kind": "doctor",
+            "target": "deniz",
+            "trustedEvent": true,
+            "startMs": 672.6000000000058,
+            "endMs": 700.9000000000087,
+            "durationMs": 28.30000000000291,
+            "correct": true,
+            "rowCount": 50,
+            "trial": 10,
+            "recordCount": 100
+          }
+        ],
+        "summary": {
+          "trials": 10,
+          "percentileMethod": "Nearest rank; descriptive small-sample result, not a population guarantee.",
+          "p50Ms": 27.90000000000873,
+          "p95Ms": 213.59999999999127,
+          "maxMs": 213.59999999999127,
+          "errors": 0,
+          "errorRate": 0,
+          "serialObservedUpdatesPerSecond": 18.271514708569242,
+          "serialIntervalMs": 547.3000000000029,
+          "throughputScope": "Single tab sequential instrumented run; interval includes Playwright gaps. Not concurrent users or server throughput."
+        },
+        "declaredThresholdMs": null,
+        "instrumentedThresholdResult": "EXPLORATORY_NO_ACCEPTANCE_THRESHOLD",
+        "transactions": {
+          "samples": [
+            {
+              "kind": "create",
+              "target": "R101",
+              "trustedEvent": true,
+              "startMs": 803.4000000000087,
+              "endMs": 834.4000000000087,
+              "durationMs": 31,
+              "correct": true,
+              "rowCount": 49
+            },
+            {
+              "kind": "cancel_after_confirmation",
+              "target": "R101",
+              "trustedEvent": null,
+              "startMs": 874.5,
+              "endMs": 900.9000000000087,
+              "durationMs": 26.40000000000873,
+              "correct": true,
+              "rowCount": 49
+            },
+            {
+              "kind": "create",
+              "target": "R102",
+              "trustedEvent": true,
+              "startMs": 970.6000000000058,
+              "endMs": 1000.8000000000029,
+              "durationMs": 30.19999999999709,
+              "correct": true,
+              "rowCount": 50
+            },
+            {
+              "kind": "cancel_after_confirmation",
+              "target": "R102",
+              "trustedEvent": null,
+              "startMs": 1040.5,
+              "endMs": 1067.5,
+              "durationMs": 27,
+              "correct": true,
+              "rowCount": 50
+            },
+            {
+              "kind": "create",
+              "target": "R103",
+              "trustedEvent": true,
+              "startMs": 1136.9000000000087,
+              "endMs": 1167.5,
+              "durationMs": 30.59999999999127,
+              "correct": true,
+              "rowCount": 51
+            },
+            {
+              "kind": "cancel_after_confirmation",
+              "target": "R103",
+              "trustedEvent": null,
+              "startMs": 1207.5,
+              "endMs": 1234.199999999997,
+              "durationMs": 26.69999999999709,
+              "correct": true,
+              "rowCount": 51
+            }
+          ],
+          "create": {
+            "trials": 3,
+            "percentileMethod": "Nearest rank; descriptive small-sample result, not a population guarantee.",
+            "p50Ms": 30.59999999999127,
+            "p95Ms": 31,
+            "maxMs": 31,
+            "errors": 0,
+            "errorRate": 0,
+            "serialObservedUpdatesPerSecond": 8.239494644328678,
+            "serialIntervalMs": 364.09999999999127,
+            "throughputScope": "Single tab sequential instrumented run; interval includes Playwright gaps. Not concurrent users or server throughput."
+          },
+          "cancelAfterNativeConfirmation": {
+            "trials": 3,
+            "percentileMethod": "Nearest rank; descriptive small-sample result, not a population guarantee.",
+            "p50Ms": 26.69999999999709,
+            "p95Ms": 27,
+            "maxMs": 27,
+            "errors": 0,
+            "errorRate": 0,
+            "serialObservedUpdatesPerSecond": 8.340283569641436,
+            "serialIntervalMs": 359.6999999999971,
+            "throughputScope": "Single tab sequential instrumented run; interval includes Playwright gaps. Not concurrent users or server throughput."
+          },
+          "acceptanceThreshold": null,
+          "scope": "Exploratory; cancellation timer begins after native confirm returns accepted. Human decision time excluded."
+        },
+        "reloadRecovery": {
+          "status": "PASS",
+          "recordCount": 103,
+          "persistedStateEqual": true,
+          "wallClockMsIncludingAutomation": 69.53948299999979,
+          "scope": "Same-origin reload, not crash durability or cross-device recovery; no latency acceptance threshold."
+        },
+        "pageErrors": []
+      },
+      {
+        "recordCount": 1000,
+        "fixtureSHA256": "9b49c4f6edb06c5d8a94d794c5c8c16c49fdb11b0da59bcd395528a7c1518ced",
+        "operation": "Reception, 12 November 2030, doctor selection using native keyboard ArrowDown/ArrowUp",
+        "samples": [
+          {
+            "kind": "doctor",
+            "target": "selin",
+            "trustedEvent": true,
+            "startMs": 339.70000000001164,
+            "endMs": 397.40000000000873,
+            "durationMs": 57.69999999999709,
+            "correct": true,
+            "rowCount": 499,
+            "trial": 1,
+            "recordCount": 1000
+          },
+          {
+            "kind": "doctor",
+            "target": "deniz",
+            "trustedEvent": true,
+            "startMs": 414.3000000000029,
+            "endMs": 468.1000000000058,
+            "durationMs": 53.80000000000291,
+            "correct": true,
+            "rowCount": 500,
+            "trial": 2,
+            "recordCount": 1000
+          },
+          {
+            "kind": "doctor",
+            "target": "selin",
+            "trustedEvent": true,
+            "startMs": 476.8000000000029,
+            "endMs": 538.8000000000029,
+            "durationMs": 62,
+            "correct": true,
+            "rowCount": 499,
+            "trial": 3,
+            "recordCount": 1000
+          },
+          {
+            "kind": "doctor",
+            "target": "deniz",
+            "trustedEvent": true,
+            "startMs": 558.5,
+            "endMs": 608.3000000000029,
+            "durationMs": 49.80000000000291,
+            "correct": true,
+            "rowCount": 500,
+            "trial": 4,
+            "recordCount": 1000
+          },
+          {
+            "kind": "doctor",
+            "target": "selin",
+            "trustedEvent": true,
+            "startMs": 616.1000000000058,
+            "endMs": 665,
+            "durationMs": 48.89999999999418,
+            "correct": true,
+            "rowCount": 499,
+            "trial": 5,
+            "recordCount": 1000
+          },
+          {
+            "kind": "doctor",
+            "target": "deniz",
+            "trustedEvent": true,
+            "startMs": 673.4000000000087,
+            "endMs": 721.6000000000058,
+            "durationMs": 48.19999999999709,
+            "correct": true,
+            "rowCount": 500,
+            "trial": 6,
+            "recordCount": 1000
+          },
+          {
+            "kind": "doctor",
+            "target": "selin",
+            "trustedEvent": true,
+            "startMs": 729.6000000000058,
+            "endMs": 781.9000000000087,
+            "durationMs": 52.30000000000291,
+            "correct": true,
+            "rowCount": 499,
+            "trial": 7,
+            "recordCount": 1000
+          },
+          {
+            "kind": "doctor",
+            "target": "deniz",
+            "trustedEvent": true,
+            "startMs": 795.1000000000058,
+            "endMs": 845.7000000000116,
+            "durationMs": 50.60000000000582,
+            "correct": true,
+            "rowCount": 500,
+            "trial": 8,
+            "recordCount": 1000
+          },
+          {
+            "kind": "doctor",
+            "target": "selin",
+            "trustedEvent": true,
+            "startMs": 853.4000000000087,
+            "endMs": 901.7000000000116,
+            "durationMs": 48.30000000000291,
+            "correct": true,
+            "rowCount": 499,
+            "trial": 9,
+            "recordCount": 1000
+          },
+          {
+            "kind": "doctor",
+            "target": "deniz",
+            "trustedEvent": true,
+            "startMs": 909.3000000000029,
+            "endMs": 957.1000000000058,
+            "durationMs": 47.80000000000291,
+            "correct": true,
+            "rowCount": 500,
+            "trial": 10,
+            "recordCount": 1000
+          }
+        ],
+        "summary": {
+          "trials": 10,
+          "percentileMethod": "Nearest rank; descriptive small-sample result, not a population guarantee.",
+          "p50Ms": 49.80000000000291,
+          "p95Ms": 62,
+          "maxMs": 62,
+          "errors": 0,
+          "errorRate": 0,
+          "serialObservedUpdatesPerSecond": 16.196954972465328,
+          "serialIntervalMs": 617.3999999999942,
+          "throughputScope": "Single tab sequential instrumented run; interval includes Playwright gaps. Not concurrent users or server throughput."
+        },
+        "declaredThresholdMs": null,
+        "instrumentedThresholdResult": "EXPLORATORY_NO_ACCEPTANCE_THRESHOLD",
+        "capacityBoundary": {
+          "status": "PASS",
+          "recordCount": 1000,
+          "attemptedExtraRecord": "rejected",
+          "dataUnchanged": true
+        },
+        "reloadRecovery": {
+          "status": "PASS",
+          "recordCount": 1000,
+          "persistedStateEqual": true,
+          "wallClockMsIncludingAutomation": 191.18557400000213,
+          "scope": "Same-origin reload, not crash durability or cross-device recovery; no latency acceptance threshold."
+        },
+        "pageErrors": []
+      }
+    ],
+    "browser": "Chromium 157.0.8103.0",
+    "failure": null,
+    "technicalResult": "PASS"
+  }
+}

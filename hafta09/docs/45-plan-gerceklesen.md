@@ -1,6 +1,8 @@
 # 45 - Plan ve gerçekleşen
 
-Referans: [26 Ekim 2026 planı](https://docs.google.com/document/d/1HFdiLmDmVWLQpftQFj_tgF2BcCujXHZ2/edit). Durum: 22 Kasım 2026 öğretmen hazırlığı. Tablodaki “gerçekleşen” öğrenci çalışması veya insan emeği ölçümü değildir.
+> 22 Kasım 2026 kapanış güncellemesi: PR zinciri main’e birleştirildi; rc.2, gerçek klavye ve performans sonuçları [49 numaralı raporda](49-kapanis-raporu.md). Aşağıdaki rc.1 hazırlık kayıtları tarihseldir; insan kabulü hâlâ açıktır.
+
+Referans: 26 Ekim 2026 ders planı. Durum: 22 Kasım 2026 öğretmen hazırlığı. Tablodaki “gerçekleşen” öğrenci çalışması veya insan emeği ölçümü değildir.
 
 | Plan / hedef | Mevcut hazırlıkta gerçekleşen | Fark / sonraki iş |
 |---|---|---|

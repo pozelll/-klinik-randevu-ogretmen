@@ -1,0 +1,82 @@
+{
+  "executedAt": "2026-11-22T13:27:27.042936+00:00",
+  "method": "Python stdlib; iki gerçek üretim ve geçici kopyalarda kontrollü bozulma",
+  "package": {
+    "status": "PASS",
+    "version": "0.3.0-rc.2",
+    "sourceCommit": "5c796623a18d4ba187d2a9fe9beba4708915360b",
+    "sha256": "85371dd961cee6e197158d95b68906dbaf21bf96e540fc2ef8a7b1f300feb84a",
+    "bytes": 49602,
+    "fileCount": 9,
+    "files": [
+      "LICENSE",
+      "README.md",
+      "SHA256SUMS.txt",
+      "SURUM.json",
+      "index.html",
+      "src/demo-data.js",
+      "src/repository.js",
+      "src/rules.js",
+      "src/ui.js"
+    ]
+  },
+  "results": [
+    {
+      "id": "H9-P01",
+      "status": "PASS",
+      "actual": {
+        "twoBuildsSameBytes": true,
+        "firstSha256": "85371dd961cee6e197158d95b68906dbaf21bf96e540fc2ef8a7b1f300feb84a",
+        "secondSha256": "85371dd961cee6e197158d95b68906dbaf21bf96e540fc2ef8a7b1f300feb84a"
+      }
+    },
+    {
+      "id": "H9-P02",
+      "status": "PASS",
+      "actual": {
+        "verifiedManifest": true,
+        "fileCount": 9,
+        "sourceCommit": "5c796623a18d4ba187d2a9fe9beba4708915360b"
+      }
+    },
+    {
+      "id": "H9-P03",
+      "status": "PASS",
+      "actual": "Dosya içeriği veya özeti uyuşmuyor: src/ui.js"
+    },
+    {
+      "id": "H9-P04",
+      "status": "PASS",
+      "actual": "Paket dosya listesi eksik, fazla veya tekrarlı."
+    },
+    {
+      "id": "H9-P05",
+      "status": "PASS",
+      "actual": "Paket dosya listesi eksik, fazla veya tekrarlı."
+    },
+    {
+      "id": "H9-P06",
+      "status": "PASS",
+      "actual": "Dosya içeriği veya özeti uyuşmuyor: src/ui.js"
+    },
+    {
+      "id": "H9-P07",
+      "status": "PASS",
+      "actual": "Kaynak dosya aday tanımıyla uyuşmuyor: src/ui.js"
+    },
+    {
+      "id": "H9-P08",
+      "status": "PASS",
+      "actual": {
+        "extractionComplete": true,
+        "scriptReferences": [
+          "src/demo-data.js",
+          "src/repository.js",
+          "src/rules.js",
+          "src/ui.js"
+        ]
+      }
+    }
+  ],
+  "scope": "İçerik/üretim kontrolü; dijital imza, kullanıcı kabulü veya bağımsız inceleme değildir."
+}

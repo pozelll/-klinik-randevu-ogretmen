@@ -1,0 +1,48 @@
+{
+  "date": "2026-11-22",
+  "repository": "pozelll/-klinik-randevu-ogretmen",
+  "authorization": "Kullanıcının PR incelemesi ve sırayla birleştirme talimatı",
+  "reviewKind": "AI teknik incelemesi; bağımsız insan onayı değildir",
+  "merges": [
+    {
+      "pr": 7,
+      "head": "7d2750589e10ff2471c81aafc03b4fa5b5975250",
+      "merge": "adff72c7230ba3f15c2943ee890cd27297c7c068"
+    },
+    {
+      "pr": 11,
+      "head": "da3ce51798344a6fafaee89cce42aa9aba90de17",
+      "merge": "13db173248002d75eac19a825af908840b39a06a"
+    },
+    {
+      "pr": 12,
+      "head": "5bb20cd2dbe10be9b246bbfee627a5d3fc771f8e",
+      "merge": "1384a6fa37b72dd932b09467ee39c081defde699"
+    },
+    {
+      "pr": 15,
+      "head": "cd3ffbe8162152b23443e2c2af83e65a39c5ab0c",
+      "merge": "8910057c4d8bc89a74447d627d77085128909fd6"
+    },
+    {
+      "pr": 16,
+      "head": "f100249a9ece6cb18ff905fe6a3bee8a6cb6f9f8",
+      "merge": "c5b690cdb87d1f8c09a19ece45bfa1392798ea11"
+    },
+    {
+      "pr": 18,
+      "head": "cc62f833a3b470557afab8db4b8acf8ba43f4c21",
+      "merge": "9e6dcef2df8bf7caf38e59b3abe9ced189542232"
+    },
+    {
+      "pr": 19,
+      "head": "a95a59b96d822f1225e4815b8c6ac4f928691cd5",
+      "merge": "da08b5c7a702b8380d7fd0c9c007a7c438280625"
+    },
+    {
+      "pr": 21,
+      "head": "eb60185313c76d0017438dee098b48428eefe705",
+      "merge": "98297352b6dd735eab0774069ab622ec45e64cc1"
+    }
+  ]
+}

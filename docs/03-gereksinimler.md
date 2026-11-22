@@ -1,5 +1,7 @@
 # 03 — Gereksinim taslağı
 
+> 22 Kasım 2026 güncellemesi: Bu tarihsel gereksinim taslağının hedefleri korunur. RC2 klavye ve instrumentasyon ölçümleri ile açık insan kabul işleri [güncel kapanış raporunda](../hafta09/docs/49-kapanis-raporu.md) kayıtlıdır.
+
 Ekip: Öğretmen denemesi  
 Tarih: 27.10.2026  
 Sürüm: Belge 0.4 — doldurulmuş öğretmen çalışma örneği  
@@ -62,7 +64,7 @@ Bu liste, gereksinimleri mevcut gözlemlerle ilişkilendirir; bütün koşullar�
 
 Bu alt bölüm ölçüm planıdır; aşağıdaki kontroller henüz çalıştırılmadı. Yeni denemelerin sonuçları 08 numaralı belgeye ayrı kayıtlarla eklenecek; önceki gözlemler korunacak.
 
-**NFR-01 için:** Dört ayrı kişi kullanılır; tek kişinin dört denemesi dört katılımcı olarak sayılmaz. Katılımcılar gerektiğinde diğer gruplardan seçilebilir; böylece dört kişilik grup da aynı hedefle çalışabilir. Katılımcıya sırayla “Bekleyen randevunuzu iptal edin” ve “İptal sürecini başlatın, sonra randevunuzu koruyarak işlemden vazgeçin” görevleri verilir. Her görevin başında ayrı bir Bekliyor kaydı hazırdır. Görev okunup başlama işareti verildiğinde süre başlar; katılımcı bitirdiğini söylediğinde durur ve kaydın gerçek durumu kontrol edilir. İptal görevinde kayıt İptal edildi ve saat Uygun; vazgeçme görevinde kayıt Bekliyor ve saat Dolu olmalıdır. Yanlış iptal veya yardım isteme ayrıca kaydedilir. Görev sırası ve önceki deneyim yazılır; küçük sınıf denemesinden bütün kullanıcılar için genelleme yapılmaz.
+**NFR-01 için:** Dört ayrı kişi kullanılır; tek kişinin dört denemesi dört katılımcı olarak sayılmaz. Katılımcılar gerektiğinde diğer gruplardan seçilebilir; böylece iki, üç ve dört kişilik ekipler de dört farklı katılımcıyla aynı hedefi değerlendirebilir. Ekip büyüklüğü, dört katılımcı ve en az 3/4 başarı koşulunu değiştirmez. İş bölümü için [grup büyüklüğüne göre yönlendirmeye](11-grup-buyuklugune-gore-yonlendirme.md) bakın. Katılımcıya sırayla “Bekleyen randevunuzu iptal edin” ve “İptal sürecini başlatın, sonra randevunuzu koruyarak işlemden vazgeçin” görevleri verilir. Her görevin başında ayrı bir Bekliyor kaydı hazırdır. Görev okunup başlama işareti verildiğinde süre başlar; katılımcı bitirdiğini söylediğinde durur ve kaydın gerçek durumu kontrol edilir. İptal görevinde kayıt İptal edildi ve saat Uygun; vazgeçme görevinde kayıt Bekliyor ve saat Dolu olmalıdır. Yanlış iptal veya yardım isteme ayrıca kaydedilir. Görev sırası ve önceki deneyim yazılır; küçük sınıf denemesinden bütün kullanıcılar için genelleme yapılmaz.
 
 **NFR-02 için:** Ölçüm ekran kaydı üzerinden yapılır; kayıt yazılımı ve kare hızı not edilir. Başlangıç, seçimin tıklama veya Enter ile onaylandığı andır; bitiş, yeni doktorun saatleri, günlük listesi ve toplamlarının tamamının doğru göründüğü andır. Yanlış içerik hız hedefini sağlamış sayılmaz. Her denemeye sıra numarası ve süre verilir. Aynı kare içinde görünen değişim için sıfır saniye yazmak yerine “bir kare aralığından kısa” denir. Sınırın ayırt edilemediği bir kayıt başarılı sayılmaz; ölçüm belirsizliği kaydedilir ve uygun kayıtla tekrar edilir. Bu kontrol yerel arayüzün belirtilen veri miktarındaki yanıtıdır; cihazlar arası paylaşım veya yoğun kullanıcı yükü testi değildir.
 
@@ -142,3 +144,4 @@ Bu metin, yukarıdaki **NFR-02** hedefinin açık ifadesidir; yeni veya farklı 
 **Belgeden sonraki adım:** `04-kabul-kriterleri.md` dosyasında gereksinimler başlangıç durumu, kullanıcı eylemi ve beklenen sonuçla açıklanacak. Kalite hedeflerinin ölçüm adımları da ilişkilendirilecek. Beklenen sonuç, gerçek çalıştırma sonucu ve henüz yapılmamış kontrol durumu ayrı tutulacak.
 
 Dayanak dosyalar: `01-vizyon-kapsam.md`, `02-paydaslar.md`, `08-prototip-gozlemleri.md`, başlangıç paketindeki `README.md` ve `index.html`.
+

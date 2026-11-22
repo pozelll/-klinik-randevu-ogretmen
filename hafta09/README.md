@@ -1,8 +1,13 @@
 # YAZ325 - 9. hafta: Gitflow, Sürüm ve Hotfix
 
+> 22 Kasım 2026 kapanış güncellemesi: PR zinciri main’e birleştirildi; rc.2, gerçek klavye ve performans sonuçları [49 numaralı raporda](docs/49-kapanis-raporu.md). Aşağıdaki rc.1 hazırlık kayıtları tarihseldir; insan kabulü hâlâ açıktır.
+
 22 Kasım 2026 öğretmen hazırlığı. Mevcut Drive planına uygun, sekiz basamaklı anlatım ve gerçek Gitflow laboratuvarı.
 
-[PR #21](https://github.com/pozelll/-klinik-randevu-ogretmen/pull/21) · [Görev #20](https://github.com/pozelll/-klinik-randevu-ogretmen/issues/20) · [Drive H9 klasörü](https://drive.google.com/drive/folders/16ho8HcE_UT98VJSqH8ONn5rnChIRHuQg)
+
+## Grubun iş bölümü
+
+İki, üç ve dört kişilik gruplar dal katkıları, çakışma çözümü, sürüm ve hotfix kontrollerini [grup büyüklüğüne göre](../docs/11-grup-buyuklugune-gore-yonlendirme.md) paylaşır. Her üye anlamlı bir çıktı ve gerçek katkı kaydı üretir; yazmadığı kapsamı inceler. Ortak yazılan bölüm için gerekirse grup dışından inceleyen belirlenir. Kendi sorumlularınızı ve sonuçlarınızı [grup kaydına](sablonlar/grup-kaydi.md) yazın; öğretmen örneğinin kişi ve süre varsayımlarını doğrudan kendi planınız saymayın.
 
 | Basamak | Derste açılacak belge | Sonuç |
 |---|---|---|
@@ -17,7 +22,6 @@
 
 ## Derste kullan
 
-- [5–9. haftaların Drive dosya dizini](https://drive.google.com/file/d/1R7vBPedrxo--nXKP4gqRqIY9xvNJ60UN/view?usp=drivesdk) · [Yükleme kayıtları](docs/48-drive-teslim-dizini.md)
 - [Tek sayfalık tıklanabilir süreç PDF'i](dagitim/YAZ325_Hafta_09_Surec_Infografik_Aktif_Linkli.pdf)
 - [9 sayfalık anlatım rehberi](dagitim/YAZ325_Hafta_09_Ders_Anlatim_Rehberi.pdf)
 - [Uygulama ZIP'i](dagitim/YAZ325_Hafta09_Gitflow_Calisma_Paketi.zip): H9 araçları, kaynak metinler, bundle, PDF'ler ve H8 başlangıç paketi.

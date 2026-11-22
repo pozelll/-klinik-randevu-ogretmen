@@ -1,0 +1,19 @@
+name: H9 - Gitflow egitim deneyi
+on:
+  push:
+    branches: ['docs/h9-gitflow-teslim']
+  pull_request:
+    paths: ['hafta09/**', '.github/workflows/hafta09-gitflow.yml']
+permissions:
+  contents: read
+jobs:
+  gitflow:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Calisma kopyasi
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - name: Gercek Gitflow, cakisma ve hotfix deneyi - 12 kontrol
+        run: python hafta09/tools/gitflow_lab.py
+      - name: Son panel - 5 yapi ve 1 anlam kontrolu
+        run: python hafta09/tools/surum_kontrol.py --anlam

@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Klinik Randevu | Sürüm paneli</title><link rel="stylesheet" href="style.css"></head>
+<body><header><div class="wrap"><p class="eyebrow">YAZILIM GELİŞTİRME SÜREÇLERİ · HAFTA 09</p><h1>Klinik Randevu<br>Sürüm ve bilgilendirme paneli</h1><p>Bir değişikliğin dal, birleştirme ve sürüm yolculuğunu takip edin.</p></div></header>
+<main class="wrap"><div class="notice"><strong>Ders uygulaması</strong><p>0.9.x yalnız Gitflow laboratuvarının sürümüdür; Klinik uygulama 0.3.0-rc.1 olarak kalır. Bu panel sürüm notlarını gösterir; randevu kaydı oluşturmaz veya değiştirmez. Gösterilen sürüm metni tek başına Git etiketi veya başarılı teslim kanıtı değildir.</p></div>
+<div class="toolbar"><span id="status" role="status" aria-live="polite">Veri yükleniyor…</span><button id="refresh" type="button">Paneli yenile</button></div>
+<div id="error" class="error" hidden></div>
+<section id="panel" hidden><div class="version-row"><div><span class="label">SÜRÜM</span><strong id="version"></strong></div><span class="badge" id="channel"></span></div>
+<article class="announcement"><span class="label">ORTAK DUYURU</span><h2 id="announcement"></h2></article>
+<div class="cards"><article><span class="number">01</span><h2>Hasta bilgilendirmesi</h2><p id="patient"></p></article><article><span class="number">02</span><h2>Personel bilgilendirmesi</h2><p id="staff"></p></article></div>
+<article class="cancel"><span class="label">İPTAL KAYDI HAKKINDA</span><p id="cancel-note"></p><p class="small">Bu açıklamayı önceki haftanın randevu davranışıyla karşılaştırın. JSON kontrolünün geçmesi, bu cümlenin iş kuralına uygun olduğunu tek başına göstermez.</p></article></section>
+<section class="evidence"><h2>Gözleminizi kanıta bağlayın</h2><p>Tarayıcıda gördüğünüz sürüm ve duyuruyu; terminaldeki dal, commit ve Git etiketiyle eşleştirin. Ekran görüntüsünü kendi çalışma günlüğünüze ekleyin.</p><p class="small">Kaynak dosya: <code>hafta09/panel/surum.json</code>. Dal değiştirdikten sonra Paneli yenile düğmesini kullanın.</p></section>
+</main><footer class="wrap">Klinik Randevu · Gitflow eğitim eki · Gerçek hasta verisi içermez.</footer>
+<script>
+const ids={surum:'version',duyuru:'announcement',hasta_notu:'patient',personel_notu:'staff',iptal_notu:'cancel-note'};
+async function refresh(){const status=document.getElementById('status'),error=document.getElementById('error'),panel=document.getElementById('panel');status.textContent='Veri yükleniyor…';error.hidden=true;try{const response=await fetch('surum.json',{cache:'no-store'});if(!response.ok)throw new Error('HTTP '+response.status);const data=await response.json();for(const [key,id] of Object.entries(ids)){if(typeof data[key]!=='string')throw new Error('Eksik alan: '+key);document.getElementById(id).textContent=data[key]}document.getElementById('channel').textContent=data.kanal==='gelistirme'?'Geliştirme':'Eğitim sürümü';panel.hidden=false;status.textContent='surum.json dosyası okundu.'}catch(e){panel.hidden=true;error.hidden=false;error.textContent='Sürüm bilgisi okunamadı. JSON biçimini ve dosyanın HTTP üzerinden açıldığını kontrol edin. Ayrıntı: '+e.message;status.textContent='Okuma başarısız.'}}
+document.getElementById('refresh').addEventListener('click',refresh);refresh();
+</script></body></html>

@@ -1,0 +1,8 @@
+{
+  "surum": "0.9.0-dev",
+  "kanal": "gelistirme",
+  "duyuru": "Klinik Randevu eğitim paneli.",
+  "hasta_notu": "Hasta bilgilendirmesi henüz eklenmedi.",
+  "personel_notu": "Personel bilgilendirmesi henüz eklenmedi.",
+  "iptal_notu": "İptal edilen randevu listeden silinir."
+}

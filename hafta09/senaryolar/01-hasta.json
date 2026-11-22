@@ -1,0 +1,8 @@
+{
+  "surum": "0.9.0-dev",
+  "kanal": "gelistirme",
+  "duyuru": "Hastalar randevu durumunu panelden izleyebilir.",
+  "hasta_notu": "Bekliyor durumundaki randevunuzu iptal edebilirsiniz.",
+  "personel_notu": "Personel bilgilendirmesi henüz eklenmedi.",
+  "iptal_notu": "İptal edilen randevu listeden silinir."
+}

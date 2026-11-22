@@ -1,0 +1,8 @@
+{
+  "surum": "0.9.0-dev",
+  "kanal": "gelistirme",
+  "duyuru": "Personel uygun saatleri panelden izleyebilir.",
+  "hasta_notu": "Hasta bilgilendirmesi henüz eklenmedi.",
+  "personel_notu": "İptal sonrasında saat uygunluğunu yeniden kontrol edin.",
+  "iptal_notu": "İptal edilen randevu listeden silinir."
+}

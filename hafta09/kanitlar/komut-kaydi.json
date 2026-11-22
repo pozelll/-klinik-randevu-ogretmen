@@ -1,0 +1,771 @@
+[
+  {
+    "command": [
+      "git",
+      "init",
+      "-b",
+      "main",
+      "--object-format=sha1"
+    ],
+    "exitCode": 0,
+    "stdout": "Initialized empty Git repository in ${LAB_OUTPUT}/lab-deposu/.git/\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "git",
+      "config",
+      "user.name",
+      "YAZ325 Otomatik Ders Deneyi"
+    ],
+    "exitCode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "git",
+      "config",
+      "user.email",
+      "ders@example.invalid"
+    ],
+    "exitCode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "git",
+      "config",
+      "commit.gpgsign",
+      "false"
+    ],
+    "exitCode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "git",
+      "config",
+      "tag.gpgsign",
+      "false"
+    ],
+    "exitCode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "git",
+      "config",
+      "core.autocrlf",
+      "false"
+    ],
+    "exitCode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "git",
+      "add",
+      "."
+    ],
+    "exitCode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "git",
+      "commit",
+      "-m",
+      "lab: ortak panel baslangici"
+    ],
+    "exitCode": 0,
+    "stdout": "[main (root-commit) f19236c] lab: ortak panel baslangici\n 4 files changed, 27 insertions(+)\n create mode 100644 README.md\n create mode 100644 panel/index.html\n create mode 100644 panel/style.css\n create mode 100644 panel/surum.json\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "git",
+      "rev-parse",
+      "HEAD"
+    ],
+    "exitCode": 0,
+    "stdout": "f19236c64a9a40ad6aaa757c08886c2a6d9f10d2\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "git",
+      "switch",
+      "-c",
+      "develop"
+    ],
+    "exitCode": 0,
+    "stdout": "",
+    "stderr": "Switched to a new branch 'develop'\n"
+  },
+  {
+    "command": [
+      "git",
+      "switch",
+      "-c",
+      "feature/hasta-bilgi"
+    ],
+    "exitCode": 0,
+    "stdout": "",
+    "stderr": "Switched to a new branch 'feature/hasta-bilgi'\n"
+  },
+  {
+    "command": [
+      "git",
+      "add",
+      "panel/surum.json"
+    ],
+    "exitCode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "git",
+      "commit",
+      "-m",
+      "feat: hasta bilgisini ekle"
+    ],
+    "exitCode": 0,
+    "stdout": "[feature/hasta-bilgi 5c561b1] feat: hasta bilgisini ekle\n 1 file changed, 2 insertions(+), 2 deletions(-)\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "git",
+      "rev-parse",
+      "HEAD"
+    ],
+    "exitCode": 0,
+    "stdout": "5c561b1bb678776942f694572f440b8a9eeda32f\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "git",
+      "switch",
+      "develop"
+    ],
+    "exitCode": 0,
+    "stdout": "",
+    "stderr": "Switched to branch 'develop'\n"
+  },
+  {
+    "command": [
+      "git",
+      "switch",
+      "-c",
+      "feature/personel-bilgi"
+    ],
+    "exitCode": 0,
+    "stdout": "",
+    "stderr": "Switched to a new branch 'feature/personel-bilgi'\n"
+  },
+  {
+    "command": [
+      "git",
+      "add",
+      "panel/surum.json"
+    ],
+    "exitCode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "git",
+      "commit",
+      "-m",
+      "feat: personel bilgisini ekle"
+    ],
+    "exitCode": 0,
+    "stdout": "[feature/personel-bilgi 801c719] feat: personel bilgisini ekle\n 1 file changed, 2 insertions(+), 2 deletions(-)\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "git",
+      "rev-parse",
+      "HEAD"
+    ],
+    "exitCode": 0,
+    "stdout": "801c71952c9b2ce5ad295d4a070f2386b5addbe8\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "git",
+      "merge-base",
+      "feature/hasta-bilgi",
+      "feature/personel-bilgi"
+    ],
+    "exitCode": 0,
+    "stdout": "f19236c64a9a40ad6aaa757c08886c2a6d9f10d2\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "git",
+      "switch",
+      "develop"
+    ],
+    "exitCode": 0,
+    "stdout": "",
+    "stderr": "Switched to branch 'develop'\n"
+  },
+  {
+    "command": [
+      "git",
+      "merge",
+      "--no-ff",
+      "feature/hasta-bilgi",
+      "-m",
+      "merge: hasta katkisini developa al"
+    ],
+    "exitCode": 0,
+    "stdout": "Merge made by the 'ort' strategy.\n panel/surum.json | 4 ++--\n 1 file changed, 2 insertions(+), 2 deletions(-)\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "git",
+      "switch",
+      "feature/personel-bilgi"
+    ],
+    "exitCode": 0,
+    "stdout": "",
+    "stderr": "Switched to branch 'feature/personel-bilgi'\n"
+  },
+  {
+    "command": [
+      "git",
+      "merge",
+      "--no-ff",
+      "develop",
+      "-m",
+      "merge: guncel developu personele al"
+    ],
+    "exitCode": 1,
+    "stdout": "Auto-merging panel/surum.json\nCONFLICT (content): Merge conflict in panel/surum.json\nAutomatic merge failed; fix conflicts and then commit the result.\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "git",
+      "diff",
+      "--name-only",
+      "--diff-filter=U"
+    ],
+    "exitCode": 0,
+    "stdout": "panel/surum.json\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "git",
+      "add",
+      "panel/surum.json"
+    ],
+    "exitCode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "git",
+      "commit",
+      "-m",
+      "merge: iki katkili duyuruyla cakismayi coz"
+    ],
+    "exitCode": 0,
+    "stdout": "[feature/personel-bilgi 0ed1026] merge: iki katkili duyuruyla cakismayi coz\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "git",
+      "rev-parse",
+      "HEAD"
+    ],
+    "exitCode": 0,
+    "stdout": "0ed1026d0804ac7d3e17eb0bbab1fb01b62582b4\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "git",
+      "rev-list",
+      "--parents",
+      "-n",
+      "1",
+      "HEAD"
+    ],
+    "exitCode": 0,
+    "stdout": "0ed1026d0804ac7d3e17eb0bbab1fb01b62582b4 801c71952c9b2ce5ad295d4a070f2386b5addbe8 599333d142c0d5abc8acca75b0bae3b624305705\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "git",
+      "switch",
+      "develop"
+    ],
+    "exitCode": 0,
+    "stdout": "",
+    "stderr": "Switched to branch 'develop'\n"
+  },
+  {
+    "command": [
+      "git",
+      "merge",
+      "--no-ff",
+      "feature/personel-bilgi",
+      "-m",
+      "merge: personel ve cozumunu developa al"
+    ],
+    "exitCode": 0,
+    "stdout": "Merge made by the 'ort' strategy.\n panel/surum.json | 4 ++--\n 1 file changed, 2 insertions(+), 2 deletions(-)\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "git",
+      "switch",
+      "-c",
+      "release/0.9.0"
+    ],
+    "exitCode": 0,
+    "stdout": "",
+    "stderr": "Switched to a new branch 'release/0.9.0'\n"
+  },
+  {
+    "command": [
+      "git",
+      "add",
+      "panel/surum.json"
+    ],
+    "exitCode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "git",
+      "commit",
+      "-m",
+      "release: panel 0.9.0 egitim surumu"
+    ],
+    "exitCode": 0,
+    "stdout": "[release/0.9.0 077d5fb] release: panel 0.9.0 egitim surumu\n 1 file changed, 2 insertions(+), 2 deletions(-)\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "git",
+      "rev-parse",
+      "HEAD"
+    ],
+    "exitCode": 0,
+    "stdout": "077d5fb6898dd3c00e575361e5c89ccc2182b252\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "git",
+      "switch",
+      "main"
+    ],
+    "exitCode": 0,
+    "stdout": "",
+    "stderr": "Switched to branch 'main'\n"
+  },
+  {
+    "command": [
+      "git",
+      "merge",
+      "--no-ff",
+      "release/0.9.0",
+      "-m",
+      "merge: release 0.9.0 egitim ana dalina"
+    ],
+    "exitCode": 0,
+    "stdout": "Merge made by the 'ort' strategy.\n panel/surum.json | 10 +++++-----\n 1 file changed, 5 insertions(+), 5 deletions(-)\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "git",
+      "rev-parse",
+      "HEAD"
+    ],
+    "exitCode": 0,
+    "stdout": "4c7cb9852875a97fefdc661f2fa8a941b83d09f8\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "git",
+      "tag",
+      "-a",
+      "egitim-hafta09-v0.9.0",
+      "-m",
+      "Yalniz yerel Gitflow egitim senaryosu; klinik yayini degildir"
+    ],
+    "exitCode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "git",
+      "rev-parse",
+      "egitim-hafta09-v0.9.0^{}"
+    ],
+    "exitCode": 0,
+    "stdout": "4c7cb9852875a97fefdc661f2fa8a941b83d09f8\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "git",
+      "cat-file",
+      "-t",
+      "egitim-hafta09-v0.9.0"
+    ],
+    "exitCode": 0,
+    "stdout": "tag\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "git",
+      "switch",
+      "develop"
+    ],
+    "exitCode": 0,
+    "stdout": "",
+    "stderr": "Switched to branch 'develop'\n"
+  },
+  {
+    "command": [
+      "git",
+      "merge",
+      "--no-ff",
+      "release/0.9.0",
+      "-m",
+      "merge: release bilgisini developa tasi"
+    ],
+    "exitCode": 0,
+    "stdout": "Merge made by the 'ort' strategy.\n panel/surum.json | 4 ++--\n 1 file changed, 2 insertions(+), 2 deletions(-)\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "git",
+      "switch",
+      "main"
+    ],
+    "exitCode": 0,
+    "stdout": "",
+    "stderr": "Switched to branch 'main'\n"
+  },
+  {
+    "command": [
+      "git",
+      "switch",
+      "-c",
+      "hotfix/0.9.1"
+    ],
+    "exitCode": 0,
+    "stdout": "",
+    "stderr": "Switched to a new branch 'hotfix/0.9.1'\n"
+  },
+  {
+    "command": [
+      "git",
+      "add",
+      "panel/surum.json"
+    ],
+    "exitCode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "git",
+      "commit",
+      "-m",
+      "fix: iptal kaydinin korundugunu acikla"
+    ],
+    "exitCode": 0,
+    "stdout": "[hotfix/0.9.1 c9ca0bd] fix: iptal kaydinin korundugunu acikla\n 1 file changed, 2 insertions(+), 2 deletions(-)\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "git",
+      "rev-parse",
+      "HEAD"
+    ],
+    "exitCode": 0,
+    "stdout": "c9ca0bd6a0b8405707cd104440aff39137f5021c\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "git",
+      "switch",
+      "main"
+    ],
+    "exitCode": 0,
+    "stdout": "",
+    "stderr": "Switched to branch 'main'\n"
+  },
+  {
+    "command": [
+      "git",
+      "merge",
+      "--no-ff",
+      "hotfix/0.9.1",
+      "-m",
+      "merge: hotfix egitim ana dalina"
+    ],
+    "exitCode": 0,
+    "stdout": "Merge made by the 'ort' strategy.\n panel/surum.json | 4 ++--\n 1 file changed, 2 insertions(+), 2 deletions(-)\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "git",
+      "rev-parse",
+      "HEAD"
+    ],
+    "exitCode": 0,
+    "stdout": "0bb56efd7b1598632e5347b4277d8ad14a339c73\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "git",
+      "tag",
+      "-a",
+      "egitim-hafta09-v0.9.1",
+      "-m",
+      "Yalniz yerel Gitflow egitim hotfix etiketi"
+    ],
+    "exitCode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "git",
+      "switch",
+      "develop"
+    ],
+    "exitCode": 0,
+    "stdout": "",
+    "stderr": "Switched to branch 'develop'\n"
+  },
+  {
+    "command": [
+      "git",
+      "merge",
+      "--no-ff",
+      "hotfix/0.9.1",
+      "-m",
+      "merge: hotfixi developa da tasi"
+    ],
+    "exitCode": 0,
+    "stdout": "Merge made by the 'ort' strategy.\n panel/surum.json | 4 ++--\n 1 file changed, 2 insertions(+), 2 deletions(-)\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "git",
+      "rev-parse",
+      "HEAD"
+    ],
+    "exitCode": 0,
+    "stdout": "2c31d9f90d55186b5aed3aa7c672c59c51f9b3f2\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "git",
+      "merge-base",
+      "--is-ancestor",
+      "c9ca0bd6a0b8405707cd104440aff39137f5021c",
+      "main"
+    ],
+    "exitCode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "git",
+      "merge-base",
+      "--is-ancestor",
+      "c9ca0bd6a0b8405707cd104440aff39137f5021c",
+      "develop"
+    ],
+    "exitCode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "git",
+      "diff",
+      "--exit-code",
+      "main",
+      "develop",
+      "--",
+      "panel/surum.json"
+    ],
+    "exitCode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "git",
+      "rev-parse",
+      "egitim-hafta09-v0.9.1^{}"
+    ],
+    "exitCode": 0,
+    "stdout": "0bb56efd7b1598632e5347b4277d8ad14a339c73\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "git",
+      "rev-parse",
+      "egitim-hafta09-v0.9.0^{}"
+    ],
+    "exitCode": 0,
+    "stdout": "4c7cb9852875a97fefdc661f2fa8a941b83d09f8\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "git",
+      "log",
+      "--graph",
+      "--decorate",
+      "--oneline",
+      "--all"
+    ],
+    "exitCode": 0,
+    "stdout": "*   2c31d9f (HEAD -> develop) merge: hotfixi developa da tasi\n|\\  \n* \\   4f1e6be merge: release bilgisini developa tasi\n|\\ \\  \n| | | *   0bb56ef (tag: egitim-hafta09-v0.9.1, main) merge: hotfix egitim ana dalina\n| | | |\\  \n| | | |/  \n| | |/|   \n| | * | c9ca0bd (hotfix/0.9.1) fix: iptal kaydinin korundugunu acikla\n| | |/  \n| | *   4c7cb98 (tag: egitim-hafta09-v0.9.0) merge: release 0.9.0 egitim ana dalina\n| | |\\  \n| | |/  \n| |/|   \n| * | 077d5fb (release/0.9.0) release: panel 0.9.0 egitim surumu\n|/ /  \n* |   e0fceb1 merge: personel ve cozumunu developa al\n|\\ \\  \n| * \\   0ed1026 (feature/personel-bilgi) merge: iki katkili duyuruyla cakismayi coz\n| |\\ \\  \n| |/ /  \n|/| |   \n* | |   599333d merge: hasta katkisini developa al\n|\\ \\ \\  \n| |_|/  \n|/| |   \n| * | 5c561b1 (feature/hasta-bilgi) feat: hasta bilgisini ekle\n|/ /  \n| * 801c719 feat: personel bilgisini ekle\n|/  \n* f19236c lab: ortak panel baslangici\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "git",
+      "bundle",
+      "create",
+      "/workspace/scratch/1af96d251036/tmp/h9/gercek-deney/YAZ325_Hafta09_Gitflow_Deneyi.bundle",
+      "--all"
+    ],
+    "exitCode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "git",
+      "bundle",
+      "verify",
+      "/workspace/scratch/1af96d251036/tmp/h9/gercek-deney/YAZ325_Hafta09_Gitflow_Deneyi.bundle"
+    ],
+    "exitCode": 0,
+    "stdout": "The bundle contains these 9 refs:\n2c31d9f90d55186b5aed3aa7c672c59c51f9b3f2 refs/heads/develop\n5c561b1bb678776942f694572f440b8a9eeda32f refs/heads/feature/hasta-bilgi\n0ed1026d0804ac7d3e17eb0bbab1fb01b62582b4 refs/heads/feature/personel-bilgi\nc9ca0bd6a0b8405707cd104440aff39137f5021c refs/heads/hotfix/0.9.1\n0bb56efd7b1598632e5347b4277d8ad14a339c73 refs/heads/main\n077d5fb6898dd3c00e575361e5c89ccc2182b252 refs/heads/release/0.9.0\nf4842822570740b99def5ddc976440443c310437 refs/tags/egitim-hafta09-v0.9.0\n08390fccd0fbd34f875b9c0f53389961cfb5bf17 refs/tags/egitim-hafta09-v0.9.1\n2c31d9f90d55186b5aed3aa7c672c59c51f9b3f2 HEAD\nThe bundle records a complete history.\nThe bundle uses this hash algorithm: sha1\n",
+    "stderr": "${LAB_OUTPUT}/YAZ325_Hafta09_Gitflow_Deneyi.bundle is okay\n"
+  },
+  {
+    "command": [
+      "git",
+      "clone",
+      "-b",
+      "develop",
+      "/workspace/scratch/1af96d251036/tmp/h9/gercek-deney/YAZ325_Hafta09_Gitflow_Deneyi.bundle",
+      "/workspace/scratch/1af96d251036/tmp/h9/gercek-deney/yeniden-acilan"
+    ],
+    "exitCode": 0,
+    "stdout": "",
+    "stderr": "Cloning into '${LAB_OUTPUT}/yeniden-acilan'...\n"
+  },
+  {
+    "command": [
+      "git",
+      "show",
+      "HEAD:panel/surum.json"
+    ],
+    "exitCode": 0,
+    "stdout": "{\n  \"surum\": \"0.9.1\",\n  \"kanal\": \"egitim\",\n  \"duyuru\": \"Hastalar randevu durumunu, personel uygun saatleri izleyebilir.\",\n  \"hasta_notu\": \"Bekliyor durumundaki randevunuzu iptal edebilirsiniz.\",\n  \"personel_notu\": \"İptal sonrasında saat uygunluğunu yeniden kontrol edin.\",\n  \"iptal_notu\": \"İptal edilen randevu geçmişte korunur; saat yeniden uygun olur.\"\n}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "git",
+      "rev-parse",
+      "HEAD"
+    ],
+    "exitCode": 0,
+    "stdout": "2c31d9f90d55186b5aed3aa7c672c59c51f9b3f2\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "git",
+      "status",
+      "--porcelain"
+    ],
+    "exitCode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "git",
+      "remote"
+    ],
+    "exitCode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "git",
+      "log",
+      "--all",
+      "--reverse",
+      "--topo-order",
+      "--format=%H|%P|%s"
+    ],
+    "exitCode": 0,
+    "stdout": "f19236c64a9a40ad6aaa757c08886c2a6d9f10d2||lab: ortak panel baslangici\n801c71952c9b2ce5ad295d4a070f2386b5addbe8|f19236c64a9a40ad6aaa757c08886c2a6d9f10d2|feat: personel bilgisini ekle\n5c561b1bb678776942f694572f440b8a9eeda32f|f19236c64a9a40ad6aaa757c08886c2a6d9f10d2|feat: hasta bilgisini ekle\n599333d142c0d5abc8acca75b0bae3b624305705|f19236c64a9a40ad6aaa757c08886c2a6d9f10d2 5c561b1bb678776942f694572f440b8a9eeda32f|merge: hasta katkisini developa al\n0ed1026d0804ac7d3e17eb0bbab1fb01b62582b4|801c71952c9b2ce5ad295d4a070f2386b5addbe8 599333d142c0d5abc8acca75b0bae3b624305705|merge: iki katkili duyuruyla cakismayi coz\ne0fceb136e518f1c60ffcb384670ea041d2fec61|599333d142c0d5abc8acca75b0bae3b624305705 0ed1026d0804ac7d3e17eb0bbab1fb01b62582b4|merge: personel ve cozumunu developa al\n077d5fb6898dd3c00e575361e5c89ccc2182b252|e0fceb136e518f1c60ffcb384670ea041d2fec61|release: panel 0.9.0 egitim surumu\n4c7cb9852875a97fefdc661f2fa8a941b83d09f8|f19236c64a9a40ad6aaa757c08886c2a6d9f10d2 077d5fb6898dd3c00e575361e5c89ccc2182b252|merge: release 0.9.0 egitim ana dalina\nc9ca0bd6a0b8405707cd104440aff39137f5021c|4c7cb9852875a97fefdc661f2fa8a941b83d09f8|fix: iptal kaydinin korundugunu acikla\n0bb56efd7b1598632e5347b4277d8ad14a339c73|4c7cb9852875a97fefdc661f2fa8a941b83d09f8 c9ca0bd6a0b8405707cd104440aff39137f5021c|merge: hotfix egitim ana dalina\n4f1e6be4a612b11cc3b97acdc9768898c72f7c0e|e0fceb136e518f1c60ffcb384670ea041d2fec61 077d5fb6898dd3c00e575361e5c89ccc2182b252|merge: release bilgisini developa tasi\n2c31d9f90d55186b5aed3aa7c672c59c51f9b3f2|4f1e6be4a612b11cc3b97acdc9768898c72f7c0e c9ca0bd6a0b8405707cd104440aff39137f5021c|merge: hotfixi developa da tasi\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "git",
+      "--version"
+    ],
+    "exitCode": 0,
+    "stdout": "git version 2.56.1\n",
+    "stderr": ""
+  }
+]

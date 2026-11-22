@@ -1,0 +1,31 @@
+*   2c31d9f (HEAD -> develop) merge: hotfixi developa da tasi
+|\  
+* \   4f1e6be merge: release bilgisini developa tasi
+|\ \  
+| | | *   0bb56ef (tag: egitim-hafta09-v0.9.1, main) merge: hotfix egitim ana dalina
+| | | |\  
+| | | |/  
+| | |/|   
+| | * | c9ca0bd (hotfix/0.9.1) fix: iptal kaydinin korundugunu acikla
+| | |/  
+| | *   4c7cb98 (tag: egitim-hafta09-v0.9.0) merge: release 0.9.0 egitim ana dalina
+| | |\  
+| | |/  
+| |/|   
+| * | 077d5fb (release/0.9.0) release: panel 0.9.0 egitim surumu
+|/ /  
+* |   e0fceb1 merge: personel ve cozumunu developa al
+|\ \  
+| * \   0ed1026 (feature/personel-bilgi) merge: iki katkili duyuruyla cakismayi coz
+| |\ \  
+| |/ /  
+|/| |   
+* | |   599333d merge: hasta katkisini developa al
+|\ \ \  
+| |_|/  
+|/| |   
+| * | 5c561b1 (feature/hasta-bilgi) feat: hasta bilgisini ekle
+|/ /  
+| * 801c719 feat: personel bilgisini ekle
+|/  
+* f19236c lab: ortak panel baslangici

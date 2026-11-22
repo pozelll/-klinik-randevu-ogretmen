@@ -17,14 +17,14 @@
 <body>
   <header class="topbar">
     <div class="wrap">
-      <div class="brand"><span class="mark" aria-hidden="true">+</span><div><strong>Klinik Randevu</strong><small>Yazılım Geliştirme Süreçleri · 5–6. hafta</small></div></div>
+      <div class="brand"><span class="mark" aria-hidden="true">+</span><div><strong>Klinik Randevu</strong><small>Yazılım Geliştirme Süreçleri · 7–8. hafta</small></div></div>
       <div class="top-actions"><span class="tag">EĞİTİM PROTOTİPİ</span><button class="ghost" id="reset-data" type="button" data-testid="reset-data">Örnek veriyi sıfırla</button></div>
     </div>
   </header>
   <main class="wrap">
     <section class="hero" aria-labelledby="page-title">
       <div><p class="eyebrow">İncele · Soru sor · Gereksinimi yaz</p><h1 id="page-title">Bir randevunun yolculuğu.</h1><p>Rolleri değiştirin, bir randevu oluşturun ve sonucunu izleyin. Bütün kişi, randevu ve tarihler eğitim için hazırlanmış örneklerdir.</p></div>
-      <div class="version">Modüler öğretmen örneği<br><strong>v0.2 · Çevrimdışı demo</strong></div>
+      <div class="version">Modüler öğretmen örneği<br><strong>v0.3.0-rc.1 · Ders adayı</strong></div>
     </section>
 
     <section class="panel controls" aria-label="Simülasyon ayarları">
@@ -46,8 +46,8 @@
     <div class="main-grid">
       <section class="panel" aria-labelledby="slots-title">
         <div class="panel-head"><span class="section-id">B1</span><div><h2 id="slots-title">Uygun saatler</h2><p id="slots-subtitle">Seçili doktor ve tarih · FR-01 / FR-02</p></div></div>
-        <div class="panel-body"><div class="legend" aria-hidden="true"><span><i class="dot free"></i>Uygun</span><span><i class="dot"></i>Dolu / kapalı</span><span><i class="dot selected"></i>Seçili</span></div><div id="slots" class="slots" aria-label="Randevu saatleri"></div>
-          <div class="booking"><h3 id="booking-label">Seçiminiz</h3><p class="booking-summary" id="booking-summary">Randevu oluşturmak için uygun bir saate tıklayın.</p><button id="book-appointment" class="primary" type="button" disabled data-testid="book-appointment">Randevuyu onayla</button><p class="small-note" id="booking-note">BR-01: Aynı doktor, tarih ve saat için iptal edilmemiş ikinci randevu oluşturulamaz.</p></div>
+        <div class="panel-body"><div class="legend" aria-hidden="true"><span><i class="dot free"></i>Uygun</span><span><i class="dot"></i>Dolu / kapalı</span><span><i class="dot selected"></i>Seçili</span></div><p id="slot-help" class="small-note" style="margin:0 0 14px" aria-live="polite">Uygun bir saat seçin; ardından bilgileri kontrol edip randevuyu onaylayın.</p><div id="slots" class="slots" aria-label="Randevu saatleri" aria-describedby="slot-help"></div>
+          <div class="booking"><h3 id="booking-label">Seçiminiz</h3><p class="booking-summary" id="booking-summary">Randevu oluşturmak için uygun bir saate tıklayın.</p><button id="book-appointment" aria-describedby="slot-help" class="primary" type="button" disabled data-testid="book-appointment">Randevuyu onayla</button><p class="small-note" id="booking-note">BR-01: Aynı doktor, tarih ve saat için iptal edilmemiş ikinci randevu oluşturulamaz.</p></div>
         </div>
       </section>
 

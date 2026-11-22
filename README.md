@@ -1,3 +1,14 @@
+# YAZ325 — 7. hafta: kontrollü değişiklik yönetimi
+
+- [7. hafta: sekiz basamak ve gerçek kanıtlar](hafta07/README.md) · [PR #18](https://github.com/pozelll/-klinik-randevu-ogretmen/pull/18)
+- [Tek sayfalık süreç PDF'i](hafta07/dagitim/YAZ325_Hafta_07_Surec_Infografik_Aktif_Linkli.pdf)
+
+H3'te ertelenen #10 saat seçimi yardımı uygulandı. Güncel öğretmen dalı `feat/h7-saat-secimi-yardimi`; main henüz bu çalışmaları içermez. 30/30 Node testi ve 14/14 Chromium senaryosu geçti. Bağımsız inceleme, birleştirme ve NFR ölçümleri bekliyor.
+
+Aşağıdaki haftalar tarihsel çalışma kayıtlarıdır; H7'nin güncel uygulaması saat yardımını da içerir.
+
+---
+
 # YAZ325 - 5. ve 6. hafta öğretmen çalışma paketi
 
 - [5. hafta: mimariyi koda aktarma](hafta05/README.md) · [PR #15](https://github.com/pozelll/-klinik-randevu-ogretmen/pull/15)

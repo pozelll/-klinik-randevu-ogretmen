@@ -1,0 +1,99 @@
+{
+  "executedAt": "2026-11-22T12:10:05.405330+00:00",
+  "browser": "Chromium 157.0.8103.0",
+  "method": "Headless Playwright; file://; sentetik ve yalıtılmış yeni tarayıcı oturumları",
+  "scope": "NFR kullanılabilirlik / yanıt süresi / klavye ölçümü değildir; bağımsız insan incelemesi değildir.",
+  "sources": {
+    "index.html": "88f3f703492aaf436a7e223b3ce8f99591ceaa3edf61e17a40e6a085d85a9d55",
+    "src/demo-data.js": "440d637afed2a1e596b5314020c57973dd323dc65ee3f1504a9ac7802f151906",
+    "src/repository.js": "8f77e18cf450c424d7cefd162b20c07c01c0591f44f200149d12252d7b9682c5",
+    "src/rules.js": "d695881e4dd6b0bfd2cc6c084b5899b910ee4b3384e0af527b4a58c53f0cb496",
+    "src/ui.js": "fe790bd7e13f4fdd2a7abe3db4c721d43c7c490e3c16d329f802c2174d49ac10"
+  },
+  "results": [
+    {
+      "id": "H3-T01",
+      "status": "PASS",
+      "actual": "H3 iptal açıklaması ve Tamamlandı sınırı ekranda.",
+      "pageErrors": []
+    },
+    {
+      "id": "H3-T02",
+      "status": "PASS",
+      "actual": "ALT-01: onaydan vazgeçmede kayıt ve saat aynı.",
+      "pageErrors": []
+    },
+    {
+      "id": "H3-T03",
+      "status": "PASS",
+      "actual": "AC-03: kayıt listede kaldı, 09:00 açıldı, genel kayıt sayısı 7.",
+      "pageErrors": []
+    },
+    {
+      "id": "H3-T04",
+      "status": "PASS",
+      "actual": "Tamamlandı kaydında iptal düğmesi yok, saat kapalı.",
+      "pageErrors": []
+    },
+    {
+      "id": "H3-T05",
+      "status": "PASS",
+      "actual": "Ece ve Kaan görünümleri kendi kayıtlarıyla sınırlı.",
+      "pageErrors": []
+    },
+    {
+      "id": "H3-T06",
+      "status": "PASS",
+      "actual": "Seçili doktor/gün toplamı 4 → 5 → 5 → 5; genel kayıt 7 → 8.",
+      "pageErrors": []
+    },
+    {
+      "id": "H6-B07",
+      "status": "PASS",
+      "actual": "Yenileme, yeniden oluşturma ve tamamlama birbiriyle tutarlı.",
+      "pageErrors": []
+    },
+    {
+      "id": "H6-B08",
+      "status": "PASS",
+      "actual": "Saklama engelliyken uygulama çalıştı; yenilemede oturum değişikliği kayboldu.",
+      "pageErrors": []
+    },
+    {
+      "id": "H6-B09",
+      "status": "PASS",
+      "actual": "390 px görünümde yatay taşma yok; randevu oluşturulabiliyor.",
+      "pageErrors": []
+    },
+    {
+      "id": "H7-B01",
+      "status": "PASS",
+      "actual": "Başlangıç yardımı görünür; saat seçilmeden onay kapalı, yeni kayıt yok.",
+      "pageErrors": []
+    },
+    {
+      "id": "H7-B02",
+      "status": "PASS",
+      "actual": "Saat seçimi kayıt yaratmadı; onay tek kayıt yarattı ve yardım başlangıca döndü.",
+      "pageErrors": []
+    },
+    {
+      "id": "H7-B03",
+      "status": "PASS",
+      "actual": "Hasta, doktor ve tarih değişimi eski seçimi temizledi; yardımda eski saat kalmadı.",
+      "pageErrors": []
+    },
+    {
+      "id": "H7-B04",
+      "status": "PASS",
+      "actual": "Doktor yönlendirmesi yetkiyle tutarlı; resepsiyon seçili hasta adına kayıt açtı.",
+      "pageErrors": []
+    },
+    {
+      "id": "H7-B05",
+      "status": "PASS",
+      "actual": "390 px görünümde yardım taşmadı; seçim tek başına kayıt yaratmadı.",
+      "pageErrors": []
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 name: Klinik - kurallar ve tarayici
 on:
   push:
-    branches: ['test/h6-karar-tablosu']
+    branches: ['test/h6-karar-tablosu', 'feat/h7-saat-secimi-yardimi', 'release/h8-surum-adayi']
   pull_request:
 permissions:
   contents: read
@@ -22,5 +22,5 @@ jobs:
         run: |
           python -m pip install playwright
           python -m playwright install --with-deps chromium
-      - name: Chromium - 9 senaryo
+      - name: Chromium - 14 senaryo
         run: python tests/browser_smoke.py

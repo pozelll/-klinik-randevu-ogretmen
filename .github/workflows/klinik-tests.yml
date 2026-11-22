@@ -24,3 +24,13 @@ jobs:
           python -m playwright install --with-deps chromium
       - name: Chromium - 14 senaryo
         run: python tests/browser_smoke.py
+      - name: Paket - 8 uretim ve butunluk kontrolu
+        run: python scripts/check_candidate.py
+      - name: Dagitim paketini yeniden uret, karsilastir ve ayikla
+        run: |
+          python scripts/build_candidate.py build --output "$RUNNER_TEMP/h8-built.zip"
+          cmp "$RUNNER_TEMP/h8-built.zip" hafta08/dagitim/Klinik_Randevu_0.3.0-rc.1.zip
+          python scripts/build_candidate.py verify hafta08/dagitim/Klinik_Randevu_0.3.0-rc.1.zip
+          python scripts/build_candidate.py extract hafta08/dagitim/Klinik_Randevu_0.3.0-rc.1.zip --target "$RUNNER_TEMP/h8-package"
+      - name: Ayiklanmis pakette Chromium - 14 senaryo
+        run: python tests/browser_smoke.py --app-dir "$RUNNER_TEMP/h8-package"

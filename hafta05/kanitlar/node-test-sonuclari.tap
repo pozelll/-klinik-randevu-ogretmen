@@ -1,0 +1,58 @@
+TAP version 13
+# Subtest: H5-S01 | Onaylı iptal kaydı silmez, nextId korunur
+ok 1 - H5-S01 | Onaylı iptal kaydı silmez, nextId korunur
+  ---
+  duration_ms: 2.944656
+  type: 'test'
+  ...
+# Subtest: H5-S02 | Yalnız kopyayı değiştirmek depoyu değiştirmez
+ok 2 - H5-S02 | Yalnız kopyayı değiştirmek depoyu değiştirmez
+  ---
+  duration_ms: 0.4982
+  type: 'test'
+  ...
+# Subtest: H5-S03 | BR-01 dolu saate ikinci kayıt açtırmaz
+ok 3 - H5-S03 | BR-01 dolu saate ikinci kayıt açtırmaz
+  ---
+  duration_ms: 2.022075
+  type: 'test'
+  ...
+# Subtest: H5-S04 | İptal, yeniden oluşturma ve tamamlama aynı veriyi kullanır
+ok 4 - H5-S04 | İptal, yeniden oluşturma ve tamamlama aynı veriyi kullanır
+  ---
+  duration_ms: 1.213724
+  type: 'test'
+  ...
+# Subtest: H5-S05 | Hasta filtresi ve günlük toplamların kapsamı korunur
+ok 5 - H5-S05 | Hasta filtresi ve günlük toplamların kapsamı korunur
+  ---
+  duration_ms: 11.625093
+  type: 'test'
+  ...
+# Subtest: H5-S06 | Yazma başarısızsa değişiklik bellekte, kalıcılık false
+ok 6 - H5-S06 | Yazma başarısızsa değişiklik bellekte, kalıcılık false
+  ---
+  duration_ms: 0.911778
+  type: 'test'
+  ...
+# Subtest: H5-S07 | Resepsiyon iptal isteğinde güncelleme yapılmaz
+ok 7 - H5-S07 | Resepsiyon iptal isteğinde güncelleme yapılmaz
+  ---
+  duration_ms: 0.405341
+  type: 'test'
+  ...
+# Subtest: H5-S08 | Onaydan önce uygun olan kayıt işlem anında yeniden denetlenir
+ok 8 - H5-S08 | Onaydan önce uygun olan kayıt işlem anında yeniden denetlenir
+  ---
+  duration_ms: 0.492536
+  type: 'test'
+  ...
+1..8
+# tests 8
+# suites 0
+# pass 8
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 335.440805

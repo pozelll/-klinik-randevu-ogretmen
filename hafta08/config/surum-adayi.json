@@ -5,7 +5,7 @@
   "releaseStatus": "candidate; independent review and acceptance pending",
   "sourceCommit": "bd5fa3fb2c35d1c11864eed982fdbc20d539d58a",
   "sourceFiles": {
-    "LICENSE": "412e81044a36d5b10e5cf35add3a64ce14f4f4044307ead820915482615e15f3",
+    "LICENSE": "a707c23f3a1f49fce87ce3093fc80d4f8f466b795c893eb5eda043052a32cba6",
     "index.html": "88f3f703492aaf436a7e223b3ce8f99591ceaa3edf61e17a40e6a085d85a9d55",
     "src/demo-data.js": "440d637afed2a1e596b5314020c57973dd323dc65ee3f1504a9ac7802f151906",
     "src/repository.js": "8f77e18cf450c424d7cefd162b20c07c01c0591f44f200149d12252d7b9682c5",

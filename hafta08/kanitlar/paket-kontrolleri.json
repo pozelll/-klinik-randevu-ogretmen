@@ -1,12 +1,12 @@
 {
-  "executedAt": "2026-11-22T12:19:32.289226+00:00",
+  "executedAt": "2026-11-22T12:22:45.887200+00:00",
   "method": "Python stdlib; iki gerçek üretim ve geçici kopyalarda kontrollü bozulma",
   "package": {
     "status": "PASS",
     "version": "0.3.0-rc.1",
     "sourceCommit": "bd5fa3fb2c35d1c11864eed982fdbc20d539d58a",
-    "sha256": "dbe47a18d1b851603770e6831e4c65266592245d8e67f758d930738e15b50928",
-    "bytes": 47826,
+    "sha256": "36822b44675d5df7d1613f9605f907e18fe3656cc74b64e614d19c277bde2dc5",
+    "bytes": 47825,
     "fileCount": 9,
     "files": [
       "LICENSE",
@@ -26,8 +26,8 @@
       "status": "PASS",
       "actual": {
         "twoBuildsSameBytes": true,
-        "firstSha256": "dbe47a18d1b851603770e6831e4c65266592245d8e67f758d930738e15b50928",
-        "secondSha256": "dbe47a18d1b851603770e6831e4c65266592245d8e67f758d930738e15b50928"
+        "firstSha256": "36822b44675d5df7d1613f9605f907e18fe3656cc74b64e614d19c277bde2dc5",
+        "secondSha256": "36822b44675d5df7d1613f9605f907e18fe3656cc74b64e614d19c277bde2dc5"
       }
     },
     {

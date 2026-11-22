@@ -55,6 +55,8 @@ Gerçek sonuçlar ancak uygulama denendikten sonra yazılır.
 
 Bunlar ders için verilen tahmin girdileridir; ölçülmüş süre veya gerçek ekip onayı değildir.
 
+**Gruba uyarlama:** U1–U4 ve blok değişimleri yukarıdaki dört kişilik öğretmen hesabına aittir. İki, üç ve dört kişilik öğrenci grupları [kendi iş bölümünü ve kaynak uygunluğunu](../../docs/11-grup-buyuklugune-gore-yonlendirme.md) dikkate alır; P0 kopyasını koruyup P1 atamalarını, süreyi ve inceleme düzenini kendi planları üzerinden yeniden değerlendirir.
+
 ## Öğrencinin yapacağı iş
 
 1. İlk planı değiştirmeden koru. Yeni bilgiyle hangi çıktıların büyüdüğünü açıkla.
@@ -65,3 +67,4 @@ Bunlar ders için verilen tahmin girdileridir; ölçülmüş süre veya gerçek 
 Öğretmen hesabı [03-is-plani-ve-riskler.md](../docs/03-is-plani-ve-riskler.md)
 belgesinin H4-P1 bölümündedir. Gruplar kendi başlangıç planlarını kullanıyorsa
 etkiyi o planın görev ve kaynaklarına göre değerlendirmelidir.
+

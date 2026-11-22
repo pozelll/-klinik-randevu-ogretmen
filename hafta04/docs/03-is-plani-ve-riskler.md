@@ -46,6 +46,10 @@ Gerçekte bir parçanın yazımına katılırsa o parçanın bağımsız inceley
 belirlenmelidir. Bu gelecek uygulama planı, H4 belgelerinin sekizinci basamaktaki
 bağımsız incelemesinin yapılmış olduğu anlamına gelmez.
 
+### Gerçek öğrenci gruplarına uyarlama
+
+Aşağıdaki U1–U4 dağılımı ve P0/P1 hesapları dört kişilik öğretmen örneği olarak korunur. Sınıfın iki, üç ve dört kişilik grupları [ortak iş bölümü yönlendirmesini](../../docs/11-grup-buyuklugune-gore-yonlendirme.md) kullanarak kendi sorumlu ve sürelerini belirler. Aynı kişiye düşen paralel işleri sıraya koyup bitişi yeniden hesaplar; bağımsız inceleme ve düzeltme için kaynak ayırır. 8 ve 9 saat ile 17 ve 19 kişi-saat değerleri bütün grupların gerçek kapasitesi değildir.
+
 ## İlk iş planı — H4-P0
 
 | İş ID | Somut görev / çıktı | Öncül iş(ler) | Sorumlu(lar) | Süre: blok (saat) | Emek: kişi-saat |
@@ -405,3 +409,4 @@ mevcut uygulamanın T01–T06 kontrolleri bu basamakta yeniden çalıştırılma
 Öğrenciler [boş 03 şablonunu](../sablonlar/03-is-plani-ve-riskler.md) kullanır.
 Kendi görev, süre ve kaynaklarını yazıp hesabı yeniden yapar. Kritik yolu yalnız
 öğretmen örneğinden kopyalamak, kendi grubunun planını oluşturmak değildir.
+

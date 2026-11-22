@@ -55,7 +55,7 @@ H3-01–H3-06 bu belgedeki iş kimlikleridir; GitHub Issue numarası değildir. 
 
 ## Sınıfta uygulanışı
 
-Üç beş kişilik ve bir dört kişilik grup, kendi gözlemlerini kullanarak ilk iki tercihini gerekçelendirecek. Bir öğrenci listeyi yazarken diğerleri ihtiyaç bağlantısını, kapsamı ve tahminlerin gerekçesini tartışacak. Gerçek isimler ve katkılar çalışma yapıldıktan sonra kaydedilecek. Öğretmenin hazır sırasını kopyalamak yerine farklı sıra öneren grup, gerekçesini açıklayabilir.
+Sınıftaki altı grup toplam 19 öğrencidir: iki grup iki kişilik, bir grup üç kişilik, üç grup dört kişiliktir. Her grup kendi gözlemlerini kullanarak ilk iki tercihini gerekçelendirecek; yazım, kontrol ve inceleme işlerini [grup büyüklüğüne göre](../../docs/11-grup-buyuklugune-gore-yonlendirme.md) paylaşacaktır. Her üye açıklayabileceği bir çıktı üretecek, gerçek katkılar grubun kendi çalışma kaydına yazılacaktır. Öğretmenin hazır sırasını kopyalamak yerine farklı sıra öneren grup, gerekçesini açıklayabilir. Yazılan veya birlikte yazılan kapsamın bağımsız inceleyeni ayrıca belirlenir.
 
 ## Kaydetme
 
@@ -64,3 +64,4 @@ Bu dosyayı 01-ekip-hedef.md ve 02-gozlem.md ile aynı hafta-03/docs klasörüne
 Güncel çıktı: İlk tahminler korunarak değişiklik kararı kaydedildi. İlk kod değişiklikleri f857deb ile kayıtlı; R011 iptal ve R012 vazgeçme gözlemleri mevcut. Ek kapsam, kalan kontroller ve inceleme bekliyor.
 
 Sonraki dosya: 04-kabul-ve-dod.md. Seçmeyi düşündüğümüz işler için beklenen sonucu ve bir işi tamamlandı sayma koşullarını açıklayacağız.
+

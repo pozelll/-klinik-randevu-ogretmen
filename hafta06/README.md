@@ -5,6 +5,10 @@ Sekiz basamaklı, aktif GitHub bağlantılı öğretmen örneği. Hazırlık: 22
 
 Çalışma dalı: `test/h6-karar-tablosu` · [PR #16](https://github.com/pozelll/-klinik-randevu-ogretmen/pull/16) · [Görev #14](https://github.com/pozelll/-klinik-randevu-ogretmen/issues/14)
 
+## Grubun iş bölümü
+
+İki, üç ve dört kişilik gruplar karar tablosu, test yazımı, test yürütümü ve kanıt incelemesini [grup büyüklüğüne göre](../docs/11-grup-buyuklugune-gore-yonlendirme.md) paylaşır. Her üye anlamlı bir çıktı ve gerçek katkı kaydı üretir; yazmadığı kapsamı inceler. Ortak yazılan bölüm için gerekirse grup dışından inceleyen belirlenir. Kendi sorumlularınızı ve sonuçlarınızı [grup kaydına](sablonlar/grup-kaydi.md) yazın; öğretmen örneğinin kişi ve süre varsayımlarını doğrudan kendi planınız saymayın.
+
 | Basamak | Ekranda açılacak belge | Hazırlık sonucu |
 |---|---|---|
 | 1 | [Test kapsamını belirledik](docs/01-test-plani.md) | Kural, veri erişimi ve ekran kontrolleri ayrıldı. |

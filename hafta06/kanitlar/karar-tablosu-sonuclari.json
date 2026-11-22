@@ -1,0 +1,1017 @@
+{
+  "executedAt": "2026-11-22T11:45:19.467Z",
+  "node": "v24.22.3",
+  "scope": "Otomatik kontrollü ders testi; bağımsız kişi incelemesi değildir.",
+  "sources": {
+    "index.html": "4be86a26c11970bbbe2b824220fff580c0420e3bfe1a6feafb59ceac134cbc08",
+    "src/demo-data.js": "440d637afed2a1e596b5314020c57973dd323dc65ee3f1504a9ac7802f151906",
+    "src/repository.js": "8f77e18cf450c424d7cefd162b20c07c01c0591f44f200149d12252d7b9682c5",
+    "src/rules.js": "d695881e4dd6b0bfd2cc6c084b5899b910ee4b3384e0af527b4a58c53f0cb496",
+    "src/ui.js": "3db70733c4316ffeb9affa9ee0d8b24f190e2c380a085d91168c7c690ec70181"
+  },
+  "evidence": [
+    {
+      "id": "DK-K01",
+      "context": {
+        "role": "patient",
+        "patientId": "ece",
+        "doctorId": "deniz",
+        "date": "2030-11-12"
+      },
+      "requestId": "R999",
+      "expected": "NOT_FOUND",
+      "actual": {
+        "ok": false,
+        "code": "NOT_FOUND"
+      },
+      "before": {
+        "schema": 1,
+        "nextId": 8,
+        "appointments": [
+          {
+            "id": "R001",
+            "patientId": "ece",
+            "doctorId": "deniz",
+            "date": "2030-11-12",
+            "time": "09:00",
+            "status": "pending"
+          },
+          {
+            "id": "R002",
+            "patientId": "kaan",
+            "doctorId": "deniz",
+            "date": "2030-11-12",
+            "time": "10:00",
+            "status": "pending"
+          },
+          {
+            "id": "R003",
+            "patientId": "ece",
+            "doctorId": "deniz",
+            "date": "2030-11-12",
+            "time": "11:00",
+            "status": "completed"
+          },
+          {
+            "id": "R004",
+            "patientId": "kaan",
+            "doctorId": "deniz",
+            "date": "2030-11-12",
+            "time": "13:00",
+            "status": "cancelled"
+          },
+          {
+            "id": "R005",
+            "patientId": "ece",
+            "doctorId": "selin",
+            "date": "2030-11-12",
+            "time": "09:30",
+            "status": "pending"
+          },
+          {
+            "id": "R006",
+            "patientId": "kaan",
+            "doctorId": "selin",
+            "date": "2030-11-12",
+            "time": "11:00",
+            "status": "completed"
+          },
+          {
+            "id": "R007",
+            "patientId": "kaan",
+            "doctorId": "deniz",
+            "date": "2030-11-13",
+            "time": "10:30",
+            "status": "pending"
+          }
+        ]
+      },
+      "after": {
+        "schema": 1,
+        "nextId": 8,
+        "appointments": [
+          {
+            "id": "R001",
+            "patientId": "ece",
+            "doctorId": "deniz",
+            "date": "2030-11-12",
+            "time": "09:00",
+            "status": "pending"
+          },
+          {
+            "id": "R002",
+            "patientId": "kaan",
+            "doctorId": "deniz",
+            "date": "2030-11-12",
+            "time": "10:00",
+            "status": "pending"
+          },
+          {
+            "id": "R003",
+            "patientId": "ece",
+            "doctorId": "deniz",
+            "date": "2030-11-12",
+            "time": "11:00",
+            "status": "completed"
+          },
+          {
+            "id": "R004",
+            "patientId": "kaan",
+            "doctorId": "deniz",
+            "date": "2030-11-12",
+            "time": "13:00",
+            "status": "cancelled"
+          },
+          {
+            "id": "R005",
+            "patientId": "ece",
+            "doctorId": "selin",
+            "date": "2030-11-12",
+            "time": "09:30",
+            "status": "pending"
+          },
+          {
+            "id": "R006",
+            "patientId": "kaan",
+            "doctorId": "selin",
+            "date": "2030-11-12",
+            "time": "11:00",
+            "status": "completed"
+          },
+          {
+            "id": "R007",
+            "patientId": "kaan",
+            "doctorId": "deniz",
+            "date": "2030-11-13",
+            "time": "10:30",
+            "status": "pending"
+          }
+        ]
+      },
+      "updateCalls": 0,
+      "storageWritesDuringRequest": 0,
+      "status": "PASS"
+    },
+    {
+      "id": "DK-K02",
+      "context": {
+        "role": "reception",
+        "patientId": "ece",
+        "doctorId": "deniz",
+        "date": "2030-11-12"
+      },
+      "requestId": "R001",
+      "expected": "ROLE",
+      "actual": {
+        "ok": false,
+        "code": "ROLE"
+      },
+      "before": {
+        "schema": 1,
+        "nextId": 8,
+        "appointments": [
+          {
+            "id": "R001",
+            "patientId": "ece",
+            "doctorId": "deniz",
+            "date": "2030-11-12",
+            "time": "09:00",
+            "status": "pending"
+          },
+          {
+            "id": "R002",
+            "patientId": "kaan",
+            "doctorId": "deniz",
+            "date": "2030-11-12",
+            "time": "10:00",
+            "status": "pending"
+          },
+          {
+            "id": "R003",
+            "patientId": "ece",
+            "doctorId": "deniz",
+            "date": "2030-11-12",
+            "time": "11:00",
+            "status": "completed"
+          },
+          {
+            "id": "R004",
+            "patientId": "kaan",
+            "doctorId": "deniz",
+            "date": "2030-11-12",
+            "time": "13:00",
+            "status": "cancelled"
+          },
+          {
+            "id": "R005",
+            "patientId": "ece",
+            "doctorId": "selin",
+            "date": "2030-11-12",
+            "time": "09:30",
+            "status": "pending"
+          },
+          {
+            "id": "R006",
+            "patientId": "kaan",
+            "doctorId": "selin",
+            "date": "2030-11-12",
+            "time": "11:00",
+            "status": "completed"
+          },
+          {
+            "id": "R007",
+            "patientId": "kaan",
+            "doctorId": "deniz",
+            "date": "2030-11-13",
+            "time": "10:30",
+            "status": "pending"
+          }
+        ]
+      },
+      "after": {
+        "schema": 1,
+        "nextId": 8,
+        "appointments": [
+          {
+            "id": "R001",
+            "patientId": "ece",
+            "doctorId": "deniz",
+            "date": "2030-11-12",
+            "time": "09:00",
+            "status": "pending"
+          },
+          {
+            "id": "R002",
+            "patientId": "kaan",
+            "doctorId": "deniz",
+            "date": "2030-11-12",
+            "time": "10:00",
+            "status": "pending"
+          },
+          {
+            "id": "R003",
+            "patientId": "ece",
+            "doctorId": "deniz",
+            "date": "2030-11-12",
+            "time": "11:00",
+            "status": "completed"
+          },
+          {
+            "id": "R004",
+            "patientId": "kaan",
+            "doctorId": "deniz",
+            "date": "2030-11-12",
+            "time": "13:00",
+            "status": "cancelled"
+          },
+          {
+            "id": "R005",
+            "patientId": "ece",
+            "doctorId": "selin",
+            "date": "2030-11-12",
+            "time": "09:30",
+            "status": "pending"
+          },
+          {
+            "id": "R006",
+            "patientId": "kaan",
+            "doctorId": "selin",
+            "date": "2030-11-12",
+            "time": "11:00",
+            "status": "completed"
+          },
+          {
+            "id": "R007",
+            "patientId": "kaan",
+            "doctorId": "deniz",
+            "date": "2030-11-13",
+            "time": "10:30",
+            "status": "pending"
+          }
+        ]
+      },
+      "updateCalls": 0,
+      "storageWritesDuringRequest": 0,
+      "status": "PASS"
+    },
+    {
+      "id": "DK-K03",
+      "context": {
+        "role": "doctor",
+        "patientId": "ece",
+        "doctorId": "deniz",
+        "date": "2030-11-12"
+      },
+      "requestId": "R001",
+      "expected": "ROLE",
+      "actual": {
+        "ok": false,
+        "code": "ROLE"
+      },
+      "before": {
+        "schema": 1,
+        "nextId": 8,
+        "appointments": [
+          {
+            "id": "R001",
+            "patientId": "ece",
+            "doctorId": "deniz",
+            "date": "2030-11-12",
+            "time": "09:00",
+            "status": "pending"
+          },
+          {
+            "id": "R002",
+            "patientId": "kaan",
+            "doctorId": "deniz",
+            "date": "2030-11-12",
+            "time": "10:00",
+            "status": "pending"
+          },
+          {
+            "id": "R003",
+            "patientId": "ece",
+            "doctorId": "deniz",
+            "date": "2030-11-12",
+            "time": "11:00",
+            "status": "completed"
+          },
+          {
+            "id": "R004",
+            "patientId": "kaan",
+            "doctorId": "deniz",
+            "date": "2030-11-12",
+            "time": "13:00",
+            "status": "cancelled"
+          },
+          {
+            "id": "R005",
+            "patientId": "ece",
+            "doctorId": "selin",
+            "date": "2030-11-12",
+            "time": "09:30",
+            "status": "pending"
+          },
+          {
+            "id": "R006",
+            "patientId": "kaan",
+            "doctorId": "selin",
+            "date": "2030-11-12",
+            "time": "11:00",
+            "status": "completed"
+          },
+          {
+            "id": "R007",
+            "patientId": "kaan",
+            "doctorId": "deniz",
+            "date": "2030-11-13",
+            "time": "10:30",
+            "status": "pending"
+          }
+        ]
+      },
+      "after": {
+        "schema": 1,
+        "nextId": 8,
+        "appointments": [
+          {
+            "id": "R001",
+            "patientId": "ece",
+            "doctorId": "deniz",
+            "date": "2030-11-12",
+            "time": "09:00",
+            "status": "pending"
+          },
+          {
+            "id": "R002",
+            "patientId": "kaan",
+            "doctorId": "deniz",
+            "date": "2030-11-12",
+            "time": "10:00",
+            "status": "pending"
+          },
+          {
+            "id": "R003",
+            "patientId": "ece",
+            "doctorId": "deniz",
+            "date": "2030-11-12",
+            "time": "11:00",
+            "status": "completed"
+          },
+          {
+            "id": "R004",
+            "patientId": "kaan",
+            "doctorId": "deniz",
+            "date": "2030-11-12",
+            "time": "13:00",
+            "status": "cancelled"
+          },
+          {
+            "id": "R005",
+            "patientId": "ece",
+            "doctorId": "selin",
+            "date": "2030-11-12",
+            "time": "09:30",
+            "status": "pending"
+          },
+          {
+            "id": "R006",
+            "patientId": "kaan",
+            "doctorId": "selin",
+            "date": "2030-11-12",
+            "time": "11:00",
+            "status": "completed"
+          },
+          {
+            "id": "R007",
+            "patientId": "kaan",
+            "doctorId": "deniz",
+            "date": "2030-11-13",
+            "time": "10:30",
+            "status": "pending"
+          }
+        ]
+      },
+      "updateCalls": 0,
+      "storageWritesDuringRequest": 0,
+      "status": "PASS"
+    },
+    {
+      "id": "DK-K04",
+      "context": {
+        "role": "patient",
+        "patientId": "kaan",
+        "doctorId": "deniz",
+        "date": "2030-11-12"
+      },
+      "requestId": "R001",
+      "expected": "OWNER",
+      "actual": {
+        "ok": false,
+        "code": "OWNER"
+      },
+      "before": {
+        "schema": 1,
+        "nextId": 8,
+        "appointments": [
+          {
+            "id": "R001",
+            "patientId": "ece",
+            "doctorId": "deniz",
+            "date": "2030-11-12",
+            "time": "09:00",
+            "status": "pending"
+          },
+          {
+            "id": "R002",
+            "patientId": "kaan",
+            "doctorId": "deniz",
+            "date": "2030-11-12",
+            "time": "10:00",
+            "status": "pending"
+          },
+          {
+            "id": "R003",
+            "patientId": "ece",
+            "doctorId": "deniz",
+            "date": "2030-11-12",
+            "time": "11:00",
+            "status": "completed"
+          },
+          {
+            "id": "R004",
+            "patientId": "kaan",
+            "doctorId": "deniz",
+            "date": "2030-11-12",
+            "time": "13:00",
+            "status": "cancelled"
+          },
+          {
+            "id": "R005",
+            "patientId": "ece",
+            "doctorId": "selin",
+            "date": "2030-11-12",
+            "time": "09:30",
+            "status": "pending"
+          },
+          {
+            "id": "R006",
+            "patientId": "kaan",
+            "doctorId": "selin",
+            "date": "2030-11-12",
+            "time": "11:00",
+            "status": "completed"
+          },
+          {
+            "id": "R007",
+            "patientId": "kaan",
+            "doctorId": "deniz",
+            "date": "2030-11-13",
+            "time": "10:30",
+            "status": "pending"
+          }
+        ]
+      },
+      "after": {
+        "schema": 1,
+        "nextId": 8,
+        "appointments": [
+          {
+            "id": "R001",
+            "patientId": "ece",
+            "doctorId": "deniz",
+            "date": "2030-11-12",
+            "time": "09:00",
+            "status": "pending"
+          },
+          {
+            "id": "R002",
+            "patientId": "kaan",
+            "doctorId": "deniz",
+            "date": "2030-11-12",
+            "time": "10:00",
+            "status": "pending"
+          },
+          {
+            "id": "R003",
+            "patientId": "ece",
+            "doctorId": "deniz",
+            "date": "2030-11-12",
+            "time": "11:00",
+            "status": "completed"
+          },
+          {
+            "id": "R004",
+            "patientId": "kaan",
+            "doctorId": "deniz",
+            "date": "2030-11-12",
+            "time": "13:00",
+            "status": "cancelled"
+          },
+          {
+            "id": "R005",
+            "patientId": "ece",
+            "doctorId": "selin",
+            "date": "2030-11-12",
+            "time": "09:30",
+            "status": "pending"
+          },
+          {
+            "id": "R006",
+            "patientId": "kaan",
+            "doctorId": "selin",
+            "date": "2030-11-12",
+            "time": "11:00",
+            "status": "completed"
+          },
+          {
+            "id": "R007",
+            "patientId": "kaan",
+            "doctorId": "deniz",
+            "date": "2030-11-13",
+            "time": "10:30",
+            "status": "pending"
+          }
+        ]
+      },
+      "updateCalls": 0,
+      "storageWritesDuringRequest": 0,
+      "status": "PASS"
+    },
+    {
+      "id": "DK-K05",
+      "context": {
+        "role": "patient",
+        "patientId": "ece",
+        "doctorId": "deniz",
+        "date": "2030-11-12"
+      },
+      "requestId": "R001",
+      "expected": "STATUS",
+      "actual": {
+        "ok": false,
+        "code": "STATUS"
+      },
+      "before": {
+        "schema": 1,
+        "nextId": 8,
+        "appointments": [
+          {
+            "id": "R001",
+            "patientId": "ece",
+            "doctorId": "deniz",
+            "date": "2030-11-12",
+            "time": "09:00",
+            "status": "completed"
+          },
+          {
+            "id": "R002",
+            "patientId": "kaan",
+            "doctorId": "deniz",
+            "date": "2030-11-12",
+            "time": "10:00",
+            "status": "pending"
+          },
+          {
+            "id": "R003",
+            "patientId": "ece",
+            "doctorId": "deniz",
+            "date": "2030-11-12",
+            "time": "11:00",
+            "status": "completed"
+          },
+          {
+            "id": "R004",
+            "patientId": "kaan",
+            "doctorId": "deniz",
+            "date": "2030-11-12",
+            "time": "13:00",
+            "status": "cancelled"
+          },
+          {
+            "id": "R005",
+            "patientId": "ece",
+            "doctorId": "selin",
+            "date": "2030-11-12",
+            "time": "09:30",
+            "status": "pending"
+          },
+          {
+            "id": "R006",
+            "patientId": "kaan",
+            "doctorId": "selin",
+            "date": "2030-11-12",
+            "time": "11:00",
+            "status": "completed"
+          },
+          {
+            "id": "R007",
+            "patientId": "kaan",
+            "doctorId": "deniz",
+            "date": "2030-11-13",
+            "time": "10:30",
+            "status": "pending"
+          }
+        ]
+      },
+      "after": {
+        "schema": 1,
+        "nextId": 8,
+        "appointments": [
+          {
+            "id": "R001",
+            "patientId": "ece",
+            "doctorId": "deniz",
+            "date": "2030-11-12",
+            "time": "09:00",
+            "status": "completed"
+          },
+          {
+            "id": "R002",
+            "patientId": "kaan",
+            "doctorId": "deniz",
+            "date": "2030-11-12",
+            "time": "10:00",
+            "status": "pending"
+          },
+          {
+            "id": "R003",
+            "patientId": "ece",
+            "doctorId": "deniz",
+            "date": "2030-11-12",
+            "time": "11:00",
+            "status": "completed"
+          },
+          {
+            "id": "R004",
+            "patientId": "kaan",
+            "doctorId": "deniz",
+            "date": "2030-11-12",
+            "time": "13:00",
+            "status": "cancelled"
+          },
+          {
+            "id": "R005",
+            "patientId": "ece",
+            "doctorId": "selin",
+            "date": "2030-11-12",
+            "time": "09:30",
+            "status": "pending"
+          },
+          {
+            "id": "R006",
+            "patientId": "kaan",
+            "doctorId": "selin",
+            "date": "2030-11-12",
+            "time": "11:00",
+            "status": "completed"
+          },
+          {
+            "id": "R007",
+            "patientId": "kaan",
+            "doctorId": "deniz",
+            "date": "2030-11-13",
+            "time": "10:30",
+            "status": "pending"
+          }
+        ]
+      },
+      "updateCalls": 0,
+      "storageWritesDuringRequest": 0,
+      "status": "PASS"
+    },
+    {
+      "id": "DK-K06",
+      "context": {
+        "role": "patient",
+        "patientId": "ece",
+        "doctorId": "deniz",
+        "date": "2030-11-12"
+      },
+      "requestId": "R001",
+      "expected": "STATUS",
+      "actual": {
+        "ok": false,
+        "code": "STATUS"
+      },
+      "before": {
+        "schema": 1,
+        "nextId": 8,
+        "appointments": [
+          {
+            "id": "R001",
+            "patientId": "ece",
+            "doctorId": "deniz",
+            "date": "2030-11-12",
+            "time": "09:00",
+            "status": "cancelled"
+          },
+          {
+            "id": "R002",
+            "patientId": "kaan",
+            "doctorId": "deniz",
+            "date": "2030-11-12",
+            "time": "10:00",
+            "status": "pending"
+          },
+          {
+            "id": "R003",
+            "patientId": "ece",
+            "doctorId": "deniz",
+            "date": "2030-11-12",
+            "time": "11:00",
+            "status": "completed"
+          },
+          {
+            "id": "R004",
+            "patientId": "kaan",
+            "doctorId": "deniz",
+            "date": "2030-11-12",
+            "time": "13:00",
+            "status": "cancelled"
+          },
+          {
+            "id": "R005",
+            "patientId": "ece",
+            "doctorId": "selin",
+            "date": "2030-11-12",
+            "time": "09:30",
+            "status": "pending"
+          },
+          {
+            "id": "R006",
+            "patientId": "kaan",
+            "doctorId": "selin",
+            "date": "2030-11-12",
+            "time": "11:00",
+            "status": "completed"
+          },
+          {
+            "id": "R007",
+            "patientId": "kaan",
+            "doctorId": "deniz",
+            "date": "2030-11-13",
+            "time": "10:30",
+            "status": "pending"
+          }
+        ]
+      },
+      "after": {
+        "schema": 1,
+        "nextId": 8,
+        "appointments": [
+          {
+            "id": "R001",
+            "patientId": "ece",
+            "doctorId": "deniz",
+            "date": "2030-11-12",
+            "time": "09:00",
+            "status": "cancelled"
+          },
+          {
+            "id": "R002",
+            "patientId": "kaan",
+            "doctorId": "deniz",
+            "date": "2030-11-12",
+            "time": "10:00",
+            "status": "pending"
+          },
+          {
+            "id": "R003",
+            "patientId": "ece",
+            "doctorId": "deniz",
+            "date": "2030-11-12",
+            "time": "11:00",
+            "status": "completed"
+          },
+          {
+            "id": "R004",
+            "patientId": "kaan",
+            "doctorId": "deniz",
+            "date": "2030-11-12",
+            "time": "13:00",
+            "status": "cancelled"
+          },
+          {
+            "id": "R005",
+            "patientId": "ece",
+            "doctorId": "selin",
+            "date": "2030-11-12",
+            "time": "09:30",
+            "status": "pending"
+          },
+          {
+            "id": "R006",
+            "patientId": "kaan",
+            "doctorId": "selin",
+            "date": "2030-11-12",
+            "time": "11:00",
+            "status": "completed"
+          },
+          {
+            "id": "R007",
+            "patientId": "kaan",
+            "doctorId": "deniz",
+            "date": "2030-11-13",
+            "time": "10:30",
+            "status": "pending"
+          }
+        ]
+      },
+      "updateCalls": 0,
+      "storageWritesDuringRequest": 0,
+      "status": "PASS"
+    },
+    {
+      "id": "DK-K07",
+      "context": {
+        "role": "patient",
+        "patientId": "ece",
+        "doctorId": "deniz",
+        "date": "2030-11-12"
+      },
+      "requestId": "R001",
+      "expected": "OK",
+      "actual": {
+        "ok": true,
+        "appointment": {
+          "id": "R001",
+          "patientId": "ece",
+          "doctorId": "deniz",
+          "date": "2030-11-12",
+          "time": "09:00",
+          "status": "cancelled"
+        },
+        "persistent": true,
+        "slotAvailable": true
+      },
+      "before": {
+        "schema": 1,
+        "nextId": 8,
+        "appointments": [
+          {
+            "id": "R001",
+            "patientId": "ece",
+            "doctorId": "deniz",
+            "date": "2030-11-12",
+            "time": "09:00",
+            "status": "pending"
+          },
+          {
+            "id": "R002",
+            "patientId": "kaan",
+            "doctorId": "deniz",
+            "date": "2030-11-12",
+            "time": "10:00",
+            "status": "pending"
+          },
+          {
+            "id": "R003",
+            "patientId": "ece",
+            "doctorId": "deniz",
+            "date": "2030-11-12",
+            "time": "11:00",
+            "status": "completed"
+          },
+          {
+            "id": "R004",
+            "patientId": "kaan",
+            "doctorId": "deniz",
+            "date": "2030-11-12",
+            "time": "13:00",
+            "status": "cancelled"
+          },
+          {
+            "id": "R005",
+            "patientId": "ece",
+            "doctorId": "selin",
+            "date": "2030-11-12",
+            "time": "09:30",
+            "status": "pending"
+          },
+          {
+            "id": "R006",
+            "patientId": "kaan",
+            "doctorId": "selin",
+            "date": "2030-11-12",
+            "time": "11:00",
+            "status": "completed"
+          },
+          {
+            "id": "R007",
+            "patientId": "kaan",
+            "doctorId": "deniz",
+            "date": "2030-11-13",
+            "time": "10:30",
+            "status": "pending"
+          }
+        ]
+      },
+      "after": {
+        "schema": 1,
+        "nextId": 8,
+        "appointments": [
+          {
+            "id": "R001",
+            "patientId": "ece",
+            "doctorId": "deniz",
+            "date": "2030-11-12",
+            "time": "09:00",
+            "status": "cancelled"
+          },
+          {
+            "id": "R002",
+            "patientId": "kaan",
+            "doctorId": "deniz",
+            "date": "2030-11-12",
+            "time": "10:00",
+            "status": "pending"
+          },
+          {
+            "id": "R003",
+            "patientId": "ece",
+            "doctorId": "deniz",
+            "date": "2030-11-12",
+            "time": "11:00",
+            "status": "completed"
+          },
+          {
+            "id": "R004",
+            "patientId": "kaan",
+            "doctorId": "deniz",
+            "date": "2030-11-12",
+            "time": "13:00",
+            "status": "cancelled"
+          },
+          {
+            "id": "R005",
+            "patientId": "ece",
+            "doctorId": "selin",
+            "date": "2030-11-12",
+            "time": "09:30",
+            "status": "pending"
+          },
+          {
+            "id": "R006",
+            "patientId": "kaan",
+            "doctorId": "selin",
+            "date": "2030-11-12",
+            "time": "11:00",
+            "status": "completed"
+          },
+          {
+            "id": "R007",
+            "patientId": "kaan",
+            "doctorId": "deniz",
+            "date": "2030-11-13",
+            "time": "10:30",
+            "status": "pending"
+          }
+        ]
+      },
+      "updateCalls": 1,
+      "storageWritesDuringRequest": 1,
+      "status": "PASS"
+    }
+  ]
+}

@@ -2,7 +2,7 @@
 
 ## Bu sürümün kapsamı
 
-Bu sürüm, tarayıcıda açılan tek dosyalı eğitim demonstratörüdür. FR-01–FR-06 için gözlenebilir örnek davranış sağlar. Öğrencinin yazacağı gereksinim belgesi veya daha sonraki C#/Java MVC projesinin tamamlandığı anlamına gelmez.
+Bu sürüm, tarayıcıda açılan modüler eğitim demonstratörüdür. FR-01–FR-06 için gözlenebilir örnek davranış sağlar. Öğrencinin yazacağı gereksinim belgesi veya daha sonraki C#/Java MVC projesinin tamamlandığı anlamına gelmez.
 
 ## Çalışan davranışlar
 
@@ -16,7 +16,7 @@ Bu sürüm, tarayıcıda açılan tek dosyalı eğitim demonstratörüdür. FR-0
 - localStorage kullanılabiliyorsa yerel kayıt; kullanılamıyorsa oturum belleğinde devam etme.
 - Bozuk veya beklenmeyen yerel kayıtta uyarı ve bilinen başlangıç verisine dönüş.
 - Örnek veriyi sıfırlamadan önce kullanıcı onayı.
-- Tüm CSS ve JavaScript dosyanın içinde; dış kaynağa ağ isteği yok.
+- CSS index.html içindedir; JavaScript src/ altındaki dört yerel dosyadan yüklenir. Dış kaynağa ağ isteği yoktur. index.html ile src/ klasörü birlikte tutulmalıdır.
 
 ## Gerçek güvenlik değildir
 
@@ -43,3 +43,4 @@ Hasta, Resepsiyon ve Doktor seçenekleri **simülasyon rolüdür**. Gerçek giri
 ## Derste nasıl kullanılmalı?
 
 Mevcut davranışı gözlemleyin, varsayımınızı yazın ve paydaş sorusuna dönüştürün. Bulduğunuz her sınırı doğrudan hata ilan etmeyin: kapsam dışı iş, eksik gereksinim ve gerçek kusur farklıdır. Bir iddiayı kabul koşulu ve yeniden uygulanabilir gözlemle destekleyin.
+

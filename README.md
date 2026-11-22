@@ -1,3 +1,15 @@
+# YAZ325 - 5. ve 6. hafta öğretmen çalışma paketi
+
+- [5. hafta: mimariyi koda aktarma](hafta05/README.md) · [PR #15](https://github.com/pozelll/-klinik-randevu-ogretmen/pull/15)
+- [6. hafta: karar tablosu, test kanıtı ve CI](hafta06/README.md) · [PR #16](https://github.com/pozelll/-klinik-randevu-ogretmen/pull/16)
+- [Yeniden çalıştırma](hafta06/docs/10-yeniden-calistirma.md) · [İzlenebilirlik](hafta06/docs/09-izlenebilirlik.md)
+
+Uygulama: H5 kodu. H6: aynı uygulama üzerine test, CI ve öğretim belgeleri.
+30 Node testi ve 9 Chromium senaryosu doğrulandı. Bağımsız inceleme ve birleştirme bekliyor.
+Güncel ders dalı: `test/h6-karar-tablosu`; main henüz bu haftaları içermez.
+
+---
+
 # 5. hafta - Modüler Klinik Randevu öğretmen örneği
 
 Bu dal, H4-MK-01 mimari kararını uygulayan öğretmen çalışma sürümüdür.

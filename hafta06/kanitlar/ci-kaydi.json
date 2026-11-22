@@ -1,0 +1,87 @@
+{
+  "date": "2026-11-22",
+  "run_id": 45019502732,
+  "url": "https://github.com/pozelll/-klinik-randevu-ogretmen/actions/runs/45019502732",
+  "head_sha": "5b18dbfeef9229f66859d74a3a379e96602e53f6",
+  "event": "pull_request",
+  "status": "completed",
+  "conclusion": "success",
+  "workflow": ".github/workflows/klinik-tests.yml",
+  "job_id": 137199033628,
+  "steps": [
+    {
+      "name": "Set up job",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 1,
+      "started_at": "2026-11-22T11:53:21Z",
+      "completed_at": "2026-11-22T11:53:22Z"
+    },
+    {
+      "name": "Calisma kopyasi",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 2,
+      "started_at": "2026-11-22T11:53:22Z",
+      "completed_at": "2026-11-22T11:53:23Z"
+    },
+    {
+      "name": "Node.js 24",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 3,
+      "started_at": "2026-11-22T11:53:23Z",
+      "completed_at": "2026-11-22T11:53:29Z"
+    },
+    {
+      "name": "Is kurallari ve veri erisimi - 30 test",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 4,
+      "started_at": "2026-11-22T11:53:29Z",
+      "completed_at": "2026-11-22T11:53:29Z"
+    },
+    {
+      "name": "Tarayici test aracini kur",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 5,
+      "started_at": "2026-11-22T11:53:29Z",
+      "completed_at": "2026-11-22T11:54:01Z"
+    },
+    {
+      "name": "Chromium - 9 senaryo",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 6,
+      "started_at": "2026-11-22T11:54:01Z",
+      "completed_at": "2026-11-22T11:54:30Z"
+    },
+    {
+      "name": "Post Node.js 24",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 11,
+      "started_at": "2026-11-22T11:54:30Z",
+      "completed_at": "2026-11-22T11:54:31Z"
+    },
+    {
+      "name": "Post Calisma kopyasi",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 12,
+      "started_at": "2026-11-22T11:54:31Z",
+      "completed_at": "2026-11-22T11:54:31Z"
+    },
+    {
+      "name": "Complete job",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 13,
+      "started_at": "2026-11-22T11:54:31Z",
+      "completed_at": "2026-11-22T11:54:31Z"
+    }
+  ],
+  "scope": "Node 30/30; Chromium 9/9. Bağımsız insan incelemesi ve NFR ölçümü değildir.",
+  "note": "PR koşusu GitHub'ın oluşturduğu birleştirme çalışma kopyasında çalışır; uygulama kaynak özetleri h5 kod commit'iyle ayrıca karşılaştırılır."
+}

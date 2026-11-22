@@ -1,0 +1,23 @@
+{
+  "source_commit": "8b668fbed7e348fc25a7e5ffa6c69d3ae9f14f3b",
+  "date": "2026-11-01",
+  "files": [
+    {
+      "file": "Ilk_4_Hafta_Ogretmen_Rehberi.pdf",
+      "bytes": 446724,
+      "sha256": "9f6686f8ac2704ec45c7d7106a749ffa4fa25ffbcd2cf1adf40e3d6b78437a4b",
+      "pages": 30
+    },
+    {
+      "file": "Ilk_4_Hafta_Ogrenci_Takip_Rehberi.pdf",
+      "bytes": 721947,
+      "sha256": "0fd19b69b84d69b20df86406455a84c363f0ec20b708780fee80c76f76e1a9af",
+      "pages": 49
+    },
+    {
+      "file": "Ilk_4_Hafta_Ogrenci_Calisma_Paketi.zip",
+      "bytes": 680727,
+      "sha256": "8dfecb8c41257e2675025675793b57a48afd60ca54d26e0a8c51decaec1b459e"
+    }
+  ]
+}

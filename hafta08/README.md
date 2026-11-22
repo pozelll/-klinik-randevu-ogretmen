@@ -4,6 +4,10 @@ Sekiz basamaklı öğretmen örneği. H5–H6 çalışmasının devamıdır; res
 
 Dal: `release/h8-surum-adayi` · [PR #19](https://github.com/pozelll/-klinik-randevu-ogretmen/pull/19) · [Görev #17](https://github.com/pozelll/-klinik-randevu-ogretmen/issues/17)
 
+## Grubun iş bölümü
+
+İki, üç ve dört kişilik gruplar paket tarifi, paket üretimi, bütünlük ve alıcı kontrollerini [grup büyüklüğüne göre](../docs/11-grup-buyuklugune-gore-yonlendirme.md) paylaşır. Her üye anlamlı bir çıktı ve gerçek katkı kaydı üretir; yazmadığı kapsamı inceler. Ortak yazılan bölüm için gerekirse grup dışından inceleyen belirlenir. Kendi sorumlularınızı ve sonuçlarınızı [grup kaydına](sablonlar/grup-kaydi.md) yazın; öğretmen örneğinin kişi ve süre varsayımlarını doğrudan kendi planınız saymayın.
+
 | Basamak | Ekranda açılacak belge | Hazırlık sonucu |
 |---|---|---|
 | 1 | [Aday sürümü sabitledik](docs/01-surum-adayi.md) | Sabit kaynak, açık aday kimliği. |

@@ -1,0 +1,2958 @@
+{
+  "sourceCommit": "5c796623a18d4ba187d2a9fe9beba4708915360b",
+  "runUrl": "https://github.com/pozelll/-klinik-randevu-ogretmen/actions/runs/45027450559",
+  "jobId": 137223463407,
+  "report": {
+    "executedAt": "2026-11-22T13:26:52.039493+00:00",
+    "browser": "Chromium 157.0.8103.0",
+    "method": "Page actions use only keyboard Tab/Shift+Tab/Home/arrows/Enter/Space; no click, select_option or programmatic focus.",
+    "nativeDialogMethod": "X11 xdotool Return/Escape",
+    "nfr03": {
+      "coreTaskChecksPassed": 4,
+      "coreTaskChecksTotal": 4,
+      "pageFocusEvidence": "Computed :focus-visible, visible bounds and nontransparent outline at every used page control; dynamic focus loss fails.",
+      "nativeDialogKeyboardTested": true,
+      "nativeDialogFocusVisualReview": "Inspect native screenshots separately; browser-chrome focus styling is outside DOM inspection.",
+      "verdict": "NATIVE_KEYS_AND_PAGE_TASKS_PASS_VISUAL_REVIEW_PENDING"
+    },
+    "nfr01": "NOT_MEASURED: requires four different real participants; this automation is not a usability participant.",
+    "limitations": [
+      "One Chromium build/environment; not a general accessibility conformance claim.",
+      "No independent human review or user acceptance is asserted."
+    ],
+    "sources": {
+      "index.html": "6582e7f493af23135e073a51253bafb821bf21c36f743a42522dcb4df3c82737",
+      "src/demo-data.js": "440d637afed2a1e596b5314020c57973dd323dc65ee3f1504a9ac7802f151906",
+      "src/repository.js": "8f77e18cf450c424d7cefd162b20c07c01c0591f44f200149d12252d7b9682c5",
+      "src/rules.js": "d695881e4dd6b0bfd2cc6c084b5899b910ee4b3384e0af527b4a58c53f0cb496",
+      "src/ui.js": "229fd8588bb1adacd39597fc0fb4fe10b8fc5cceca2997d6c16ce081b506b421"
+    },
+    "passed": 6,
+    "total": 6,
+    "results": [
+      {
+        "id": "NFR03-K01",
+        "status": "PASS",
+        "actual": "Yalnız klavyeyle 09:30 seçildi ve R008 oluşturuldu; kayıt/saat doğrulandı.",
+        "error": "Error: Page.screenshot: Protocol error (Page.captureScreenshot): Unable to capture screenshot\nCall log:\n  - taking page screenshot\n  - waiting for fonts to load...\n  - fonts loaded\n",
+        "focusTrace": [
+          {
+            "event": "Tab",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "reset-data",
+              "time": null,
+              "action": null,
+              "record": null,
+              "label": "Örnek veriyi sıfırla",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tab",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "role-patient",
+              "time": null,
+              "action": null,
+              "record": null,
+              "label": "Hasta",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Hedefe ulaşıldı: #role-patient",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "role-patient",
+              "time": null,
+              "action": null,
+              "record": null,
+              "label": "Hasta",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tuş öncesi: Enter",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "role-patient",
+              "time": null,
+              "action": null,
+              "record": null,
+              "label": "Hasta",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tuş sonrası: Enter",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "role-patient",
+              "time": null,
+              "action": null,
+              "record": null,
+              "label": "Hasta",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tab",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "role-reception",
+              "time": null,
+              "action": null,
+              "record": null,
+              "label": "Resepsiyon",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tab",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "role-doctor",
+              "time": null,
+              "action": null,
+              "record": null,
+              "label": "Doktor",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tab",
+            "focus": {
+              "tag": "SELECT",
+              "id": "patient-select",
+              "time": null,
+              "action": null,
+              "record": null,
+              "label": "Ece YılmazKaan Demir",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tab",
+            "focus": {
+              "tag": "SELECT",
+              "id": "doctor-select",
+              "time": null,
+              "action": null,
+              "record": null,
+              "label": "Doktor Deniz ArıDoktor Selin Kaya",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tab",
+            "focus": {
+              "tag": "SELECT",
+              "id": "date-select",
+              "time": null,
+              "action": null,
+              "record": null,
+              "label": "12 Kasım 203013 Kasım 2030",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tab",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "",
+              "time": "09:30",
+              "action": null,
+              "record": null,
+              "label": "09:30, Uygun",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Hedefe ulaşıldı: [data-time=\"09:30\"]",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "",
+              "time": "09:30",
+              "action": null,
+              "record": null,
+              "label": "09:30, Uygun",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tuş öncesi: Space",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "",
+              "time": "09:30",
+              "action": null,
+              "record": null,
+              "label": "09:30, Uygun",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tuş sonrası: Space",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "",
+              "time": "09:30",
+              "action": null,
+              "record": null,
+              "label": "09:30, Seçili",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tab",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "",
+              "time": "10:30",
+              "action": null,
+              "record": null,
+              "label": "10:30, Uygun",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tab",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "",
+              "time": "11:30",
+              "action": null,
+              "record": null,
+              "label": "11:30, Uygun",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tab",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "",
+              "time": "13:00",
+              "action": null,
+              "record": null,
+              "label": "13:00, Uygun",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tab",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "",
+              "time": "13:30",
+              "action": null,
+              "record": null,
+              "label": "13:30, Uygun",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tab",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "",
+              "time": "14:00",
+              "action": null,
+              "record": null,
+              "label": "14:00, Uygun",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tab",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "",
+              "time": "14:30",
+              "action": null,
+              "record": null,
+              "label": "14:30, Uygun",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tab",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "book-appointment",
+              "time": null,
+              "action": null,
+              "record": null,
+              "label": "Randevuyu onayla",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Hedefe ulaşıldı: #book-appointment",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "book-appointment",
+              "time": null,
+              "action": null,
+              "record": null,
+              "label": "Randevuyu onayla",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tuş öncesi: Enter",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "book-appointment",
+              "time": null,
+              "action": null,
+              "record": null,
+              "label": "Randevuyu onayla",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tuş sonrası: Enter",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "",
+              "time": null,
+              "action": "cancel",
+              "record": "R001",
+              "label": "09:00 saatindeki R001 randevusunu iptal et",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          }
+        ],
+        "dialogs": [],
+        "pageErrors": []
+      },
+      {
+        "id": "NFR03-K02",
+        "status": "PASS",
+        "actual": "İptal başlatıldı ve vazgeçildi; veri ve dolu saat korundu, Shift+Tab ile çıkılabildi.",
+        "error": null,
+        "focusTrace": [
+          {
+            "event": "Tab",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "reset-data",
+              "time": null,
+              "action": null,
+              "record": null,
+              "label": "Örnek veriyi sıfırla",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tab",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "role-patient",
+              "time": null,
+              "action": null,
+              "record": null,
+              "label": "Hasta",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tab",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "role-reception",
+              "time": null,
+              "action": null,
+              "record": null,
+              "label": "Resepsiyon",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tab",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "role-doctor",
+              "time": null,
+              "action": null,
+              "record": null,
+              "label": "Doktor",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tab",
+            "focus": {
+              "tag": "SELECT",
+              "id": "patient-select",
+              "time": null,
+              "action": null,
+              "record": null,
+              "label": "Ece YılmazKaan Demir",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tab",
+            "focus": {
+              "tag": "SELECT",
+              "id": "doctor-select",
+              "time": null,
+              "action": null,
+              "record": null,
+              "label": "Doktor Deniz ArıDoktor Selin Kaya",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tab",
+            "focus": {
+              "tag": "SELECT",
+              "id": "date-select",
+              "time": null,
+              "action": null,
+              "record": null,
+              "label": "12 Kasım 203013 Kasım 2030",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tab",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "",
+              "time": "09:30",
+              "action": null,
+              "record": null,
+              "label": "09:30, Uygun",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tab",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "",
+              "time": "10:30",
+              "action": null,
+              "record": null,
+              "label": "10:30, Uygun",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tab",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "",
+              "time": "11:30",
+              "action": null,
+              "record": null,
+              "label": "11:30, Uygun",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tab",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "",
+              "time": "13:00",
+              "action": null,
+              "record": null,
+              "label": "13:00, Uygun",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tab",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "",
+              "time": "13:30",
+              "action": null,
+              "record": null,
+              "label": "13:30, Uygun",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tab",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "",
+              "time": "14:00",
+              "action": null,
+              "record": null,
+              "label": "14:00, Uygun",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tab",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "",
+              "time": "14:30",
+              "action": null,
+              "record": null,
+              "label": "14:30, Uygun",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tab",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "",
+              "time": null,
+              "action": "cancel",
+              "record": "R001",
+              "label": "09:00 saatindeki R001 randevusunu iptal et",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Hedefe ulaşıldı: [data-appointment-id=\"R001\"] [data-action=\"cancel\"]",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "",
+              "time": null,
+              "action": "cancel",
+              "record": "R001",
+              "label": "09:00 saatindeki R001 randevusunu iptal et",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tuş öncesi: Enter",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "",
+              "time": null,
+              "action": "cancel",
+              "record": "R001",
+              "label": "09:00 saatindeki R001 randevusunu iptal et",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Onay penceresi kapandıktan sonra",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "",
+              "time": null,
+              "action": "cancel",
+              "record": "R001",
+              "label": "09:00 saatindeki R001 randevusunu iptal et",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Shift+Tab",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "",
+              "time": "14:30",
+              "action": null,
+              "record": null,
+              "label": "14:30, Uygun",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Shift+Tab",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "",
+              "time": "14:00",
+              "action": null,
+              "record": null,
+              "label": "14:00, Uygun",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Shift+Tab",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "",
+              "time": "13:30",
+              "action": null,
+              "record": null,
+              "label": "13:30, Uygun",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Shift+Tab",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "",
+              "time": "13:00",
+              "action": null,
+              "record": null,
+              "label": "13:00, Uygun",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Shift+Tab",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "",
+              "time": "11:30",
+              "action": null,
+              "record": null,
+              "label": "11:30, Uygun",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Shift+Tab",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "",
+              "time": "10:30",
+              "action": null,
+              "record": null,
+              "label": "10:30, Uygun",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Shift+Tab",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "",
+              "time": "09:30",
+              "action": null,
+              "record": null,
+              "label": "09:30, Uygun",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Shift+Tab",
+            "focus": {
+              "tag": "SELECT",
+              "id": "date-select",
+              "time": null,
+              "action": null,
+              "record": null,
+              "label": "12 Kasım 203013 Kasım 2030",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Hedefe ulaşıldı: #date-select",
+            "focus": {
+              "tag": "SELECT",
+              "id": "date-select",
+              "time": null,
+              "action": null,
+              "record": null,
+              "label": "12 Kasım 203013 Kasım 2030",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          }
+        ],
+        "dialogs": [
+          {
+            "decision": "dismiss",
+            "trigger": "page.keyboard Enter",
+            "observed": true,
+            "type": "confirm",
+            "message": "R001 — 12 Kasım 2030 saat 09:00\n\nTamam: Randevuyu iptal eder. İptal edilen kayıt listede kalır. Aynı doktor, tarih ve saatte başka iptal edilmemiş kayıt yoksa saat yeniden uygun olur.\n\nİptal: İşlemden vazgeçer; randevunuz Bekliyor durumunda kalır.\n\nRandevunuzu iptal etmek istiyor musunuz?",
+            "nativeScreenshot": "NFR03-K02-dialog-1.png",
+            "nativeScreenshotSHA256": "dd558504eb196c6cc5849bce831ab3f877b8f3d428f1a0a6797398a13e224f1d",
+            "method": "X11 xdotool keyboard",
+            "windowId": "2097170",
+            "key": "Escape",
+            "playwrightDialogDecisionUsed": false
+          }
+        ],
+        "pageErrors": []
+      },
+      {
+        "id": "NFR03-K03",
+        "status": "PASS",
+        "actual": "İptal kaydı korundu; 09:00 açıldı ve klavyeyle yeniden seçilebildi.",
+        "error": null,
+        "focusTrace": [
+          {
+            "event": "Tab",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "reset-data",
+              "time": null,
+              "action": null,
+              "record": null,
+              "label": "Örnek veriyi sıfırla",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tab",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "role-patient",
+              "time": null,
+              "action": null,
+              "record": null,
+              "label": "Hasta",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tab",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "role-reception",
+              "time": null,
+              "action": null,
+              "record": null,
+              "label": "Resepsiyon",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tab",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "role-doctor",
+              "time": null,
+              "action": null,
+              "record": null,
+              "label": "Doktor",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tab",
+            "focus": {
+              "tag": "SELECT",
+              "id": "patient-select",
+              "time": null,
+              "action": null,
+              "record": null,
+              "label": "Ece YılmazKaan Demir",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tab",
+            "focus": {
+              "tag": "SELECT",
+              "id": "doctor-select",
+              "time": null,
+              "action": null,
+              "record": null,
+              "label": "Doktor Deniz ArıDoktor Selin Kaya",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tab",
+            "focus": {
+              "tag": "SELECT",
+              "id": "date-select",
+              "time": null,
+              "action": null,
+              "record": null,
+              "label": "12 Kasım 203013 Kasım 2030",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tab",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "",
+              "time": "09:30",
+              "action": null,
+              "record": null,
+              "label": "09:30, Uygun",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tab",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "",
+              "time": "10:30",
+              "action": null,
+              "record": null,
+              "label": "10:30, Uygun",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tab",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "",
+              "time": "11:30",
+              "action": null,
+              "record": null,
+              "label": "11:30, Uygun",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tab",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "",
+              "time": "13:00",
+              "action": null,
+              "record": null,
+              "label": "13:00, Uygun",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tab",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "",
+              "time": "13:30",
+              "action": null,
+              "record": null,
+              "label": "13:30, Uygun",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tab",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "",
+              "time": "14:00",
+              "action": null,
+              "record": null,
+              "label": "14:00, Uygun",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tab",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "",
+              "time": "14:30",
+              "action": null,
+              "record": null,
+              "label": "14:30, Uygun",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tab",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "",
+              "time": null,
+              "action": "cancel",
+              "record": "R001",
+              "label": "09:00 saatindeki R001 randevusunu iptal et",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Hedefe ulaşıldı: [data-appointment-id=\"R001\"] [data-action=\"cancel\"]",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "",
+              "time": null,
+              "action": "cancel",
+              "record": "R001",
+              "label": "09:00 saatindeki R001 randevusunu iptal et",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tuş öncesi: Enter",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "",
+              "time": null,
+              "action": "cancel",
+              "record": "R001",
+              "label": "09:00 saatindeki R001 randevusunu iptal et",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Onay penceresi kapandıktan sonra",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "",
+              "time": "09:00",
+              "action": null,
+              "record": null,
+              "label": "09:00, Uygun",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Hedefe ulaşıldı: [data-time=\"09:00\"]",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "",
+              "time": "09:00",
+              "action": null,
+              "record": null,
+              "label": "09:00, Uygun",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tuş öncesi: Space",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "",
+              "time": "09:00",
+              "action": null,
+              "record": null,
+              "label": "09:00, Uygun",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tuş sonrası: Space",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "",
+              "time": "09:00",
+              "action": null,
+              "record": null,
+              "label": "09:00, Seçili",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          }
+        ],
+        "dialogs": [
+          {
+            "decision": "accept",
+            "trigger": "page.keyboard Enter",
+            "observed": true,
+            "type": "confirm",
+            "message": "R001 — 12 Kasım 2030 saat 09:00\n\nTamam: Randevuyu iptal eder. İptal edilen kayıt listede kalır. Aynı doktor, tarih ve saatte başka iptal edilmemiş kayıt yoksa saat yeniden uygun olur.\n\nİptal: İşlemden vazgeçer; randevunuz Bekliyor durumunda kalır.\n\nRandevunuzu iptal etmek istiyor musunuz?",
+            "nativeScreenshot": "NFR03-K03-dialog-1.png",
+            "nativeScreenshotSHA256": "31ce9feda89d754d881da5bc33a4536066b79c7b7514d8046b23c7a191c38aa2",
+            "method": "X11 xdotool keyboard",
+            "windowId": "2097174",
+            "key": "Return",
+            "playwrightDialogDecisionUsed": false
+          }
+        ],
+        "pageErrors": []
+      },
+      {
+        "id": "NFR03-K04",
+        "status": "PASS",
+        "actual": "Doktor rolüne geçildi, R001 tamamlandı; kapalı saat/toplam ve ters klavye yolu doğrulandı.",
+        "error": null,
+        "focusTrace": [
+          {
+            "event": "Tab",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "reset-data",
+              "time": null,
+              "action": null,
+              "record": null,
+              "label": "Örnek veriyi sıfırla",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tab",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "role-patient",
+              "time": null,
+              "action": null,
+              "record": null,
+              "label": "Hasta",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tab",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "role-reception",
+              "time": null,
+              "action": null,
+              "record": null,
+              "label": "Resepsiyon",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tab",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "role-doctor",
+              "time": null,
+              "action": null,
+              "record": null,
+              "label": "Doktor",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Hedefe ulaşıldı: #role-doctor",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "role-doctor",
+              "time": null,
+              "action": null,
+              "record": null,
+              "label": "Doktor",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tuş öncesi: Enter",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "role-doctor",
+              "time": null,
+              "action": null,
+              "record": null,
+              "label": "Doktor",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tuş sonrası: Enter",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "role-doctor",
+              "time": null,
+              "action": null,
+              "record": null,
+              "label": "Doktor",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tab",
+            "focus": {
+              "tag": "SELECT",
+              "id": "doctor-select",
+              "time": null,
+              "action": null,
+              "record": null,
+              "label": "Doktor Deniz ArıDoktor Selin Kaya",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tab",
+            "focus": {
+              "tag": "SELECT",
+              "id": "date-select",
+              "time": null,
+              "action": null,
+              "record": null,
+              "label": "12 Kasım 203013 Kasım 2030",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tab",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "",
+              "time": null,
+              "action": "complete",
+              "record": "R001",
+              "label": "09:00 saatindeki R001 randevusunu tamamlandı yap",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Hedefe ulaşıldı: [data-appointment-id=\"R001\"] [data-action=\"complete\"]",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "",
+              "time": null,
+              "action": "complete",
+              "record": "R001",
+              "label": "09:00 saatindeki R001 randevusunu tamamlandı yap",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tuş öncesi: Space",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "",
+              "time": null,
+              "action": "complete",
+              "record": "R001",
+              "label": "09:00 saatindeki R001 randevusunu tamamlandı yap",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tuş sonrası: Space",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "",
+              "time": null,
+              "action": "complete",
+              "record": "R002",
+              "label": "10:00 saatindeki R002 randevusunu tamamlandı yap",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Shift+Tab",
+            "focus": {
+              "tag": "SELECT",
+              "id": "date-select",
+              "time": null,
+              "action": null,
+              "record": null,
+              "label": "12 Kasım 203013 Kasım 2030",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Shift+Tab",
+            "focus": {
+              "tag": "SELECT",
+              "id": "doctor-select",
+              "time": null,
+              "action": null,
+              "record": null,
+              "label": "Doktor Deniz ArıDoktor Selin Kaya",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Hedefe ulaşıldı: #doctor-select",
+            "focus": {
+              "tag": "SELECT",
+              "id": "doctor-select",
+              "time": null,
+              "action": null,
+              "record": null,
+              "label": "Doktor Deniz ArıDoktor Selin Kaya",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          }
+        ],
+        "dialogs": [],
+        "pageErrors": []
+      },
+      {
+        "id": "KB-K05",
+        "status": "PASS",
+        "actual": "Rol, hasta, doktor ve tarih yalnız Tab/ok/Home/Enter/Boşluk ile değiştirildi.",
+        "error": null,
+        "focusTrace": [
+          {
+            "event": "Tab",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "reset-data",
+              "time": null,
+              "action": null,
+              "record": null,
+              "label": "Örnek veriyi sıfırla",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tab",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "role-patient",
+              "time": null,
+              "action": null,
+              "record": null,
+              "label": "Hasta",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tab",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "role-reception",
+              "time": null,
+              "action": null,
+              "record": null,
+              "label": "Resepsiyon",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Hedefe ulaşıldı: #role-reception",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "role-reception",
+              "time": null,
+              "action": null,
+              "record": null,
+              "label": "Resepsiyon",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tuş öncesi: Space",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "role-reception",
+              "time": null,
+              "action": null,
+              "record": null,
+              "label": "Resepsiyon",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tuş sonrası: Space",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "role-reception",
+              "time": null,
+              "action": null,
+              "record": null,
+              "label": "Resepsiyon",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tab",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "role-doctor",
+              "time": null,
+              "action": null,
+              "record": null,
+              "label": "Doktor",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tab",
+            "focus": {
+              "tag": "SELECT",
+              "id": "patient-select",
+              "time": null,
+              "action": null,
+              "record": null,
+              "label": "Ece YılmazKaan Demir",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Hedefe ulaşıldı: #patient-select",
+            "focus": {
+              "tag": "SELECT",
+              "id": "patient-select",
+              "time": null,
+              "action": null,
+              "record": null,
+              "label": "Ece YılmazKaan Demir",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tuş öncesi: Home",
+            "focus": {
+              "tag": "SELECT",
+              "id": "patient-select",
+              "time": null,
+              "action": null,
+              "record": null,
+              "label": "Ece YılmazKaan Demir",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tuş sonrası: Home",
+            "focus": {
+              "tag": "SELECT",
+              "id": "patient-select",
+              "time": null,
+              "action": null,
+              "record": null,
+              "label": "Ece YılmazKaan Demir",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tuş öncesi: ArrowDown",
+            "focus": {
+              "tag": "SELECT",
+              "id": "patient-select",
+              "time": null,
+              "action": null,
+              "record": null,
+              "label": "Ece YılmazKaan Demir",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tuş sonrası: ArrowDown",
+            "focus": {
+              "tag": "SELECT",
+              "id": "patient-select",
+              "time": null,
+              "action": null,
+              "record": null,
+              "label": "Ece YılmazKaan Demir",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Hedefe ulaşıldı: #patient-select",
+            "focus": {
+              "tag": "SELECT",
+              "id": "patient-select",
+              "time": null,
+              "action": null,
+              "record": null,
+              "label": "Ece YılmazKaan Demir",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tuş öncesi: Home",
+            "focus": {
+              "tag": "SELECT",
+              "id": "patient-select",
+              "time": null,
+              "action": null,
+              "record": null,
+              "label": "Ece YılmazKaan Demir",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tuş sonrası: Home",
+            "focus": {
+              "tag": "SELECT",
+              "id": "patient-select",
+              "time": null,
+              "action": null,
+              "record": null,
+              "label": "Ece YılmazKaan Demir",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tab",
+            "focus": {
+              "tag": "SELECT",
+              "id": "doctor-select",
+              "time": null,
+              "action": null,
+              "record": null,
+              "label": "Doktor Deniz ArıDoktor Selin Kaya",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Hedefe ulaşıldı: #doctor-select",
+            "focus": {
+              "tag": "SELECT",
+              "id": "doctor-select",
+              "time": null,
+              "action": null,
+              "record": null,
+              "label": "Doktor Deniz ArıDoktor Selin Kaya",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tuş öncesi: Home",
+            "focus": {
+              "tag": "SELECT",
+              "id": "doctor-select",
+              "time": null,
+              "action": null,
+              "record": null,
+              "label": "Doktor Deniz ArıDoktor Selin Kaya",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tuş sonrası: Home",
+            "focus": {
+              "tag": "SELECT",
+              "id": "doctor-select",
+              "time": null,
+              "action": null,
+              "record": null,
+              "label": "Doktor Deniz ArıDoktor Selin Kaya",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tuş öncesi: ArrowDown",
+            "focus": {
+              "tag": "SELECT",
+              "id": "doctor-select",
+              "time": null,
+              "action": null,
+              "record": null,
+              "label": "Doktor Deniz ArıDoktor Selin Kaya",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tuş sonrası: ArrowDown",
+            "focus": {
+              "tag": "SELECT",
+              "id": "doctor-select",
+              "time": null,
+              "action": null,
+              "record": null,
+              "label": "Doktor Deniz ArıDoktor Selin Kaya",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Hedefe ulaşıldı: #doctor-select",
+            "focus": {
+              "tag": "SELECT",
+              "id": "doctor-select",
+              "time": null,
+              "action": null,
+              "record": null,
+              "label": "Doktor Deniz ArıDoktor Selin Kaya",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tuş öncesi: Home",
+            "focus": {
+              "tag": "SELECT",
+              "id": "doctor-select",
+              "time": null,
+              "action": null,
+              "record": null,
+              "label": "Doktor Deniz ArıDoktor Selin Kaya",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tuş sonrası: Home",
+            "focus": {
+              "tag": "SELECT",
+              "id": "doctor-select",
+              "time": null,
+              "action": null,
+              "record": null,
+              "label": "Doktor Deniz ArıDoktor Selin Kaya",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tab",
+            "focus": {
+              "tag": "SELECT",
+              "id": "date-select",
+              "time": null,
+              "action": null,
+              "record": null,
+              "label": "12 Kasım 203013 Kasım 2030",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Hedefe ulaşıldı: #date-select",
+            "focus": {
+              "tag": "SELECT",
+              "id": "date-select",
+              "time": null,
+              "action": null,
+              "record": null,
+              "label": "12 Kasım 203013 Kasım 2030",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tuş öncesi: Home",
+            "focus": {
+              "tag": "SELECT",
+              "id": "date-select",
+              "time": null,
+              "action": null,
+              "record": null,
+              "label": "12 Kasım 203013 Kasım 2030",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tuş sonrası: Home",
+            "focus": {
+              "tag": "SELECT",
+              "id": "date-select",
+              "time": null,
+              "action": null,
+              "record": null,
+              "label": "12 Kasım 203013 Kasım 2030",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tuş öncesi: ArrowDown",
+            "focus": {
+              "tag": "SELECT",
+              "id": "date-select",
+              "time": null,
+              "action": null,
+              "record": null,
+              "label": "12 Kasım 203013 Kasım 2030",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tuş sonrası: ArrowDown",
+            "focus": {
+              "tag": "SELECT",
+              "id": "date-select",
+              "time": null,
+              "action": null,
+              "record": null,
+              "label": "12 Kasım 203013 Kasım 2030",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Hedefe ulaşıldı: #date-select",
+            "focus": {
+              "tag": "SELECT",
+              "id": "date-select",
+              "time": null,
+              "action": null,
+              "record": null,
+              "label": "12 Kasım 203013 Kasım 2030",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tuş öncesi: Home",
+            "focus": {
+              "tag": "SELECT",
+              "id": "date-select",
+              "time": null,
+              "action": null,
+              "record": null,
+              "label": "12 Kasım 203013 Kasım 2030",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tuş sonrası: Home",
+            "focus": {
+              "tag": "SELECT",
+              "id": "date-select",
+              "time": null,
+              "action": null,
+              "record": null,
+              "label": "12 Kasım 203013 Kasım 2030",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          }
+        ],
+        "dialogs": [],
+        "pageErrors": []
+      },
+      {
+        "id": "KB-K06",
+        "status": "PASS",
+        "actual": "Sıfırlamadan vazgeçme değişikliği korudu; onay başlangıçtaki 7 sentetik kaydı yükledi.",
+        "error": null,
+        "focusTrace": [
+          {
+            "event": "Tab",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "reset-data",
+              "time": null,
+              "action": null,
+              "record": null,
+              "label": "Örnek veriyi sıfırla",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tab",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "role-patient",
+              "time": null,
+              "action": null,
+              "record": null,
+              "label": "Hasta",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Hedefe ulaşıldı: #role-patient",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "role-patient",
+              "time": null,
+              "action": null,
+              "record": null,
+              "label": "Hasta",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tuş öncesi: Enter",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "role-patient",
+              "time": null,
+              "action": null,
+              "record": null,
+              "label": "Hasta",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tuş sonrası: Enter",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "role-patient",
+              "time": null,
+              "action": null,
+              "record": null,
+              "label": "Hasta",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tab",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "role-reception",
+              "time": null,
+              "action": null,
+              "record": null,
+              "label": "Resepsiyon",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tab",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "role-doctor",
+              "time": null,
+              "action": null,
+              "record": null,
+              "label": "Doktor",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tab",
+            "focus": {
+              "tag": "SELECT",
+              "id": "patient-select",
+              "time": null,
+              "action": null,
+              "record": null,
+              "label": "Ece YılmazKaan Demir",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tab",
+            "focus": {
+              "tag": "SELECT",
+              "id": "doctor-select",
+              "time": null,
+              "action": null,
+              "record": null,
+              "label": "Doktor Deniz ArıDoktor Selin Kaya",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tab",
+            "focus": {
+              "tag": "SELECT",
+              "id": "date-select",
+              "time": null,
+              "action": null,
+              "record": null,
+              "label": "12 Kasım 203013 Kasım 2030",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tab",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "",
+              "time": "09:30",
+              "action": null,
+              "record": null,
+              "label": "09:30, Uygun",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Hedefe ulaşıldı: [data-time=\"09:30\"]",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "",
+              "time": "09:30",
+              "action": null,
+              "record": null,
+              "label": "09:30, Uygun",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tuş öncesi: Space",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "",
+              "time": "09:30",
+              "action": null,
+              "record": null,
+              "label": "09:30, Uygun",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tuş sonrası: Space",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "",
+              "time": "09:30",
+              "action": null,
+              "record": null,
+              "label": "09:30, Seçili",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tab",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "",
+              "time": "10:30",
+              "action": null,
+              "record": null,
+              "label": "10:30, Uygun",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tab",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "",
+              "time": "11:30",
+              "action": null,
+              "record": null,
+              "label": "11:30, Uygun",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tab",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "",
+              "time": "13:00",
+              "action": null,
+              "record": null,
+              "label": "13:00, Uygun",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tab",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "",
+              "time": "13:30",
+              "action": null,
+              "record": null,
+              "label": "13:30, Uygun",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tab",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "",
+              "time": "14:00",
+              "action": null,
+              "record": null,
+              "label": "14:00, Uygun",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tab",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "",
+              "time": "14:30",
+              "action": null,
+              "record": null,
+              "label": "14:30, Uygun",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tab",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "book-appointment",
+              "time": null,
+              "action": null,
+              "record": null,
+              "label": "Randevuyu onayla",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Hedefe ulaşıldı: #book-appointment",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "book-appointment",
+              "time": null,
+              "action": null,
+              "record": null,
+              "label": "Randevuyu onayla",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tuş öncesi: Enter",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "book-appointment",
+              "time": null,
+              "action": null,
+              "record": null,
+              "label": "Randevuyu onayla",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tuş sonrası: Enter",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "",
+              "time": null,
+              "action": "cancel",
+              "record": "R001",
+              "label": "09:00 saatindeki R001 randevusunu iptal et",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tab",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "",
+              "time": null,
+              "action": "cancel",
+              "record": "R008",
+              "label": "09:30 saatindeki R008 randevusunu iptal et",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tab",
+            "focus": {
+              "tag": "SUMMARY",
+              "id": "",
+              "time": null,
+              "action": null,
+              "record": null,
+              "label": "Nasıl inceleyebilirim? · Kısa rehber ve prototipin sınırları",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tab",
+            "focus": {
+              "tag": "A",
+              "id": "",
+              "time": null,
+              "action": null,
+              "record": null,
+              "label": "Paket açıklaması · README.md",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tab",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "reset-data",
+              "time": null,
+              "action": null,
+              "record": null,
+              "label": "Örnek veriyi sıfırla",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Hedefe ulaşıldı: #reset-data",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "reset-data",
+              "time": null,
+              "action": null,
+              "record": null,
+              "label": "Örnek veriyi sıfırla",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tuş öncesi: Enter",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "reset-data",
+              "time": null,
+              "action": null,
+              "record": null,
+              "label": "Örnek veriyi sıfırla",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Onay penceresi kapandıktan sonra",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "reset-data",
+              "time": null,
+              "action": null,
+              "record": null,
+              "label": "Örnek veriyi sıfırla",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Hedefe ulaşıldı: #reset-data",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "reset-data",
+              "time": null,
+              "action": null,
+              "record": null,
+              "label": "Örnek veriyi sıfırla",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Tuş öncesi: Enter",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "reset-data",
+              "time": null,
+              "action": null,
+              "record": null,
+              "label": "Örnek veriyi sıfırla",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          },
+          {
+            "event": "Onay penceresi kapandıktan sonra",
+            "focus": {
+              "tag": "BUTTON",
+              "id": "reset-data",
+              "time": null,
+              "action": null,
+              "record": null,
+              "label": "Örnek veriyi sıfırla",
+              "disabled": false,
+              "focusVisible": true,
+              "outlineStyle": "solid",
+              "outlineWidth": "3px",
+              "outlineColor": "rgb(213, 148, 32)",
+              "outlineOffset": "3px",
+              "visible": true
+            }
+          }
+        ],
+        "dialogs": [
+          {
+            "decision": "dismiss",
+            "trigger": "page.keyboard Enter",
+            "observed": true,
+            "type": "confirm",
+            "message": "Bu prototipte yaptığınız yerel randevu değişiklikleri silinecek ve başlangıçtaki örnek kayıtlar yüklenecek. Devam edilsin mi?",
+            "nativeScreenshot": "KB-K06-dialog-1.png",
+            "nativeScreenshotSHA256": "958473c1c0790de62aac8921819ff61e3337fc6c0b8df626ea7a3095e560a8a6",
+            "method": "X11 xdotool keyboard",
+            "windowId": "2097186",
+            "key": "Escape",
+            "playwrightDialogDecisionUsed": false
+          },
+          {
+            "decision": "accept",
+            "trigger": "page.keyboard Enter",
+            "observed": true,
+            "type": "confirm",
+            "message": "Bu prototipte yaptığınız yerel randevu değişiklikleri silinecek ve başlangıçtaki örnek kayıtlar yüklenecek. Devam edilsin mi?",
+            "nativeScreenshot": "KB-K06-dialog-2.png",
+            "nativeScreenshotSHA256": "95bb9bce8d5c8c8e71851fd2359fca9a7f034a7cc2961f2dba6dfd1524790c75",
+            "method": "X11 xdotool keyboard",
+            "windowId": "2097186",
+            "key": "Return",
+            "playwrightDialogDecisionUsed": false
+          }
+        ],
+        "pageErrors": []
+      }
+    ]
+  }
+}

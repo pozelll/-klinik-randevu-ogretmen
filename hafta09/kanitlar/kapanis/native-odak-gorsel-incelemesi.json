@@ -1,0 +1,10 @@
+{
+  "date": "2026-11-22",
+  "sourceCommit": "5c796623a18d4ba187d2a9fe9beba4708915360b",
+  "run": "https://github.com/pozelll/-klinik-randevu-ogretmen/actions/runs/45027450559",
+  "method": "Gerçek Xvfb/Chromium ekran görüntülerinin AI görsel incelemesi; insan kabulü değildir.",
+  "images": ["NFR03-K02-dialog-1.png", "NFR03-K03-dialog-1.png", "KB-K06-dialog-1.png", "KB-K06-dialog-2.png"],
+  "observation": "Dört native onay görüntüsünde OK düğmesi çevresinde görünür odak halkası var. Otomatik X11 Escape/Return sonrası kayıt durumları ve sayfa odağı 6/6 kontrollerle doğrulandı.",
+  "verdict": "NFR-03 dört temel görev bu Chromium ortamında geçti; iki ek klavye kontrolü de geçti.",
+  "limitations": ["Tarayıcı dili İngilizce, uygulama Türkçe; native düğmeler OK/Cancel olarak görünüyor.", "Kapsam klavye kullanımıdır; genel erişilebilirlik uygunluğu veya insan kullanılabilirlik kabulü değildir."]
+}

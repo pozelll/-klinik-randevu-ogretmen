@@ -42,6 +42,8 @@
     }
 
     function renderSlots() {
+      const focusedSlot = document.activeElement?.matches('#slots button[data-time]')
+        ? document.activeElement.dataset.time : null;
       $('slots-subtitle').textContent = DOCTORS[state.doctorId] + ' · ' + dateLabel(state.date) + ' · FR-01';
       const fragment = document.createDocumentFragment();
       TIMES.forEach(time => {
@@ -62,6 +64,12 @@
         fragment.append(button);
       });
       $('slots').replaceChildren(fragment);
+      // Saat düğmeleri yeniden üretilirken klavyenin bulunduğu yeri koru.
+      if (focusedSlot) {
+        const replacement = [...$('slots').querySelectorAll('button')]
+          .find(button => button.dataset.time === focusedSlot && !button.disabled);
+        if (replacement) replacement.focus({preventScroll:true});
+      }
       if (state.selectedTime && occupiedAt(state.selectedTime)) state.selectedTime = null;
       $('book-appointment').disabled = !canBook() || !state.selectedTime;
       // H7 / H3-03: Görünen yardım, mevcut izin ve seçim sonucunu açıklar.
@@ -122,7 +130,19 @@
       $('metric-total').textContent = String(totals ? totals.total : 0);
     }
 
-    function render() { renderControls(); renderSlots(); renderAppointments(); renderSummary(); renderStorage(); }
+    function render() {
+      const active = document.activeElement;
+      const hadFocus = active && active !== document.body && active !== document.documentElement;
+      renderControls(); renderSlots(); renderAppointments(); renderSummary(); renderStorage();
+      // İşlem sonucunda kaldırılan veya pasifleşen denetim odağı sayfaya düşürmesin.
+      if (hadFocus && (!active.isConnected || active.disabled) &&
+          (document.activeElement === document.body || document.activeElement.disabled)) {
+        const next = $('appointments').querySelector('button:not(:disabled)') ||
+          $('slots').querySelector('button:not(:disabled)') ||
+          document.querySelector('[data-role][aria-pressed="true"]');
+        if (next) next.focus({preventScroll:true});
+      }
+    }
 
     function showError(result) {
       const messages = {

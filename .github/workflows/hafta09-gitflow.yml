@@ -1,7 +1,7 @@
 name: H9 - Gitflow egitim deneyi
 on:
   push:
-    branches: ['docs/h9-gitflow-teslim']
+    branches: ['docs/h9-gitflow-teslim', 'main']
   pull_request:
     paths: ['hafta09/**', '.github/workflows/hafta09-gitflow.yml']
 permissions:

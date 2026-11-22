@@ -5,6 +5,10 @@ Sekiz basamaklı, aktif GitHub bağlantılı öğretmen örneği. Hazırlık: 22
 
 Çalışma dalı: `feat/h5-moduler-uygulama` · [PR #15](https://github.com/pozelll/-klinik-randevu-ogretmen/pull/15) · [Görev #13](https://github.com/pozelll/-klinik-randevu-ogretmen/issues/13)
 
+## Grubun iş bölümü
+
+İki, üç ve dört kişilik gruplar veri erişimi, iş kuralları, arayüz ve davranış kontrollerini [grup büyüklüğüne göre](../docs/11-grup-buyuklugune-gore-yonlendirme.md) paylaşır. Her üye anlamlı bir çıktı ve gerçek katkı kaydı üretir; yazmadığı kapsamı inceler. Ortak yazılan bölüm için gerekirse grup dışından inceleyen belirlenir. Kendi sorumlularınızı ve sonuçlarınızı [grup kaydına](sablonlar/grup-kaydi.md) yazın; öğretmen örneğinin kişi ve süre varsayımlarını doğrudan kendi planınız saymayın.
+
 | Basamak | Ekranda açılacak belge | Hazırlık sonucu |
 |---|---|---|
 | 1 | [Başlangıcı sabitledik](docs/01-baslangic.md) | H5 çalışma dalı ve görev #13 hazır. |

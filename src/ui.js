@@ -64,6 +64,12 @@
       $('slots').replaceChildren(fragment);
       if (state.selectedTime && occupiedAt(state.selectedTime)) state.selectedTime = null;
       $('book-appointment').disabled = !canBook() || !state.selectedTime;
+      // H7 / H3-03: Görünen yardım, mevcut izin ve seçim sonucunu açıklar.
+      $('slot-help').textContent = !canBook()
+        ? 'Doktor rolünde saatleri yalnız inceleyebilirsiniz. Randevu oluşturmak için Hasta veya Resepsiyon rolünü seçin.'
+        : state.selectedTime
+          ? state.selectedTime + ' seçildi; henüz randevu oluşturulmadı. Hasta, doktor ve tarihi kontrol edip “Randevuyu onayla” düğmesine basın.'
+          : '1. Uygun bir saat seçin. 2. Hasta, doktor ve tarihi kontrol edip “Randevuyu onayla” düğmesine basın. Dolu ve Kapalı saatler seçilemez.';
       $('booking-summary').textContent = !canBook()
         ? 'Doktor rolü saatleri inceler. Randevu oluşturmak için Hasta veya Resepsiyon rolünü seçin.'
         : state.selectedTime

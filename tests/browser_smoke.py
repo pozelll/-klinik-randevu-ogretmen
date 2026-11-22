@@ -12,7 +12,10 @@ ROOT = Path(__file__).resolve().parents[1]
 KEY = 'ygs-klinik-randevu-demo-v1'
 parser = argparse.ArgumentParser()
 parser.add_argument('--evidence-dir', type=Path)
+parser.add_argument('--app-dir', type=Path, default=ROOT,
+                    help='İsteğe bağlı: ayıklanmış sürüm paketinin kökü.')
 args = parser.parse_args()
+APP_ROOT = args.app_dir.resolve()
 results = []
 
 def snapshot(page):
@@ -27,7 +30,7 @@ def run(name, fn, init=None, viewport=None):
     if init: ctx.add_init_script(init)
     page = ctx.new_page(); errors=[]
     page.on('pageerror', lambda error: errors.append(str(error)))
-    page.goto((ROOT/'index.html').as_uri())
+    page.goto((APP_ROOT/'index.html').as_uri())
     expect(page.locator('#slots button')).to_have_count(10)
     detail = fn(page)
     assert not errors, errors
@@ -97,14 +100,71 @@ def b09(p):
     expect(p.locator('[data-appointment-id="R008"]')).to_have_count(1)
     return '390 px görünümde yatay taşma yok; randevu oluşturulabiliyor.'
 
+def h701(p):
+    expect(p.locator('#slot-help')).to_be_visible()
+    expect(p.locator('#slot-help')).to_contain_text('Uygun bir saat seçin')
+    expect(p.locator('#slot-help')).to_contain_text('Dolu ve Kapalı')
+    expect(p.locator('#slots')).to_have_attribute('aria-describedby','slot-help')
+    expect(p.locator('#book-appointment')).to_be_disabled()
+    assert len(snapshot(p)['appointments']) == 7
+    return 'Başlangıç yardımı görünür; saat seçilmeden onay kapalı, yeni kayıt yok.'
+def h702(p):
+    before=snapshot(p)
+    p.locator('[data-time="09:30"]').click()
+    expect(p.locator('#slot-help')).to_contain_text('09:30 seçildi; henüz randevu oluşturulmadı')
+    expect(p.locator('[data-time="09:30"]')).to_have_attribute('aria-pressed','true')
+    assert snapshot(p)==before
+    p.locator('#book-appointment').click()
+    after=snapshot(p)
+    assert len(after['appointments'])==8 and after['nextId']==9
+    assert after['appointments'][-1]['time']=='09:30'
+    expect(p.locator('#slot-help')).to_contain_text('Uygun bir saat seçin')
+    expect(p.locator('#book-appointment')).to_be_disabled()
+    return 'Saat seçimi kayıt yaratmadı; onay tek kayıt yarattı ve yardım başlangıca döndü.'
+def h703(p):
+    before=snapshot(p)
+    for field,value in [('patient','kaan'),('doctor','selin'),('date','2030-11-13')]:
+        p.locator('[data-time="13:30"]').click()
+        expect(p.locator('#slot-help')).to_contain_text('13:30 seçildi')
+        p.locator('#'+field+'-select').select_option(value)
+        expect(p.locator('#slot-help')).to_contain_text('Uygun bir saat seçin')
+        expect(p.locator('#book-appointment')).to_be_disabled()
+        expect(p.locator('#slots [aria-pressed="true"]')).to_have_count(0)
+    assert snapshot(p)==before
+    return 'Hasta, doktor ve tarih değişimi eski seçimi temizledi; yardımda eski saat kalmadı.'
+def h704(p):
+    p.locator('[data-time="09:30"]').click()
+    p.locator('#role-doctor').click()
+    expect(p.locator('#slot-help')).to_contain_text('Doktor rolünde')
+    expect(p.locator('#slots button:disabled')).to_have_count(10)
+    expect(p.locator('#book-appointment')).to_be_disabled()
+    p.locator('#role-reception').click()
+    p.locator('#patient-select').select_option('kaan')
+    p.locator('[data-time="09:30"]').click()
+    expect(p.locator('#slot-help')).to_contain_text('henüz randevu oluşturulmadı')
+    expect(p.locator('#booking-summary')).to_contain_text('Kaan Demir')
+    p.locator('#book-appointment').click()
+    assert snapshot(p)['appointments'][-1]['patientId']=='kaan'
+    return 'Doktor yönlendirmesi yetkiyle tutarlı; resepsiyon seçili hasta adına kayıt açtı.'
+def h705(p):
+    expect(p.locator('#slot-help')).to_be_visible()
+    assert p.evaluate('document.documentElement.scrollWidth <= window.innerWidth')
+    p.locator('[data-time="09:30"]').click()
+    expect(p.locator('#slot-help')).to_contain_text('09:30 seçildi')
+    assert p.evaluate('document.documentElement.scrollWidth <= window.innerWidth')
+    assert len(snapshot(p)['appointments'])==7
+    return '390 px görünümde yardım taşmadı; seçim tek başına kayıt yaratmadı.'
+
 with sync_playwright() as pw:
     browser=pw.chromium.launch(headless=True, executable_path=shutil.which('chromium'), args=['--no-sandbox'])
     version=browser.version
     for name,fn in [('H3-T01',t01),('H3-T02',t02),('H3-T03',t03),('H3-T04',t04),('H3-T05',t05),('H3-T06',t06),('H6-B07',b07)]:run(name,fn)
     run('H6-B08',b08,"Object.defineProperty(window,'localStorage',{get(){throw new Error('Test: saklama engelli');}});")
     run('H6-B09',b09,viewport={'width':390,'height':844})
+    for name,fn in [('H7-B01',h701),('H7-B02',h702),('H7-B03',h703),('H7-B04',h704)]:run(name,fn)
+    run('H7-B05',h705,viewport={'width':390,'height':844})
     browser.close()
-sources={p:hashlib.sha256((ROOT/p).read_bytes()).hexdigest() for p in ['index.html','src/demo-data.js','src/repository.js','src/rules.js','src/ui.js']}
+sources={p:hashlib.sha256((APP_ROOT/p).read_bytes()).hexdigest() for p in ['index.html','src/demo-data.js','src/repository.js','src/rules.js','src/ui.js']}
 report={'executedAt':datetime.now(timezone.utc).isoformat(),'browser':'Chromium '+version,
         'method':'Headless Playwright; file://; sentetik ve yalıtılmış yeni tarayıcı oturumları',
         'scope':'NFR kullanılabilirlik / yanıt süresi / klavye ölçümü değildir; bağımsız insan incelemesi değildir.',

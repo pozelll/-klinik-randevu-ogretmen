@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="440" viewBox="0 0 900 440" role="img" aria-label="Gitflow dal ilişkileri">
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse"><path d="M0,0 L8,4 L0,8 Z" fill="#526A80"/></marker></defs>
+<rect width="900" height="440" fill="#fff"/>
+<g font-family="DejaVu Sans, sans-serif" fill="#17314A"><text x="35" y="38" font-size="23" font-weight="bold">Gitflow: dal ilişkileri</text><text x="35" y="64" font-size="13">Eğitim modelidir. Gerçek commit kimlikleri ayrı Git geçmişi kaydındadır.</text></g>
+<g stroke="#526A80" stroke-width="2" fill="none" marker-end="url(#arrow)">
+<path d="M190 185 L190 115 L390 115"/><path d="M450 140 L450 210 L265 210"/>
+<path d="M265 225 L390 285"/><path d="M450 330 L450 365 L200 365 L200 240"/>
+<path d="M525 300 L650 300"/><path d="M725 275 L725 140"/>
+<path d="M795 140 L820 140 L820 300 L800 300"/><path d="M650 115 L605 115 L605 398 L130 398 L130 240"/>
+</g>
+<g fill="#F0F7FB" stroke="#2363A8" stroke-width="2"><rect x="115" y="185" width="150" height="55" rx="8"/><rect x="390" y="85" width="150" height="55" rx="8"/><rect x="390" y="275" width="150" height="55" rx="8"/><rect x="650" y="275" width="150" height="55" rx="8"/><rect x="650" y="85" width="150" height="55" rx="8"/></g>
+<g font-family="DejaVu Sans, sans-serif" fill="#17314A" font-size="19" text-anchor="middle" font-weight="bold"><text x="190" y="219">develop</text><text x="465" y="119">feature</text><text x="465" y="309">release</text><text x="725" y="309">main</text><text x="725" y="119">hotfix</text></g>
+<g font-family="DejaVu Sans, sans-serif" fill="#526A80" font-size="12"><text x="219" y="106">özellik başlat</text><text x="305" y="201">katkıyı birleştir</text><text x="279" y="259">sürüm hazırla</text><text x="280" y="355">sürüm bilgisini taşı</text><text x="564" y="291">teslim</text><text x="734" y="208">düzeltme aç</text><text x="829" y="210">teslim</text><text x="263" y="418">hotfix'i gelecek sürüme de taşı</text></g>
+<g fill="#526A80"><polygon points="390,115 380,110 380,120"/><polygon points="265,210 275,205 275,215"/><polygon points="390,285 378,284 383,275"/><polygon points="200,240 195,250 205,250"/><polygon points="650,300 640,295 640,305"/><polygon points="725,140 720,150 730,150"/><polygon points="800,300 810,295 810,305"/><polygon points="130,240 125,250 135,250"/></g></svg>

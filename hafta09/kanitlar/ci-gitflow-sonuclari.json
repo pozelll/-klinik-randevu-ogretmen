@@ -1,0 +1,316 @@
+{
+  "sourceCommit": "901f8144b83947ec4bfc0aabad5a7f7998a24ce8",
+  "runUrl": "https://github.com/pozelll/-klinik-randevu-ogretmen/actions/runs/45023202073",
+  "jobId": 137210412313,
+  "report": {
+    "executedAt": "2026-11-22T12:37:01.059318+00:00",
+    "gitVersion": "git version 2.56.1",
+    "method": "Yeni yerel Git deposunda gerçek commit, merge, çakışma, annotated tag ve bundle; insan incelemesi simüle edilmez.",
+    "clinicalBaseline": "a95a59b96d822f1225e4815b8c6ac4f928691cd5",
+    "scope": "0.9.x yalnız panel laboratuvarıdır; Klinik uygulama 0.3.0-rc.1 olarak korunur. Yerel merge, GitHub PR merge veya insan onayı değildir.",
+    "results": [
+      {
+        "id": "H9-G01",
+        "status": "PASS",
+        "actual": "Başlangıç panelinde 5/5 yapısal kontrol geçti; anlam doğrulanmadı."
+      },
+      {
+        "id": "H9-G02",
+        "status": "PASS",
+        "actual": {
+          "commonFeatureBase": "7127f830986185134a3c7fd1454e3cd4e0641a72"
+        }
+      },
+      {
+        "id": "H9-G03",
+        "status": "PASS",
+        "actual": {
+          "expectedConflict": true,
+          "unmergedPath": "panel/surum.json"
+        }
+      },
+      {
+        "id": "H9-G04",
+        "status": "PASS",
+        "actual": {
+          "unresolvedPanelRejected": true,
+          "checks": {
+            "scope": "Sürüm paneli kontrolü; klinik uygulama testleri veya insan incelemesi değildir.",
+            "checks": [
+              {
+                "id": "P01",
+                "name": "JSON nesnesi okunabilir",
+                "passed": false
+              },
+              {
+                "id": "P02",
+                "name": "Altı beklenen alan var",
+                "passed": false
+              },
+              {
+                "id": "P03",
+                "name": "Alanlar boş olmayan kısa metin",
+                "passed": false
+              },
+              {
+                "id": "P04",
+                "name": "Ders sürümü ve kanal uyumlu",
+                "passed": false
+              },
+              {
+                "id": "P05",
+                "name": "Çakışma işareti yok",
+                "passed": false
+              }
+            ],
+            "passed": 0,
+            "total": 5,
+            "status": "FAIL"
+          }
+        }
+      },
+      {
+        "id": "H9-G05",
+        "status": "PASS",
+        "actual": {
+          "parents": [
+            "f3feb35d4b3241275e53c6310e90d8474056e348",
+            "ca2f6af0205979483955474b835517ce3dbc7093"
+          ],
+          "combinedAnnouncement": "Hastalar randevu durumunu, personel uygun saatleri izleyebilir."
+        }
+      },
+      {
+        "id": "H9-G06",
+        "status": "PASS",
+        "actual": {
+          "annotatedReleaseTagTarget": "80c1a3ab1840a43de81d5bbd5d07920e01c7416c"
+        }
+      },
+      {
+        "id": "H9-G07",
+        "status": "PASS",
+        "actual": {
+          "structuralPassMeaningFail": true,
+          "checks": {
+            "scope": "Sürüm paneli kontrolü; klinik uygulama testleri veya insan incelemesi değildir.",
+            "checks": [
+              {
+                "id": "P01",
+                "name": "JSON nesnesi okunabilir",
+                "passed": true
+              },
+              {
+                "id": "P02",
+                "name": "Altı beklenen alan var",
+                "passed": true
+              },
+              {
+                "id": "P03",
+                "name": "Alanlar boş olmayan kısa metin",
+                "passed": true
+              },
+              {
+                "id": "P04",
+                "name": "Ders sürümü ve kanal uyumlu",
+                "passed": true
+              },
+              {
+                "id": "P05",
+                "name": "Çakışma işareti yok",
+                "passed": true
+              },
+              {
+                "id": "A01",
+                "name": "İptal açıklaması korunmuş kayıt davranışıyla uyumlu",
+                "passed": false
+              }
+            ],
+            "passed": 5,
+            "total": 6,
+            "status": "FAIL"
+          }
+        }
+      },
+      {
+        "id": "H9-G08",
+        "status": "PASS",
+        "actual": {
+          "scope": "Sürüm paneli kontrolü; klinik uygulama testleri veya insan incelemesi değildir.",
+          "checks": [
+            {
+              "id": "P01",
+              "name": "JSON nesnesi okunabilir",
+              "passed": true
+            },
+            {
+              "id": "P02",
+              "name": "Altı beklenen alan var",
+              "passed": true
+            },
+            {
+              "id": "P03",
+              "name": "Alanlar boş olmayan kısa metin",
+              "passed": true
+            },
+            {
+              "id": "P04",
+              "name": "Ders sürümü ve kanal uyumlu",
+              "passed": true
+            },
+            {
+              "id": "P05",
+              "name": "Çakışma işareti yok",
+              "passed": true
+            },
+            {
+              "id": "A01",
+              "name": "İptal açıklaması korunmuş kayıt davranışıyla uyumlu",
+              "passed": true
+            }
+          ],
+          "passed": 6,
+          "total": 6,
+          "status": "PASS"
+        }
+      },
+      {
+        "id": "H9-G09",
+        "status": "PASS",
+        "actual": {
+          "hotfixAncestorExitCodes": {
+            "main": 0,
+            "develop": 0
+          },
+          "panelContentsEqual": true
+        }
+      },
+      {
+        "id": "H9-G10",
+        "status": "PASS",
+        "actual": {
+          "releaseTagUnmoved": "80c1a3ab1840a43de81d5bbd5d07920e01c7416c",
+          "hotfixTagTarget": "c413ebeb309a7b6aafedafe3cb189bf0f59eab70"
+        }
+      },
+      {
+        "id": "H9-G11",
+        "status": "PASS",
+        "actual": "Bundle yeni klasöre klonlandı; son panel ve commit kimliği korundu."
+      },
+      {
+        "id": "H9-G12",
+        "status": "PASS",
+        "actual": "Deney deposu temiz; harici remote ve push yok."
+      }
+    ],
+    "commits": {
+      "baseline": "7127f830986185134a3c7fd1454e3cd4e0641a72",
+      "patient": "a88cf159f6c9bde7c2c407f592fa2280388d3d10",
+      "staff": "f3feb35d4b3241275e53c6310e90d8474056e348",
+      "resolution": "c63e8f675a53d0441e1523a5e4ad6b12e7e86459",
+      "release": "ac10612fe55b77eb6c6a8218994e1f106c938c1c",
+      "releaseMain": "80c1a3ab1840a43de81d5bbd5d07920e01c7416c",
+      "hotfix": "a98d8883c8b19bd896bbe6ef46d08ad52bee1f85",
+      "hotfixMain": "c413ebeb309a7b6aafedafe3cb189bf0f59eab70",
+      "develop": "a94b40c9662a9d23869bda242d05cfd083754fe8"
+    },
+    "graph": [
+      {
+        "sha": "7127f830986185134a3c7fd1454e3cd4e0641a72",
+        "parents": [],
+        "subject": "lab: ortak panel baslangici"
+      },
+      {
+        "sha": "f3feb35d4b3241275e53c6310e90d8474056e348",
+        "parents": [
+          "7127f830986185134a3c7fd1454e3cd4e0641a72"
+        ],
+        "subject": "feat: personel bilgisini ekle"
+      },
+      {
+        "sha": "a88cf159f6c9bde7c2c407f592fa2280388d3d10",
+        "parents": [
+          "7127f830986185134a3c7fd1454e3cd4e0641a72"
+        ],
+        "subject": "feat: hasta bilgisini ekle"
+      },
+      {
+        "sha": "ca2f6af0205979483955474b835517ce3dbc7093",
+        "parents": [
+          "7127f830986185134a3c7fd1454e3cd4e0641a72",
+          "a88cf159f6c9bde7c2c407f592fa2280388d3d10"
+        ],
+        "subject": "merge: hasta katkisini developa al"
+      },
+      {
+        "sha": "c63e8f675a53d0441e1523a5e4ad6b12e7e86459",
+        "parents": [
+          "f3feb35d4b3241275e53c6310e90d8474056e348",
+          "ca2f6af0205979483955474b835517ce3dbc7093"
+        ],
+        "subject": "merge: iki katkili duyuruyla cakismayi coz"
+      },
+      {
+        "sha": "581d32cfde32aefd30d9363fd29978fbd59d1d46",
+        "parents": [
+          "ca2f6af0205979483955474b835517ce3dbc7093",
+          "c63e8f675a53d0441e1523a5e4ad6b12e7e86459"
+        ],
+        "subject": "merge: personel ve cozumunu developa al"
+      },
+      {
+        "sha": "ac10612fe55b77eb6c6a8218994e1f106c938c1c",
+        "parents": [
+          "581d32cfde32aefd30d9363fd29978fbd59d1d46"
+        ],
+        "subject": "release: panel 0.9.0 egitim surumu"
+      },
+      {
+        "sha": "80c1a3ab1840a43de81d5bbd5d07920e01c7416c",
+        "parents": [
+          "7127f830986185134a3c7fd1454e3cd4e0641a72",
+          "ac10612fe55b77eb6c6a8218994e1f106c938c1c"
+        ],
+        "subject": "merge: release 0.9.0 egitim ana dalina"
+      },
+      {
+        "sha": "a98d8883c8b19bd896bbe6ef46d08ad52bee1f85",
+        "parents": [
+          "80c1a3ab1840a43de81d5bbd5d07920e01c7416c"
+        ],
+        "subject": "fix: iptal kaydinin korundugunu acikla"
+      },
+      {
+        "sha": "c413ebeb309a7b6aafedafe3cb189bf0f59eab70",
+        "parents": [
+          "80c1a3ab1840a43de81d5bbd5d07920e01c7416c",
+          "a98d8883c8b19bd896bbe6ef46d08ad52bee1f85"
+        ],
+        "subject": "merge: hotfix egitim ana dalina"
+      },
+      {
+        "sha": "621c43ada60aeafc83d90b67b10451e9d4f355d7",
+        "parents": [
+          "581d32cfde32aefd30d9363fd29978fbd59d1d46",
+          "ac10612fe55b77eb6c6a8218994e1f106c938c1c"
+        ],
+        "subject": "merge: release bilgisini developa tasi"
+      },
+      {
+        "sha": "a94b40c9662a9d23869bda242d05cfd083754fe8",
+        "parents": [
+          "621c43ada60aeafc83d90b67b10451e9d4f355d7",
+          "a98d8883c8b19bd896bbe6ef46d08ad52bee1f85"
+        ],
+        "subject": "merge: hotfixi developa da tasi"
+      }
+    ],
+    "bundle": {
+      "filename": "YAZ325_Hafta09_Gitflow_Deneyi.bundle",
+      "bytes": 6796,
+      "sha256": "e780d8df6fd1912747caa27551f14c039ed5e9c8b421e3ce01efa2a27b615c05"
+    },
+    "clinicalReleaseDecision": "BEKLET: bağımsız inceleme, NFR ve performans kanıtı tamamlanmadı."
+  }
+}

@@ -88,3 +88,11 @@ Tam ZIP'i ayıklayın; index.html ve src klasörü birlikte kalmalıdır. Native
 
 Bu sonuçlar sağlanmadığı için [#20](https://github.com/pozelll/-klinik-randevu-ogretmen/issues/20) açık tutulur. Teknik birleştirme, insan kabulü tamamlandı anlamına gelmez. Nihai klinik yayın kararı hâlâ BEKLET; öğretmen ders adayı teknik kanıtlarıyla kullanılabilir. Gerçek hasta verisi ve sunucu kimlik doğrulaması projenin kapsamı değildir.
 
+
+## Ölçüm aracının tekrar koşusu
+
+Belge güncellemesi `5526ff93af38ef14674e5f118fae1cd59584c181` için [push kalite koşusu 45032884539](https://github.com/pozelll/-klinik-randevu-ogretmen/actions/runs/45032884539), 7 kayıt düzeyini tamamladıktan sonra 20 kayıt düzeyinde mesaj içermeyen `AssertionError` ile durdu. Aynı head'in PR kalite koşusu geçti. [Başarısız koşunun özgün performans çıktısı](../kanitlar/kapanis/performans-basarisiz-tekrar.json) korunur. Eski günlük, hatanın ilk veri yükleme eşitliğinde mi yoksa yenileme eşitliğinde mi olduğunu göstermediği için kesin eski hata satırı veya kök neden iddia edilmez.
+
+Ölçüm aracında ön-belge `init` betiği ve oturum işaretçisi kaldırıldı. Önce gerçek `file://` sayfası açılır; sentetik veri bu yerleşmiş kaynakta açıkça yazılır ve sayfa yenilenir. Ölçümden önce yalnız kayıt sayısı değil, tam başlangıç verisinin eşitliği doğrulanır. Sonraki toparlanma yenilemesi hiçbir şekilde yeniden veri kurmaz. Hata çıktısı artık aşama, kayıt düzeyi ve traceback içerir; rapor ölçüm betiğinin SHA-256 değerini de taşır.
+
+Bu değişiklik yalnız deney hazırlığı ve teşhis kaydıdır. On doktor değişiminin tümü, aynı içerik kontrolleri, iki rAF yaklaşımı ve 7/20 kayıttaki 1000 ms eşiği korunur. Önceki başarılı sonuç tablosu kendi belirtilen koşusunun ölçümüdür; yeni head'in yürütümü PR Checks sayfasından ayrıca doğrulanır.

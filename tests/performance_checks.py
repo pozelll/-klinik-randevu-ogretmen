@@ -16,6 +16,7 @@ import platform
 import shutil
 import sys
 import time
+import traceback
 from playwright.sync_api import sync_playwright, expect
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -157,15 +158,25 @@ def run_level(browser, count, args):
         options['record_video_dir'] = str(args.evidence_dir / 'videos' / str(count))
         options['record_video_size'] = {'width': 1280, 'height': 900}
     context = browser.new_context(**options)
-    # Only first document load is seeded. Reload must read the application's persisted result.
-    context.add_init_script(f"if (!sessionStorage.getItem('perf-seeded')) {{localStorage.setItem({json.dumps(KEY)}, {json.dumps(json.dumps(data))}); sessionStorage.setItem('perf-seeded','yes');}}")
     page = context.new_page()
     page.set_default_timeout(15000)
     errors = []
     page.on('pageerror', lambda e: errors.append(str(e)))
     page.goto((args.app_dir / 'index.html').as_uri())
     expect(page.locator('#slots button')).to_have_count(10)
-    assert page.evaluate('(key) => JSON.parse(localStorage.getItem(key)).appointments.length', KEY) == count
+    # Establish the file origin before writing the fixture. This setup is outside
+    # the measured interval; no doctor-change samples are warmed up or discarded.
+    # There is deliberately no init script: the later recovery reload cannot reseed.
+    page.evaluate('({key, data}) => localStorage.setItem(key, JSON.stringify(data))',
+                  {'key': KEY, 'data': data})
+    seeded = page.evaluate('(key) => JSON.parse(localStorage.getItem(key))', KEY)
+    assert seeded == data, {'phase': 'fixture_write', 'recordCount': count,
+                            'expected': data, 'actual': seeded}
+    page.reload()
+    expect(page.locator('#slots button')).to_have_count(10)
+    loaded = page.evaluate('(key) => JSON.parse(localStorage.getItem(key))', KEY)
+    assert loaded == data, {'phase': 'fixture_application_load', 'recordCount': count,
+                            'expected': data, 'actual': loaded}
     page.locator('#role-reception').click()
     page.evaluate(INSTRUMENT, {'expectations': {d: expected_view(data, d) for d in DOCTORS}})
     samples = []
@@ -216,7 +227,9 @@ def run_level(browser, count, args):
         before_data = page.evaluate('(key) => localStorage.getItem(key)', KEY)
         page.locator('[data-time="09:30"]').click()
         page.locator('#book-appointment').click()
-        assert page.evaluate('(key) => localStorage.getItem(key)', KEY) == before_data
+        after_data = page.evaluate('(key) => localStorage.getItem(key)', KEY)
+        assert after_data == before_data, {'phase': 'capacity_rejection', 'recordCount': count,
+                                           'expected': before_data, 'actual': after_data}
         expect(page.locator('#notice-text')).to_contain_text('en fazla 1.000')
         result['capacityBoundary'] = {'status': 'PASS', 'recordCount': 1000, 'attemptedExtraRecord': 'rejected', 'dataUnchanged': True}
     saved = page.evaluate('(key) => JSON.parse(localStorage.getItem(key))', KEY)
@@ -224,7 +237,8 @@ def run_level(browser, count, args):
     page.reload()
     expect(page.locator('#slots button')).to_have_count(10)
     restored = page.evaluate('(key) => JSON.parse(localStorage.getItem(key))', KEY)
-    assert restored == saved
+    assert restored == saved, {'phase': 'recovery_reload', 'recordCount': count,
+                                'expected': saved, 'actual': restored}
     if count < 1000:
         expect(page.locator(f'[data-appointment-id="R{count+3:03}"] .status-pill')).to_have_text('İptal edildi')
     result['reloadRecovery'] = {'status': 'PASS', 'recordCount': len(restored['appointments']),
@@ -252,6 +266,8 @@ def main():
               'logicalCpuCount': os.cpu_count(), 'machine': platform.machine(),
               'context': {'viewport': {'width': 1280, 'height': 900}, 'headless': True,
                           'reducedMotion': 'reduce', 'origin': 'file://', 'tabsPerContext': 1},
+              'harnessSHA256': hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
+              'fixtureSetup': 'Established file origin; explicit localStorage write and reload; exact fixture equality before measurement; recovery reload never reseeds.',
               'python': sys.version.split()[0], 'sources': {p: hashlib.sha256((args.app_dir/p).read_bytes()).hexdigest() for p in paths},
               'method': 'Native keyboard doctor changes; browser performance.now from capture-phase change to a second requestAnimationFrame. Correct slots, exact daily rows and totals checked together.',
               'limitations': ['Headless local single-tab browser; no server or multi-user load tested.',
@@ -262,15 +278,18 @@ def main():
                               '100/1000-record results are exploratory; no performance threshold was invented.'],
               'formalNFR02ScreenRecordingAcceptance': 'NOT_ASSESSED', 'results': []}
     failure = None
+    active_level = None
     try:
         with sync_playwright() as pw:
             browser = pw.chromium.launch(headless=True, executable_path=shutil.which('chromium'), args=['--no-sandbox'])
             report['browser'] = 'Chromium ' + browser.version
             for count in (7, 20, 100, 1000):
+                active_level = count
                 report['results'].append(run_level(browser, count, args))
             browser.close()
     except Exception as exc:
-        failure = {'type': type(exc).__name__, 'message': str(exc)}
+        failure = {'type': type(exc).__name__, 'message': str(exc),
+                   'recordCount': active_level, 'traceback': traceback.format_exc()}
     report['failure'] = failure
     report['technicalResult'] = 'PASS' if not failure and len(report['results']) == 4 and all(
         x['summary']['errors'] == 0 and x['instrumentedThresholdResult'] != 'FAIL' for x in report['results']) else 'FAIL'

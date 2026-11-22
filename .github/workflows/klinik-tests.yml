@@ -1,7 +1,7 @@
 name: Klinik - kurallar ve tarayici
 on:
   push:
-    branches: ['test/h6-karar-tablosu', 'feat/h7-saat-secimi-yardimi', 'release/h8-surum-adayi']
+    branches: ['main', 'test/h6-karar-tablosu', 'feat/h7-saat-secimi-yardimi', 'release/h8-surum-adayi', 'fix/ogretmen-kapanis']
   pull_request:
 permissions:
   contents: read
@@ -25,12 +25,12 @@ jobs:
       - name: Chromium - 14 senaryo
         run: python tests/browser_smoke.py
       - name: Paket - 8 uretim ve butunluk kontrolu
-        run: python scripts/check_candidate.py
+        run: python scripts/check_candidate.py --profile h9
       - name: Dagitim paketini yeniden uret, karsilastir ve ayikla
         run: |
-          python scripts/build_candidate.py build --output "$RUNNER_TEMP/h8-built.zip"
-          cmp "$RUNNER_TEMP/h8-built.zip" hafta08/dagitim/Klinik_Randevu_0.3.0-rc.1.zip
-          python scripts/build_candidate.py verify hafta08/dagitim/Klinik_Randevu_0.3.0-rc.1.zip
-          python scripts/build_candidate.py extract hafta08/dagitim/Klinik_Randevu_0.3.0-rc.1.zip --target "$RUNNER_TEMP/h8-package"
+          python scripts/build_candidate.py build --profile h9 --output "$RUNNER_TEMP/h9-built.zip"
+          cmp "$RUNNER_TEMP/h9-built.zip" hafta09/dagitim/Klinik_Randevu_0.3.0-rc.2.zip
+          python scripts/build_candidate.py verify --profile h9 hafta09/dagitim/Klinik_Randevu_0.3.0-rc.2.zip
+          python scripts/build_candidate.py extract --profile h9 hafta09/dagitim/Klinik_Randevu_0.3.0-rc.2.zip --target "$RUNNER_TEMP/h9-package"
       - name: Ayiklanmis pakette Chromium - 14 senaryo
-        run: python tests/browser_smoke.py --app-dir "$RUNNER_TEMP/h8-package"
+        run: python tests/browser_smoke.py --app-dir "$RUNNER_TEMP/h9-package"

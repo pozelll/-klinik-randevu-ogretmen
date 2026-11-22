@@ -1,0 +1,16 @@
+{
+  "archiveFormat": "ZIP_STORED; sorted names; timestamp 1980-01-01 00:00:00; unix file mode 100644",
+  "packageReadmeSha256": "23d599238cafbc1d406a5fe83a84f3956fa0608282dac8928fc7aae7b6a8ad99",
+  "purpose": "YAZ325 H9 öğretmen uygulaması; klavye odağı düzeltmesini içeren ders adayı",
+  "releaseStatus": "candidate; independent human review and user acceptance pending",
+  "sourceCommit": "5c796623a18d4ba187d2a9fe9beba4708915360b",
+  "sourceFiles": {
+    "LICENSE": "a707c23f3a1f49fce87ce3093fc80d4f8f466b795c893eb5eda043052a32cba6",
+    "index.html": "6582e7f493af23135e073a51253bafb821bf21c36f743a42522dcb4df3c82737",
+    "src/demo-data.js": "440d637afed2a1e596b5314020c57973dd323dc65ee3f1504a9ac7802f151906",
+    "src/repository.js": "8f77e18cf450c424d7cefd162b20c07c01c0591f44f200149d12252d7b9682c5",
+    "src/rules.js": "d695881e4dd6b0bfd2cc6c084b5899b910ee4b3384e0af527b4a58c53f0cb496",
+    "src/ui.js": "229fd8588bb1adacd39597fc0fb4fe10b8fc5cceca2997d6c16ce081b506b421"
+  },
+  "version": "0.3.0-rc.2"
+}

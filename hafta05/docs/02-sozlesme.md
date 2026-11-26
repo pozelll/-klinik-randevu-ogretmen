@@ -1,33 +1,39 @@
-# 5. hafta / 2. basamak - Sözleşmeyi netleştirdik
+# 5. hafta / 2. adım - Bileşen sözleşmesi
 
-Hazırlık tarihi: 22 Kasım 2026. Öğretmen örneği; öğrenci katkısı veya bağımsız kişi incelemesi değildir.
+Öğrenci çalışma yönergesi · Güncelleme: 26 Kasım 2026.
 
-## Derste ne söyleyeceğim?
+## Amaç
 
-Sözleşme, bir bileşenden ne istediğimizi ve nasıl bir sonuç beklediğimizi tanımlar. Randevu Deposu, GitHub deposu değildir; uygulama verisini okuyan ve güncelleyen küçük bir bileşendir. findById ve list bağımsız kopya döndürür.
+Veri erişimi bileşeninin hangi işlemleri sunduğunu ve işlem sonuçlarının nasıl yorumlanacağını tanımlamak.
 
-## Ekranda ne açacağım, ne yapacağım?
+Buradaki randevu deposu, uygulama verisini okuyan ve güncelleyen bileşendir. Sözleşme, bu bileşene gönderilen istekleri ve dönen sonuçları tanımlar.
 
-repository.js içinde findById, list ve update işlemlerini bulun. H5-S02 testinde dönen kopyanın durumunu değiştirdiğimiz hâlde kayıtlı R001’in Bekliyor kaldığını gösterin. update, yeni randevu oluşturmaz; bulunmayan kimlikte applied:false döner. Oluşturma için add, sıfırlama için reset aynı veri kaynağını kullanır.
+| İşlem / alan | Anlamı |
+|---|---|
+| `findById` | Kimliğe göre bulunan kaydın bağımsız kopyasını döndürür. |
+| `list` | Kayıtları bağımsız kopyalar halinde sunar. |
+| `update` | Var olan kaydı günceller; bulunmayan kimlik için `applied:false` döner. |
+| `add` | Aynı veri kaynağına yeni randevu ekler. |
+| `reset` | Aynı veri kaynağını başlangıç durumuna getirir. |
+| `applied` | İşlemin oturum verisine uygulanıp uygulanmadığını bildirir. |
+| `persistent` | Sonucun kalıcı saklamaya yazılıp yazılmadığını bildirir. |
 
-- [02-sozlesme.md](https://github.com/pozelll/-klinik-randevu-ogretmen/blob/feat/h5-moduler-uygulama/hafta05/docs/02-sozlesme.md)
+`applied:true` ve `persistent:false` birlikte dönebilir. Bu durumda oturum verisi değişmiş, kalıcı yazma başarısız olmuştur; değişiklik sayfa yenilendiğinde korunmayabilir. Okuma işleminden alınan kopyayı değiştirmek, kayıtlı veriyi doğrudan güncellemez.
+
+## Grup çalışması
+
+1. Kendi veri erişimi bileşeninizin okuma ve güncelleme işlemlerini tanımlayın.
+2. Başarılı güncelleme, reddedilen istek ve saklama hatası için beklenen sonuç alanlarını ayrı yazın.
+3. Okuma işleminin döndürdüğü kopyanın kayıtlı veriden bağımsız olduğunu kendi çalışmanızda sınayın.
+4. Sözleşmeyi ve çalıştırdığınız kontrolün sonucunu [grup kaydına](../sablonlar/grup-kaydi.md) bağlayın.
+
+## Örnek uygulama
+
+22 Kasım 2026 tarihli H5 çalışmasında bu sözleşme `src/repository.js` içinde uygulanmıştır. H5-S02, dönen kopya değiştirildiğinde kayıtlı R001'in durumunun korunmasını sınar.
+
+## Kaynaklar
+
 - [src/repository.js](https://github.com/pozelll/-klinik-randevu-ogretmen/blob/feat/h5-moduler-uygulama/src/repository.js)
-
-## Kontrol sorusu
-
-Kopyayı değiştirmek ile update çağırmak arasındaki fark açıklanıyor mu? applied ve persistent birbirine karıştırılıyor mu?
-
-**Öğrenciye soru:** applied:true ve persistent:false birlikte mümkün mü?
-
-**Beklenen açıklama:** Evet. İşlem oturum belleğine uygulanmış olabilir; tarayıcıya kalıcı yazma başarısız olabilir. Yenilemede bu değişiklik korunmayabilir.
-
-## Öğrencinin yapacağı iş
-
-Bir başarılı güncelleme, bir ret ve bir saklama hatası için beklediğin sonuç alanlarını yaz.
-
-## Öğretmen örneğinin gerçek durumu
-
-findById · list · update sınırı kuruldu. applied: oturum değişti / persistent: kalıcı yazıldı.
-
-Görev: [#13](https://github.com/pozelll/-klinik-randevu-ogretmen/issues/13) · İnceleme paketi: [PR #15](https://github.com/pozelll/-klinik-randevu-ogretmen/pull/15).
-Bağımsız inceleme ve birleştirme bekliyor. Gerçek isim, öğrenci çalışması veya inceleme sonucu uydurulmadı.
+- [H5 dalındaki sözleşme yönergesi](https://github.com/pozelll/-klinik-randevu-ogretmen/blob/feat/h5-moduler-uygulama/hafta05/docs/02-sozlesme.md)
+- [Görev #13](https://github.com/pozelll/-klinik-randevu-ogretmen/issues/13)
+- [PR #15 ve güncel durumu](https://github.com/pozelll/-klinik-randevu-ogretmen/pull/15)

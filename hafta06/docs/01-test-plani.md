@@ -1,33 +1,26 @@
-# 6. hafta / 1. basamak - Test kapsamını belirledik
+# 6. hafta / 1. basamak - Test planı
 
-Hazırlık tarihi: 22 Kasım 2026. Öğretmen örneği; öğrenci katkısı veya bağımsız kişi incelemesi değildir.
+## Amaç
 
-## Derste ne söyleyeceğim?
+Bir gereksinimin hangi veriyle ve hangi düzeyde sınanacağını belirleyin. İş kuralı testleri kararları, bütünleşme testleri bileşenlerin ortak çalışmasını, tarayıcı testleri ise kullanıcının gördüğü akışı kapsar.
 
-Test planı hangi davranışı, hangi veriyle ve hangi düzeyde sınayacağımızı belirler. İş kuralı testi ekran olmadan kararları; bütünleşme testi bileşenlerin ortak veriyi doğru kullanmasını; tarayıcı testi kullanıcının gördüğü akışı sınar.
+## Çalışma
 
-## Ekranda ne açacağım, ne yapacağım?
+1. [H4-DK-01 karar kartını](https://github.com/pozelll/-klinik-randevu-ogretmen/blob/test/h6-karar-tablosu/hafta04/kartlar/01-karar-tablosu-ve-kanit.md) inceleyin.
+2. Kendi grubunuzun bir gereksinimini seçin. Olumlu, olumsuz ve alternatif akış için başlangıç verisini ve beklenen sonucu yazın.
+3. Her senaryonun test düzeyini belirleyin. İptal yetkisi, kayıt silmeme, vazgeçme, BR-01 saat sonucu ve günlük toplamlar için ilgili gereksinim bağlantısını ekleyin.
+4. İşlevsel testlerden ayrı ölçüm gerektiren kullanılabilirlik, yanıt süresi ve klavye kullanımını ayrıca belirtin.
 
-H4-DK-01 kartını ve FR-03 / AC-03 / ALT-01 bağlantılarını açın. İptal yetkisi, kayıt silmeme, vazgeçme, BR-01 saat sonucu ve günlük toplamları listeleyin. H5 uygulamasını değiştirmeden test kapsamını büyüttüğümüzü gösterin.
+## Teslim edilecek çıktı
 
-- [01-test-plani.md](https://github.com/pozelll/-klinik-randevu-ogretmen/blob/test/h6-karar-tablosu/hafta06/docs/01-test-plani.md)
-- [H4-DK-01 karar kartı](https://github.com/pozelll/-klinik-randevu-ogretmen/blob/test/h6-karar-tablosu/hafta04/kartlar/01-karar-tablosu-ve-kanit.md)
+| Senaryo | Gereksinim | Başlangıç verisi | İşlem | Beklenen sonuç | Test düzeyi |
+|---|---|---|---|---|---|
+| Grubunuz doldurur | | | | | |
 
-## Kontrol sorusu
+Test planını [grup kaydına](../sablonlar/grup-kaydi.md) bağlayın. Beklenen sonucu, çalıştırmadan önce tanımlayın; gerçekleşen sonucu testten sonra ayrı kaydedin.
 
-Her testin beklenen sonucu var mı? İşlevsel kontrol ile kullanılabilirlik, yanıt süresi ve klavye ölçümü ayrılıyor mu?
+## Örnek çalışma kaydı
 
-**Öğrenciye soru:** Ekranda iptal düğmesinin görünmemesi kuralın korunduğunu kanıtlar mı?
+22 Kasım 2026 tarihli H6 örneği; kural, veri erişimi ve ekran kontrollerini ayırır. Bu haftanın o tarihli test kapsamı NFR-01-NFR-03 ölçümlerini içermez.
 
-**Beklenen açıklama:** Tek başına yetmez. Kontrollü isteği doğrudan iş katmanına gönderip verinin ve yazma çağrılarının değişmediğini kontrol ederiz.
-
-## Öğrencinin yapacağı iş
-
-Kendi grubunun bir gereksinimini seç. Olumlu, olumsuz ve alternatif akış için beklenen sonucu yaz.
-
-## Öğretmen örneğinin gerçek durumu
-
-Kural, veri erişimi ve ekran kontrolleri ayrıldı. NFR-01–NFR-03 ölçümleri kapsam dışında kaldı.
-
-Görev: [#14](https://github.com/pozelll/-klinik-randevu-ogretmen/issues/14) · İnceleme paketi: [PR #16](https://github.com/pozelll/-klinik-randevu-ogretmen/pull/16).
-Bağımsız inceleme ve birleştirme bekliyor. Gerçek isim, öğrenci çalışması veya inceleme sonucu uydurulmadı.
+[Görev #14](https://github.com/pozelll/-klinik-randevu-ogretmen/issues/14) · [PR #16 ve güncel durumu](https://github.com/pozelll/-klinik-randevu-ogretmen/pull/16)

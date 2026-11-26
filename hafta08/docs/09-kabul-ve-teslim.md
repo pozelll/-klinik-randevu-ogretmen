@@ -1,5 +1,7 @@
 # H8 — Kabul ve teslim kapıları
 
+Bu tablo 22 Kasım 2026 tarihli H8 hazırlığının teknik sonuçlarını ve o hazırlık anındaki bekleyen işleri gösterir. Grubunuzun gerçek değerlendirmesini alttaki boş forma kaydedin. PR #19 aynı gün `main` dalına birleştirilmiştir; güncel inceleme ve birleştirme durumu [PR kaydından](https://github.com/pozelll/-klinik-randevu-ogretmen/pull/19) izlenir.
+
 | Koşul | Hazırlığın gerçek durumu | Kanıt / sorumlu |
 |---|---|---|
 | Aday kaynağı sabit | Tamamlandı | config/surum-adayi.json |
@@ -17,7 +19,7 @@
 | Nihai yayın onayı / GitHub Release | Yapılmadı | Ders adayı olarak sunuldu |
 | Geri dönüş tatbikatı | Yapılmadı | Yalnız plan hazır |
 
-**Sonuç:** Teknik olarak doğrulanmış, incelenebilir ders sürüm adayı. Nihai kabul tamamlandı denmez. Görev #17 ve PR #19 bu nedenle açıktır.
+**Hazırlık kaydının sonucu:** Teknik kontrolleri tamamlanmış, incelenebilir ders sürüm adayı. Bu teknik kayıt, nihai kullanıcı kabulünün tamamlandığını göstermez. Görev #17 ve PR #19'un güncel durumları ilgili GitHub kayıtlarından kontrol edilir.
 
 ## Gerçek kabul kaydı — doldurulacak
 

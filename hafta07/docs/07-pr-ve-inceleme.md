@@ -1,45 +1,40 @@
-# 7. hafta / 7. basamak — İncelemeye sunduk
+# 7. hafta / 7. adım - PR ve inceleme
 
-Öğretmen örneği · 22 Kasım 2026
+Öğrenci çalışma yönergesi · Güncelleme: 26 Kasım 2026.
 
-## Derste anlat
+## Amaç
 
-Pull request, değişikliği incelemek için bir araya getiren kayıttır. Yeşil CI otomatik kontrollerin geçtiğini söyler; başka bir kişinin anlaşılabilirlik ve kapsam değerlendirmesini yapmış olduğunu söylemez. Önceki haftaların PR’ları da açık olduğu için hedef dal H6’dır.
+Değişikliğin amacı, dosya farkları ve test kanıtlarını bir PR içinde birleştirmek; gerçek inceleme sonucunu kaydetmek.
 
-## Ekranda göster ve uygula
+Otomatik kontrollerin sonucu, başka bir kişinin incelemesi ve değişikliğin hedef dala birleştirilmesi ayrı durumlardır. İncelemeyi ilgili içeriğin yazımına katılmamış bir kişi yapar.
 
-PR #18’in hedefini, değişen dosyalarını ve Checks bölümünü gösterin. #7 → #11 → #12 → #15 → #16 → #18 bağımlılığını okuyun. İnceleme formunda kişi, tam commit, kapsam ve bulgu alanlarının bağımsız inceleme yapılmadan doldurulmadığını açıklayın.
+## Grup çalışması
 
-- [07-pr-ve-inceleme.md](https://github.com/pozelll/-klinik-randevu-ogretmen/blob/feat/h7-saat-secimi-yardimi/hafta07/docs/07-pr-ve-inceleme.md)
-- [PR #18](https://github.com/pozelll/-klinik-randevu-ogretmen/pull/18)
+1. Kendi PR açıklamanıza sorunu, değişen davranışı ve test kanıtlarını yazın.
+2. Kaynak dalı, hedef dalı ve **Files changed** bölümündeki farkı kontrol edin.
+3. Başka bir üyeye belirli bir inceleme kapsamı verin; ortak yazılan kapsam için gerekirse grup dışından inceleyen belirleyin.
+4. Gerçek inceleme sonucunu, incelenen tam commit'i ve varsa bulguları kaydedin.
+5. Düzeltme yapıldıysa düzeltme commit'ini ve yeniden kontrol sonucunu ekleyin.
 
-## Öğrenciye soru
+## İnceleme kayıt formu
 
-**Taslak PR açıkken kod çalışabilir mi?**
-
-Beklenen açıklama: Evet. Çalışma dalındaki kod çalışabilir; ana dala kabul edildiği veya teslim onayı aldığı anlamına gelmez.
-
-## Grubun yapacağı iş
-
-Kendi PR’ında sorunu, değişen davranışı ve kanıtı yaz. Farklı bir kişinin incelemesini gerçek sonuçla kaydet.
-
-Kontrol: CI başarısı, bağımsız review ve merge üç ayrı durum olarak belirtilmiş mi?
-
-## Hazırlığın gerçek durumu
-
-H7 → H6: taslak PR #18 açık. Bağımsız inceleme ve birleştirme bekliyor.
-
-[Görev #10](https://github.com/pozelll/-klinik-randevu-ogretmen/issues/10) · [PR #18](https://github.com/pozelll/-klinik-randevu-ogretmen/pull/18)
-
-## İnceleme kaydı — bekliyor
-
-| Alan | Gerçek durum / doldurulacak |
+| Alan | Grubun kaydı |
 |---|---|
-| Yazar dışında inceleyen | Bekliyor |
-| İncelenen tam commit | İnceleme sırasında yazılacak |
-| Kapsam ve bulgular | Gerçek inceleme sırasında yazılacak |
-| Düzeltme ve yeniden kontrol | Bulgular varsa kaydedilecek |
-| Hedef dal | test/h6-karar-tablosu |
-| Birleştirme | Yapılmadı |
+| İnceleyen adı / hesabı | |
+| İncelenen içeriğin yazımına katılma durumu | |
+| İncelenen tam commit / tarih | |
+| Kapsam ve bulgular | |
+| Düzeltme commit'i ve yeniden kontrol | |
+| Hedef dal | |
+| Gerçek GitHub review bağlantısı | |
+| Birleştirme durumu ve kaydı | |
 
-Önceki PR'lar birleştirilirse güncel hedef, fark ve çakışmalar yeniden kontrol edilir. Bu ders hazırlığı önceki açık inceleme koşullarını kapatmaz.
+Henüz yapılmayan incelemeyi onay olarak doldurmayın. Bağımlı PR'larda hedef dal değiştiğinde farkı, çakışmaları ve kontrol edilen commit'i yeniden doğrulayın.
+
+## Örnek PR kaydı
+
+[PR #18](https://github.com/pozelll/-klinik-randevu-ogretmen/pull/18), **22 Kasım 2026 tarihinde `main` dalına birleştirilmiştir**. İlk hazırlıkta kaynak dal `feat/h7-saat-secimi-yardimi`, hedef dal `test/h6-karar-tablosu` idi; tarihsel bağımlılık sırası #7 → #11 → #12 → #15 → #16 → #18 olarak kaydedilmişti.
+
+Bu tarihsel hedef bilgisi güncel birleştirme durumuyla karıştırılmamalıdır. PR sayfası gerçek inceleme ve birleştirme kayıtları için kaynaktır; birleştirilmiş olması bağımsız insan incelemesi yapıldığını tek başına göstermez.
+
+[Görev #10](https://github.com/pozelll/-klinik-randevu-ogretmen/issues/10) · [Grup kayıt formu](../sablonlar/grup-kaydi.md)

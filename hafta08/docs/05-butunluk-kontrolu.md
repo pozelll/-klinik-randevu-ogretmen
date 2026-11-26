@@ -1,37 +1,27 @@
-# 8. hafta / 5. basamak — Bozuk paketi yakaladık
+# 8. hafta / 5. adım - Paket bütünlüğü
 
-Öğretmen örneği · 22 Kasım 2026
+Öğrenci çalışma yönergesi · Güncelleme: 26 Kasım 2026.
 
-## Derste anlat
+## Amaç
 
-Bir doğrulayıcının doğru paketi kabul etmesi yeterli değildir; yanlış paketi reddettiğini de göstermeliyiz. İki ayrı kopyada bir dosyayı değiştiriyor ve bir dosyayı çıkarıyoruz. Deneme kopyaları geçicidir. Teslim edilen ZIP bozulmaz. İç özet listesine tek başına güvenmek yerine dıştaki aday tanımı da kontrol edilir.
+Doğrulayıcının sağlam paketi kabul ettiğini ve beklenen içeriğe uymayan paketi reddettiğini sınayın. İç özet listesiyle birlikte dış aday tanımını da kontrol edin.
 
-## Ekranda göster ve uygula
+## Grup çalışması
 
-Paket kontrollerindeki değiştirilmiş dosya, eksik dosya ve ek dosya sonuçlarını gösterin. Ardından sağlam dağıtım ZIP’ini verify komutuyla doğrulayın. SHA256SUMS.txt dosyasının kendisini özetlememesinin döngüsel bağımlılığı önlediğini açıklayın.
+1. Sağlam teslim paketini ve başlangıç SHA-256 özetini kaydedin.
+2. Deneme için ayrı bir kopya oluşturun; yalnız bu kopyada kontrollü eksik dosya denemesi yapın.
+3. Beklenen reddi ve gerçekten oluşan sonucu ayrı yazın.
+4. Sağlam paketi yeniden doğrulayın ve başlangıç özetinin korunduğunu kontrol edin.
 
-- [05-butunluk-kontrolu.md](https://github.com/pozelll/-klinik-randevu-ogretmen/blob/release/h8-surum-adayi/hafta08/docs/05-butunluk-kontrolu.md)
-- [check_candidate.py](https://github.com/pozelll/-klinik-randevu-ogretmen/blob/release/h8-surum-adayi/scripts/check_candidate.py)
+Denemeler geçici kopyalarda yapılır. Teslim ZIP'ini veya asıl kaynak dosyalarını deneme amacıyla bozmayın. [Örnek kontrol aracı](https://github.com/pozelll/-klinik-randevu-ogretmen/blob/release/h8-surum-adayi/scripts/check_candidate.py) bu denemeleri ayrı çalışma kopyalarında yürütür.
 
-## Öğrenciye soru
+## Teslim edilecek çıktı
 
-**Saldırgan ZIP’i ve iç özetleri birlikte değiştirirse iç liste yeterli midir?**
+Sağlam paketin özeti, deneme kopyasına yapılan değişiklik, beklenen sonuç, gerçek doğrulama çıktısı ve sağlam paketin son kontrolü.
 
-Beklenen açıklama: Hayır. Güvenilen dış kaynak/manifest gerekir. Bu dersin özeti bir dijital imza veya kimlik doğrulama sistemi değildir.
+## 22 Kasım 2026 tarihli sekiz örnek kontrol
 
-## Grubun yapacağı iş
-
-Paket kopyasında kontrollü eksik dosya denemesi yap. Beklenen ret ile gerçek sonucu kaydet.
-
-Kontrol: Negatif denemede beklenen ret gerçekten oluşuyor mu? Sağlam paket özeti değişmeden duruyor mu?
-
-## Hazırlığın gerçek durumu
-
-Kontrollü bozulmalar reddedildi. Beklenen içerik, dış aday tanımından gelir.
-
-[Görev #17](https://github.com/pozelll/-klinik-randevu-ogretmen/issues/17) · [PR #19](https://github.com/pozelll/-klinik-randevu-ogretmen/pull/19)
-
-## Sekiz anlamlı kontrol
+Aşağıdaki sonuçlar [örnek paket kontrol kaydına](../kanitlar/paket-kontrolleri.json) aittir. Kendi denemenizin sonucunu ayrıca üretin. Doğrulama komutu `release/h8-surum-adayi` dalının depo kökünde çalıştırılır.
 
 | Kimlik | Gerçek kontrol | Sonuç |
 |---|---|---|
@@ -49,3 +39,5 @@ python scripts/build_candidate.py verify hafta08/dagitim/Klinik_Randevu_0.3.0-rc
 ```
 
 Doğrulama için depo kökündeki kaynak dosyalar, dış aday tanımı ve yönerge bulunmalıdır. SHA256SUMS.txt kendi kendisini özetlemez. İçerik eşitliği kontrol edilir; bu mekanizma dijital imza veya tedarik zinciri güvenlik sertifikası değildir.
+
+[Görev #17](https://github.com/pozelll/-klinik-randevu-ogretmen/issues/17) · [PR #19 ve güncel durumu](https://github.com/pozelll/-klinik-randevu-ogretmen/pull/19)

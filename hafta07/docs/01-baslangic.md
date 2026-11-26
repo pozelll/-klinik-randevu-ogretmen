@@ -1,39 +1,31 @@
-# 7. hafta / 1. basamak — Ertelenen işi seçtik
+# 7. hafta / 1. adım - Ertelenen işin seçimi
 
-Öğretmen örneği · 22 Kasım 2026
+Öğrenci çalışma yönergesi · Güncelleme: 26 Kasım 2026.
 
-## Derste anlat
+## Amaç
 
-Bir işin ertelenmesi silinmesi demek değildir. Üçüncü haftada kapasite 8 puandı; kapsam 9 puana çıkınca 3 puanlık saat yardımı dışarıda kalmıştı. Şimdi o görevi yeniden seçiyoruz. Bu, öğretmen örneğinin planlama kararıdır; gerçek klinik talebi toplandığını göstermez.
+Önceki iş listesinden ertelenmiş bir işi seçmek, yeni seçim gerekçesini açıklamak ve çalışmanın başlangıç sürümünü kaydetmek.
 
-## Ekranda göster ve uygula
+Bir iş ertelendiğinde önceki karar ve gerekçesi korunur. İş yeniden seçildiğinde yeni karar ayrı kaydedilir. Puan göreli büyüklük tahminidir; gerçekleşen çalışma süresi ayrıca ölçülür.
 
-Görev #10’un tarihsel kaydını ve üstteki H7 güncellemesini açın. H6 başlangıç commit’ini gösterin. feat/h7-saat-secimi-yardimi dalına geçip aynı uygulamanın devamında çalışıldığını açıklayın. Eski kararın üzerine yazmak yerine yeni kararın gerekçesini eklediğimizi gösterin.
+## Grup çalışması
 
-- [01-baslangic.md](https://github.com/pozelll/-klinik-randevu-ogretmen/blob/feat/h7-saat-secimi-yardimi/hafta07/docs/01-baslangic.md)
-- [Görev #10](https://github.com/pozelll/-klinik-randevu-ogretmen/issues/10)
+1. Kendi iş listenizden ertelenmiş bir iş seçin ve önceki kararın bağlantısını bulun.
+2. İşin neden ertelendiğini ve neden şimdi ele alınacağını yazın.
+3. Başlangıç commit'ini, çalışma dalını ve görev sorumlusunu belirleyin.
+4. Bu bilgileri [grup kaydına](../sablonlar/grup-kaydi.md) ekleyin. Önceki planı yeni kararın üzerine yazmayın.
 
-## Öğrenciye soru
+## Teslim edilecek çıktı
 
-**3 puanlık işin 3 saatte biteceğini söyleyebilir miyiz?**
+Görev bağlantısı, önceki erteleme gerekçesi, yeni seçim gerekçesi, başlangıç commit'i, çalışma dalı ve sorumlu.
 
-Beklenen açıklama: Hayır. Puan göreli büyüklük tahminidir. Gerçek süre ayrıca ölçülür; bu örnekte gerçekleşmiş emek kaydı yoktur.
+## Tarihli örnek başlangıç
 
-## Grubun yapacağı iş
-
-Kendi iş listenden ertelenmiş bir iş seç. Önceki kararını koru; neden şimdi seçtiğini ve başlangıç commit’ini yaz.
-
-Kontrol: Öğrenci eski erteleme gerekçesini ve yeni başlangıç sürümünü ayırt edebiliyor mu?
-
-## Hazırlığın gerçek durumu
-
-H3-03, 7. haftanın işine dönüştü. İlk tahmin: 3 puan; gerçekleşen süre değil.
-
-[Görev #10](https://github.com/pozelll/-klinik-randevu-ogretmen/issues/10) · [PR #18](https://github.com/pozelll/-klinik-randevu-ogretmen/pull/18)
-
-## Sabit başlangıç
+22 Kasım 2026 tarihli örnekte H3-03 saat yardımı işi H7 kapsamına alınmıştır. H3'te kapasite 8 puan, genişleyen kapsam 9 puandı; 3 puanlık iş ertelendiğinde kapsam 6 puana inmişti. Bu değerler tarihsel plan kaydıdır; gerçekleşmiş emek ölçümü değildir. Örnek, gerçek klinik talebi toplandığını göstermez.
 
 - H6 başlangıcı: `f100249a9ece6cb18ff905fe6a3bee8a6cb6f9f8`.
 - H7 uygulama ve test commit'i: `bd5fa3fb2c35d1c11864eed982fdbc20d539d58a`.
-- Kaynak görev: [#10](https://github.com/pozelll/-klinik-randevu-ogretmen/issues/10), önceki kod/test PR'ı: [#16](https://github.com/pozelll/-klinik-randevu-ogretmen/pull/16).
-- H3'teki 8 → 9 → 6 puan kapasite/kapsam hesabı tarihsel plan kaydıdır. Bu hafta gerçekleşmiş iş gücü hesabı yapılmadı.
+- Örnek çalışma dalı: `feat/h7-saat-secimi-yardimi`.
+- [Önceki kod ve test kaydı: PR #16](https://github.com/pozelll/-klinik-randevu-ogretmen/pull/16).
+
+[Görev #10](https://github.com/pozelll/-klinik-randevu-ogretmen/issues/10) · [PR #18 ve güncel durumu](https://github.com/pozelll/-klinik-randevu-ogretmen/pull/18)

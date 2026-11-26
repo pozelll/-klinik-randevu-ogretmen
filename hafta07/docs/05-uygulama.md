@@ -1,39 +1,33 @@
-# 7. hafta / 5. basamak — Yardımı uyguladık
+# 7. hafta / 5. adım - Değişikliğin uygulanması
 
-Öğretmen örneği · 22 Kasım 2026
+Öğrenci çalışma yönergesi · Güncelleme: 26 Kasım 2026.
 
-## Derste anlat
+## Amaç
 
-Yardım metni, uygulamanın mevcut durumunu anlatmalıdır. Metni ayrı bir değişkende tutup eskimesine izin vermek yerine saatler yeniden çizilirken güncelliyoruz. aria-describedby yardım ile ilgili alanı bağlar; aria-live değişen açıklama için bir ipucu verir. Bunlar tek başına erişilebilirlik onayı değildir.
+Değişiklik kartındaki davranışı uygulamak ve açıklama metnini uygulamanın gerçek durumuyla tutarlı tutmak.
 
-## Ekranda göster ve uygula
+Örnek uygulamada saat yardımı, `renderSlots` çalışırken güncellenir. Yardım metni rol ve seçili saat durumuna bağlıdır. Saat seçimi kayıt oluşturmaz; oluşturma, iptal ve tamamlama işlemleri `src/rules.js` üzerinden yürür.
 
-Uygulamayı ayıklanmış klasörden açın. 09:30’u seçin; “henüz randevu oluşturulmadı” metnini gösterin. Onaydan önce tarih değiştirin ve seçimin temizlendiğini izleyin. Sonra yeniden saat seçip onaylayın. Doktor rolüne geçerek rol açıklamasını gösterin.
+`aria-describedby`, yardım ile ilgili alanı ilişkilendirir; `aria-live`, değişen açıklamanın bildirilmesine yönelik bir ipucudur. Bu özelliklerin bulunması tek başına klavye veya ekran okuyucu uygunluğu kanıtı değildir.
 
-- [05-uygulama.md](https://github.com/pozelll/-klinik-randevu-ogretmen/blob/feat/h7-saat-secimi-yardimi/hafta07/docs/05-uygulama.md)
+## Grup çalışması
+
+1. Kendi değişiklik kartınızda belirtilen davranışı uygulayın.
+2. Değişikliği en az bir durum geçişiyle sınayın. Örneğin saat seçiminden sonra tarih veya rol değiştiğinde açıklamanın güncel durumu yansıtmasını kontrol edin.
+3. Kullanıcının seçimi, onayı ve veri değişiminin hangi adımlarda gerçekleştiğini ayrı kaydedin.
+4. Dosya değişikliklerini commit ile kaydedin ve bağlantıyı [grup formuna](../sablonlar/grup-kaydi.md) ekleyin.
+
+## Teslim edilecek çıktı
+
+Değişen dosyalar, uygulama commit'i ve en az bir durum geçişinin başlangıç/sonuç kaydı.
+
+## Tarihli örnek uygulama
+
+22 Kasım 2026 tarihli [kod farkı](https://github.com/pozelll/-klinik-randevu-ogretmen/commit/bd5fa3fb2c35d1c11864eed982fdbc20d539d58a), yardımın `renderSlots` içinde güncellendiği uygulamayı gösterir. Başlangıç verisi 7 kayıttır.
+
+Örneği incelemek için proje klasörünü tamamen ayıklayıp `index.html` dosyasını `src/` ile birlikte açın. 09:30 seçimi, onaydan önce tarih değişimi ve doktor rolüne geçişi ayrı senaryolar olarak deneyin. Yeniden denemelerde yalıtılmış bir tarayıcı oturumu kullanın veya gerekli gözlemleri kaydettikten sonra yalnız sentetik örnek veriyi sıfırlayın.
+
 - [src/ui.js](https://github.com/pozelll/-klinik-randevu-ogretmen/blob/feat/h7-saat-secimi-yardimi/src/ui.js)
 - [index.html](https://github.com/pozelll/-klinik-randevu-ogretmen/blob/feat/h7-saat-secimi-yardimi/index.html)
 
-## Öğrenciye soru
-
-**Aynı açıklamayı her role göstermek neden yanlış olabilir?**
-
-Beklenen açıklama: Doktor rolü kayıt oluşturamaz. Yardım, izin verilen eylemle uyumlu olmalı ve yapılamayan bir işlem önermemelidir.
-
-## Grubun yapacağı iş
-
-Kendi değişikliğini uygula. En az bir durum geçişini göster ve ilgili commit’i kaydet.
-
-Kontrol: Yardım görünümü gerçek seçimle tutarlı mı? Seçim ile kayıt oluşturma ayrı eylemler mi?
-
-## Hazırlığın gerçek durumu
-
-Seçim ve onay adımı ayrılıyor. Saat seçmek tek başına kayıt oluşturmuyor.
-
-[Görev #10](https://github.com/pozelll/-klinik-randevu-ogretmen/issues/10) · [PR #18](https://github.com/pozelll/-klinik-randevu-ogretmen/pull/18)
-
-## Uygulama kaydı
-
-[Kod farkı](https://github.com/pozelll/-klinik-randevu-ogretmen/commit/bd5fa3fb2c35d1c11864eed982fdbc20d539d58a). Yardımın tek güncelleme noktası renderSlots'tur. Başlangıç verisi 7 kayıttır; yeniden denemeden önce yalnız sentetik örnek veriyi sıfırlayın veya yeni yalıtılmış tarayıcı oturumu kullanın. Öğrencinin mevcut çalışmasını habersiz sıfırlamayın.
-
-Oluşturma, iptal ve tamamlama iş kuralları src/rules.js üzerinden çalışmaya devam eder. Saat yardımı kayıt oluşturmaz. aria özelliklerinin bulunması tek başına klavye/ekran okuyucu uygunluk belgesi değildir.
+[Görev #10](https://github.com/pozelll/-klinik-randevu-ogretmen/issues/10) · [PR #18 ve güncel durumu](https://github.com/pozelll/-klinik-randevu-ogretmen/pull/18)

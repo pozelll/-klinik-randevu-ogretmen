@@ -1,37 +1,23 @@
-# 8. hafta / 1. basamak — Aday sürümü sabitledik
+# 8. hafta / 1. adım - Aday sürüm kimliği
 
-Öğretmen örneği · 22 Kasım 2026
+Öğrenci çalışma yönergesi · Güncelleme: 26 Kasım 2026.
 
-## Derste anlat
+## Amaç
 
-“En son dosya” teslim kimliği değildir; dalın içeriği değişebilir. Tam commit ve dosya özetleri hangi uygulamadan paket ürettiğimizi belirtir. 0.3.0-rc.1 etiketi bu çalışmada seçtiğimiz aday sürüm adıdır. GitHub Release yayımlanmış veya üretime alınmış değildir.
+Teslim paketinin hangi kaynaklardan üretileceğini açıkça belirleyin. Dalın içeriği zamanla değişebileceği için tam commit ve dosya özetleri, adayın kaynak kimliğini birlikte tanımlar.
 
-## Ekranda göster ve uygula
+## Grup çalışması
 
-Aday tanımındaki sourceCommit ve sourceFiles alanlarını açın. H7 kod commit’ini GitHub’da gösterin. Sonradan eklenen ders belgelerinin uygulama dosyalarını değiştirmediğini özetlerle karşılaştırın. Paket üretim aracı kaynak dosya değişirse neden duruyor, açıklayın.
+1. Kendi aday sürümünüzü adlandırın ve kapsamını yazın.
+2. Tam kaynak commit'ini ve pakete girecek dosyaları kaydedin.
+3. [Örnek aday tanımındaki](https://github.com/pozelll/-klinik-randevu-ogretmen/blob/release/h8-surum-adayi/hafta08/config/surum-adayi.json) `sourceCommit` ve `sourceFiles` alanlarını inceleyin. Kendi dosya listenizi sürüm kaydınızla eşleştirin.
+4. Kaynak dosyaların özetlerini üretin ve aday tanımına bağlayın. Dosya değişirse yeni sürümü inceleyerek tanımı güncelleyin.
 
-- [01-surum-adayi.md](https://github.com/pozelll/-klinik-randevu-ogretmen/blob/release/h8-surum-adayi/hafta08/docs/01-surum-adayi.md)
-- [Aday tanımı](https://github.com/pozelll/-klinik-randevu-ogretmen/blob/release/h8-surum-adayi/hafta08/config/surum-adayi.json)
+## Teslim edilecek çıktı
 
-## Öğrenciye soru
+Aday adı, kapsam, tam kaynak commit'i, dosya listesi ve dosya özetlerini içeren sürüm kaydı. Paketin adı, içerik doğrulamasının yerine geçmez.
 
-**Dosya adını v1-final-son.zip yapmak sürümü doğrular mı?**
-
-Beklenen açıklama: Hayır. Ad tek başına içerik kanıtı değildir. Commit, manifest ve gerçek paket özeti birlikte incelenir.
-
-## Grubun yapacağı iş
-
-Kendi aday sürümünü adlandır. Tam kaynak commit’ini, kapsamı ve dosya listesini kaydet.
-
-Kontrol: Adayın kaynağı hareketli dal adı yerine tam commit ve dosya özetiyle tanımlı mı?
-
-## Hazırlığın gerçek durumu
-
-Sabit kaynak, açık aday kimliği. rc.1 ders adayıdır; yayın onayı değildir.
-
-[Görev #17](https://github.com/pozelll/-klinik-randevu-ogretmen/issues/17) · [PR #19](https://github.com/pozelll/-klinik-randevu-ogretmen/pull/19)
-
-## Kimlik kartı
+## 22 Kasım 2026 tarihli örnek kimlik kartı
 
 | Alan | Değer |
 |---|---|
@@ -44,3 +30,7 @@ Sabit kaynak, açık aday kimliği. rc.1 ders adayıdır; yayın onayı değildi
 | SHA-256 | `36822b44675d5df7d1613f9605f907e18fe3656cc74b64e614d19c277bde2dc5` |
 
 H7'nin son belge commit'i uygulamanın kaynağıyla aynı kavram değildir. Paket tanımı ürün dosyalarının geldiği tam commit'i gösterir; H8 CI kaydı üretim/test araçlarının sürümünü ayrıca taşır. `sourceCommit` alanının yazılması tek başına uzak sunucuyu doğrulamaz: beş uygulama dosyasının CI raporundaki özetleri tanımla karşılaştırıldı. Lisans da sabit kaynak dosya listesine dahildir.
+
+`0.3.0-rc.1`, bu hazırlıkta kullanılan ders adayı adıdır. Hazırlık kaydında GitHub Release veya üretim yayını bulunmaz.
+
+[Görev #17](https://github.com/pozelll/-klinik-randevu-ogretmen/issues/17) · [PR #19 ve güncel durumu](https://github.com/pozelll/-klinik-randevu-ogretmen/pull/19)

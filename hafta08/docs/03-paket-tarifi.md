@@ -1,37 +1,24 @@
-# 8. hafta / 3. basamak — Paket içeriğini tanımladık
+# 8. hafta / 3. adım - Paket tarifi
 
-Öğretmen örneği · 22 Kasım 2026
+Öğrenci çalışma yönergesi · Güncelleme: 26 Kasım 2026.
 
-## Derste anlat
+## Amaç
 
-Bir klasörü rastgele sıkıştırmak yerine hangi dosyaların teslim edileceğini tanımlıyoruz. Bu pakette index.html, dört JavaScript dosyası, lisans, kullanım yönergesi, sürüm bilgisi ve özet listesi bulunur. Öğrencinin tarayıcısındaki randevu verisi kaynak dosya değildir ve bu ZIP’e aktarılmaz.
+Hangi dosyaların teslim edileceğini ve her dosyanın görevini tanımlayın. Uygulamanın çalışması için gereken dosyalar birlikte paketlenir; geçici çıktılar ve kişisel veriler pakete alınmaz.
 
-## Ekranda göster ve uygula
+## Grup çalışması
 
-Üretim aracındaki izinli dosya listesini ve aday tanımını açın. Arşivin sıralı üretildiğini, zaman damgasının sabit olduğunu ve sıkıştırmasız ZIP kullanıldığını gösterin. Bu seçimlerin dosya içeriğini değil, paketleme değişkenliğini azaltmak için yapıldığını açıklayın.
+1. Kendi uygulamanızın çalışması için gereken dosyaları listeleyin.
+2. Kullanım yönergesi, lisans, sürüm bilgisi ve özet listesi gibi destek dosyalarını belirleyin.
+3. [Örnek üretim aracındaki](https://github.com/pozelll/-klinik-randevu-ogretmen/blob/release/h8-surum-adayi/scripts/build_candidate.py) izinli dosya listesini [aday tanımıyla](../config/surum-adayi.json) karşılaştırın.
+4. Arşiv sırası, zaman bilgisi ve dosya modu gibi paketleme tercihlerini kaydedin.
+5. Eksik uygulama dosyasını yakalayacak kontrolü teslim listenize ekleyin.
 
-- [03-paket-tarifi.md](https://github.com/pozelll/-klinik-randevu-ogretmen/blob/release/h8-surum-adayi/hafta08/docs/03-paket-tarifi.md)
-- [build_candidate.py](https://github.com/pozelll/-klinik-randevu-ogretmen/blob/release/h8-surum-adayi/scripts/build_candidate.py)
+## Teslim edilecek çıktı
 
-## Öğrenciye soru
+Dosya yolu, görevi ve kaynağı bulunan paket içerik listesi. Tarayıcıdaki randevu kayıtları uygulama kaynak dosyası değildir; örnek ZIP'e aktarılmaz.
 
-**Yalnız index.html dosyasını göndermek yeterli mi?**
-
-Beklenen açıklama: Hayır. H5’ten beri JavaScript dört src dosyasından yüklenir. HTML tek başına tam uygulama değildir.
-
-## Grubun yapacağı iş
-
-Kendi paketin için açık içerik listesi oluştur. Geçici dosyaları, kişisel veriyi ve gereksiz çıktıları dışarıda tut.
-
-Kontrol: Paketin her dosyasının amacı açıklanıyor ve eksik src dosyası yakalanıyor mu?
-
-## Hazırlığın gerçek durumu
-
-9 dosyalı çevrimdışı çalışma paketi. Gerçek tarayıcı verisi pakete alınmaz.
-
-[Görev #17](https://github.com/pozelll/-klinik-randevu-ogretmen/issues/17) · [PR #19](https://github.com/pozelll/-klinik-randevu-ogretmen/pull/19)
-
-## Dokuz dosyanın görevi
+## 22 Kasım 2026 tarihli örnekteki dokuz dosya
 
 | Dosya | Görev |
 |---|---|
@@ -46,3 +33,5 @@ Kontrol: Paketin her dosyasının amacı açıklanıyor ve eksik src dosyası ya
 | SHA256SUMS.txt | Diğer sekiz dosyanın SHA-256 özetleri |
 
 Kaynak dışı destek yönergesi `hafta08/config/PAKET_README.md` dosyasından gelir ve özeti dış aday tanımında sabittir. Paket yalnız uygulama içindir; ders PDF'leri, test araçları ve eski ders belgeleri bu ZIP'in parçası değildir. Arşiv sıralaması, 1980-01-01 sabit zamanı, Unix 100644 dosya modu ve ZIP_STORED yöntemi tanımlıdır.
+
+[Görev #17](https://github.com/pozelll/-klinik-randevu-ogretmen/issues/17) · [PR #19 ve güncel durumu](https://github.com/pozelll/-klinik-randevu-ogretmen/pull/19)

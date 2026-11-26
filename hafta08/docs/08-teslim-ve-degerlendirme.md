@@ -1,45 +1,37 @@
-# 8. hafta / 8. basamak — Teslim ve açık işleri kaydettik
+# 8. hafta / 8. adım - Teslim ve değerlendirme
 
-Öğretmen örneği · 22 Kasım 2026
+Öğrenci çalışma yönergesi · Güncelleme: 26 Kasım 2026.
 
-## Derste anlat
+## Amaç
 
-Teslim, bir dosyayı göndermekten fazlasıdır: alıcının neyi açacağı, hangi sürümü değerlendireceği ve neyin tamamlanmadığı anlaşılmalıdır. Teknik kontroller tamamlandı; bağımsız kişi incelemesi ve kullanıcı kabulü tamamlanmadı. Bu nedenle çalışma, incelenebilir ders sürüm adayı olarak sunulur.
+Alıcının açacağı paketi, değerlendireceği sürümü ve henüz tamamlanmayan işleri tek teslim kaydında birleştirin.
 
-## Ekranda göster ve uygula
+## Grup çalışması
 
-H8 PR’ını, dağıtım klasörünü ve kabul tablosunu açın. ZIP’in SHA-256 özetini kanıt kaydıyla eşleştirin. Öğrenci formunda gerçek katkı, alıcı erişimi ve değerlendirme alanlarını gösterin. Son soruda hangi riskin kapandığını ve hangisinin açık kaldığını tartıştırın.
+1. Kendi ZIP dosyanızın adını, boyutunu ve SHA-256 özetini kaydedin.
+2. Kaynak commit'i, sürüm notları, test kanıtları ve PR bağlantısını tesliminize ekleyin.
+3. [Grup formuna](../sablonlar/grup-kaydi.md) her üyenin gerçek katkısını ve çalışma süresini yazın.
+4. Gerçek alıcı değerlendirmesinde erişim, cihaz, tarayıcı, yapılan akış ve sonucu [kabul kaydına](09-kabul-ve-teslim.md) işleyin. Değerlendirme gerçekleşmediyse bekleyen iş olarak belirtin.
+5. Test, kişi incelemesi, birleştirme ve kullanıcı kabulü durumlarını ayrı gösterin. Açık bulguları bir sonraki iş listesine aktarın.
 
-- [08-teslim-ve-degerlendirme.md](https://github.com/pozelll/-klinik-randevu-ogretmen/blob/release/h8-surum-adayi/hafta08/docs/08-teslim-ve-degerlendirme.md)
-- [Kabul ve teslim](https://github.com/pozelll/-klinik-randevu-ogretmen/blob/release/h8-surum-adayi/hafta08/docs/09-kabul-ve-teslim.md)
-- [Grup formu](https://github.com/pozelll/-klinik-randevu-ogretmen/blob/release/h8-surum-adayi/hafta08/sablonlar/grup-kaydi.md)
+## Teslim edilecek çıktı
 
-## Öğrenciye soru
+- Dağıtım paketi ve sürüm kimliği.
+- Dosya özetleri ve gerçek test kayıtları.
+- Sürüm notu, açılış yönergesi ve geri dönüş planı.
+- Grup katkıları, inceleme ve varsa düzeltme kayıtları.
+- Alıcı değerlendirmesi veya değerlendirme için bekleyen işler.
+- Gerçek bulgudan türetilmiş bir sonraki iyileştirme önerisi.
 
-**Sürüm adayı hazır olduğunda tüm Issue’ları kapatmalı mıyız?**
+## Tarihli örnek teslim paketi
 
-Beklenen açıklama: Hayır. İnceleme ve birleştirme gibi kabul koşulları açıksa görev açık kalır; teknik hazırlık durumu ayrıca yazılır.
+22 Kasım 2026 tarihli H8 hazırlığının dosyaları:
 
-## Grubun yapacağı iş
-
-Teslim kaydını gerçek alıcı ve gerçek sürümle doldur. Bir iyileştirme önerisini sonraki iş listesine ekle.
-
-Kontrol: Paket, sürüm, kanıt, sorumlu ve açık koşullar birbirine bağlı mı?
-
-## Hazırlığın gerçek durumu
-
-İncelenebilir sürüm adayı hazır. Nihai kabul, bağımsız inceleme ve merge açık.
-
-[Görev #17](https://github.com/pozelll/-klinik-randevu-ogretmen/issues/17) · [PR #19](https://github.com/pozelll/-klinik-randevu-ogretmen/pull/19)
-
-## İnceleme paketi
-
-- [PR #19](https://github.com/pozelll/-klinik-randevu-ogretmen/pull/19), hedef `feat/h7-saat-secimi-yardimi`.
-- [Dağıtım ZIP'i](../dagitim/Klinik_Randevu_0.3.0-rc.1.zip), 47.825 bayt, SHA-256 `36822b44675d5df7d1613f9605f907e18fe3656cc74b64e614d19c277bde2dc5`.
+- [0.3.0-rc.1 dağıtım ZIP'i](../dagitim/Klinik_Randevu_0.3.0-rc.1.zip): 47.825 bayt; SHA-256 `36822b44675d5df7d1613f9605f907e18fe3656cc74b64e614d19c277bde2dc5`.
 - [H8 süreç PDF'i](../dagitim/YAZ325_Hafta_08_Surec_Infografik_Aktif_Linkli.pdf).
-- [H7–H8 öğretmen anlatım rehberi](../dagitim/YAZ325_Hafta_07_08_Ders_Anlatim_Rehberi.pdf).
 - [Kabul ve teslim tablosu](09-kabul-ve-teslim.md).
+- [PR #19](https://github.com/pozelll/-klinik-randevu-ogretmen/pull/19): 22 Kasım 2026 tarihinde `main` dalına birleştirilmiştir. Güncel inceleme ve birleştirme ayrıntıları PR kaydındadır.
 
-Bağımlılık: #7 → #11 → #12 → #15 → #16 → #18 → #19. main'e birleştirme yapılmadı. Alıcının cihazında açılış ve kabul kontrolü bu hazırlıkta yapılmadı.
+Hazırlıktaki bağımlılık sırası #7 → #11 → #12 → #15 → #16 → #18 → #19 olarak kaydedilmiştir. Alıcının cihazında açılış ve gerçek kabul kontrolü, o hazırlık kaydında yapılmamış iş olarak belirtilmiştir. Birleştirme kaydı tek başına kullanıcı kabulünü göstermez.
 
-Ders sonu değerlendirme: (1) Hangi risk testle azaltıldı? (2) Hangi varsayım hâlâ ölçülmedi? (3) Bir sonraki işi hangi gerçek bulguya göre seçeceğiz? Yanıtlar grubun gerçek gözleminden üretilir; yapılmamış toplantı tutanağı yazılmaz.
+[Görev #17](https://github.com/pozelll/-klinik-randevu-ogretmen/issues/17) · [PR #19 ve güncel durumu](https://github.com/pozelll/-klinik-randevu-ogretmen/pull/19)

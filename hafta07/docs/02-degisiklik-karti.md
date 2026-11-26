@@ -1,37 +1,27 @@
-# 7. hafta / 2. basamak — Değişikliği sınırladık
+# 7. hafta / 2. adım - Değişiklik kartı
 
-Öğretmen örneği · 22 Kasım 2026
+Öğrenci çalışma yönergesi · Güncelleme: 26 Kasım 2026.
 
-## Derste anlat
+## Amaç
 
-Değişiklik isteği, hangi sorunu ele aldığımızı ve hangi sınır içinde kalacağımızı anlatmalıdır. Saat seçildiğinde henüz randevu oluşmaz. Yardım, bu ayrımı ekranda açıklar. Bunun kullanıcı hatasını azalttığı henüz ölçülmedi; şu anda yalnız gözlenebilir davranışını tanımlıyoruz.
+Değişikliğin ele aldığı sorunu, sınırlarını ve kabul koşullarını tanımlamak.
 
-## Ekranda göster ve uygula
+Saat seçimi ile randevunun onaylanarak oluşturulması ayrı işlemlerdir. Örnek değişiklik, uygulamanın bu durumlarını yardım metniyle açıklar. Kullanıcı hatasını azalttığına ilişkin fayda varsayımı, ölçülmüş sonuç olarak sunulmaz.
 
-H7-DK-01 kartını açın. Başlangıç, seçili saat ve doktor rolü için üç metin durumunu okuyun. FR-01 uygun saatler ve FR-02 oluşturma bağlantısını gösterin. Kapsam dışındaki hatırlatma, yeni takvim ve kullanıcı araştırması işlerinin bu küçük göreve eklenmediğini belirtin.
+## Grup çalışması
 
-- [02-degisiklik-karti.md](https://github.com/pozelll/-klinik-randevu-ogretmen/blob/feat/h7-saat-secimi-yardimi/hafta07/docs/02-degisiklik-karti.md)
-- [FR-01 / FR-02](https://github.com/pozelll/-klinik-randevu-ogretmen/blob/feat/h7-saat-secimi-yardimi/docs/03-gereksinimler.md)
+1. Kendi değişikliğinizin ele aldığı sorunu somut bir davranış üzerinden yazın.
+2. Başlangıç durumu, kullanıcı işlemi ve beklenen yeni davranışı tanımlayın.
+3. Değişen dosyaları, ilgili gereksinimi ve en az bir kapsam dışı işi belirtin.
+4. Kabul koşullarına bağlantı ekleyin. Henüz ölçülmemiş faydayı varsayım olarak işaretleyin.
 
-## Öğrenciye soru
+## Teslim edilecek çıktı
 
-**“Kullanımı kolaylaştırdık” cümlesi tek başına kabul koşulu olur mu?**
+Sorun, kapsam, kapsam dışı işler, ilgili gereksinim, değişen dosyalar ve kabul koşulları bulunan bir değişiklik kartı.
 
-Beklenen açıklama: Hayır. Gözlenebilir sonuç gerekir: seçimde açıklama değişmeli, onaydan önce veri değişmemelidir.
+## H7-DK-01 - Tarihli örnek değişiklik kartı
 
-## Grubun yapacağı iş
-
-Bir değişiklik kartı yaz. Varsayımını ölçülmüş sonuç gibi sunma; en az bir kapsam dışı işi belirt.
-
-Kontrol: Kartta sorun, kapsam, kapsam dışı işler ve kabul koşullarına bağlantı bulunuyor mu?
-
-## Hazırlığın gerçek durumu
-
-H7-DK-01: yardım metni ve durumu. Yeni iş kuralı veya veri alanı yok.
-
-[Görev #10](https://github.com/pozelll/-klinik-randevu-ogretmen/issues/10) · [PR #18](https://github.com/pozelll/-klinik-randevu-ogretmen/pull/18)
-
-## H7-DK-01 — Değişiklik kartı
+Aşağıdaki kart 22 Kasım 2026 tarihli hazırlık kaydıdır. Karar ve kabul durumu o hazırlık anını gösterir; güncel PR durumu bağlantıdan izlenir.
 
 | Alan | Karar |
 |---|---|
@@ -44,3 +34,7 @@ H7-DK-01: yardım metni ve durumu. Yeni iş kuralı veya veri alanı yok.
 | Kabul | H7-B01–B05; beş gözlenebilir senaryo |
 | Fayda varsayımı | Seçim/onay ayrımının anlaşılmasına yardımcı olabilir; kullanıcı araştırmasıyla ölçülmedi |
 | Karar durumu | Öğretmen örneğinde uygulandı; bağımsız kabul bekliyor |
+
+[FR-01 ve FR-02 gereksinimleri](https://github.com/pozelll/-klinik-randevu-ogretmen/blob/feat/h7-saat-secimi-yardimi/docs/03-gereksinimler.md)
+
+[Görev #10](https://github.com/pozelll/-klinik-randevu-ogretmen/issues/10) · [PR #18 ve güncel durumu](https://github.com/pozelll/-klinik-randevu-ogretmen/pull/18)

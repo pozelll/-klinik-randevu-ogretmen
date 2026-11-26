@@ -1,37 +1,26 @@
-# 8. hafta / 7. basamak — Geri dönüşü planladık
+# 8. hafta / 7. adım - Geri dönüş planı
 
-Öğretmen örneği · 22 Kasım 2026
+Öğrenci çalışma yönergesi · Güncelleme: 26 Kasım 2026.
 
-## Derste anlat
+## Amaç
 
-Geri dönüş planı, hata olduğunda neyi durduracağımızı ve hangi bilinen sürümü kullanacağımızı tarif eder. Bu örnekte H6, yardım değişikliğinden önceki temel sürümdür. Yeni bir klasörde o sürümü açmak kaynak kodu değiştirir; tarayıcıdaki veriyi önceki ana otomatik döndürmez.
+Bir sorun ortaya çıktığında dağıtımı hangi koşulda durduracağınızı, hangi bilinen sürüme döneceğinizi ve sonucu nasıl doğrulayacağınızı planlayın. Kaynak kodunun önceki sürümünü açmak, tarayıcıdaki veriyi önceki durumuna otomatik olarak döndürmez.
 
-## Ekranda göster ve uygula
+## Grup çalışması
 
-Planın tetikleyici, sorumlu, kaynak commit, doğrulama ve iletişim alanlarını açın. Öğrenci denemesinin kopyada yapılacağını belirtin. Burada canlı sisteme dönüş, veri geri yükleme veya gerçek dağıtım yapılmadığını gösterin. Farklı dosya adresinin localStorage davranışını etkileyebileceğini hatırlatın.
+1. Kendi değişikliğiniz için bir geri dönüş tetikleyicisi belirleyin.
+2. Karar sorumlusunu, bilinen temel sürümün tam commit'ini ve kontrol adımlarını yazın.
+3. Kaynak dosyalarının geri alınmasıyla veri yedeği veya veri geri yükleme ihtiyacını ayrı tanımlayın.
+4. Bir deneme yapacaksanız kopya üzerinde çalışın; mevcut çalışma veya kullanıcı verisinin üzerine yazmayın.
+5. Planın durumunu ve gerçekten yapılan denemeyi ayrı kaydedin.
 
-- [07-geri-donus.md](https://github.com/pozelll/-klinik-randevu-ogretmen/blob/release/h8-surum-adayi/hafta08/docs/07-geri-donus.md)
-- [H6 kaynak commit’i](https://github.com/pozelll/-klinik-randevu-ogretmen/commit/f100249a9ece6cb18ff905fe6a3bee8a6cb6f9f8)
+## Teslim edilecek çıktı
 
-## Öğrenciye soru
+Tetikleyici, ilk eylem, sorumlu, temel sürüm, uygulama yolu, doğrulama ve kapanış alanları bulunan geri dönüş planı. Deneme yapılmadıysa kaydı “plan hazır; uygulanmadı” olarak bırakın.
 
-**Önceki JavaScript’i açmak eski randevu kayıtlarını geri getirir mi?**
+## 22 Kasım 2026 tarihli örnek plan - uygulanmadı
 
-Beklenen açıklama: Hayır. Kod ve tarayıcı verisi ayrı varlıklardır. Bu örnekte otomatik veri yedeği veya geri yükleme işlevi yoktur.
-
-## Grubun yapacağı iş
-
-Kendi değişikliğin için bir geri dönüş tetikleyicisi ve kontrol listesi yaz. Yapmadığın tatbikatı tamamlandı gösterme.
-
-Kontrol: Plan kaynak dönüşü ile veri dönüşünü ayırıyor mu? Geri dönülecek sürüm ve kontrol belli mi?
-
-## Hazırlığın gerçek durumu
-
-Geri dönüş planı hazır; uygulanmadı. Kodun dönüşü, kullanıcı verisinin dönüşü değil.
-
-[Görev #17](https://github.com/pozelll/-klinik-randevu-ogretmen/issues/17) · [PR #19](https://github.com/pozelll/-klinik-randevu-ogretmen/pull/19)
-
-## Geri dönüş planı — uygulanmadı
+H6, saat yardımı değişikliğinden önceki temel sürüm olarak seçilmiştir.
 
 | Alan | Plan |
 |---|---|
@@ -45,3 +34,7 @@ Geri dönüş planı hazır; uygulanmadı. Kodun dönüşü, kullanıcı verisin
 | Kapanış | Yeni test sonucu, kullanılan sürüm ve yeniden dağıtım kararı kaydedilir |
 
 Bu hazırlıkta gerçek üretim yayını, geri dönüş tatbikatı veya kullanıcı verisi geri yüklemesi yapılmadı. Ayrı klasördeki dosya URL'si saklama davranışını değiştirebilir; önceki kayıtların göründüğünü varsaymayın. Oturum verisi gerekirse mevcut örneğin kapsamı dışında ayrı yedekleme gereksinimi tanımlanmalıdır.
+
+[H6 kaynak commit'i](https://github.com/pozelll/-klinik-randevu-ogretmen/commit/f100249a9ece6cb18ff905fe6a3bee8a6cb6f9f8)
+
+[Görev #17](https://github.com/pozelll/-klinik-randevu-ogretmen/issues/17) · [PR #19 ve güncel durumu](https://github.com/pozelll/-klinik-randevu-ogretmen/pull/19)

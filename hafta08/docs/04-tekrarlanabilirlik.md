@@ -1,38 +1,25 @@
-# 8. hafta / 4. basamak — İki üretimi karşılaştırdık
+# 8. hafta / 4. adım - Tekrarlanabilir üretim
 
-Öğretmen örneği · 22 Kasım 2026
+Öğrenci çalışma yönergesi · Güncelleme: 26 Kasım 2026.
 
-## Derste anlat
+## Amaç
 
-Tekrarlanabilir üretim, aynı tanımlı girdilerden aynı çıktıyı elde etmeyi hedefler. Burada iki üretimin baytları eşit. Sabit dosya sırası ve arşiv zamanı bu sonucu destekler. Bu kontrol dosyaların iyi tasarlandığını veya paketin güvenilir bir kişi tarafından imzalandığını kanıtlamaz.
+Aynı tanımlı girdilerden üretilen iki paketin baytlarını ve SHA-256 özetlerini karşılaştırın. Sabit dosya sırası ve arşiv zamanı, aynı içeriğin aynı paketle üretilmesini destekler.
 
-## Ekranda göster ve uygula
+## Grup çalışması
 
-check_candidate.py aracını çalıştırın ve iki üretimin özetlerinin eşit olduğu satırı gösterin. Kaynak dosyaya yapılan kontrollü bir değişikliğin üretimi durdurduğunu okuyun. Daha önceki üretimin çıktısını aynı yeni denemenin sonucu gibi kaydetmemeyi vurgulayın.
+1. Kendi kaynak commit'inizi, aday tanımınızı ve üretim ortamınızı kaydedin.
+2. Paketi iki ayrı çıktı dosyasına üretin.
+3. İki dosyanın baytlarını ve özetlerini karşılaştırın. Fark varsa kaynak, araç veya paket metaverisindeki değişikliği araştırın.
+4. Yeni denemenizin komutlarını, tarihini ve gerçek sonuçlarını kaydedin.
 
-- [04-tekrarlanabilirlik.md](https://github.com/pozelll/-klinik-randevu-ogretmen/blob/release/h8-surum-adayi/hafta08/docs/04-tekrarlanabilirlik.md)
-- [check_candidate.py](https://github.com/pozelll/-klinik-randevu-ogretmen/blob/release/h8-surum-adayi/scripts/check_candidate.py)
-- [Paket sonuçları](https://github.com/pozelll/-klinik-randevu-ogretmen/blob/release/h8-surum-adayi/hafta08/kanitlar/paket-kontrolleri.json)
+## Teslim edilecek çıktı
 
-## Öğrenciye soru
+İki üretimin dosya adları, kaynak bilgileri, SHA-256 özetleri, karşılaştırma sonucu ve varsa farkın açıklaması. Eşit özet, insan onayı veya dijital imza anlamına gelmez.
 
-**ZIP’in saatini her üretimde bugüne ayarlasaydık ne olurdu?**
+## H8 örneğini çalıştırma
 
-Beklenen açıklama: Kaynak aynı olsa bile arşiv baytları değişebilirdi. Bu nedenle paket metaverisi de tanımlanır.
-
-## Grubun yapacağı iş
-
-Kendi paketini iki kez üret. Özetleri karşılaştır ve fark varsa hangi girdinin değiştiğini araştır.
-
-Kontrol: Eşitlik sonucu iki gerçek üretimden mi geliyor? Kaynak tanımı değişirse kontrol duruyor mu?
-
-## Hazırlığın gerçek durumu
-
-İki üretim aynı paket içeriğini verdi. Eşit özet, insan onayı veya imza değildir.
-
-[Görev #17](https://github.com/pozelll/-klinik-randevu-ogretmen/issues/17) · [PR #19](https://github.com/pozelll/-klinik-randevu-ogretmen/pull/19)
-
-## Çalıştırma — depo kökünde
+Örnek komutlar `release/h8-surum-adayi` dalının depo kökünde çalıştırılır. Aşağıdaki H8-P01 sonucu ve ilk CI bulgusu 22 Kasım 2026 tarihli kayıtlara aittir.
 
 ```bash
 python scripts/check_candidate.py
@@ -47,3 +34,7 @@ Kaynak dosya veya paket yönergesi aday tanımından farklıysa üretim durur. Y
 ## Hazırlık sırasında yakalanan gerçek bulgu
 
 İlk CI koşusunda lisansın yerel kopyasına eklenmiş bir satır sonu nedeniyle kaynak özeti uyuşmadı ve üretim durdu. Özgün uzak lisans değiştirilmedi; sabit commit'teki dosya baytları korunarak yeniden alındı. Aday tanımı ve paket bu gerçek kaynağa göre yeniden üretildi, yeni CI geçti. [İlk bulgu kaydı](../kanitlar/ilk-ci-bulgusu.json) ile [başarılı koşuyu](../kanitlar/ci-kaydi.json) karşılaştırın. Bir bayt farkının bile göz ardı edilmemesi, kontrolün amacını gösterir.
+
+[Kontrol aracı](https://github.com/pozelll/-klinik-randevu-ogretmen/blob/release/h8-surum-adayi/scripts/check_candidate.py) · [Tarihli paket sonuçları](../kanitlar/paket-kontrolleri.json)
+
+[Görev #17](https://github.com/pozelll/-klinik-randevu-ogretmen/issues/17) · [PR #19 ve güncel durumu](https://github.com/pozelll/-klinik-randevu-ogretmen/pull/19)

@@ -1,37 +1,27 @@
-# 7. hafta / 3. basamak — Etkiyi ve riski gördük
+# 7. hafta / 3. adım - Etki ve risk planı
 
-Öğretmen örneği · 22 Kasım 2026
+Öğrenci çalışma yönergesi · Güncelleme: 26 Kasım 2026.
 
-## Derste anlat
+## Amaç
 
-Küçük bir metin değişikliği de duruma bağlıysa hata üretebilir. Hasta veya tarih değiştiğinde eski saat yardımda kalırsa ekran yanıltır. Bu yüzden etki analizi yalnız dosya sayısı değildir; hangi olayın hangi durumu yenilediğini de inceler. Tahmin ile gerçek emek ayrı kaydedilir.
+Değişikliğin dosyalar, durum geçişleri ve mevcut davranışlar üzerindeki etkisini belirlemek; riskleri kontrol adımlarıyla eşleştirmek.
 
-## Ekranda göster ve uygula
+Duruma bağlı bir açıklama, hasta veya tarih değiştiğinde yenilenmezse eski bilgiyi gösterebilir. Etki analizi, değişen dosyalarla birlikte bu olayları da kapsar. Değişmeyen bileşenlerin birlikte çalışma davranışı regresyon testleriyle yeniden sınanır.
 
-Etki tablosunu açın: index.html yardım alanını, ui.js güncel metni üretir. rules.js, repository.js ve demo-data.js değişmez. Hasta, doktor, tarih ve rol değişimlerini risk tablosunda bulun. Planlanan işleri uygulama, tarayıcı kontrolü, belge ve inceleme olarak gösterin.
+## Grup çalışması
 
-- [03-etki-ve-plan.md](https://github.com/pozelll/-klinik-randevu-ogretmen/blob/feat/h7-saat-secimi-yardimi/hafta07/docs/03-etki-ve-plan.md)
-- [src/ui.js](https://github.com/pozelll/-klinik-randevu-ogretmen/blob/feat/h7-saat-secimi-yardimi/src/ui.js)
+1. Değişecek dosyaları ve her dosyanın sorumluluğunu yazın.
+2. En az iki etki ve bir risk tanımlayın. Durumu değiştiren kullanıcı işlemlerini belirtin.
+3. Her riski bir test veya gözlenebilir kontrolle eşleştirin.
+4. Uygulama, test, belge ve inceleme işlerini planlayın. Tahmini süre ile çalışmadan sonra ölçülen gerçek süreyi ayrı kaydedin.
 
-## Öğrenciye soru
+## Teslim edilecek çıktı
 
-**Kurallar değişmediyse eski testleri neden yeniden çalıştırıyoruz?**
+Etki tablosu, risk-kontrol eşleştirmesi, iş sırası ve grup üyelerinin sorumlulukları.
 
-Beklenen açıklama: Arayüz yanlış çağrı yapabilir veya eski akışı bozabilir. Regresyon kontrolü önceki davranışın korunmasına kanıt sağlar.
+## Tarihli örnek etki ve kontrol
 
-## Grubun yapacağı iş
-
-En az iki etki ve bir risk yaz. Her riski bir kontrolle eşleştir; gerçek süreyi çalıştıktan sonra kaydet.
-
-Kontrol: Öğrenci değişen dosyalarla yeniden kontrol edilen fakat değişmeyen dosyaları ayırabiliyor mu?
-
-## Hazırlığın gerçek durumu
-
-Ürün değişikliği iki dosyada. Kurallar, depo ve şema korunuyor.
-
-[Görev #10](https://github.com/pozelll/-klinik-randevu-ogretmen/issues/10) · [PR #18](https://github.com/pozelll/-klinik-randevu-ogretmen/pull/18)
-
-## Etki ve kontrol
+Aşağıdaki tablolar 22 Kasım 2026 tarihli H7 hazırlığına aittir.
 
 | Varlık | Değişiklik / kontrol |
 |---|---|
@@ -48,4 +38,8 @@ Kontrol: Öğrenci değişen dosyalarla yeniden kontrol edilen fakat değişmeye
 | Onaydan önce kayıt oluşması | H7-B02 önce/sonra veri karşılaştırması |
 | Dar ekranda taşma | H7-B05, 390 × 844 px |
 
-Plan sırası: kabul → iki ürün dosyası → yeni senaryolar → regresyon → kanıt/belge → bağımsız inceleme. İlk beş iş hazırlıkta tamamlandı; bağımsız inceleme bekliyor. Kişi ataması veya gerçekleşmiş emek uydurulmadı. Geri dönüş kaynağı H6 commit'idir; veri geri yüklemesi değildir.
+Örnek plan sırası: kabul koşulları → iki ürün dosyası → yeni senaryolar → regresyon → kanıt ve belge → bağımsız inceleme. Hazırlık kaydında ilk beş iş tamamlanmış, bağımsız inceleme bekliyor olarak belirtilmiştir. Gerçekleşmiş insan emeği bu kayıtta ölçülmemiştir. H6 commit'i kod için geri dönüş kaynağıdır; kullanıcı verisinin yedeği değildir.
+
+[src/ui.js](https://github.com/pozelll/-klinik-randevu-ogretmen/blob/feat/h7-saat-secimi-yardimi/src/ui.js)
+
+[Görev #10](https://github.com/pozelll/-klinik-randevu-ogretmen/issues/10) · [PR #18 ve güncel durumu](https://github.com/pozelll/-klinik-randevu-ogretmen/pull/18)

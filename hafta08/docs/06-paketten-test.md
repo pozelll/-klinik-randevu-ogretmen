@@ -1,38 +1,26 @@
-# 8. hafta / 6. basamak — Teslim dosyasını sınadık
+# 8. hafta / 6. adım - Paketten test
 
-Öğretmen örneği · 22 Kasım 2026
+Öğrenci çalışma yönergesi · Güncelleme: 26 Kasım 2026.
 
-## Derste anlat
+## Amaç
 
-Çalışma klasörünün çalışması, teslim paketinin eksiksiz olduğunu tek başına göstermez. Bu nedenle paketi ayrı klasörde açıp aynı davranış senaryolarını çalıştırıyoruz. Tarayıcı raporundaki uygulama dosyası özetlerini aday tanımıyla karşılaştırarak testin doğru içeriğe ait olduğunu kontrol ediyoruz.
+Teslim ZIP'ini ayrı bir klasöre ayıklayıp uygulamanın davranışlarını bu içerik üzerinde sınayın. Test edilen dosyaların özetlerini aday tanımıyla eşleştirin.
 
-## Ekranda göster ve uygula
+## Grup çalışması
 
-CI’da önce kaynak testlerini, sonra paket üretimini, ardından --app-dir ile ayıklanmış paketteki tarayıcı adımını gösterin. Kaynakta 14 ve pakette 14 senaryo vardır; bunlar 28 farklı senaryo değildir. Paket raporundaki beş kaynak özetini aday tanımıyla eşleştirin.
+1. Kendi teslim ZIP'inizi ve SHA-256 özetini kaydedin.
+2. Paketi yeni ve boş bir klasöre ayıklayın.
+3. Kaynak uygulamada kullandığınız en az bir uçtan uca akışı ayıklanmış paket üzerinde tekrar çalıştırın.
+4. Testin açtığı uygulama yolunu, kaynak sürümünü, beklenen davranışı ve gerçek sonucu kaydedin.
+5. Kaynak ile paket sonuçlarını karşılaştırın; aynı senaryonun iki yürütümünü iki farklı senaryo olarak saymayın.
 
-- [06-paketten-test.md](https://github.com/pozelll/-klinik-randevu-ogretmen/blob/release/h8-surum-adayi/hafta08/docs/06-paketten-test.md)
-- [Paket tarayıcı kaydı](https://github.com/pozelll/-klinik-randevu-ogretmen/blob/release/h8-surum-adayi/hafta08/kanitlar/paket-tarayici-sonuclari.json)
-- [CI kaydı](https://github.com/pozelll/-klinik-randevu-ogretmen/blob/release/h8-surum-adayi/hafta08/kanitlar/ci-kaydi.json)
+## Teslim edilecek çıktı
 
-## Öğrenciye soru
+Paket kimliği, ayıklama konumu, test edilen dosya özetleri, komutlar, ortam, tarih ve gerçek sonuçlar. Test kanıtı teslim ettiğiniz ZIP'in içeriğiyle eşleşmelidir.
 
-**Paket testi ile kaynak testinin aynı olması neden yararlı?**
+## Tarihli örnek yürütüm ve yeniden çalıştırma
 
-Beklenen açıklama: Aynı beklenen davranışların teslim edilen içerikte de çalıştığını gösterir; eksik dosya veya yanlış sürüm riskini azaltır.
-
-## Grubun yapacağı iş
-
-Kendi ZIP’ini yeni klasörde aç. En az bir uçtan uca akışı paket üzerinde tekrar çalıştır ve sürümü kaydet.
-
-Kontrol: Tarayıcı gerçekten ayıklanan klasörü mü açmış? Test edilen içerik teslim ZIP’iyle aynı mı?
-
-## Hazırlığın gerçek durumu
-
-Kaynak ve paket: 14’er senaryo geçti. 30 Node testi kaynak üzerinde de geçti.
-
-[Görev #17](https://github.com/pozelll/-klinik-randevu-ogretmen/issues/17) · [PR #19](https://github.com/pozelll/-klinik-randevu-ogretmen/pull/19)
-
-## Gerçek yürütüm ve yeniden çalıştırma
+Aşağıdaki CI sonuçları 22 Kasım 2026 tarihli H8 çalışmasına aittir. Örnek komutları `release/h8-surum-adayi` dalının depo kökünde çalıştırın.
 
 [GitHub Actions koşusu](https://github.com/pozelll/-klinik-randevu-ogretmen/actions/runs/45021999531) · kaynak/test commit'i `6eb6088bdd8cdc9b8c3fe5b7ff1b703e2bd87fa2`.
 
@@ -46,3 +34,11 @@ python tests/browser_smoke.py --app-dir kendi-ciktilarim/aday-paket
 Ayıklama hedefi boş olmalıdır; araç dolu hedefin üzerine yazmaz. Tarayıcı testi için Playwright ve Chromium gerekir; kurulum H7 test belgesindedir. Paketi normal kullanıcı olarak açmak için bu araçlar gerekmez.
 
 CI: 30 Node, kaynakta 14 tarayıcı, 8 paket kontrolü, dağıtım ZIP'i ile yeniden üretilen ZIP'in bayt eşitliği ve ayıklanmış dağıtım paketinde 14 tarayıcı senaryosu geçti. İki tarayıcı yürütümü aynı senaryoların iki içerik konumunda kontrolüdür. Kayıtlar: `kaynak-tarayici-sonuclari.json`, `paket-tarayici-sonuclari.json`, `ci-paket-kontrolleri.json`, `ci-kaydi.json`.
+
+- [H7 test ortamı kurulumu](../../hafta07/docs/06-test-kaniti.md)
+- [Kaynak tarayıcı sonuçları](../kanitlar/kaynak-tarayici-sonuclari.json)
+- [Paket tarayıcı sonuçları](../kanitlar/paket-tarayici-sonuclari.json)
+- [CI paket kontrolleri](../kanitlar/ci-paket-kontrolleri.json)
+- [CI kaydı](../kanitlar/ci-kaydi.json)
+
+[Görev #17](https://github.com/pozelll/-klinik-randevu-ogretmen/issues/17) · [PR #19 ve güncel durumu](https://github.com/pozelll/-klinik-randevu-ogretmen/pull/19)

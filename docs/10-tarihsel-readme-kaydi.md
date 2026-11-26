@@ -21,7 +21,7 @@ Aşağıdaki haftalık kayıtlar tarihsel başlangıçları anlatır. main henü
 
 - [7. hafta süreç PDF'i](../hafta07/dagitim/YAZ325_Hafta_07_Surec_Infografik_Aktif_Linkli.pdf)
 - [8. hafta süreç PDF'i](../hafta08/dagitim/YAZ325_Hafta_08_Surec_Infografik_Aktif_Linkli.pdf)
-- [18 sayfalık H7–H8 ders anlatım rehberi](../hafta08/dagitim/YAZ325_Hafta_07_08_Ders_Anlatim_Rehberi.pdf)
+- [7. hafta öğrenci çalışma yönergeleri](../hafta07/README.md) · [8. hafta öğrenci çalışma yönergeleri](../hafta08/README.md)
 - [Çalışan uygulamanın ZIP'i — 0.3.0-rc.1](../hafta08/dagitim/Klinik_Randevu_0.3.0-rc.1.zip)
 
 Güncel birleşik ders dalı `release/h8-surum-adayi`. ZIP'i tamamen ayıklayın; index.html ile src/ birlikte tutulmalıdır. Uygulamayı açmak için Python veya Node.js gerekmez. Paket üretimi ve test araçları için [H8 yönergesini](../hafta08/docs/06-paketten-test.md) izleyin.

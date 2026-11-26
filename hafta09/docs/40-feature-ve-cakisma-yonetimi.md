@@ -1,5 +1,7 @@
 # 40 - Feature ve çakışma yönetimi
 
+> 22 Kasım 2026 tarihli teknik hazırlık kaydı: Bu belge Gitflow eğitim deneyini ve klinik 0.3.0-rc.1 başlangıcını anlatır. Dal, hedef ve açık/taslak PR bilgileri birleştirme öncesindeki duruma aittir. [PR #21](https://github.com/pozelll/-klinik-randevu-ogretmen/pull/21) aynı gün main'e birleştirilmiştir; bu işlem bağımsız insan incelemesi veya kabulü yerine geçmez. Güncel 0.3.0-rc.2 sonuçları [kapanış raporunda](https://github.com/pozelll/-klinik-randevu-ogretmen/blob/main/hafta09/docs/49-kapanis-raporu.md), açık insan kabul işleri [kabul oturumu ve formlarında](https://github.com/pozelll/-klinik-randevu-ogretmen/blob/main/hafta09/docs/50-insan-kabul-oturumu.md) bulunur.
+
 ## Beklenen ihtiyaçlar
 
 | Alan | Hasta katkısı | Personel katkısı | Birleşik karar |
@@ -12,8 +14,16 @@
 
 ## Ekranda inceleme
 
+Deney tamamlandığında `feature/personel-bilgi` dalı çözüm commit'ine ilerlemiş olur. Başlangıçtaki ortak tabanı incelemek için dal adları yerine kendi deney raporunuzdaki `commits.patient` ve `commits.staff` kimliklerini kullanın. Depo kökünde aşağıdaki komut bu iki kimliği ve karşılaştıracağınız `commits.baseline` değerini gösterir:
+
 ```bash
-git -C h9-deneyim/lab-deposu merge-base feature/hasta-bilgi feature/personel-bilgi
+python -c "import json; from pathlib import Path; c=json.loads(Path('h9-deneyim/gitflow-sonuclari.json').read_text(encoding='utf-8'))['commits']; print('patient:', c['patient']); print('staff:', c['staff']); print('baseline:', c['baseline'])"
+```
+
+Sonraki komutta `HASTA_COMMIT` ve `PERSONEL_COMMIT` yerlerine bu çıktıda gördüğünüz tam kimlikleri yazın. `merge-base` sonucu kendi raporunuzdaki `baseline` kimliğiyle aynı olmalıdır.
+
+```bash
+git -C h9-deneyim/lab-deposu merge-base HASTA_COMMIT PERSONEL_COMMIT
 git -C h9-deneyim/lab-deposu log --graph --decorate --oneline --all
 git -C h9-deneyim/lab-deposu show feature/personel-bilgi:panel/surum.json
 git -C h9-deneyim/lab-deposu rev-list --parents -n 1 feature/personel-bilgi

@@ -1,13 +1,90 @@
 {
   "file": "YAZ325_Hafta09_Gitflow_Calisma_Paketi.zip",
-  "bytes": 231778,
-  "sha256": "7df15d416f686861bd5ef483231f140453dc73efc611feff9d0eebfe42fd8659",
-  "entries": 45,
-  "manifestVerifiedFiles": 44,
+  "executedAt": "2026-11-26T18:45:04.039056+00:00",
+  "documentationUpdatedAt": "2026-11-26",
+  "bytes": 127663,
+  "sha256": "9331c4a1d67b2e2d0b0462df3287253d5c58a868fc1c100b46d081e31f400c06",
+  "entries": 44,
+  "manifestVerifiedFiles": 43,
   "zipCrc": "PASS",
   "extractedLabChecks": 12,
   "extractedPanelChecks": 6,
   "clinicalBaselineZipSHA256": "36822b44675d5df7d1613f9605f907e18fe3656cc74b64e614d19c277bde2dc5",
   "bundleSHA256": "d8fd9933df4a095305323b6767487d2ed2db7b9cbf0c2c7f694fc82e858d3b65",
-  "finalChange": "Yalnız SVG ok etiketi konumu düzeltildi; kod ve test girdileri aynı. Manifest ve ZIP CRC yeniden doğrulandı."
+  "unchangedOriginalPayloadFiles": 23,
+  "preservedPayloadSHA256": {
+    "baslangic/Klinik_Randevu_0.3.0-rc.1.zip": "36822b44675d5df7d1613f9605f907e18fe3656cc74b64e614d19c277bde2dc5",
+    "hafta09/dagitim/YAZ325_Hafta_09_Surec_Infografik_Aktif_Linkli.pdf": "5fa9b852800cb41a45c00dc098a6b13ff9042c3847a664bac8f2f792ef0b6ec7",
+    "hafta09/diagrams/11-gitflow-akisi.mmd": "499b0556af0ee2f02e39d0e5924ccb0423b7df4d4ea68457a1cf0bca045bc9fa",
+    "hafta09/diagrams/11-gitflow-akisi.svg": "f44eef323d87d3f18355ca7a5a37afc24a09a6d99031ec7fa070ce7a9f144a75",
+    "hafta09/kanitlar/YAZ325_Hafta09_Gitflow_Deneyi.bundle": "d8fd9933df4a095305323b6767487d2ed2db7b9cbf0c2c7f694fc82e858d3b65",
+    "hafta09/kanitlar/cakisma-oncesi-cozulmemis.txt": "5b4cfbbb39dd03b40a0475adda521703124b82be86665dd96151ad461a755497",
+    "hafta09/kanitlar/ci-gitflow-sonuclari.json": "b3179e10cec36f69e533040908d2cc9a651d8996f273fa85e8a420166902e5cb",
+    "hafta09/kanitlar/git-gecmisi.txt": "1e47fa4245dae2c0927db6095e0aa0fddac25a84ba25a9ed81e0bebbe73f057a",
+    "hafta09/kanitlar/gitflow-sonuclari.json": "c9717280d06123677f8d5497bbffecf12960eedd54a3b5f5b8f0d69ffdee2d96",
+    "hafta09/kanitlar/komut-kaydi.json": "a574a1b0e0eb325d7bc81e1af29c086b63b5cd6e9eeec29d07a4d48ae4ba1e45",
+    "hafta09/panel/index.html": "94033bc2074e47d36ffaa91d35f1c6cc7c4a571bf1013f61f71a02de280cd456",
+    "hafta09/panel/style.css": "0e38320651119ce913d20ca218645275098ad5a4c476805cb5f59a0b745c9ced",
+    "hafta09/panel/surum.json": "b58034175e14497b10cc2042bfe0ebe6bf1ef381a6ad5aa964204339666082f5",
+    "hafta09/sablonlar/grup-kaydi.md": "2ad45422876878bd58f7203590ededdbe6def5129a0bdb29dcd05bb82afe0341",
+    "hafta09/senaryolar/00-baslangic.json": "3d1fc016e30631fafab90fcb267bfdf6795c013c8385421131d8d89ddc22fbe3",
+    "hafta09/senaryolar/01-hasta.json": "565fdccf4e3bfc34700d2d8672417a244f9fed754db789dde830bedcda878282",
+    "hafta09/senaryolar/02-personel.json": "675308536fc1a0b065fb8e759ec6b4b6390f8b8d7fe6c2fed1b2909152817e28",
+    "hafta09/senaryolar/03-cozum.json": "43e2c59f58f550603b5e6e2b983ae92f2a44f578befb8152e806fe4cc20bbff8",
+    "hafta09/senaryolar/04-release.json": "9e1a838365a3b67f0e955ad14de90e0c63e70c880f620e3154e757bfad96b82e",
+    "hafta09/senaryolar/05-hotfix.json": "b58034175e14497b10cc2042bfe0ebe6bf1ef381a6ad5aa964204339666082f5",
+    "hafta09/senaryolar/README.md": "0cef22a3297271ca03cb2fc65613aa50c181821bc2176439f2530a566765a07c",
+    "hafta09/tools/gitflow_lab.py": "f1cba62e23da6e448628f85f8865dcd8c2303afae7b3e1a58cfd36729f61c5f9",
+    "hafta09/tools/surum_kontrol.py": "c1f82c6ce03d5995e62d95dbf80411f11a7b146561a1f5d234e95525d0332f8a"
+  },
+  "instructorNotesAndPrivateLinksScan": {
+    "textFilesScanned": 49,
+    "pdfFilesScanned": 1,
+    "nestedArchivesScanned": 1,
+    "problems": []
+  },
+  "fixedCommitMergeBaseCheck": {
+    "command": [
+      "git",
+      "merge-base",
+      "5a9a6d8c7bd1087944f10773cb948d368824b188",
+      "b1a02a934dd5ff263f0fa659b07c89d0140243ef"
+    ],
+    "commonBase": "8afe6067f9c02b6754ef3602e64b618d71b821ea",
+    "expectedBaseline": "8afe6067f9c02b6754ef3602e64b618d71b821ea",
+    "status": "PASS"
+  },
+  "verification": {
+    "pythonVersion": "3.12.14",
+    "gitVersion": "git version 2.56.1",
+    "labExecutedAt": "2026-11-26T18:45:03.997142+00:00",
+    "method": "ZIP yeni klasöre ayıklandı; paketin kendi değişmeyen araçlarıyla Gitflow deneyi ve anlam kapılı panel kontrolü gerçekten çalıştırıldı. Yeni deney commit kimlikleri bu koşuya aittir.",
+    "labCommand": "python hafta09/tools/gitflow_lab.py --output yeni-kontrol",
+    "panelCommand": "python hafta09/tools/surum_kontrol.py --anlam",
+    "labResultIds": [
+      "H9-G01",
+      "H9-G02",
+      "H9-G03",
+      "H9-G04",
+      "H9-G05",
+      "H9-G06",
+      "H9-G07",
+      "H9-G08",
+      "H9-G09",
+      "H9-G10",
+      "H9-G11",
+      "H9-G12"
+    ],
+    "panelResultIds": [
+      "P01",
+      "P02",
+      "P03",
+      "P04",
+      "P05",
+      "A01"
+    ],
+    "labResultSHA256": "47fd756b2a39ab3b4dd5bef08a5efd805a77e279068038de6c186e4f9af001ec",
+    "panelResultSHA256": "ada0a9d5da6f42e3e99775d9ce457f1737a165616b4a4643a0e1e8ead01a50b6"
+  },
+  "finalChange": "Öğrenci yönergeleri güncellendi; öğretmen anlatım PDF’si, anlatım/cevap alanları ve özel Drive bağlantıları paketten çıkarıldı. Kod, panel, senaryolar, kayıtlı bundle ve iç klinik başlangıç ZIP’i byte-for-byte korundu. Manifest, CRC, 12 Gitflow ve 6 panel kontrolü yeniden doğrulandı. Bu kontrol insan kabulü veya güncel klinik sürümün tamamlandığı iddiası değildir."
 }

@@ -1,25 +1,28 @@
-# 9. hafta / 8. basamak - Kapsamı kapat, devret
+# 9. hafta / 8. adım - Kapsamı kapat, devret
 
-## Derste anlat
-Konu başlığının bir tabloda bulunması, öğrencinin o kazanımı gösterdiği anlamına gelmez. 14 konu için mevcut öğretmen örneğini, sınıfın üreteceği çıktıyı ve açık işi ayrı tutarız. CI var; gerçek üretim CD’si gösterilmedi. Performans ölçümü ve yapay zekâ önerisine bağımsız değerlendirme açık. Bu ayrım, 10–14. haftalarda kendi projelerine geçecek gruplar için dürüst bir başlangıç sağlar.
+Öğrenci çalışma yönergesi · Güncelleme: 26 Kasım 2026.
 
-## Ekranda göster ve uygula
-46 tablosundan bir kanıtlı, bir kısmi, bir eksik satır seçin. Öğrenciye hangi dosya veya ölçümün bu satırı tamamlayacağını sorun. Boş grup formunu açıp başlangıç commit’i, katkı, inceleme ve sonraki görev alanlarını gösterin. Dersin Drive klasöründeki PDF ve çalışma ZIP’ini açın; alıcının erişimini ve öğrencinin kendi yürütümünü derste ayrıca doğrulayın.
+## Amaç
 
-- [46 · 14 konu kapsamı](https://github.com/pozelll/-klinik-randevu-ogretmen/blob/docs/h9-gitflow-teslim/hafta09/docs/46-konu-kapsam-tablosu.md)
-- [Grup çalışma formu](https://github.com/pozelll/-klinik-randevu-ogretmen/blob/docs/h9-gitflow-teslim/hafta09/sablonlar/grup-kaydi.md)
+Projenin hangi işleri tamamladığını ve hangi işleri devrettiğini kanıtlarla gösterin. Alıcının dosyaya erişmesini ve kendi ortamında çalıştırmasını gerçek sonuçla kaydedin.
 
-## Öğrenciye soru
-**14 satırın hepsinin dolu olması, 14 kazanımın tamamlandığı anlamına gelir mi?**
+## Grup çalışması
 
-Beklenen açıklama: Hayır. Tablo kapsamı görünür kılar. Gerçek öğrenci çıktısı, ölçüm ve değerlendirme ayrıca gerekir.
+1. [14 konu kapsamı tablosunu](46-konu-kapsam-tablosu.md) başlangıç olarak kullanın. Her satıra grubunuzun kendi dosyasını, ölçümünü veya değerlendirmesini ekleyin; eksik kalan işi belirtin.
+2. Örnek tablonun tarihsel durumunu [güncel kapanış kaydıyla](https://github.com/pozelll/-klinik-randevu-ogretmen/blob/main/hafta09/docs/49-kapanis-raporu.md) birlikte okuyun. Otomatik CI, gerçek üretim ortamına CD, teknik ölçüm ve insan kabulünü ayrı kaydedin.
+3. [Grup çalışma formuna](../sablonlar/grup-kaydi.md) başlangıç commit'ini, üye katkılarını, inceleme kayıtlarını ve sonraki görevleri yazın. Örnek dosyaların varlığını kendi kazanımınızın tamamlandığı sonucu olarak kullanmayın.
+4. [Gitflow çalışma ZIP'ini](https://github.com/pozelll/-klinik-randevu-ogretmen/blob/main/hafta09/dagitim/YAZ325_Hafta09_Gitflow_Calisma_Paketi.zip), [süreç PDF'ini](../dagitim/YAZ325_Hafta_09_Surec_Infografik_Aktif_Linkli.pdf) ve kendi kanıtlarınızı teslim dizinine bağlayın. Alıcı, ZIP'i yeni klasöre tamamen ayıklayıp [kurulum adımlarını](47-yeniden-calistirma-ve-kaynaklar.md) kendi ortamında uygulasın.
+5. Gerçek erişim, çalıştırma, bulgu ve kabul sonucunu kaydedin. Klinik rc.2 teslimi için ayrıca [kabul oturumundaki](https://github.com/pozelll/-klinik-randevu-ogretmen/blob/main/hafta09/docs/50-insan-kabul-oturumu.md) paket kimliği ve kontrol adımlarını kullanın.
+6. Açık işlerden en az birini sonraki proje görevinize dönüştürün; sorumlusunu, beklenen çıktısını ve tamamlanma ölçütünü belirleyin.
 
-## Grubun yapacağı iş
-Her grup eksiklerinden birini sonraki proje görevine dönüştürsün; kendi kanıtını ve teslim bağlantısını eklesin.
+## Teslim edilecek çıktı
 
-Kontrol: 14 satır kanıt veya açık işe bağlı; teslim erişimi ve katkı gerçek kayıtlı.
+Kanıt bağlantılı kapsam tablosu, grup katkı kaydı, paket ve kaynak kimlikleri, alıcının gerçek değerlendirmesi ve sonraki görev listesi.
 
-## Hazırlığın durumu
-Ders paketi hazır; açık işler kayıtlı. Öğrenci kazanımı varsayılmadı.
+## Çıktı kontrolü
 
-[Görev #20](https://github.com/pozelll/-klinik-randevu-ogretmen/issues/20) · [PR #21](https://github.com/pozelll/-klinik-randevu-ogretmen/pull/21). Öğretmen örneği; gerçek öğrenci katkısı veya bağımsız inceleme iddiası değildir.
+- Kapsamın her satırı kanıt veya açık işe bağlıdır.
+- Teslim bağlantıları alıcı tarafından açılmış, çalıştırma sonucu kaydedilmiştir.
+- Katkı, inceleme ve kabul kayıtları fiilen yapılan işi yansıtır.
+
+[Önceki adım](07-karar.md) · [Hafta ana sayfası](../README.md)

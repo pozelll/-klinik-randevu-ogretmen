@@ -1,25 +1,37 @@
-# 9. hafta / 6. basamak - Kanıtı yeniden üret
+# 9. hafta / 6. adım - Kanıtı yeniden üret
 
-## Derste anlat
-Bir ekran görüntüsü anı gösterir; komut, kaynak commit ve sonuç kaydı deneyi izlenebilir yapar. Git bundle dalları ve etiketleriyle geçmişi taşımamızı sağlar. Yeni klasörde açıp kimliği karşılaştırmak teslimin kontrolüdür. Yerel ve CI deneyleri ayrı Git geçmişleri üretir; zamanlar farklı olduğu için commit kimlikleri farklı olabilir. Her rapor kendi koşusunun kimlikleriyle okunur.
+Öğrenci çalışma yönergesi · Güncelleme: 26 Kasım 2026.
 
-## Ekranda göster ve uygula
-Yerel gitflow-sonuclari.json ile CI raporunun kaynak commit ve tarihini ayırt edin. GitHub Actions’ta 12 Gitflow ve son panelin 6 kontrolünü açın. Klinik koşusunda 30 Node, 14 kaynak tarayıcı, 8 paket ve 14 paket tarayıcı kontrolünü gösterin. Bundle’ı yeni klasöre git clone -b develop ile açın; kayıtlı develop SHA’sı ve panel metniyle karşılaştırın.
+## Amaç
 
-- [43 · Kanıt zinciri](https://github.com/pozelll/-klinik-randevu-ogretmen/blob/docs/h9-gitflow-teslim/hafta09/docs/43-git-kanit-ve-izlenebilirlik.md)
-- [GitHub Actions koşusu](https://github.com/pozelll/-klinik-randevu-ogretmen/actions/runs/45023202073)
+Sonuçları kaynak commit, komut, ortam ve koşu tarihiyle ilişkilendirin. Git geçmişinin teslim dosyasından yeniden açılabildiğini doğrulayın.
 
-## Öğrenciye soru
-**Panelin altı kontrolünün geçmesi, klinik randevu uygulamasının bütün testlerinin geçtiği anlamına gelir mi?**
+## Grup çalışması
 
-Beklenen açıklama: Hayır. Panel, Gitflow süreci ve klinik uygulama farklı kapsamdır. Her biri kendi kaynak ve yürütüm kaydına bağlanır.
+1. Kendi `h9-deneyim/gitflow-sonuclari.json`, `komut-kaydi.json` ve `git-gecmisi.txt` dosyalarınızı birlikte inceleyin. Kaynak deponun commit'ini, deneyin ürettiği commit'leri ve koşu tarihini ayrı kaydedin.
+2. H9-G01–G12 süreç kontrollerini ve son panelin altı kontrolünü kendi koşunuzdan okuyun. Başarısız veya eksik bir sonucu örneğin başarılı sonucuyla değiştirmeyin.
+3. Kendi deneyinizin bundle dosyasını, henüz var olmayan yeni bir klasöre açın:
 
-## Grubun yapacağı iş
-Kendi denemenizi yeni klasörde çalıştırın. Koşu tarihi, komut, ortam, SHA ve sonuç dosyalarını kaydedin.
+```bash
+git clone -b develop h9-deneyim/YAZ325_Hafta09_Gitflow_Deneyi.bundle h9-gecmis
+git -C h9-gecmis log --graph --decorate --oneline --all
+git -C h9-gecmis rev-parse HEAD
+git -C h9-gecmis show HEAD:panel/surum.json
+```
 
-Kontrol: Başka klasörde açılan geçmiş aynı; her sonuç kendi kapsamına bağlı.
+4. Açılan `HEAD` kimliğini kendi raporunuzun `commits.develop` değeriyle karşılaştırın. Panelin son içeriğini ve bundle dosyasının SHA-256 değerini aynı koşunun kaydıyla doğrulayın.
+5. [Yerel örnek ile CI kanıtını](43-git-kanit-ve-izlenebilirlik.md) karşılaştırın. Yeniden üretilen geçmişlerin commit kimlikleri farklı olabilir; her dosyayı ait olduğu koşuyla eşleştirin.
 
-## Hazırlığın durumu
-12/12 Gitflow · 6/6 panel. Klinik testleri ayrıca başarılı.
+## Teslim edilecek çıktı
 
-[Görev #20](https://github.com/pozelll/-klinik-randevu-ogretmen/issues/20) · [PR #21](https://github.com/pozelll/-klinik-randevu-ogretmen/pull/21). Öğretmen örneği; gerçek öğrenci katkısı veya bağımsız inceleme iddiası değildir.
+Tarih, ortam, kaynak commit, çalıştırılan komutlar, sonuç dosyaları, bundle ve yeni klasörden yapılan kimlik/içerik doğrulaması.
+
+## Çıktı kontrolü
+
+- Bundle'dan açılan geçmiş kendi koşunuzun son commit'iyle eşleşir.
+- Gitflow, panel ve klinik uygulama sonuçları ayrı kapsamda raporlanır.
+- Otomatik kontroller insan incelemesi veya kullanıcı kabulü olarak yazılmaz.
+
+22 Kasım 2026 örneğinde [Gitflow CI](https://github.com/pozelll/-klinik-randevu-ogretmen/actions/runs/45023202073) 12/12, son panel 6/6'dır. Tarihsel klinik koşu 30 Node, 14 kaynak tarayıcı, 8 paket ve pakette aynı 14 senaryoyu içerir. Klinik rc.2'nin sonraki ölçümleri [49 numaralı kayıtta](https://github.com/pozelll/-klinik-randevu-ogretmen/blob/main/hafta09/docs/49-kapanis-raporu.md) bulunur.
+
+[Önceki adım](05-hotfix.md) · [Sonraki adım: Kalite kararı](07-karar.md)

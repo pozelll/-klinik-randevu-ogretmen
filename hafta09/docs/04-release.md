@@ -1,25 +1,36 @@
-# 9. hafta / 4. basamak - Release ve etiket
+# 9. hafta / 4. adım - Release ve etiket
 
-## Derste anlat
-Release dalı sürüm hazırlığını ayırır. Commit bir içerik anını, dal ilerleyen bir referansı, etiket seçilmiş sürüm noktasını gösterir. Açıklamalı etiketin mesajı da vardır; yine de etiket tek başına kalite onayı değildir. Bu laboratuvarda kusurun geç fark edilmesini canlandırmak için 0.9.0 eğitim etiketi oluşturulur. Gerçek klinik yayın kararı bundan ayrıdır.
+Öğrenci çalışma yönergesi · Güncelleme: 26 Kasım 2026.
 
-## Ekranda göster ve uygula
-41 belgesindeki release kaydını açın. Deney deposunda git show egitim-hafta09-v0.9.0 komutuyla mesajı ve hedefi inceleyin. git cat-file -t egitim-hafta09-v0.9.0 çıktısı tag olmalıdır. GitHub PR #21’in hâlâ açık olduğunu gösterin: yerel main birleşmesi, gerçek ders deposunun main dalının birleştiği anlamına gelmez.
+## Amaç
 
-- [41 · Sürüm kaydı](https://github.com/pozelll/-klinik-randevu-ogretmen/blob/docs/h9-gitflow-teslim/hafta09/docs/41-release-ve-surum-kaydi.md)
-- [Gitflow sonuçları](https://github.com/pozelll/-klinik-randevu-ogretmen/blob/docs/h9-gitflow-teslim/hafta09/kanitlar/gitflow-sonuclari.json)
+Seçilen sürümün kapsamını, tam commit'ini ve etiketini kayıt altına alın. Etiket kaydıyla test, inceleme ve kabul sonuçlarını ayrı alanlarda izleyin.
 
-## Öğrenciye soru
-**Etiket atılmış olması sürümün tüm kalite koşullarını geçtiğini kanıtlar mı?**
+## Grup çalışması
 
-Beklenen açıklama: Hayır. Etiket bir sürüm noktasını işaretler. Test, inceleme, ölçüm ve kabul kayıtları ayrıca değerlendirilir.
+1. [Örnek sürüm kaydındaki](41-release-ve-surum-kaydi.md) `release/0.9.0` dalını, `main` birleşimini ve `develop` dalına geri taşıma adımını inceleyin.
+2. Kendi deneyinizin açıklamalı etiketini aşağıdaki komutlarla kontrol edin. Etiket mesajını, türünü ve tam hedef commit'ini çalışma kaydınıza ekleyin.
 
-## Grubun yapacağı iş
-Sürüm kapsamı, tam commit, etiket mesajı ve açık riskleri kendi sürüm kaydınıza yazın.
+```bash
+git -C h9-deneyim/lab-deposu show egitim-hafta09-v0.9.0
+git -C h9-deneyim/lab-deposu cat-file -t egitim-hafta09-v0.9.0
+git -C h9-deneyim/lab-deposu rev-parse 'egitim-hafta09-v0.9.0^{}'
+```
 
-Kontrol: Etiket türü ve hedefi doğrulanmış; eğitim yayını ile ürün kararı ayrı.
+3. Tür çıktısını `tag` olarak ve hedefi aynı koşunun `commits.releaseMain` değeriyle doğrulayın. H9-G06 kaydını ekleyin.
+4. Grubunuzun sürüm kaydına kapsamı, tam commit'i, etiket mesajını, açık bulguları ve ilgili test kayıtlarını yazın.
+5. GitHub'daki [PR #21'in güncel durumunu](https://github.com/pozelll/-klinik-randevu-ogretmen/pull/21) kendi kaynağından okuyun. Yerel eğitim deposunun merge/tag kayıtlarını gerçek GitHub PR ve ürün yayın kayıtlarından ayrı tutun.
 
-## Hazırlığın durumu
-Yerel etiket: v0.9.0 senaryosu. GitHub üretim yayını yapılmadı.
+## Teslim edilecek çıktı
 
-[Görev #20](https://github.com/pozelll/-klinik-randevu-ogretmen/issues/20) · [PR #21](https://github.com/pozelll/-klinik-randevu-ogretmen/pull/21). Öğretmen örneği; gerçek öğrenci katkısı veya bağımsız inceleme iddiası değildir.
+Sürüm adı, kapsam, açıklamalı etiket mesajı, hedef commit, doğrulama çıktıları ve açık riskleri içeren sürüm kaydı.
+
+## Çıktı kontrolü
+
+- Etiket türü ve hedefi komut çıktısıyla doğrulanmıştır.
+- Yerel `0.9.0` eğitim senaryosu klinik uygulamanın yayın kararı olarak kullanılmamıştır.
+- Sürüm kararı için gerekli kalite kanıtları ayrıca bağlantılanmıştır.
+
+Örneğin `0.9.0` sürümündeki kontrollü anlam kusuru bir sonraki hotfix adımının girdisidir. Gerçek klinik uygulamada aynı kusurun bulunduğu sonucu çıkarılmaz.
+
+[Önceki adım](03-cakisma.md) · [Sonraki adım: Hotfix](05-hotfix.md)

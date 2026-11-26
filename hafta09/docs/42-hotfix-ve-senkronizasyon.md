@@ -1,5 +1,7 @@
 # 42 - Hotfix ve senkronizasyon
 
+> 22 Kasım 2026 tarihli teknik hazırlık kaydı: Bu belge Gitflow eğitim deneyini ve klinik 0.3.0-rc.1 başlangıcını anlatır. Dal, hedef ve açık/taslak PR bilgileri birleştirme öncesindeki duruma aittir. [PR #21](https://github.com/pozelll/-klinik-randevu-ogretmen/pull/21) aynı gün main'e birleştirilmiştir; bu işlem bağımsız insan incelemesi veya kabulü yerine geçmez. Güncel 0.3.0-rc.2 sonuçları [kapanış raporunda](https://github.com/pozelll/-klinik-randevu-ogretmen/blob/main/hafta09/docs/49-kapanis-raporu.md), açık insan kabul işleri [kabul oturumu ve formlarında](https://github.com/pozelll/-klinik-randevu-ogretmen/blob/main/hafta09/docs/50-insan-kabul-oturumu.md) bulunur.
+
 ## Kontrollü bulgu
 
 Eski laboratuvardan alınan kasıtlı yanlış girdi: “İptal edilen randevu listeden silinir.” Klinik gereksiniminde iptal edilen kayıt geçmişte kalır ve saat serbestleşir. H9 klinik iş kuralını değiştirmez; yalnız panel metnini düzeltir.
@@ -24,4 +26,4 @@ git -C h9-deneyim/lab-deposu show develop:panel/surum.json
 
 İlk üç komutun çıkışı 0'dır; başarılı durumda metin basmayabilir. Otomatik rapor çıkış kodlarını kaydeder. Atalık düzeltmenin geçmişte bulunduğunu gösterir; sonraki bir commit düzeltmeyi geri alabileceği için son içerik de kontrol edilir. Panelin iki hedefte eşit ve doğru olduğu doğrulandı.
 
-Yeni açıklamalı etiket `egitim-hafta09-v0.9.1`; önceki 0.9.0 etiketinin hedefi korunur. Geri dönüş eski etiketi taşımak değil, ayrı karar ve doğrulama gerektiren bir işlemdir. Klinik uygulamanın [H8 geri dönüş planı](../../hafta08/docs/07-geri-donus.md) ayrı kapsamdır.
+Yeni açıklamalı etiket `egitim-hafta09-v0.9.1`; önceki 0.9.0 etiketinin hedefi korunur. Geri dönüş eski etiketi taşımak değil, ayrı karar ve doğrulama gerektiren bir işlemdir. Klinik uygulamanın [H8 geri dönüş planı](https://github.com/pozelll/-klinik-randevu-ogretmen/blob/main/hafta08/docs/07-geri-donus.md) ayrı kapsamdır.

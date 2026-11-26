@@ -1,25 +1,34 @@
-# 9. hafta / 2. basamak - İki feature, ortak taban
+# 9. hafta / 2. adım - İki feature, ortak taban
 
-## Derste anlat
-İki ekip üyesinin aynı başlangıçtan çalışması, aynı satırı farklı amaçlarla değiştirebilecekleri anlamına gelir. Hasta dalı hasta notunu, personel dalı personel notunu geliştirir; ikisi de ortak duyuruyu değiştirir. Dalların isimlerine bakmak ortak geçmişi kanıtlamaz. merge-base ile iki çalışmanın ortak atasını buluruz.
+Öğrenci çalışma yönergesi · Güncelleme: 26 Kasım 2026.
 
-## Ekranda göster ve uygula
-Senaryolar klasöründeki 01-hasta.json ile 02-personel.json dosyalarını yan yana açın. Yalnız duyuruya değil, korunması gereken iki özel nota da bakın. Deney deposunda git merge-base feature/hasta-bilgi feature/personel-bilgi komutunu çalıştırın. Çıkan kimliği gitflow-sonuclari.json içindeki baseline ile karşılaştırın. H9-G02 bu eşitliği gerçekten kontrol etti.
+## Amaç
 
-- [40 · Feature ve çakışma](https://github.com/pozelll/-klinik-randevu-ogretmen/blob/docs/h9-gitflow-teslim/hafta09/docs/40-feature-ve-cakisma-yonetimi.md)
-- [Gerçek Git geçmişi](https://github.com/pozelll/-klinik-randevu-ogretmen/blob/docs/h9-gitflow-teslim/hafta09/kanitlar/git-gecmisi.txt)
+İki katkının hangi ortak başlangıçtan ayrıldığını commit kimlikleriyle doğrulayın. Her katkının değiştirdiği alanı ve karşıladığı ihtiyacı kaydedin.
 
-## Öğrenciye soru
-**İki dalın adı farklıysa içerikleri mutlaka çakışmadan birleşir mi?**
+## Grup çalışması
 
-Beklenen açıklama: Hayır. Ayrı dallar aynı ortak tabandaki aynı satırı farklı değiştirebilir; isim farkı içerik uyumu sağlamaz.
+1. [Hasta senaryosunu](../senaryolar/01-hasta.json) ve [personel senaryosunu](../senaryolar/02-personel.json) karşılaştırın. `duyuru`, `hasta_notu` ve `personel_notu` alanlarındaki değişiklikleri yazın.
+2. Birinci adımda oluşan `h9-deneyim/gitflow-sonuclari.json` dosyasından `commits.patient`, `commits.staff` ve `commits.baseline` değerlerini alın.
+3. Aşağıdaki `HASTA_COMMIT` ve `PERSONEL_COMMIT` yerlerine bu koşunun tam commit kimliklerini yazıp komutu çalıştırın. Sonucu aynı rapordaki `baseline` ve H9-G02 kaydıyla karşılaştırın.
 
-## Grubun yapacağı iş
-Ortak tabandan iki küçük katkı oluşturun. Her dalın değiştirdiği alanları ve katkı amacını yazın.
+```bash
+git -C h9-deneyim/lab-deposu merge-base HASTA_COMMIT PERSONEL_COMMIT
+```
 
-Kontrol: İki commit var; ortak ata doğru; her katkının amacı açıklanabiliyor.
+4. Dal uçları birleştirme sırasında ilerler. İlk ortak tabanı incelerken ilk iki katkının sabit commit kimliklerini kullanın; deney sonundaki dal adlarını ilk katkı kimlikleriyle karıştırmayın.
+5. Grubunuzun ayrı çalışma deposunda aynı başlangıçtan iki küçük katkı oluşturun. Gerçekte katkıyı yapan üyeyi, değiştirdiği alanları ve commit'ini [grup formuna](../sablonlar/grup-kaydi.md) yazın.
 
-## Hazırlığın durumu
-Ortak taban doğrulandı. Dallar aynı duyuru alanını değiştirir.
+## Teslim edilecek çıktı
 
-[Görev #20](https://github.com/pozelll/-klinik-randevu-ogretmen/issues/20) · [PR #21](https://github.com/pozelll/-klinik-randevu-ogretmen/pull/21). Öğretmen örneği; gerçek öğrenci katkısı veya bağımsız inceleme iddiası değildir.
+İki katkının amacı, yazarları ve tam commit'leri; ortak ata komutu ve çıktısı; korunması gereken alanların listesi.
+
+## Çıktı kontrolü
+
+- İlk katkı commit'lerinin ortak atası kayıtlı başlangıçla eşleşir.
+- Her katkı için ayrı bir ihtiyaç ve gerçek değişiklik gösterilir.
+- Otomatik deneyin commit'leri grubun insan katkısı olarak sunulmaz.
+
+[Feature ve çakışma kaydı](40-feature-ve-cakisma-yonetimi.md) · [Örnek Git geçmişi](../kanitlar/git-gecmisi.txt)
+
+[Önceki adım](01-baslangic.md) · [Sonraki adım: Çakışma çözümü](03-cakisma.md)

@@ -19,10 +19,6 @@
       "result": "Klinik: 0.3.0-rc.1 · Lab: 0.9.x",
       "note": "İki sürüm alanı ayrı tutulur.",
       "visual": "main + develop + kısa ömürlü dallar",
-      "teach": "Önce hangi sürüm üzerinde çalıştığımızı belirleriz. Klinik uygulamanın H8 adayı 0.3.0-rc.1 olarak kalır. Gitflow kavramlarını, bilgilendirme paneli içeren ayrı bir eğitim deposunda 0.9.x sürümüyle uygularız. main teslim geçmişini, develop gelecek sürümün birleşik çalışmasını temsil eder. Gitflow her proje için zorunlu değildir; burada release ve hotfix ayrımını görünür kılmak için seçildi.",
-      "do": "GitHub H9 dalını ve 39 numaralı belgeyi açın. Önce H8 paketini gösterin. Terminalde python hafta09/tools/gitflow_lab.py --output h9-deneyim komutu bütün deneyi yeni klasörde kurar. Komut mevcut dolu klasörü kabul etmez. Sonraki basamaklarda bu deneyin gerçek commit, çakışma ve etiket kayıtlarını inceleyeceğiz. Ayrı terminalde python -m http.server 8000 çalıştırıp /hafta09/panel/ yolunu açın.",
-      "ask": "Panelde 0.9.1 yazması klinik uygulamanın da 0.9.1 olduğu anlamına gelir mi?",
-      "answer": "Hayır. Panel ve klinik aday farklı kapsamdır. Sürüm metnini ürün, commit ve paket kaydıyla birlikte yorumlarız.",
       "student": "Kendi başlangıç commit’inizi, dal politikanızı ve kapsam dışı işleri 39 belgesine kaydedin. Sürüm alanlarını adlandırın.",
       "check": "Başlangıç SHA’sı ve iki ürün kapsamı açık; deney kendi klasöründe."
     },
@@ -43,10 +39,6 @@
       "result": "Ortak taban doğrulandı.",
       "note": "Dallar aynı duyuru alanını değiştirir.",
       "visual": "develop → hasta / personel",
-      "teach": "İki ekip üyesinin aynı başlangıçtan çalışması, aynı satırı farklı amaçlarla değiştirebilecekleri anlamına gelir. Hasta dalı hasta notunu, personel dalı personel notunu geliştirir; ikisi de ortak duyuruyu değiştirir. Dalların isimlerine bakmak ortak geçmişi kanıtlamaz. merge-base ile iki çalışmanın ortak atasını buluruz.",
-      "do": "Senaryolar klasöründeki 01-hasta.json ile 02-personel.json dosyalarını yan yana açın. Yalnız duyuruya değil, korunması gereken iki özel nota da bakın. Deney deposunda git merge-base feature/hasta-bilgi feature/personel-bilgi komutunu çalıştırın. Çıkan kimliği gitflow-sonuclari.json içindeki baseline ile karşılaştırın. H9-G02 bu eşitliği gerçekten kontrol etti.",
-      "ask": "İki dalın adı farklıysa içerikleri mutlaka çakışmadan birleşir mi?",
-      "answer": "Hayır. Ayrı dallar aynı ortak tabandaki aynı satırı farklı değiştirebilir; isim farkı içerik uyumu sağlamaz.",
       "student": "Ortak tabandan iki küçük katkı oluşturun. Her dalın değiştirdiği alanları ve katkı amacını yazın.",
       "check": "İki commit var; ortak ata doğru; her katkının amacı açıklanabiliyor."
     },
@@ -67,10 +59,6 @@
       "result": "Çözüm: iki ebeveyn, iki katkı.",
       "note": "Yalnız işaretleri silmek yetmez.",
       "visual": "çatışma → karar → kontrol → commit",
-      "teach": "Git bir çakışma gösterdiğinde ürün kararını bizim vermemiz gerekir. Sadece bir tarafı kabul etmek diğer ekibin ihtiyacını kaybettirebilir. Bu örnekte duyuru iki hedefi de anlatmalı; hasta ve personel notları ayrı ayrı korunmalıdır. Çözümden sonra geçerli JSON, doğru içerik ve birleştirme geçmişini birlikte kontrol ederiz.",
-      "do": "Ham çakışma dosyasında HEAD ve develop bölümlerini gösterin. komut-kaydi.json içinde merge çıkışının 1, çözülmemiş yolun panel/surum.json olduğunu bulun. 03-cozum.json ile karşılaştırın. Çözüm commit’ini git show ile açın; iki ebeveyn içerdiğini gösterin. H9-G03–G05 çakışmanın oluştuğunu, hatalı dosyanın reddedildiğini ve iki notun korunduğunu doğrular.",
-      "ask": "Çakışma işaretleri silindi ve JSON okunuyor. İş bitti mi?",
-      "answer": "Henüz değil. İki ihtiyacın da korunması gerekir. Biçim doğruluğu ile içerik doğruluğu farklı kontrollerdir.",
       "student": "İki katkıyı koruyan bir çözüm yazın. Neden bu metni seçtiğinizi ve kontrol sonucunu kaydedin.",
       "check": "İşaret yok, JSON geçerli, iki not korunmuş; çözüm gerekçesi mevcut."
     },
@@ -91,10 +79,6 @@
       "result": "Yerel etiket: v0.9.0 senaryosu.",
       "note": "GitHub üretim yayını yapılmadı.",
       "visual": "release → main + develop; tag → commit",
-      "teach": "Release dalı sürüm hazırlığını ayırır. Commit bir içerik anını, dal ilerleyen bir referansı, etiket seçilmiş sürüm noktasını gösterir. Açıklamalı etiketin mesajı da vardır; yine de etiket tek başına kalite onayı değildir. Bu laboratuvarda kusurun geç fark edilmesini canlandırmak için 0.9.0 eğitim etiketi oluşturulur. Gerçek klinik yayın kararı bundan ayrıdır.",
-      "do": "41 belgesindeki release kaydını açın. Deney deposunda git show egitim-hafta09-v0.9.0 komutuyla mesajı ve hedefi inceleyin. git cat-file -t egitim-hafta09-v0.9.0 çıktısı tag olmalıdır. GitHub PR #21’in hâlâ açık olduğunu gösterin: yerel main birleşmesi, gerçek ders deposunun main dalının birleştiği anlamına gelmez.",
-      "ask": "Etiket atılmış olması sürümün tüm kalite koşullarını geçtiğini kanıtlar mı?",
-      "answer": "Hayır. Etiket bir sürüm noktasını işaretler. Test, inceleme, ölçüm ve kabul kayıtları ayrıca değerlendirilir.",
       "student": "Sürüm kapsamı, tam commit, etiket mesajı ve açık riskleri kendi sürüm kaydınıza yazın.",
       "check": "Etiket türü ve hedefi doğrulanmış; eğitim yayını ile ürün kararı ayrı."
     },
@@ -115,10 +99,6 @@
       "result": "İki atalık kontrolü geçti.",
       "note": "Eski etiket yerinde korundu.",
       "visual": "hotfix → main + develop · yeni tag",
-      "teach": "Paneldeki kasıtlı yanlış cümle, iptal edilen kaydın silindiğini söylüyor. Oysa klinik örnekte kayıt geçmişte kalır, saat açılır. Beş yapısal kontrol bu anlam hatasını yakalamaz. Eklenen A01 kontrolü yanlış metni reddeder. Hotfix teslim dalından çıkar; hem teslim geçmişine hem gelecek sürümün dalına taşınır. Böylece bir sonraki sürüm aynı hatayı geri getirmez.",
-      "do": "04-release.json için surum_kontrol.py komutunu önce normal, sonra --anlam ile çalıştırın: 5/5 geçer, 5/6 başarısız olur. 05-hotfix.json ile 6/6 geçtiğini gösterin. Deney deposunda hotfix/0.9.1’in main ve develop için atalık kontrolünü yapın. Son panel içeriklerini de karşılaştırın. 0.9.0 etiketi değiştirilmeden 0.9.1 etiketi eklenmiştir.",
-      "ask": "Düzeltme yalnız main’e taşınırsa sonraki sürümde hangi risk doğar?",
-      "answer": "develop eski metni taşıyorsa hata yeniden gelebilir. Düzeltmenin geçmişte bulunması ve son içerikte korunması birlikte denetlenir.",
       "student": "Hotfix gerekçesini yazın; iki hedef için atalık ve içerik kontrolünün gerçek çıktısını kaydedin.",
       "check": "İki atalık çıkışı 0; son içerik aynı; eski etiket hedefi değişmedi."
     },
@@ -139,10 +119,6 @@
       "result": "12/12 Gitflow · 6/6 panel.",
       "note": "Klinik testleri ayrıca başarılı.",
       "visual": "komut → sonuç → SHA → CI → bundle",
-      "teach": "Bir ekran görüntüsü anı gösterir; komut, kaynak commit ve sonuç kaydı deneyi izlenebilir yapar. Git bundle dalları ve etiketleriyle geçmişi taşımamızı sağlar. Yeni klasörde açıp kimliği karşılaştırmak teslimin kontrolüdür. Yerel ve CI deneyleri ayrı Git geçmişleri üretir; zamanlar farklı olduğu için commit kimlikleri farklı olabilir. Her rapor kendi koşusunun kimlikleriyle okunur.",
-      "do": "Yerel gitflow-sonuclari.json ile CI raporunun kaynak commit ve tarihini ayırt edin. GitHub Actions’ta 12 Gitflow ve son panelin 6 kontrolünü açın. Klinik koşusunda 30 Node, 14 kaynak tarayıcı, 8 paket ve 14 paket tarayıcı kontrolünü gösterin. Bundle’ı yeni klasöre git clone -b develop ile açın; kayıtlı develop SHA’sı ve panel metniyle karşılaştırın.",
-      "ask": "Panelin altı kontrolünün geçmesi, klinik randevu uygulamasının bütün testlerinin geçtiği anlamına gelir mi?",
-      "answer": "Hayır. Panel, Gitflow süreci ve klinik uygulama farklı kapsamdır. Her biri kendi kaynak ve yürütüm kaydına bağlanır.",
       "student": "Kendi denemenizi yeni klasörde çalıştırın. Koşu tarihi, komut, ortam, SHA ve sonuç dosyalarını kaydedin.",
       "check": "Başka klasörde açılan geçmiş aynı; her sonuç kendi kapsamına bağlı."
     },
@@ -163,10 +139,6 @@
       "result": "Klinik nihai yayın: BEKLET.",
       "note": "NFR, performans ve inceleme açık.",
       "visual": "başarılı test ≠ tamamlanmış kabul",
-      "teach": "Kalite kararı yalnız geçen test sayısıyla verilmez. NFR-01 kullanılabilirlik, NFR-02 yanıt süresi ve NFR-03 klavye ölçümleri henüz tamamlanmadı. Güncel plandaki performans ve ölçek deneyi de yok. Bu nedenle klinik nihai yayın kararı BEKLET olarak kalır. Hazırlanmış ders materyali kullanılabilir; öğrenciler eksik kanıtın kararı nasıl etkilediğini tartışır.",
-      "do": "44 tablosunda her kapının hangi sürüme ve kanıta bağlı olduğunu gösterin. 45 tablosunda planlanan performans çalışması ile H8’de gerçekten yapılan paket doğrulamasını karşılaştırın. Test koşusunun süresini insan emeği diye yazmayın. Yayın için hangi ek çalışma, hangi sorumlu ve hangi kabul ölçütü gerektiğini sınıfta belirleyin; gerçek atama yapılmadan isim uydurmayın.",
-      "ask": "Bütün otomatik kontroller başarılıysa neden BEKLET diyebiliriz?",
-      "answer": "Kontroller yalnız tanımlanan kapsamı ölçer. Ölçülmemiş bir gereksinim veya yapılmamış bağımsız inceleme kendiliğinden tamamlanmaz.",
       "student": "Kendi kalite kapılarınızı ve yayın kararınızı gerekçelendirin. Tahmin ile gerçekleşen emeği ayrı yazın.",
       "check": "Karar kanıta dayanıyor; eksik kapı, sonraki iş ve belirsizlik açık."
     },
@@ -187,12 +159,12 @@
       "result": "Ders paketi hazır; açık işler kayıtlı.",
       "note": "Öğrenci kazanımı varsayılmadı.",
       "visual": "kanıtlı / kısmi / eksik → sonraki görev",
-      "teach": "Konu başlığının bir tabloda bulunması, öğrencinin o kazanımı gösterdiği anlamına gelmez. 14 konu için mevcut öğretmen örneğini, sınıfın üreteceği çıktıyı ve açık işi ayrı tutarız. CI var; gerçek üretim CD’si gösterilmedi. Performans ölçümü ve yapay zekâ önerisine bağımsız değerlendirme açık. Bu ayrım, 10–14. haftalarda kendi projelerine geçecek gruplar için dürüst bir başlangıç sağlar.",
-      "do": "46 tablosundan bir kanıtlı, bir kısmi, bir eksik satır seçin. Öğrenciye hangi dosya veya ölçümün bu satırı tamamlayacağını sorun. Boş grup formunu açıp başlangıç commit’i, katkı, inceleme ve sonraki görev alanlarını gösterin. Dersin Drive klasöründeki PDF ve çalışma ZIP’ini açın; alıcının erişimini ve öğrencinin kendi yürütümünü derste ayrıca doğrulayın.",
-      "ask": "14 satırın hepsinin dolu olması, 14 kazanımın tamamlandığı anlamına gelir mi?",
-      "answer": "Hayır. Tablo kapsamı görünür kılar. Gerçek öğrenci çıktısı, ölçüm ve değerlendirme ayrıca gerekir.",
       "student": "Her grup eksiklerinden birini sonraki proje görevine dönüştürsün; kendi kanıtını ve teslim bağlantısını eklesin.",
       "check": "14 satır kanıt veya açık işe bağlı; teslim erişimi ve katkı gerçek kayıtlı."
     }
-  ]
+  ],
+  "audience": "ogrenci",
+  "updated": "2026-11-26",
+  "evidenceDate": "2026-11-22",
+  "scopeNote": "Kartlardaki sürüm ve sonuçlar 22 Kasım 2026 tarihli rc.1 / 0.9.x eğitim deneyine aittir. Güncel öğrenci adımları hafta09/docs/01–08 belgelerindedir; rc.2 ve açık insan kabulü için ana daldaki 49 ve 50 numaralı belgeler kullanılır."
 }

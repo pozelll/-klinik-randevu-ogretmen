@@ -1,31 +1,40 @@
 # YAZ325 - 9. hafta: Gitflow, Sürüm ve Hotfix
 
-22 Kasım 2026 öğretmen hazırlığı. Mevcut Drive planına uygun, sekiz basamaklı anlatım ve gerçek Gitflow laboratuvarı.
+Öğrenci çalışma rehberi · Güncelleme: 26 Kasım 2026.
 
-[PR #21](https://github.com/pozelll/-klinik-randevu-ogretmen/pull/21) · [Görev #20](https://github.com/pozelll/-klinik-randevu-ogretmen/issues/20) · [Drive H9 klasörü](https://drive.google.com/drive/folders/16ho8HcE_UT98VJSqH8ONn5rnChIRHuQg)
+Bu hafta iki dalın ortak başlangıcını doğrulayacak, çakışmayı çözecek, bir sürümü etiketleyecek ve düzeltmeyi iki hedef dala taşıyacaksınız. Her grup kendi katkılarını, komut sonuçlarını, kalite kararını ve teslim kaydını oluşturur.
 
-| Basamak | Derste açılacak belge | Sonuç |
+Örnek çalışma dalı: `docs/h9-gitflow-teslim` · [Görev #20](https://github.com/pozelll/-klinik-randevu-ogretmen/issues/20) · [PR #21 ve güncel durumu](https://github.com/pozelll/-klinik-randevu-ogretmen/pull/21).
+
+## Çalışma adımları
+
+| Adım | Çalışma yönergesi | Grubun üreteceği çıktı |
 |---|---|---|
-| 1 | [Başlangıç ve dal planı](docs/01-baslangic.md) | Klinik: 0.3.0-rc.1 · Lab: 0.9.x |
-| 2 | [İki feature, ortak taban](docs/02-feature.md) | Ortak taban doğrulandı. |
-| 3 | [Çakışmayı anlamıyla çöz](docs/03-cakisma.md) | Çözüm: iki ebeveyn, iki katkı. |
-| 4 | [Release ve etiket](docs/04-release.md) | Yerel etiket: v0.9.0 senaryosu. |
-| 5 | [Hotfix’i iki dala taşı](docs/05-hotfix.md) | İki atalık kontrolü geçti. |
-| 6 | [Kanıtı yeniden üret](docs/06-kanit.md) | 12/12 Gitflow · 6/6 panel. |
-| 7 | [Kaliteyle sürüm kararı](docs/07-karar.md) | Klinik nihai yayın: BEKLET. |
-| 8 | [Kapsamı kapat, devret](docs/08-devir.md) | Ders paketi hazır; açık işler kayıtlı. |
+| 1 | [Başlangıç ve dal planı](docs/01-baslangic.md) | Başlangıç commit'i, ürün kapsamı ve dal planı. |
+| 2 | [İki feature, ortak taban](docs/02-feature.md) | İki katkı commit'i ve ortak ata doğrulaması. |
+| 3 | [Çakışmayı anlamıyla çöz](docs/03-cakisma.md) | İki ihtiyacı koruyan çözüm, gerekçe ve kontrol kaydı. |
+| 4 | [Release ve etiket](docs/04-release.md) | Sürüm kapsamı, etiket türü ve hedef commit. |
+| 5 | [Hotfix'i iki dala taşı](docs/05-hotfix.md) | Düzeltme, iki hedef için atalık ve son içerik kontrolü. |
+| 6 | [Kanıtı yeniden üret](docs/06-kanit.md) | Koşu kaydı, sonuç dosyaları ve bundle doğrulaması. |
+| 7 | [Kaliteyle sürüm kararı](docs/07-karar.md) | Kanıta bağlı yayın kararı ve açık iş listesi. |
+| 8 | [Kapsamı kapat, devret](docs/08-devir.md) | Kapsam tablosu, katkılar ve alıcı teslim kaydı. |
 
-## Derste kullan
+## Grubun iş bölümü
 
-- [5–9. haftaların Drive dosya dizini](https://drive.google.com/file/d/1R7vBPedrxo--nXKP4gqRqIY9xvNJ60UN/view?usp=drivesdk) · [Yükleme kayıtları](docs/48-drive-teslim-dizini.md)
-- [Tek sayfalık tıklanabilir süreç PDF'i](dagitim/YAZ325_Hafta_09_Surec_Infografik_Aktif_Linkli.pdf)
-- [9 sayfalık anlatım rehberi](dagitim/YAZ325_Hafta_09_Ders_Anlatim_Rehberi.pdf)
-- [Uygulama ZIP'i](dagitim/YAZ325_Hafta09_Gitflow_Calisma_Paketi.zip): H9 araçları, kaynak metinler, bundle, PDF'ler ve H8 başlangıç paketi.
-- [Kurulum, prova ve teknik kaynaklar](docs/47-yeniden-calistirma-ve-kaynaklar.md)
-- [Grubun kendi çalışma formu](sablonlar/grup-kaydi.md)
+Dal katkılarını, çakışma çözümünü, sürüm ve hotfix kontrollerini [grup büyüklüğüne göre](https://github.com/pozelll/-klinik-randevu-ogretmen/blob/main/docs/11-grup-buyuklugune-gore-yonlendirme.md) paylaşın. Her üyenin anlamlı çıktısını ve gerçek katkı kaydını [grup formuna](sablonlar/grup-kaydi.md) yazın. İnceleyen kişi, değerlendirdiği içeriğin yazımına katılmamış olmalıdır; ortak yazılan bölüm için gerekirse grup dışından inceleme planlayın.
 
-## Gerçek durum
+## Kaynaklar
 
-12/12 Gitflow kontrolü yerelde ve [CI'da](https://github.com/pozelll/-klinik-randevu-ogretmen/actions/runs/45023202073) geçti. Son panel 6/6. [Klinik CI](https://github.com/pozelll/-klinik-randevu-ogretmen/actions/runs/45023202040) 30 Node, 14 kaynak tarayıcı, 8 paket ve 14 paketten tarayıcı kontrolünü geçti. Yeni 0.9.x paneli klinik 0.3.0-rc.1 adayından ayrıdır. Yerel eğitim merge/tag'leri GitHub ana dalında yayın değildir.
+- [Tek sayfalık süreç PDF'i — 22 Kasım 2026 eğitim özeti](dagitim/YAZ325_Hafta_09_Surec_Infografik_Aktif_Linkli.pdf)
+- [Gitflow çalışma ZIP'i](https://github.com/pozelll/-klinik-randevu-ogretmen/blob/main/hafta09/dagitim/YAZ325_Hafta09_Gitflow_Calisma_Paketi.zip): araçlar, panel, senaryolar, çalışma belgeleri, kanıtlar ve H8 başlangıç uygulaması.
+- [Kurulum ve teknik kaynaklar](docs/47-yeniden-calistirma-ve-kaynaklar.md)
+- [Kanıt zinciri](docs/43-git-kanit-ve-izlenebilirlik.md) · [Konu kapsamı](docs/46-konu-kapsam-tablosu.md)
+- [Güncel klinik teknik kapanış kaydı](https://github.com/pozelll/-klinik-randevu-ogretmen/blob/main/hafta09/docs/49-kapanis-raporu.md) · [İnsan kabulü için çalışma formu](https://github.com/pozelll/-klinik-randevu-ogretmen/blob/main/hafta09/docs/50-insan-kabul-oturumu.md)
 
-**Nihai klinik yayın kararı BEKLET:** bağımsız inceleme, NFR ve performans kanıtı açık. [Kalite kararı](docs/44-surum-kalite-karari.md), [plan-gerçekleşen](docs/45-plan-gerceklesen.md), [14 konu kapsamı](docs/46-konu-kapsam-tablosu.md). Otomatik deneydeki Git yazarı “YAZ325 Otomatik Ders Deneyi”dir; öğrenci/öğretmen tarafından yapılmış insan katkısı taklit edilmez.
+## Örnek sonuçların kullanımı
+
+22 Kasım 2026 tarihli Gitflow örneğinde yerel ve [CI yürütümü](https://github.com/pozelll/-klinik-randevu-ogretmen/actions/runs/45023202073) 12/12 süreç kontrolünü; son panel 6/6 kontrolü geçti. Aynı hazırlığın [klinik CI kaydı](https://github.com/pozelll/-klinik-randevu-ogretmen/actions/runs/45023202040), 30 Node testi, 14 kaynak tarayıcı senaryosu, 8 paket kontrolü ve pakette aynı 14 tarayıcı senaryosunu içerir.
+
+Laboratuvarın `0.9.x` paneli ve H8 başlangıç paketi `0.3.0-rc.1` ayrı kapsamlardır. Daha sonraki klinik `0.3.0-rc.2` adayı, klavye ve performans ölçümleri 49 numaralı kayıttadır. Önceki hazırlık belgelerindeki açık PR ve yapılmamış ölçüm ifadeleri kendi tarihleriyle okunmalıdır.
+
+Otomatik örneğin Git yazarı “YAZ325 Otomatik Ders Deneyi”dir. Bu kayıtlar grubun insan katkısı veya bağımsız incelemesi olarak kullanılamaz. Kendi koşunuzun tarihini, ortamını, tam commit'ini ve gerçek sonucunu ayrıca kaydedin. Klinik nihai yayın kararı, eksik insan kabulü kayıtları nedeniyle **BEKLET** durumundadır; tamamlanmamış kabulü başarılı işaretlemeyin.

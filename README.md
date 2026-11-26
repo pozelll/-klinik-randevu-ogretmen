@@ -1,6 +1,6 @@
 # YAZ325 - 9. hafta: Gitflow, sürüm ve hotfix
 
-[Sekiz basamak, PDF ve çalışma ZIP'i](hafta09/README.md) · [PR #21](https://github.com/pozelll/-klinik-randevu-ogretmen/pull/21) · [Ders dosyaları](hafta09/docs/48-drive-teslim-dizini.md)
+[9. hafta öğrenci çalışma yönergeleri](hafta09/README.md) · [PR #21](https://github.com/pozelll/-klinik-randevu-ogretmen/pull/21) · [Ders dosyaları](hafta09/docs/48-drive-teslim-dizini.md)
 
 Güncel öğretmen dalı `docs/h9-gitflow-teslim`. Ayrı eğitim deposunda gerçek çakışma, release ve iki hedefli hotfix; yerel ve CI 12/12 süreç kontrolü, son panel 6/6. Klinik uygulama 0.3.0-rc.1 olarak korunur. Nihai klinik yayın BEKLET: bağımsız inceleme, NFR ve performans ölçümleri açık. [Plan farkı ve 14 konu kapsamı](hafta09/docs/46-konu-kapsam-tablosu.md).
 

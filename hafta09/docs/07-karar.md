@@ -1,25 +1,29 @@
-# 9. hafta / 7. basamak - Kaliteyle sürüm kararı
+# 9. hafta / 7. adım - Kaliteyle sürüm kararı
 
-## Derste anlat
-Kalite kararı yalnız geçen test sayısıyla verilmez. NFR-01 kullanılabilirlik, NFR-02 yanıt süresi ve NFR-03 klavye ölçümleri henüz tamamlanmadı. Güncel plandaki performans ve ölçek deneyi de yok. Bu nedenle klinik nihai yayın kararı BEKLET olarak kalır. Hazırlanmış ders materyali kullanılabilir; öğrenciler eksik kanıtın kararı nasıl etkilediğini tartışır.
+Öğrenci çalışma yönergesi · Güncelleme: 26 Kasım 2026.
 
-## Ekranda göster ve uygula
-44 tablosunda her kapının hangi sürüme ve kanıta bağlı olduğunu gösterin. 45 tablosunda planlanan performans çalışması ile H8’de gerçekten yapılan paket doğrulamasını karşılaştırın. Test koşusunun süresini insan emeği diye yazmayın. Yayın için hangi ek çalışma, hangi sorumlu ve hangi kabul ölçütü gerektiğini sınıfta belirleyin; gerçek atama yapılmadan isim uydurmayın.
+## Amaç
 
-- [44 · Kalite kararı](https://github.com/pozelll/-klinik-randevu-ogretmen/blob/docs/h9-gitflow-teslim/hafta09/docs/44-surum-kalite-karari.md)
-- [45 · Plan-gerçekleşen](https://github.com/pozelll/-klinik-randevu-ogretmen/blob/docs/h9-gitflow-teslim/hafta09/docs/45-plan-gerceklesen.md)
+Kendi sürümünüz için kalite kararını mevcut kanıtlara dayandırın. Eksik ölçümü, açık işi ve kararın sınırını görünür kılın.
 
-## Öğrenciye soru
-**Bütün otomatik kontroller başarılıysa neden BEKLET diyebiliriz?**
+## Grup çalışması
 
-Beklenen açıklama: Kontroller yalnız tanımlanan kapsamı ölçer. Ölçülmemiş bir gereksinim veya yapılmamış bağımsız inceleme kendiliğinden tamamlanmaz.
+1. [Tarihsel rc.1 kalite kararını](44-surum-kalite-karari.md) ve [plan–gerçekleşen tablosunu](45-plan-gerceklesen.md) inceleyin. Bunların hangi hazırlık anını anlattığını kaydedin.
+2. [Güncel rc.2 kapanış kaydıyla](https://github.com/pozelll/-klinik-randevu-ogretmen/blob/main/hafta09/docs/49-kapanis-raporu.md) karşılaştırın. Sonradan eklenen klavye ve otomatik performans kanıtlarını, hâlâ tamamlanmamış insan kabulünden ayırın.
+3. Kendi adayınız için işlevsel test, paket bütünlüğü, NFR, bağımsız inceleme ve alıcı kabulünü ayrı satırlara yazın. Her satıra aynı adaya ait kaynak commit'i ve kanıt bağlantısını ekleyin.
+4. Eksik satırlar için yapılacak işi, gerçekten atanmış sorumluyu ve tamamlanma ölçütünü belirleyin. Ölçülmemiş sonuç veya atanmamış kişi için başarı/isim üretmeyin.
+5. Yayın kararınızı gerekçelendirin. Tahmini emek, gerçek insan emeği, otomasyon süresi ve takvim süresini ayrı alanlarda kaydedin.
 
-## Grubun yapacağı iş
-Kendi kalite kapılarınızı ve yayın kararınızı gerekçelendirin. Tahmin ile gerçekleşen emeği ayrı yazın.
+## Teslim edilecek çıktı
 
-Kontrol: Karar kanıta dayanıyor; eksik kapı, sonraki iş ve belirsizlik açık.
+Kalite kapıları tablosu, her kapıya bağlı kanıt, gerekçeli yayın kararı ve sorumlusu/ölçütü belirtilmiş açık iş listesi.
 
-## Hazırlığın durumu
-Klinik nihai yayın: BEKLET. NFR, performans ve inceleme açık.
+## Çıktı kontrolü
 
-[Görev #20](https://github.com/pozelll/-klinik-randevu-ogretmen/issues/20) · [PR #21](https://github.com/pozelll/-klinik-randevu-ogretmen/pull/21). Öğretmen örneği; gerçek öğrenci katkısı veya bağımsız inceleme iddiası değildir.
+- Karar verilen adayın tam kaynak kimliği bellidir.
+- Kanıtın yöntemi ve kapsamı açıktır; farklı adayın sonucu doğrudan aktarılmamıştır.
+- Eksik kapılar ve sonraki işler kayıtlıdır.
+
+Klinik örnekte rc.2 için teknik klavye ve otomatik performans sonuçları vardır. NFR-01 insan kullanılabilirliği, NFR-02'nin özgün ekran kaydı yöntemi, bağımsız insan incelemesi ve alıcı kabulü [50 numaralı protokolde](https://github.com/pozelll/-klinik-randevu-ogretmen/blob/main/hafta09/docs/50-insan-kabul-oturumu.md) tamamlanacak işlerdir. Bu kayıtlar tamamlanmadığı için nihai klinik yayın kararı **BEKLET** olarak kalır.
+
+[Önceki adım](06-kanit.md) · [Sonraki adım: Devir](08-devir.md)

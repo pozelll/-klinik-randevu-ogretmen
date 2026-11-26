@@ -1,6 +1,8 @@
 # 45 - Plan ve gerçekleşen
 
-Referans: [26 Ekim 2026 planı](https://docs.google.com/document/d/1HFdiLmDmVWLQpftQFj_tgF2BcCujXHZ2/edit). Durum: 22 Kasım 2026 öğretmen hazırlığı. Tablodaki “gerçekleşen” öğrenci çalışması veya insan emeği ölçümü değildir.
+> 22 Kasım 2026 kapanış güncellemesi: PR zinciri main’e birleştirildi; rc.2, gerçek klavye ve performans sonuçları [49 numaralı raporda](https://github.com/pozelll/-klinik-randevu-ogretmen/blob/main/hafta09/docs/49-kapanis-raporu.md) bulunur. Aşağıdaki rc.1 hazırlık kayıtları ve açık PR durumları birleştirme öncesine aittir. Bağımsız insan incelemesi ve kabulü birleştirme işlemiyle tamamlanmış sayılmaz; açık işler [insan kabul oturumu ve formlarında](https://github.com/pozelll/-klinik-randevu-ogretmen/blob/main/hafta09/docs/50-insan-kabul-oturumu.md) izlenir.
+
+Referans: 26 Ekim 2026 ders planı. Durum: 22 Kasım 2026 öğretmen hazırlığı. Tablodaki “gerçekleşen” öğrenci çalışması veya insan emeği ölçümü değildir.
 
 | Plan / hedef | Mevcut hazırlıkta gerçekleşen | Fark / sonraki iş |
 |---|---|---|
@@ -12,7 +14,7 @@ Referans: [26 Ekim 2026 planı](https://docs.google.com/document/d/1HFdiLmDmVWLQ
 | H9 kalite kararı | Kanıt ve eksik kapılara göre BEKLET | Ölçüm + inceleme sonrası güncellenecek |
 | H9 kapsam ve devretme | 14 satırlık mevcut kanıt tablosu, grup formu, PDF/ZIP | Öğrenci kazanımı ve alıcı kabulü derste doğrulanacak |
 
-H4 [ilk iş planı](../../hafta04/planlar/01-ilk-is-plani.md) tarihsel tahmindir. Bu hazırlıkta kişi başına fiilî başlangıç/bitiş veya emek kaydı tutulmadı. CI süresi, takvimde geçen süre ve insan emeği farklı ölçülerdir; tahmin/gerçekleşen oranı uydurulmadı.
+H4 [ilk iş planı](https://github.com/pozelll/-klinik-randevu-ogretmen/blob/main/hafta04/planlar/01-ilk-is-plani.md) tarihsel tahmindir. Bu hazırlıkta kişi başına fiilî başlangıç/bitiş veya emek kaydı tutulmadı. CI süresi, takvimde geçen süre ve insan emeği farklı ölçülerdir; tahmin/gerçekleşen oranı uydurulmadı.
 
 | Öğrencinin kaydedeceği alan | Durum |
 |---|---|

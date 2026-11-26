@@ -1,25 +1,38 @@
-# YAZ325 — 7. hafta: Kontrollü Değişiklik Yönetimi
+# YAZ325 - 7. hafta: Kontrollü Değişiklik Yönetimi
 
-Sekiz basamaklı öğretmen örneği. H5–H6 çalışmasının devamıdır; resmî ders izlencesi yerine yeni bir müfredat kararı değildir.
+Öğrenci çalışma rehberi · Güncelleme: 26 Kasım 2026.
 
-Dal: `feat/h7-saat-secimi-yardimi` · [PR #18](https://github.com/pozelll/-klinik-randevu-ogretmen/pull/18) · [Görev #10](https://github.com/pozelll/-klinik-randevu-ogretmen/issues/10)
+Bu hafta önceki iş listesinden bir değişiklik seçerek kapsamını, etkilerini, kabul koşullarını ve testlerini hazırlayacaksınız. Örnek çalışma, 5. ve 6. haftadaki modüler uygulamaya saat seçimi yardımı ekler.
 
-| Basamak | Ekranda açılacak belge | Hazırlık sonucu |
+Örnek dal: `feat/h7-saat-secimi-yardimi` · [Görev #10](https://github.com/pozelll/-klinik-randevu-ogretmen/issues/10) · [PR #18](https://github.com/pozelll/-klinik-randevu-ogretmen/pull/18)
+
+Örnek test sonuçları 22 Kasım 2026 tarihli çalıştırmalara aittir. PR #18 aynı gün `main` dalına birleştirilmiştir. Her grup kendi sürümünü, katkılarını ve gerçek sonuçlarını ayrıca kaydeder.
+
+## Çalışma adımları
+
+| Adım | Çalışma yönergesi | Grubun üreteceği çıktı |
 |---|---|---|
-| 1 | [Ertelenen işi seçtik](docs/01-baslangic.md) | H3-03, 7. haftanın işine dönüştü. |
-| 2 | [Değişikliği sınırladık](docs/02-degisiklik-karti.md) | H7-DK-01: yardım metni ve durumu. |
-| 3 | [Etkiyi ve riski gördük](docs/03-etki-ve-plan.md) | Ürün değişikliği iki dosyada. |
-| 4 | [Kabulü gözlenebilir yaptık](docs/04-kabul-kosullari.md) | H7-B01–B05: beş kabul kontrolü. |
-| 5 | [Yardımı uyguladık](docs/05-uygulama.md) | Seçim ve onay adımı ayrılıyor. |
-| 6 | [Yeni ve eski akışı sınadık](docs/06-test-kaniti.md) | 30/30 Node · 14/14 Chromium geçti. |
-| 7 | [İncelemeye sunduk](docs/07-pr-ve-inceleme.md) | H7 → H6: taslak PR #18 açık. |
-| 8 | [Sonraki haftaya bağladık](docs/08-devretme.md) | İzlenebilir değişiklik paketi hazır. |
+| 1 | [Ertelenen işin seçimi](docs/01-baslangic.md) | Önceki karar, yeni seçim gerekçesi ve başlangıç commit'i. |
+| 2 | [Değişiklik kartı](docs/02-degisiklik-karti.md) | Sorun, kapsam, kapsam dışı işler ve kabul bağlantısı. |
+| 3 | [Etki ve risk planı](docs/03-etki-ve-plan.md) | Değişen dosyalar, etkiler, riskler ve kontroller. |
+| 4 | [Kabul koşulları](docs/04-kabul-kosullari.md) | Gözlenebilir sonuçları tanımlayan senaryolar. |
+| 5 | [Değişikliğin uygulanması](docs/05-uygulama.md) | Çalışan değişiklik, durum geçişi ve commit kaydı. |
+| 6 | [Kabul ve regresyon testleri](docs/06-test-kaniti.md) | Kendi sürümünüzün test sonuçları ve yürütüm bilgileri. |
+| 7 | [PR ve inceleme](docs/07-pr-ve-inceleme.md) | Değişiklik açıklaması, inceleme kapsamı ve gerçek sonuç. |
+| 8 | [İzlenebilirlik ve devir](docs/08-devretme.md) | Gereksinim, görev, kod ve kanıt bağlantıları; açık işler. |
 
-## Materyal
+## Grubun iş bölümü
 
-- [Tek sayfalık, tıklanabilir süreç PDF'i](dagitim/YAZ325_Hafta_07_Surec_Infografik_Aktif_Linkli.pdf)
+Değişiklik analizi, uygulama, kabul kontrolleri ve regresyonu [grup büyüklüğüne göre](https://github.com/pozelll/-klinik-randevu-ogretmen/blob/main/docs/11-grup-buyuklugune-gore-yonlendirme.md) paylaşın. Her üyenin sorumluluğunu ve gerçek katkısını [grup kaydına](sablonlar/grup-kaydi.md) yazın. İncelemeyi ilgili içeriğin yazımına katılmamış bir üye yapar; ortak yazılan bölüm için gerekirse grup dışından inceleme planlanır.
+
+## Çalışma materyali
+
+- [Tek sayfalık süreç infografiği](dagitim/YAZ325_Hafta_07_Surec_Infografik_Aktif_Linkli.pdf)
+- [Gereksinim, değişiklik ve test eşleştirmesi](docs/09-izlenebilirlik.md)
 - [Grubun kendi çalışma formu](sablonlar/grup-kaydi.md)
 
-Her basamakta önce soruyu sorun, ilgili dosyayı açın, gerçek sonucu gösterin; sonra grup kendi uygulamasını yapsın. Otomatik kontroller bağımsız insan incelemesi veya kullanıcı kabulü değildir. Öğrenci kendi sürümünü ve gerçek katkısını kaydeder.
+## Örnek sonuçların kapsamı
 
-Bağımsız inceleme, önceki PR bağımlılıklarının çözümü, birleştirme ve NFR-01–NFR-03 ölçümleri açık. Test süresi gerçekleşmiş insan emeği değildir.
+22 Kasım 2026 tarihli H7 kayıtlarında 30 Node testi ve 14 Chromium senaryosu başarılıdır. Tarayıcı kontrollerinin 9'u önceki davranışları, 5'i yeni saat yardımını kapsar. Bu sayılar farklı gereksinimlerin sayısı veya NFR ölçüm sonucu değildir.
+
+Otomatik test, başka kişinin incelemesi ve kullanıcı kabulü ayrı kaydedilir. Test çalışma süresi grup emeğinin ölçümü değildir; grubunuzun gerçekleşen süresini ayrıca yazın. İnfografikteki sürüm ve durum bilgileri hazırlandığı tarihin kaydıdır; güncel birleştirme durumu PR sayfasında bulunur.

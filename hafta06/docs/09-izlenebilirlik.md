@@ -1,6 +1,6 @@
 # H6 - Gereksinimden kanıta izlenebilirlik
 
-Hazırlık: 22 Kasım 2026. Sonuçlar öğretmen örneğinin otomatik kontrolleridir.
+Bu tablo 22 Kasım 2026 tarihli H6 örnek çalışmasının hazırlık kayıtlarını gösterir. Test sonuçları, ölçüm kapsamı ve bekleyen işler o hazırlık anına aittir; grubunuzun kendi sonuçları değildir. PR #16 aynı gün main dalına birleştirilmiştir. Güncel inceleme durumu [PR kaydındadır](https://github.com/pozelll/-klinik-randevu-ogretmen/pull/16).
 
 | Gereksinim / koşul | Test | Gerçek kanıt |
 |---|---|---|

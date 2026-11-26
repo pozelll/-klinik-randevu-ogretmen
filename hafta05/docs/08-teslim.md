@@ -1,34 +1,39 @@
-# 5. hafta / 8. basamak - Teslim ve devamı belirledik
+# 5. hafta / 8. adım - Teslim paketi
 
-Hazırlık tarihi: 22 Kasım 2026. Öğretmen örneği; öğrenci katkısı veya bağımsız kişi incelemesi değildir.
+Öğrenci çalışma yönergesi · Güncelleme: 26 Kasım 2026.
 
-## Derste ne söyleyeceğim?
+## Amaç
 
-Teslimde çalışan dosyalar, tekrar edilebilir test ve doğru sürüm bağlantısı birlikte bulunmalıdır. Öğretmen örneği öğrencinin kendi katkısı değildir. H4’teki 9 saat ve 19 kişi-saat gerçekleşmiş süreye dönüşmez; bunlar planlama tahminleridir.
+Çalışan uygulamayı, test sonuçlarını ve grup katkılarını aynı sürüme bağlayan bir teslim hazırlamak.
 
-## Ekranda ne açacağım, ne yapacağım?
+## Teslim listesi
 
-hafta05/README.md üzerinden dosyaları açın. Kullanılan kod commit’ini ve kaynak özetlerini gösterin. Sonraki hafta H4-DK-01’deki yedi satırın ayrı veriyle yürütüleceğini, regresyonların ve otomatik GitHub kontrolünün ekleneceğini anlatın.
+- Başlangıç commit'i, çalışma dalı ve görev bağlantısı.
+- Çalışan `index.html`, `src/` klasörü ve ilgili diğer dosyalar.
+- Arayüz, iş kuralları ve veri erişimi sorumluluklarının dosya bağlantıları.
+- Kendi çalıştırmanızın test komutu, ortamı, tarihi, commit'i ve gerçek sonucu.
+- Her üyenin dosya ve commit üzerinden gösterilen katkısı.
+- Gerçekleşen incelemenin kapsamı, sonucu ve varsa düzeltme kayıtları.
+- PR bağlantısı ve teslim anındaki birleştirme durumu.
+- Gerçek çalışma süresi, tamamlanmamış işler ve sonraki çalışma için bir açık soru.
 
-- [08-teslim.md](https://github.com/pozelll/-klinik-randevu-ogretmen/blob/feat/h5-moduler-uygulama/hafta05/docs/08-teslim.md)
+Bu bilgileri [grup kaydında](../sablonlar/grup-kaydi.md) bir araya getirin. Grup üyelerinden biri dosya ve test bağlantılarını açarak teslimin kullanılan sürüme ulaştığını doğrulasın.
+
+## Süre ve kapsam kaydı
+
+4. haftadaki **9 saat / 19 kişi-saat** değerleri planlama tahminidir. Grubunuzun gerçekleşen süresini ayrıca ölçüp kaydedin. Otomatik testlerin çalışma süresi ekip emeğinin ölçümü değildir.
+
+NFR-01 kullanılabilirlik, NFR-02 yanıt süresi ve NFR-03 klavye ölçümleri için yalnızca gerçekten yaptığınız ölçümleri yazın; yapılmayanları açık bırakın.
+
+## Tarihli örnek ve sonraki hafta
+
+22 Kasım 2026 tarihli H5 örneğinde uygulama dosyaları, 8/8 Node test sonucu ve kaynak dosya özetleri kayıtlıdır. Bu tarihli kayıt, grubunuzun kendi çalışma ve inceleme kaydının yerine kullanılmaz.
+
+6. haftada H4-DK-01 karar tablosunun yedi satırı ayrı başlangıç verileriyle sınanır; regresyon testleri ve otomatik GitHub kontrolleri ele alınır.
+
+## Kaynaklar
+
 - [Kaynak sürüm kaydı](https://github.com/pozelll/-klinik-randevu-ogretmen/blob/feat/h5-moduler-uygulama/hafta05/kanitlar/kaynak-surum.json)
+- [H5 dalındaki teslim yönergesi](https://github.com/pozelll/-klinik-randevu-ogretmen/blob/feat/h5-moduler-uygulama/hafta05/docs/08-teslim.md)
 - [Görev #13](https://github.com/pozelll/-klinik-randevu-ogretmen/issues/13)
-
-## Kontrol sorusu
-
-Açık işler açık mı yazılmış? Gerçek ekip süresi uydurulmuş mu? İlk dört haftanın kayıtları korunuyor mu?
-
-**Öğrenciye soru:** Yeni öğrendiğimiz ayrımı tek cümleyle nasıl anlatırız?
-
-**Beklenen açıklama:** Arayüz kullanıcıyla konuşur, iş kuralları karar verir, veri erişimi sonucu saklar.
-
-## Öğrencinin yapacağı iş
-
-Kendi teslim listene başlangıç sürümü, dosyalar, test sonucu, katkı ve inceleme durumunu ekle. Sonraki iş için bir açık soru yaz.
-
-## Öğretmen örneğinin gerçek durumu
-
-Uygulama ve öğretim paketi hazır. NFR ölçümleri ve bağımsız inceleme bekliyor.
-
-Görev: [#13](https://github.com/pozelll/-klinik-randevu-ogretmen/issues/13) · İnceleme paketi: [PR #15](https://github.com/pozelll/-klinik-randevu-ogretmen/pull/15).
-Bağımsız inceleme ve birleştirme bekliyor. Gerçek isim, öğrenci çalışması veya inceleme sonucu uydurulmadı.
+- [PR #15 ve güncel durumu](https://github.com/pozelll/-klinik-randevu-ogretmen/pull/15)

@@ -1,38 +1,23 @@
-# 7. hafta / 6. basamak — Yeni ve eski akışı sınadık
+# 7. hafta / 6. adım - Kabul ve regresyon testleri
 
-Öğretmen örneği · 22 Kasım 2026
+Öğrenci çalışma yönergesi · Güncelleme: 26 Kasım 2026.
 
-## Derste anlat
+## Amaç
 
-Yeni özelliğin testinin geçmesi eski davranışın korunduğunu tek başına göstermez. Bu nedenle iptal, oluşturma, rol, saklama ve dar ekran akışlarını da yeniden çalıştırdık. Test kaydı hangi sürümde, hangi ortamda ve neyi kontrol ettiğimizi açıklamalıdır.
+Yeni davranışı ve önceki akışların korunduğunu sınamak; her sonucu test edilen sürüme ve çalıştırma ortamına bağlamak.
 
-## Ekranda göster ve uygula
+Kabul testleri yeni değişikliği, regresyon testleri önceki davranışları kontrol eder. Farklı düzeylerdeki testler aynı gereksinimi sınayabildiğinden test sayısı doğrudan gereksinim sayısı olarak yorumlanmaz.
 
-CI kaydını ve tarayıcı sonuçlarını açın. H7-B02’nin seçim öncesi/sonrası veriyi karşılaştırdığını gösterin. 30 Node testinin H5’ten gelen 8, karar tablosundan 7 ve regresyondan 15 testten oluştuğunu hatırlatın. Chromium sürümünü ve kaynak dosyaların SHA-256 özetlerini bulun.
+## Grup çalışması
 
-- [06-test-kaniti.md](https://github.com/pozelll/-klinik-randevu-ogretmen/blob/feat/h7-saat-secimi-yardimi/hafta07/docs/06-test-kaniti.md)
-- [Tarayıcı sonuçları](https://github.com/pozelll/-klinik-randevu-ogretmen/blob/feat/h7-saat-secimi-yardimi/hafta07/kanitlar/tarayici-sonuclari.json)
-- [Başarılı CI koşusu](https://github.com/pozelll/-klinik-randevu-ogretmen/actions/runs/45020807054)
-
-## Öğrenciye soru
-
-**30 + 14 sonucu 44 farklı gereksinimin sağlandığı anlamına gelir mi?**
-
-Beklenen açıklama: Hayır. Bunlar farklı katmanlardaki kontrollerdir; aynı davranışı birden çok düzeyde sınayabilirler.
-
-## Grubun yapacağı iş
-
-Testlerini kendi sürümünde çalıştır. Başarısızlığı saklama; düzeltme commit’i ve yeniden kontrol sonucunu ekle.
-
-Kontrol: Her “geçti” ifadesinin yürütüm kaydı ve kaynak sürümü bulunuyor mu?
-
-## Hazırlığın gerçek durumu
-
-30/30 Node · 14/14 Chromium geçti. Sonuçlar kaynak commit’iyle bağlı.
-
-[Görev #10](https://github.com/pozelll/-klinik-randevu-ogretmen/issues/10) · [PR #18](https://github.com/pozelll/-klinik-randevu-ogretmen/pull/18)
+1. Testleri kendi çalışma sürümünüzde çalıştırın.
+2. Komutu, tarihi, tam commit'i ve araç sürümlerini kaydedin.
+3. Başarılı ve başarısız sonuçları gerçek çıktıdan aktarın. Başarısızlık varsa düzeltme commit'ini ve yeniden kontrol sonucunu ekleyin.
+4. Yerel test yürütümünü ve GitHub Actions koşusunu ayrı kaydedin.
 
 ## Yeniden çalıştırma
+
+Proje kökünde:
 
 ```bash
 node --test --test-reporter=tap tests/*.test.cjs
@@ -41,6 +26,24 @@ python -m playwright install chromium
 python tests/browser_smoke.py
 ```
 
-Linux CI, tarayıcı sistem bağımlılıkları için `python -m playwright install --with-deps chromium` kullanır. Varsayılan test komutu eski kanıt dosyalarını değiştirmez. Kendi kaydınız için `--evidence-dir kendi-kanit-klasorunuz` verin.
+Linux CI, tarayıcı sistem bağımlılıkları için `python -m playwright install --with-deps chromium` kullanır. Varsayılan test komutu eski kanıt dosyalarını değiştirmez. Kendi tarayıcı kaydınızı üretmek için:
 
-Gerçek koşu: [45020807054](https://github.com/pozelll/-klinik-randevu-ogretmen/actions/runs/45020807054), kaynak `bd5fa3fb2c35d1c11864eed982fdbc20d539d58a`, Chromium 157.0.8103.0. 30/30 Node ve 14/14 tarayıcı kontrolü başarılı. Node TAP dosyası çalışma ortamındaki gerçek yürütümdür; CI özeti ve tarayıcı JSON'u GitHub Actions yürütümündendir. NFR-01–NFR-03 ölçümleri bu sayılara dahil değildir.
+```bash
+python tests/browser_smoke.py --evidence-dir kendi-kanit-klasorunuz
+```
+
+## Teslim edilecek çıktı
+
+Test edilen commit, komut, ortam, tarih, gerçek sonuç dosyası ve varsa düzeltme/yeniden kontrol bağlantıları.
+
+## Tarihli örnek sonuçlar
+
+22 Kasım 2026 tarihli örnek: **30/30 Node testi ve 14/14 Chromium senaryosu başarılıdır.** Node testleri 8 H5, 7 karar tablosu ve 15 regresyon testinden oluşur. Tarayıcıda 9 önceki senaryoya 5 H7 senaryosu eklenmiştir. NFR-01–NFR-03 ölçümleri bu sayılara dahil değildir.
+
+- Kaynak: `bd5fa3fb2c35d1c11864eed982fdbc20d539d58a`.
+- Chromium: `157.0.8103.0`.
+- [GitHub Actions koşusu: 45020807054](https://github.com/pozelll/-klinik-randevu-ogretmen/actions/runs/45020807054).
+- [Tarayıcı sonuçları ve kaynak dosya özetleri](https://github.com/pozelll/-klinik-randevu-ogretmen/blob/feat/h7-saat-secimi-yardimi/hafta07/kanitlar/tarayici-sonuclari.json).
+- [Node TAP kaydı](../kanitlar/node-test-sonuclari.tap) yerel çalışma ortamındaki gerçek yürütümdür; CI özeti ve tarayıcı JSON'u GitHub Actions yürütümündendir.
+
+[Görev #10](https://github.com/pozelll/-klinik-randevu-ogretmen/issues/10) · [PR #18 ve güncel durumu](https://github.com/pozelll/-klinik-randevu-ogretmen/pull/18)

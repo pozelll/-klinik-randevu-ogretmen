@@ -1,34 +1,38 @@
-# 5. hafta / 5. basamak - Arayüzü bağladık
+# 5. hafta / 5. adım - Arayüz bağlantısı
 
-Hazırlık tarihi: 22 Kasım 2026. Öğretmen örneği; öğrenci katkısı veya bağımsız kişi incelemesi değildir.
+Öğrenci çalışma yönergesi · Güncelleme: 26 Kasım 2026.
 
-## Derste ne söyleyeceğim?
+## Amaç
 
-Arayüz kullanıcı seçimini alır, onay sorar ve sonuçları gösterir. Vazgeçildiğinde iptal isteği göndermez. Onaylı istekte kararın sonucunu servisten alır. Başarı mesajında saatin uygunluğu artık gerçek BR-01 sonucuna bağlıdır.
+Kullanıcı seçimlerini ve onayını iş kuralları bileşenine bağlamak; işlem ve saklama sonuçlarını arayüzde göstermek.
 
-## Ekranda ne açacağım, ne yapacağım?
+Arayüz kullanıcı seçimini alır, onay ister ve sonucu gösterir. Kullanıcı vazgeçtiğinde iptal isteği gönderilmez. Onay verdiğinde işlem sonucu iş kuralları bileşeninden alınır. Saat uygunluğu mesajı BR-01'in sonucuna dayanır.
 
-Depoyu tamamen indirin ve ayıklayın. index.html dosyasını src/ klasörü yanında tutarak tarayıcıda açın. R001 iptal penceresinde önce İptal ile vazgeçin, sonra Tamam ile onaylayın. Ekranı gösterirken öğrencinin kendi gözlemini bekleyin; bu iki işlemin farklı sonuçlarını kaydettirin.
+## Uygulamayı çalıştırma
+
+1. Çalışacağınız dalın tamamını indirin ve arşivi ayıklayın.
+2. `index.html` dosyasını `src/` klasörüyle aynı proje dizininde tutun.
+3. `index.html` dosyasını tarayıcıda açın.
+
+Uygulama dört yerel JavaScript dosyasını `demo-data`, `repository`, `rules`, `ui` sırasında yükler. Dosyaları paylaşırken proje klasörünü birlikte aktarın.
+
+## Grup çalışması
+
+Kendi uygulamanızda iptal işlemini iki ayrı senaryoyla çalıştırın:
+
+- Onay penceresinde **İptal** seçeneğiyle vazgeçme.
+- Onay penceresinde **Tamam** seçeneğiyle iptali onaylama.
+
+Her senaryonun başlangıç kaydını, gerçek sonucunu, kullanılan sürümü ve tarihini ayrı kaydedin. Önceki haftanın kanıtı yerine bu sürümdeki çalıştırmanızın sonucunu ekleyin. Arayüzdeki saklama bildiriminin veri erişimi bileşeninden dönen sonuçla uyumlu olmasını sağlayın.
+
+## Örnek uygulama kaydı
+
+22 Kasım 2026 tarihli H5 çalışmasında arayüz, iş kuralları ve veri erişimi aynı uygulama akışında bağlanmıştır. Örnek uygulama `index.html` ile `src/` klasörü birlikte kullanılarak çalışır.
+
+## Kaynaklar
 
 - [index.html](https://github.com/pozelll/-klinik-randevu-ogretmen/blob/feat/h5-moduler-uygulama/index.html)
 - [src/ui.js](https://github.com/pozelll/-klinik-randevu-ogretmen/blob/feat/h5-moduler-uygulama/src/ui.js)
-- [05-arayuz.md](https://github.com/pozelll/-klinik-randevu-ogretmen/blob/feat/h5-moduler-uygulama/hafta05/docs/05-arayuz.md)
-
-## Kontrol sorusu
-
-Klasik betikler demo-data, repository, rules, ui sırasında yükleniyor mu? Arayüz randevu dizisine doğrudan yazıyor mu? Saklama durumu görünür mü?
-
-**Öğrenciye soru:** Yalnız index.html dosyasını arkadaşına göndermek neden artık yeterli değil?
-
-**Beklenen açıklama:** JavaScript dört yerel dosyadan yüklenir. src/ klasörü eksikse arayüz davranışı çalışmaz.
-
-## Öğrencinin yapacağı iş
-
-Kendi dalını tamamen indirip aç. Vazgeçme ve onay sonuçlarını ayrı kaydet; eski H3 kanıtını yeni test diye kullanma.
-
-## Öğretmen örneğinin gerçek durumu
-
-Üç sorumluluk çalışan akışta birleşti. index.html ve src/ klasörü birlikte açılır.
-
-Görev: [#13](https://github.com/pozelll/-klinik-randevu-ogretmen/issues/13) · İnceleme paketi: [PR #15](https://github.com/pozelll/-klinik-randevu-ogretmen/pull/15).
-Bağımsız inceleme ve birleştirme bekliyor. Gerçek isim, öğrenci çalışması veya inceleme sonucu uydurulmadı.
+- [H5 dalındaki arayüz yönergesi](https://github.com/pozelll/-klinik-randevu-ogretmen/blob/feat/h5-moduler-uygulama/hafta05/docs/05-arayuz.md)
+- [Görev #13](https://github.com/pozelll/-klinik-randevu-ogretmen/issues/13)
+- [PR #15 ve güncel durumu](https://github.com/pozelll/-klinik-randevu-ogretmen/pull/15)

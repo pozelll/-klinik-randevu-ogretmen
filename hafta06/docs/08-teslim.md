@@ -1,34 +1,27 @@
-# 6. hafta / 8. basamak - Kanıt ve teslimi bağladık
+# 6. hafta / 8. basamak - İzlenebilirlik ve teslim
 
-Hazırlık tarihi: 22 Kasım 2026. Öğretmen örneği; öğrenci katkısı veya bağımsız kişi incelemesi değildir.
+## Amaç
 
-## Derste ne söyleyeceğim?
+Bir gereksinimden ilgili teste, gerçek sonuç kaydına ve test edilen uygulama sürümüne ulaşılmasını sağlayın.
 
-İzlenebilirlik, bir gereksinim için hangi testin çalıştığını ve kanıtın nerede olduğunu bulmamızı sağlar. Çok sayıda test, doğru beklentiye bağlanmamışsa yeterli değildir. Teslim, kanıtların hangi uygulama sürümüne ait olduğunu da göstermelidir.
+## Çalışma
 
-## Ekranda ne açacağım, ne yapacağım?
+1. [Örnek izlenebilirlik tablosunu](09-izlenebilirlik.md) inceleyin. FR-03, karar satırları ve test kanıtı arasındaki bağlantıyı takip edin.
+2. Kendi grubunuzun seçtiği gereksinimi test kimliği, kaynak commit ve gerçek kanıt dosyasıyla eşleştirin.
+3. [Grup kayıt şablonuna](../sablonlar/grup-kaydi.md) gerçek katkıları, çalıştırma tarihlerini, inceleme durumunu ve açık işleri yazın.
+4. Başka bir gruptan bir gereksinimden başlayarak test kanıtına ulaşmayı denemesini isteyin. Eksik veya yanlış bağlantıları düzeltin.
 
-09-izlenebilirlik.md tablosunda FR-03’ten karar satırına, test dosyasına ve kanıt JSON’una gidin. ALT-01’in tarayıcı vazgeçme testiyle ilişkisini gösterin. Sonra açık işleri ve PR bağımlılık sırasını okuyun. Öğrenciler kendi kayıtlarını boş şablona işler.
+## Teslim edilecek çıktı
 
-- [09-izlenebilirlik.md](https://github.com/pozelll/-klinik-randevu-ogretmen/blob/test/h6-karar-tablosu/hafta06/docs/09-izlenebilirlik.md)
-- [08-teslim.md](https://github.com/pozelll/-klinik-randevu-ogretmen/blob/test/h6-karar-tablosu/hafta06/docs/08-teslim.md)
-- [Grup kayıt şablonu](https://github.com/pozelll/-klinik-randevu-ogretmen/blob/test/h6-karar-tablosu/hafta06/sablonlar/grup-kaydi.md)
+- Gereksinim-test-kanıt eşleştirmesi.
+- Test edilen commit ve kullanılan dosyalar.
+- Çalıştırma komutları, araç sürümleri, tarih ve gerçek sonuçlar.
+- Grup katkıları ve gerçek çalışma süreleri.
+- PR, kişi incelemesi, bulgular ve varsa düzeltme kayıtları.
+- Tamamlanmamış işler ve sonraki adım.
 
-## Kontrol sorusu
+## Örnek sonuçların kapsamı
 
-Aynı sonuç iki farklı çalıştırma gibi sunuluyor mu? Kaynak dosya özetleri uyuşuyor mu? Gerçek süre, katkı ve bağımsız inceleme boşlukları açık mı?
+22 Kasım 2026 tarihli H6 kayıtları 30 Node testi ve 9 tarayıcı senaryosu içerir. Aynı sonucu farklı çalıştırmalar gibi çoğaltmayın; kendi sürümünüzün sonuçlarını ayrıca kaydedin. Otomatik test, kişi incelemesi ve NFR ölçümlerinin durumları ayrı gösterilmelidir.
 
-**Öğrenciye soru:** Bu hafta tamamladığımız işi tek cümleyle nasıl anlatırız?
-
-**Beklenen açıklama:** Kararlarımızı ayrı veriyle sınadık; gerçek sonuçları sürüm, gereksinim ve inceleme bağlantılarıyla kaydettik.
-
-## Öğrencinin yapacağı iş
-
-Tesliminde bir gereksinimden test kanıtına ulaşan bağlantı zincirini başka bir gruba kontrol ettir.
-
-## Öğretmen örneğinin gerçek durumu
-
-30 Node + 9 tarayıcı kontrolü kayıtlı. Birleştirme, bağımsız inceleme ve NFR’ler bekliyor.
-
-Görev: [#14](https://github.com/pozelll/-klinik-randevu-ogretmen/issues/14) · İnceleme paketi: [PR #16](https://github.com/pozelll/-klinik-randevu-ogretmen/pull/16).
-Bağımsız inceleme ve birleştirme bekliyor. Gerçek isim, öğrenci çalışması veya inceleme sonucu uydurulmadı.
+[Görev #14](https://github.com/pozelll/-klinik-randevu-ogretmen/issues/14) · [PR #16 ve güncel durumu](https://github.com/pozelll/-klinik-randevu-ogretmen/pull/16) · [Yeniden çalıştırma rehberi](10-yeniden-calistirma.md)

@@ -1,25 +1,35 @@
-# 9. hafta / 3. basamak - Çakışmayı anlamıyla çöz
+# 9. hafta / 3. adım - Çakışmayı anlamıyla çöz
 
-## Derste anlat
-Git bir çakışma gösterdiğinde ürün kararını bizim vermemiz gerekir. Sadece bir tarafı kabul etmek diğer ekibin ihtiyacını kaybettirebilir. Bu örnekte duyuru iki hedefi de anlatmalı; hasta ve personel notları ayrı ayrı korunmalıdır. Çözümden sonra geçerli JSON, doğru içerik ve birleştirme geçmişini birlikte kontrol ederiz.
+Öğrenci çalışma yönergesi · Güncelleme: 26 Kasım 2026.
 
-## Ekranda göster ve uygula
-Ham çakışma dosyasında HEAD ve develop bölümlerini gösterin. komut-kaydi.json içinde merge çıkışının 1, çözülmemiş yolun panel/surum.json olduğunu bulun. 03-cozum.json ile karşılaştırın. Çözüm commit’ini git show ile açın; iki ebeveyn içerdiğini gösterin. H9-G03–G05 çakışmanın oluştuğunu, hatalı dosyanın reddedildiğini ve iki notun korunduğunu doğrular.
+## Amaç
 
-- [Çakışmanın ham kaydı](https://github.com/pozelll/-klinik-randevu-ogretmen/blob/docs/h9-gitflow-teslim/hafta09/kanitlar/cakisma-oncesi-cozulmemis.txt)
-- [40 · Çözüm ve kontrol](https://github.com/pozelll/-klinik-randevu-ogretmen/blob/docs/h9-gitflow-teslim/hafta09/docs/40-feature-ve-cakisma-yonetimi.md)
+Çakışmayı iki ihtiyacı da koruyacak biçimde çözün. Dosyanın biçimini, içerik kararını ve birleştirme geçmişini birlikte doğrulayın.
 
-## Öğrenciye soru
-**Çakışma işaretleri silindi ve JSON okunuyor. İş bitti mi?**
+## Grup çalışması
 
-Beklenen açıklama: Henüz değil. İki ihtiyacın da korunması gerekir. Biçim doğruluğu ile içerik doğruluğu farklı kontrollerdir.
+1. Kendi deney klasörünüzdeki `cakisma-oncesi-cozulmemis.txt` dosyasını açın. İki tarafın değiştirdiği alanı ve çakışma işaretlerini belirleyin. [Paylaşılan ham kayıt](../kanitlar/cakisma-oncesi-cozulmemis.txt) karşılaştırma örneğidir.
+2. Aynı koşunun `komut-kaydi.json` dosyasında çakışmaya yol açan merge komutunu, `1` çıkış kodunu ve çözülmemiş `panel/surum.json` yolunu bulun.
+3. [Çözüm senaryosunu](../senaryolar/03-cozum.json) önceki iki katkıyla karşılaştırın. Duyurunun kapsamını, hasta notunu ve personel notunu ayrı ayrı kontrol edin.
+4. Aşağıdaki komutlarla çözüm commit'inin ebeveynlerini ve dosya içeriğini inceleyin. H9-G03–G05 sonuçlarını kendi koşunuzun raporuyla eşleştirin.
 
-## Grubun yapacağı iş
-İki katkıyı koruyan bir çözüm yazın. Neden bu metni seçtiğinizi ve kontrol sonucunu kaydedin.
+```bash
+git -C h9-deneyim/lab-deposu rev-list --parents -n 1 feature/personel-bilgi
+git -C h9-deneyim/lab-deposu show feature/personel-bilgi:panel/surum.json
+```
 
-Kontrol: İşaret yok, JSON geçerli, iki not korunmuş; çözüm gerekçesi mevcut.
+5. Grubunuzun iki katkısından doğan çakışmayı çözün. Seçtiğiniz metnin gerekçesini yazın; iki ihtiyacın korunmasını ve geçerli JSON oluşmasını kontrol ettikten sonra çözümü commit olarak kaydedin.
 
-## Hazırlığın durumu
-Çözüm: iki ebeveyn, iki katkı. Yalnız işaretleri silmek yetmez.
+## Teslim edilecek çıktı
 
-[Görev #20](https://github.com/pozelll/-klinik-randevu-ogretmen/issues/20) · [PR #21](https://github.com/pozelll/-klinik-randevu-ogretmen/pull/21). Öğretmen örneği; gerçek öğrenci katkısı veya bağımsız inceleme iddiası değildir.
+Çakışan dosya kaydı, çözülmüş dosya, çözüm gerekçesi, merge commit'i ve doğrulama sonuçları.
+
+## Çıktı kontrolü
+
+- Çakışma işareti kalmamıştır; JSON okunabilir.
+- Hasta ve personel katkıları korunmuştur.
+- Çözüm merge commit'inin iki ebeveyni ve gerekçesi kayıtlıdır.
+
+[Çözümün teknik kaydı](40-feature-ve-cakisma-yonetimi.md)
+
+[Önceki adım](02-feature.md) · [Sonraki adım: Release ve etiket](04-release.md)

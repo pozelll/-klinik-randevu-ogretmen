@@ -1,6 +1,6 @@
 # 44 - Sürüm kalite kararı
 
-> 22 Kasım 2026 kapanış güncellemesi: PR zinciri main’e birleştirildi; rc.2, gerçek klavye ve performans sonuçları [49 numaralı raporda](49-kapanis-raporu.md). Aşağıdaki rc.1 hazırlık kayıtları tarihseldir; insan kabulü hâlâ açıktır.
+> 22 Kasım 2026 kapanış güncellemesi: PR zinciri main’e birleştirildi; rc.2, gerçek klavye ve performans sonuçları [49 numaralı raporda](https://github.com/pozelll/-klinik-randevu-ogretmen/blob/main/hafta09/docs/49-kapanis-raporu.md) bulunur. Aşağıdaki rc.1 hazırlık kayıtları ve açık PR durumları birleştirme öncesine aittir. Bağımsız insan incelemesi ve kabulü birleştirme işlemiyle tamamlanmış sayılmaz; açık işler [insan kabul oturumu ve formlarında](https://github.com/pozelll/-klinik-randevu-ogretmen/blob/main/hafta09/docs/50-insan-kabul-oturumu.md) izlenir.
 
 **Karar: Klinik 0.3.0-rc.1 için nihai yayını BEKLET.** H9 eğitim materyali hazırlanmıştır; bu karar dersin yapılamayacağı anlamına gelmez. Karar sahibi ve bağımsız kabul edecek kişi henüz kaydedilmemiştir.
 

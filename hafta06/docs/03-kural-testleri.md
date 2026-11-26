@@ -1,34 +1,27 @@
-# 6. hafta / 3. basamak - Kuralları kanıtladık
+# 6. hafta / 3. basamak - İş kuralı testleri
 
-Hazırlık tarihi: 22 Kasım 2026. Öğretmen örneği; öğrenci katkısı veya bağımsız kişi incelemesi değildir.
+## Amaç
 
-## Derste ne söyleyeceğim?
+İşlemin sonuç kodunu ve veri üzerindeki etkisini birlikte sınayın. Bir ret senaryosunda önceki veri, güncelleme çağrıları ve kalıcı yazma sayısı ayrı ayrı kontrol edilir.
 
-Yalnız ret mesajını kontrol etmek yeterli değildir. Reddedilen isteğin kaydı gizlice değiştirmediğini de göstermeliyiz. Bu yüzden sonucu, önce/sonra veri eşitliğini, update çağrısını ve kalıcı yazma sayısını birlikte denetliyoruz.
+## Çalışma
 
-## Ekranda ne açacağım, ne yapacağım?
+1. Proje kökünde karar testlerini çalıştırın:
 
-node --test tests/h6-decision.test.cjs komutunu gösterin. Kanıt JSON’unda DK-K02 için updateCalls:0 ve storageWritesDuringRequest:0 alanlarını bulun. DK-K07’de status değişir; toplam kayıt sayısı, nextId ve diğer kayıtlar korunur.
+   ```bash
+   node --test tests/h6-decision.test.cjs
+   ```
 
-- [tests/h6-decision.test.cjs](https://github.com/pozelll/-klinik-randevu-ogretmen/blob/test/h6-karar-tablosu/tests/h6-decision.test.cjs)
-- [Karar satırı kanıtları](https://github.com/pozelll/-klinik-randevu-ogretmen/blob/test/h6-karar-tablosu/hafta06/kanitlar/karar-tablosu-sonuclari.json)
-- [03-kural-testleri.md](https://github.com/pozelll/-klinik-randevu-ogretmen/blob/test/h6-karar-tablosu/hafta06/docs/03-kural-testleri.md)
+2. [Test dosyasındaki](https://github.com/pozelll/-klinik-randevu-ogretmen/blob/test/h6-karar-tablosu/tests/h6-decision.test.cjs) DK-K01-DK-K07 kimliklerini [karar tablosuyla](02-karar-tablosu.md) eşleştirin.
+3. Bir ret senaryosu seçin. Önce/sonra veriyi, `updateCalls` ve `storageWritesDuringRequest` değerlerini kendi çalıştırmanızdan kaydedin.
+4. Başarılı işlemde değişen kaydı ve korunması gereken alanları karşılaştırın. Kayıt sayısı ve `nextId` değerini de kaydınıza ekleyin.
 
-## Kontrol sorusu
+## Teslim edilecek çıktı
 
-Kanıt gerçek test yürütümünden mi üretildi? Ret satırlarında bütün veri aynı mı? Başarılı iptalde yalnız amaçlanan kayıt mı değişti?
+Test kimliği, kaynak commit, tarih, komut, gerçek sonuç, önce/sonra veri ve yazma sayısı. Kanıt üretme komutları için [yeniden çalıştırma rehberini](10-yeniden-calistirma.md) kullanın.
 
-**Öğrenciye soru:** Test mesajı doğru olsa da veri yanlışlıkla değişmiş olabilir mi?
+## Örnek kanıt
 
-**Beklenen açıklama:** Evet. Bu nedenle sadece mesajı değil, veri durumunu ve yan etkileri de karşılaştırırız.
+22 Kasım 2026 tarihli [karar satırı kayıtlarında](https://github.com/pozelll/-klinik-randevu-ogretmen/blob/test/h6-karar-tablosu/hafta06/kanitlar/karar-tablosu-sonuclari.json) 7/7 test başarılıdır. DK-K02'de `updateCalls:0` ve `storageWritesDuringRequest:0` kaydedilmiştir. DK-K07'de durum değişmiş; toplam kayıt sayısı, `nextId` ve diğer kayıtlar korunmuştur. Bu örnek kayıt kendi test yürütümünüzün yerine geçmez.
 
-## Öğrencinin yapacağı iş
-
-Bir ret senaryosunu seç; önce/sonra veriyi ve yazma sayısını ayrı göster. Sonucu kendi çalıştırdığın sürümle eşleştir.
-
-## Öğretmen örneğinin gerçek durumu
-
-7/7 karar satırı geçti. Başarılı iptal toplamı ve nextId değerini korur.
-
-Görev: [#14](https://github.com/pozelll/-klinik-randevu-ogretmen/issues/14) · İnceleme paketi: [PR #16](https://github.com/pozelll/-klinik-randevu-ogretmen/pull/16).
-Bağımsız inceleme ve birleştirme bekliyor. Gerçek isim, öğrenci çalışması veya inceleme sonucu uydurulmadı.
+[Görev #14](https://github.com/pozelll/-klinik-randevu-ogretmen/issues/14) · [PR #16 ve güncel durumu](https://github.com/pozelll/-klinik-randevu-ogretmen/pull/16)

@@ -1,47 +1,37 @@
 # YAZ325 - 6. hafta: Karar Tablosundan Test Kanıtına
 
-Sekiz basamaklı, aktif GitHub bağlantılı öğretmen örneği. Hazırlık: 22 Kasım 2026.
-Önceki dersleri değiştiren resmî müfredat kararı değildir; H4 mimari kararının uygulama ve test devamıdır.
+Öğrenci çalışma rehberi. Güncelleme: 26 Kasım 2026.
 
-Çalışma dalı: `test/h6-karar-tablosu` · [PR #16](https://github.com/pozelll/-klinik-randevu-ogretmen/pull/16) · [Görev #14](https://github.com/pozelll/-klinik-randevu-ogretmen/issues/14)
+Bu hafta 5. haftadaki modüler uygulamayı kullanarak test kapsamını, karar tablosunu, otomatik kontrolleri ve test kanıtlarını hazırlayacaksınız. Her grup kendi deposunda çalışır ve kendi çalıştırma sonuçlarını kaydeder.
+
+Örnek çalışma dalı: `test/h6-karar-tablosu` · [Görev #14](https://github.com/pozelll/-klinik-randevu-ogretmen/issues/14) · [PR #16](https://github.com/pozelll/-klinik-randevu-ogretmen/pull/16) 22 Kasım 2026'da `main` dalına birleştirilmiştir.
+
+## Çalışma adımları
+
+| Basamak | Çalışma | Grubun üreteceği çıktı |
+|---|---|---|
+| 1 | [Test planı](docs/01-test-plani.md) | Gereksinim, başlangıç verisi, test düzeyi ve beklenen sonuç. |
+| 2 | [Karar tablosu](docs/02-karar-tablosu.md) | Her koşul için ayrı başlangıç ve sonuç kaydı. |
+| 3 | [İş kuralı testleri](docs/03-kural-testleri.md) | Sonuç kodu, önce/sonra veri ve yazma sayısı. |
+| 4 | [Bütünleşme ve regresyon](docs/04-butunlesme.md) | Ortak veri üzerinde ardışık işlemlerin test sonuçları. |
+| 5 | [Tarayıcı testleri](docs/05-tarayici.md) | Vazgeçme, onaylı iptal ve ekran akışı kayıtları. |
+| 6 | [Sürekli bütünleştirme (CI)](docs/06-ci.md) | Çalıştırma bağlantısı, commit ve gerçek kontrol sonucu. |
+| 7 | [Kod ve kanıt incelemesi](docs/07-inceleme.md) | İnceleyen, kapsam, bulgular ve varsa düzeltme kaydı. |
+| 8 | [İzlenebilirlik ve teslim](docs/08-teslim.md) | Gereksinimden test kanıtına ulaşan teslim paketi. |
 
 ## Grubun iş bölümü
 
-İki, üç ve dört kişilik gruplar karar tablosu, test yazımı, test yürütümü ve kanıt incelemesini [grup büyüklüğüne göre](../docs/11-grup-buyuklugune-gore-yonlendirme.md) paylaşır. Her üye anlamlı bir çıktı ve gerçek katkı kaydı üretir; yazmadığı kapsamı inceler. Ortak yazılan bölüm için gerekirse grup dışından inceleyen belirlenir. Kendi sorumlularınızı ve sonuçlarınızı [grup kaydına](sablonlar/grup-kaydi.md) yazın; öğretmen örneğinin kişi ve süre varsayımlarını doğrudan kendi planınız saymayın.
+İki, üç ve dört kişilik gruplar karar tablosu, test yazımı, test yürütümü ve kanıt incelemesini [grup büyüklüğüne göre](https://github.com/pozelll/-klinik-randevu-ogretmen/blob/main/docs/11-grup-buyuklugune-gore-yonlendirme.md) paylaşır. Her üye anlamlı bir çıktı ve gerçek katkı kaydı üretir; yazımına katılmadığı içeriği inceler. Ortak yazılan bölüm için gerekirse grup dışından inceleyen belirlenir. Sorumluları, tarihleri ve sonuçları [grup kaydına](sablonlar/grup-kaydi.md) yazın.
 
-| Basamak | Ekranda açılacak belge | Hazırlık sonucu |
-|---|---|---|
-| 1 | [Test kapsamını belirledik](docs/01-test-plani.md) | Kural, veri erişimi ve ekran kontrolleri ayrıldı. |
-| 2 | [Yedi karar satırını kurduk](docs/02-karar-tablosu.md) | DK-K01–DK-K07 ayrı ayrı tanımlandı. |
-| 3 | [Kuralları kanıtladık](docs/03-kural-testleri.md) | 7/7 karar satırı geçti. |
-| 4 | [Bütünleşmeyi denedik](docs/04-butunlesme.md) | 8 H5 + 7 karar + 15 regresyon = 30/30. |
-| 5 | [Ekran akışını kontrol ettik](docs/05-tarayici.md) | 9/9 Chromium senaryosu geçti. |
-| 6 | [Otomatik kontrolü kurduk](docs/06-ci.md) | GitHub Actions: başarılı. |
-| 7 | [İnceleme paketini açtık](docs/07-inceleme.md) | Taslak PR #16 açık; hedef H5 dalı. |
-| 8 | [Kanıt ve teslimi bağladık](docs/08-teslim.md) | 30 Node + 9 tarayıcı kontrolü kayıtlı. |
+## Kaynaklar
 
-## Ders akışı
-
-Her basamakta önce soruyu sorun, sonra ilgili dosyayı açın, en son gerçek sonuç kaydını gösterin.
-Öğrenciler kendi depolarında kendi çıktısını üretir. Öğretmen testini kendi çalıştırması gibi kaydetmez.
-Kavramlar, dosyalar, test sonuçları ve inceleme durumu ayrı tutulur.
-
-## Ders materyali
-
-[Tek sayfalık süreç infografiği](dagitim/YAZ325_Hafta_06_Surec_Infografik_Aktif_Linkli.pdf)
-
-## Açık işler
-
-- Bağımsız kişi incelemesi ve varsa bulguların kapanışı.
-- Önceki PR bağımlılıklarının çözümü ve koşullar sağlanınca birleştirme.
-- NFR-01 kullanılabilirlik, NFR-02 yanıt süresi ve NFR-03 klavye ölçümleri.
-- Öğrenci gruplarının gerçek katkı, süre ve kendi sürümlerindeki test kayıtları.
-
-Otomatik test süreleri, 4. haftanın 9 saat / 19 kişi-saat planının gerçekleşmiş emek ölçümü değildir.
-
-## Derste ve sonrasında
-
-- [5. ve 6. hafta ayrıntılı anlatım rehberi](dagitim/YAZ325_Hafta_05_06_Ders_Anlatim_Rehberi.pdf)
-- [Gereksinim–test–kanıt eşleştirmesi](docs/09-izlenebilirlik.md)
+- [Tek sayfalık süreç infografiği](dagitim/YAZ325_Hafta_06_Surec_Infografik_Aktif_Linkli.pdf)
+- [Gereksinim-test-kanıt eşleştirmesi](docs/09-izlenebilirlik.md)
 - [İndirme, açma ve test komutları](docs/10-yeniden-calistirma.md)
 - [Boş grup kayıt formu](sablonlar/grup-kaydi.md)
+
+## Örnek sonuçların kullanımı
+
+22 Kasım 2026 tarihli örnek çalışma kayıtlarında 30 Node testi (8 H5 + 7 karar + 15 regresyon) ve 9 Chromium senaryosu başarılıdır. Bu kayıtlar kendi grubunuzun çalıştırma sonucu değildir. Kendi sürümünüzün commit'ini, araç sürümünü, tarihi ve gerçek sonucunu ayrıca kaydedin.
+
+Otomatik test, kod incelemesi ve kullanılabilirlik/performans/klavye ölçümleri ayrı çalışmalardır. 4. haftadaki 9 saat / 19 kişi-saat planlama tahmini, gerçekleşmiş grup emeği veya otomatik test süresi olarak kullanılamaz.
